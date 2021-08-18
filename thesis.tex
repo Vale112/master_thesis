@@ -122,6 +122,7 @@
 \usepackage[pdfusetitle, unicode, linkbordercolor=tugreen, citebordercolor=tugreen]{hyperref}
 \usepackage{bookmark}
 \usepackage[shortcuts]{extdash}
+\usepackage{pdfpages} % to include the Eidesstaatliche Versicherung
 
 %------------------------------------------------------------------------------
 %-------------------------    Angaben zur Arbeit   ----------------------------
@@ -137,6 +138,7 @@
 \submissiondate{02. Dezember 2021}
 \firstcorrector{Prof.~Dr.~Mirko Cinchetti}
 \secondcorrector{apl.~Prof.~Dr.~Heinz Hövel}
+\supervisor{M.~Sc.~David Janas}
 
 % tu logo on top of the titlepage
 \titlehead{\includegraphics[height=1.5cm]{logos/tu-logo.pdf}}
@@ -167,6 +169,8 @@
 \backmatter
 \printbibliography
 
-%\cleardoublepage
+
+\cleardoublepage
+\includepdf[fitpaper=true]{content/Eidesstattliche_Versicherung.pdf}
 % \input{content/eid_versicherung.tex}
 \end{document}

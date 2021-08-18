@@ -69,6 +69,7 @@
 \newcommand\thesubmissiondate{}
 \newcommand\thefirstcorrector{}
 \newcommand\thesecondcorrector{}
+\newcommand\thesupervisor{}
 
 % new commands for information about the thesis
 \newcommand\birthplace[1]{\renewcommand\thebirthplace{geboren in #1}}
@@ -78,6 +79,7 @@
 \newcommand\submissiondate[1]{\renewcommand\thesubmissiondate{#1}}
 \newcommand\firstcorrector[1]{\renewcommand\thefirstcorrector{#1}}
 \newcommand\secondcorrector[1]{\renewcommand\thesecondcorrector{#1}}
+\newcommand\supervisor[1]{\renewcommand\thesupervisor{#1}}
 
 % set title page elements
 \subject{Arbeit zur Erlangung des akademischen Grades\\ \thethesisclass}
@@ -90,6 +92,7 @@
   \begin{tabular}{@{}l@{\hspace{2em}}l@{}}
       Erstgutachter:  & \thefirstcorrector \\
       Zweitgutachter: & \thesecondcorrector \\
+      Betreuer: & \thesupervisor \\
       Abgabedatum:    & \thesubmissiondate
   \end{tabular}
   \newpage
