@@ -13,7 +13,14 @@ build/thesis.pdf: FORCE | build
 	lualatex --output-directory=build thesis.tex
 	
 FORCE:
-
+	# content/00_abstract.tex
+	# content/01_einleitung.tex
+	# content/02_Grundlagen.tex
+	# content/03_Methoden.tex
+	# content/04_Ergebnisse.tex
+	# content/05_Zusammenfassung.tex
+	# references.bib
+	
 build:
 	mkdir -p build/
 
