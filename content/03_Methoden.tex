@@ -1,9 +1,50 @@
 \chapter{Methoden und Techniken}
-        \begin{itemize}
-            \item Wozu UHV (Sauberkeit, Mittlere Freieweglänge)
-            \item Oberflächensensetive Methoden
-        \end{itemize}
-    \section{LEED}
+    In diesem Kapitel geht es um die grundlegenden Bedingungen zur Untersuchung von Molekülen auf antiferromagnnetischen Oberflächen.
+    Dazu gehört zunächst das Ultrahochvakuum, welches notwendig ist um eine saubere und wohl definierte Oberfläche zu erhalten.
+    Ferner wird die Methode Beugung niederenergergetischer Elektronen erläutert, womit auf die geometrische Struktur der Oberfläche geschlossen werden kann.
+    Anschließend geht es um die Photoelektronenspektroskopie und ihre Teilbereiche.
+
+    \section{Grundlegende Bedingungen}
+    Um sich Oberflächen genauer anzusehen muss zunächst verhindert werden, dass sich keine unerwünschten Teilchen auf der Oberfläche absetzen.
+    Hierzu wird Ultrahochvakuum (UHV) eingesetzt.
+    Da es keine Pumpe gibt, die direkt vom Atmosphärendruck bis hinab in den UHV Bereichen kleiner \SI{10e-8}{\milli\bar} reicht ist ein mehrstufiges Pumpsystem unabdingbar \textbf{QUELLE}.
+    In dem vorliegenden Aufbau wird dies durch Turbomolekularpumpen mit vorgeschalteten Scrollpumpen realisert.
+    Ferner werden diese durch Titansublimationspumpen sowie Ionenpumpen unterstützt.
+    Diese tiefen Drücke sind erforderlich, da schon bei einem Druck von xx bar die Oberfläche innerhalb von nur xx min vollständig mit den im Restgas vorhandenen Teilchen bedeckt wäre \textbf{Quelle, Zahlen}.
+
+    Es gibt auch die Möglichkeit gezielt Gase in die Präperationskammer zu leiten, in der die Proben für die anschließenden Messungen vorbereitet werden.
+    Dies geschieht dann durch sogenannte Leckventiele.
+    Ein Maß für die Oberflächenbedeckung ist die Einheit Langmuir \si{\langmuir}, welcher einer Dosis entspricht.
+    Dabei ist $\SI{1}{\langmuir} = \SI{1}{\torr} \cdot \si{\micro\second}$ also etwa $\SI{1.33e-6}{\milli\bar} \cdot \si{second}$.
+    Hier wird zu Grunde gelegt, dass jedes auf die Oberfläche auftreffende Teilchen auch haften bleibt. 
+    Die Oberfläche besäße also einen Haftkoeffizienten von \num{1}, was in der Realität so nicht vorkommt.
+
+    Das Vakuum dient allerdings nicht nur der Reinheit der Probe, sondern auch das die später emittierten Elektronen auch den Raum durchdringen und den Analysator erreichen können.
+    Dies hat damit zu Tun, dass Teilchen durch Streuung an anderen Teilchen abgebremst werden.
+    Elektronen hätten bei einem Druck von xx bar nur eine Reichweite von \textbf{QUELLE, Zahlen}.
+    Da es sich um die Untersuchung von Oberflächen handelt ist somit auch bei den Techniken auf die Oberflächensensitivität zu achten.
+    Relevant wird also die mittlere freie Weglänge der verwendeten Sonde.
+    Als perfekte Sonden stellten sich die Elektronen heraus, ihre inelastische mittlere freie Weglänge ist Abbildung \ref{fig:Weg} graphisch dargestellt.
+    % \begin{figure}
+    %     \centering
+    %     \includegraphics[width=0.7\textwidth]{./content/Weg.png}
+    %     \caption{Die mittlere freie Weglänge für Elektronen in verschiedenen Materialien. Aus \textbf{Quelle}.}
+    %     \label{fig:Weg}
+    % \end{figure}
+    Es ist zu erkennen, dass Elektronen mit einer kinetischen Energie im Bereich von \SIrange{30}{150}{\electronvolt} aus einer Tiefe von nicht mehr als \SI{5}{\angstrom} kommen.
+    Werden also Elektronen als Sonden verwendet und ihre kinetische Energie angepasst, so kann davon ausgegagngen werden, dass sie nur aus Oberflächen nahen Bereichen kommen.
+
+    Um Elektronen von der Probe kommend zu erhalten gibt es zwei Möglichkeiten.
+    Zunächst kann man die Probe mit Elektronen im entsprechenden Energiebereich beschießen, die zurückkommenden Elektronen mit identischer kinetischen Energie können also nur aus oberflächen Nahemn bereichen kommen.
+    Die zweite Möglichkeit ist es freie Elektronen in der Probe zu erzeugen, die dann aus der Oberfläche austreten und detektiert werden können.
+    Die erste Möglichkeit wird bei der Beugung niederenergergetischer Elektronen verwendet und die zweite bei der Photoelektronenspektroskopie.
+
+
+    \section{Beugung niederenergetischer Elektronen}
+    Um sich die geometrische Oberflächenbeschaffenheit genau anzusehen wir die Beugung niederenergergetischer Elektronen (\textit{Low energy electron diffraction}, LEED) eingestezt.
+    Hierbei werden Elektronen mit einer kinetischen Energie im Bereich der Oberflächensensitivität auf die Probe geschossen.
+    Die Elektronen werden zunächst durch den Glühelektrischen Effekt erzeugt und durch einen Wehnelt-Zylinder gebündet.
+    Anschließend werden Sie zur Probe hin beschleunigt, ...
         \begin{itemize}
             \item Geometrische Struktur
             \item Mathematische Methoden
@@ -33,7 +74,7 @@
         \end{figure}
         Ein exemplarischer Aufbau ist in Abbildung \ref{fig:MM} zu sehen.
         Die durch die Photonen angeregten Elektronen werden durch ein starkes elektrisches Feld von einigen \si{\kilo\volt} von der Probe zum Analysator hin beschleunigt.
-        Das Extractorfeld kann bis auf \SI{29}{\kilo\volt} erhöht werden, wird standardmäßig aber auf \SI{10}{\kilo\volt} festgesetzt
+        Das Extractorfeld kann bis auf \SI{29}{\kilo\volt} erhöht werden, wird standardmäßig auf \SI{10}{\kilo\volt} festgesetzt.
         Durch diese große Spannung zwischen Probe und Extraktor ist es möglich ein ein großen Sichtbereich im Impulsraum abzudecken.
         Dies ist nötig, da durch den streifenden Einfall der Photonen und der Abberation der elektrostatischen Linsen nur einen kleinen Akzeptanzwinkel zur Verfügung stehen würde. \textbf{QUELLE}
         Wichtig bei der Kathoden Linse ist, dass das Feld zwischen Probe und Linse sehr homogen ist, damit der Austrittswinkel erhalten bleibt.
