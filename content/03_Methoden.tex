@@ -1,10 +1,10 @@
-\chapter{Methoden und Techniken}
+\chapter{Methoden und Techniken} \label{cha:Methoden}
     In diesem Kapitel geht es um die grundlegenden Bedingungen zur Untersuchung von Molekülen auf antiferromagnnetischen Oberflächen.
     Dazu gehört zunächst das Ultrahochvakuum, welches notwendig ist um eine saubere und wohl definierte Oberfläche zu erhalten.
     Ferner wird die Methode Beugung niederenergergetischer Elektronen erläutert, womit auf die geometrische Struktur der Oberfläche geschlossen werden kann.
     Anschließend geht es um die Photoelektronenspektroskopie und ihre Teilbereiche.
 
-    \section{Grundlegende Bedingungen}
+    \section{Grundlegende Bedingungen} \label{sec:Grundlagen}
     Um sich Oberflächen genauer anzusehen muss zunächst verhindert werden, dass sich keine unerwünschten Teilchen auf der Oberfläche absetzen.
     Hierzu wird Ultrahochvakuum (UHV) eingesetzt.
     Da es keine Pumpe gibt, die direkt vom Atmosphärendruck bis hinab in den UHV Bereichen kleiner \SI{10e-8}{\milli\bar} reicht ist ein mehrstufiges Pumpsystem unabdingbar \textbf{QUELLE}.
@@ -40,28 +40,94 @@
     Die erste Möglichkeit wird bei der Beugung niederenergergetischer Elektronen verwendet und die zweite bei der Photoelektronenspektroskopie.
 
 
-    \section{Beugung niederenergetischer Elektronen}
+    \section{Beugung niederenergetischer Elektronen} \label{sec:LEED}
     Um sich die geometrische Oberflächenbeschaffenheit genau anzusehen wir die Beugung niederenergergetischer Elektronen (\textit{Low energy electron diffraction}, LEED) eingestezt.
     Hierbei werden Elektronen mit einer kinetischen Energie im Bereich der Oberflächensensitivität auf die Probe geschossen.
     Die Elektronen werden zunächst durch den Glühelektrischen Effekt erzeugt und durch einen Wehnelt-Zylinder gebündet.
-    Anschließend werden Sie zur Probe hin beschleunigt, ...
+    Diese beiden Komponenten bilden zusammen die Elektronenkanone.
+    Anschließend werden Sie zur Probe hin beschleunigt.
+    Da die Probe geerdet ist geschieht dies durch eine positive Vorspannung zwischen Probe und Elektronenkanone.
+    Die gestreuten Elektronen bewegen sich in alle Richtungen von der Probe weg.
+    Damit die Flugbahn nicht durch elektrische Felder beeinflusst wird befindet sich das erste von der Probe aus gesehen Netz ebenfalls auf Erdpotential.
+    Das dahinter liegende Netz hat dann eine zur Probe negativ Spannung angelegt, die genau der Vorspannung entspricht.
+    Diese Spannung sorgt dafür, dass nur inelastisch gestreute Elektronen die weiteren Netze durchlaufen.
+    Das nächste Gitter leigt wieder auf dem Erdpotential, damit das vom dahinter liegenden Gitter erzeugte Beschleunigungsfeld nicht durchgreift.
+    Diese Beschleunigungsfeld wir durch eine hohe Spannung hervorgerufen und ist dafür notwendig, damit die Elektronen auf dem Leuchtschirm das Beugungsmuster erzeugen können.
+
+    Die Entstehung des Beugungsmusters geschieht durch Interferenz Effekte, es ist also eine periodische Struktur von Nöten.
+    Das entstehende Beugungsmuster ist charakteristisch für die Oberflächenbeschaffenheit.
         \begin{itemize}
             \item Geometrische Struktur
             \item Mathematische Methoden
         \end{itemize}
-    \section{PES}
+
+    
+    \section{Photoelektronenspektroskopie} \label{sec:PES}
+    Die Grundlage ist der Photoelektronenspektroskopie ist der Photoelektrische Effekt, der 1905 zum ersten Mal von Albert Einstein erklärt wurde \cite{Einstein}.
+    Hierbei werden Elektronen durch ein einfallendes Photon angeregt, ist die Energie hoch genug, so treten diese aus der Probenoberfläche aus.
+    In Formeln ergibt sich so die kinetische Energie der Elektronen, die die Probe verlassen zu 
+    \begin{equation}
+        E_{\text{Kin}} = h \nu - E_{\symup{B}} - \psi
+        \label{eqn:Photoeffekt}
+    \end{equation}
+    mit der Bindungsenergie des Elektrons $E_{\symup{B}}$, der Energie des einfallenden Photons $h \nu$ und der Austrittsarbeit $\psi$.
+    Die Austrittsarbeit ist der Energieunterschied zwischen der Fermienergie und der Vakuumenergie.
+    % \begin{figure}
+    %     \centering
+    %     \includegraphics[width=0.7\textwidth]{./content/3Stufen.png}
+    %     \caption{Schematische Darstellung des drei Stufen Models für den photoelektrischen Effekt. Aus \textbf{Quelle}.}
+    %     \label{fig:Weg}
+    % \end{figure}
+
+    Dieser Prozess der Emittation eines Elektrons nach einfall eines Photons lässt sich in einem drei Stufen Model erklären.
+    Das Model mit den Stufen ist in Abbildung \ref{fig:3Stufen} \textbf{BILD} schematisch zu sehen.
+    Der erste Schritt ist die Absorption des Photons, wodurch das Elektron angeregt wird. 
+    Dieses kann dann innerhalb des Festkörpers zur Probenoberfläche wandern.
+    In diesem zweiten Schritt kommt auch die mittlere freie Weglänge der Elektroen zu tragen, weshalb die Methode oberflächensensitiv ist.
+    Im dritten Schritt verlässt das Elektron die Oberfläche und wird auf Grund fehlender periodischer Strukturen gebeugt.
+
+    Je nach Energie der verwendeten Photonen lässt sich in maßgeblich zwei Bereiche unterscheiden.
+    Zum Einen in den Bereich der Röntgenstrahlung (\textit{X-Ray}), womit kernnahe Zustände untersucht werden.
+    Zum Anderen den Bereich der Ultravioletten Strahlung, hier können Zustände nahe der Fermikante sichtbar gemacht werden.
+    Die verschiedenen Energiebereich sind notwendig, damit die angeregten Elektronen eine kinetische Energie im oberflächensensitiven Bereich haben.
+    Diese erste Methode wird XPS genannt, wohingegen die zweite Methode mit UPS abgekürzt wird.
+
+    \subsection{Röntgenphotoelektronenspektroskopie}
+    In den Energiebereich der Röntgenstrahlung fallen Photonen mit einer Energie von \SIrange{0}{0}{\electronvolt} \textbf{Quelle, Zahlen}.
+    Diese Energien sind nur mit klassischen Röntgenquellen oder einem Synchrotron erreichbar.
+    Mit dieser Methode lässt sich besonders gut die chemische Zusammensetzung untersuchen, da die kernnahen Zustände nur geringfügig beinflusst werden.
+
+
+    \subsection{Ultraviolettphotoelektronenspektroskopie}
+    Die Ultraviolette Strahlung besitzt einer Energie der Photonen im Bereich von \SIrange{0}{0}{\electronvolt} \textbf{Quelle, Zahlen}.
+    Photonen in diesem Energiebereich können auch in Laboren mit Gasentladungslapen erzeugt werden, sind aber ebenfalls an Synchrotrons verfügbar.
+    Diese Energien eignen sich besonders gut für Zustände nähe der Fermikante, also auch den Oberflächenzuständen.
+    In diesen Bereich fallen auch die Energien die zur Molekülorbital Tomographie genutzt werden, welche in Kapitel \ref{sec:MOT} eingeführt wird.
+
+    \subsection{Winkelaufgelöste Photoelektronenspektroskopie}
+    Bisher wurde  auf den Austrittswinkel der Elektronen nicht genauer eingegangen, zumal bei XPS und UPS auch egeal ist unterwelchem Winkel die Elektronen die Probe verlassen.
+    Diese Messungen werden meist auch in normaler Emission, also parallel zur Oberflächennormalen, vermessen.
+    Über alle Austrittswinkel gemittelten Spektren werden auch als integrierte Spektren bezeichnet.
+    % \begin{figure}
+    %     \centering
+    %     \includegraphics[width=0.7\textwidth]{./content/ARPES.png}
+    %     \caption{Darstellung zur Anschaulichkeit von ARPES Messungen. Aus \textbf{Quelle}.}
+    %     \label{fig:Weg}
+    % \end{figure}
+
+    Die genaue Winkelverteilung der Elektronen wird bei der Winkelaufgelösten Photoelektronenspektroskopie genauer untersucht.
+    Hierzu wird vom Analysator nur ein kleiner Winkelbreich akzeptiert und der Winkel zwischen Probe und Analysator stets varriert.
+    Schematisch ist dies auch in Abbildung \ref{fig:ARPES} \textbf{BILD} dargstellt.
+    Für jeden Messpunkt wird ein UPS Spektrum aufgezeichnet.
+
         \begin{itemize}
-            \item XPS
-            \item UPS
-            \item Modele der Anregung 
-            \item Mittlere Frei weglänge
             \item Integrierte Spektren
         \end{itemize}
 
-    \section{ARPES}
+
     
 
-    \section{2D Photoelektronen Mikroskopie}
+    \section{2D Photoelektronen Mikroskopie} \label{sec:2D-PES}
         Bei der 2D Photoelektronen Mikroskopie ist eine sehr viel versprechende Technik, die für immer mehr Aufsehen in den letzten Jahren gesorgt hat.
         Der größte Vorteil liegt wohl in der Kombination von spektroskopischen Methoden und mikroskopischen Methoden.
         Zuerst wurde dies 1933 durch E. Brüche entdeckt, der eine Zinkplatte mit Hilfe von Photoelektronen und einer magnetischen Linse auf einem Leuchtschirm abbildete \cite{bruche_elektronenmikroskopische_1933}.
@@ -115,7 +181,7 @@
             Bei einem Blendendurchmesser von \SI{20}{\micro\meter} und der Standard-Vergrößerung von \num{5} ist der ausgewählt Bereich etwa \SI{4}{\micro\meter} groß.
             Bei der Aufnahme im Impulsraum wird bei der gesamten Abbildungsoptik der Austrittswinkel erhalten.
             So wird auf die Eintrittsblende des Analysators das Beugungsbild abgebildet.
-            Das verwendete Mikroskop kann einen Austrittswinkel von biszu $\pm\SI{90}{\degree}$ erfassen für eine Energie kleiner als \SI{50}{\electronvolt} \cite[page=21]{SPECS-MM}.
+            Das verwendete Mikroskop kann einen Austrittswinkel von biszu $\pm\SI{90}{\degree}$ erfassen für eine Energie kleiner als \SI{50}{\electronvolt} \cite[21]{SPECS-MM}.
             Für größere kinetische Energien wird das Sichtfeld auf $\pm\SI{3.6}{\angstrom}$ beschränkt.
             Dabei spielt es keine Rolle wo auf der Probe die Elektronen emittiert werden.
 
@@ -128,7 +194,7 @@
         \subsection{Realraum Aufnahmen}
             Es ist ferner möglich Bilder im Realraum aufzunehmen.
             Dies geschieht durch Einsetzen einer Blende in dem hinteren Brennpunkt, die Kontrastblende (\textit{contrast aperture}).
-            Dabei können sehr kleine Spots von \SIrange[range-phrase=' bis ']{50}{200}{\micro\meter} ausgewählt werden.
+            Dabei können sehr kleine Spots von \SIrange{50}{200}{\micro\meter} ausgewählt werden.
             Um den Kontrast im Bild zu erhöhen werden nur Elektronen mit einem bestimmten Austrittswinkel für die Erstellung des Bildes erfasst.
             Mit Hilfe der Kontrastblenden kann dann eine Auflößung von einigen \si{\nano\meter} erreicht werden \textbf{QUELLE}. 
             Auf dem Eintrittsspalt des Energyanalysators wird dann das Bild der Oberfläche projeziert.
@@ -152,12 +218,12 @@
             Hierbei erfolgt die Anregung mit zwei zeitlich versetzten Pulsen. 
             Dabei regt der erste Puls die Elektronen in einen höheren Zustand an und der zweite Puls löst diese dann aus.
             So ist es auch möglich zuvor unbesetzte Zustände (zwei Photonenemission) zu untersuchen.
-            Wird der zeitliche Versatz zwischen den beiden Pulsen varriert so ist auch die Lebensdauer der Zustaände abschätzbar.
+            Wird der zeitliche Versatz zwischen den beiden Pulsen varriert so ist auch die Lebensdauer der Zustände abschätzbar.
 
             Mögliche Erweiterung wäre auch die Elektronen nach der Energieselection auch noch nach ihrem Spin zu sortieren.
         
 
-    \section{Molekül Orbital Tomographie}
+    \section{Molekül Orbital Tomographie} \label{sec:MOT}
         Die Molekül Orbital Tomographie vereinigt nun die Vorteile der Impuls Mikroskopes mit der Theorie der Dichtefunktionaltheorie (DFT) um Molekülorbitale zu identifizieren.
         Aus der Theorie können die Orbitale der Moleküle in der Gasphase im Realraum berechnet werden \cite{database}.
         Werden diese dann Fourier transformiert, so erhält man die Aufenthaltswahrscheinlichkeiten der Elektronen abhängig von ihrem Impuls.
