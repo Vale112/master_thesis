@@ -1,7 +1,7 @@
 \chapter{Methoden und Techniken} \label{cha:Methoden}
     In diesem Kapitel geht es um die grundlegenden Bedingungen zur Untersuchung von Molekülen auf antiferromagnnetischen Oberflächen.
     Dazu gehört zunächst das Ultrahochvakuum, welches notwendig ist um eine saubere und wohl definierte Oberfläche zu erhalten.
-    Ferner wird die Methode Beugung niederenergergetischer Elektronen erläutert, womit auf die geometrische Struktur der Oberfläche geschlossen werden kann.
+    Ferner wird die Methode Beugung niederenergetischer Elektronen erläutert, womit auf die geometrische Struktur der Oberfläche geschlossen werden kann.
     Anschließend geht es um die Photoelektronenspektroskopie und ihre Teilbereiche.
 
     \section{Grundlegende Bedingungen} \label{sec:Grundlagen}
@@ -10,7 +10,7 @@
     Da es keine Pumpe gibt, die direkt vom Atmosphärendruck bis hinab in den UHV Bereichen kleiner \SI{10e-8}{\milli\bar} reicht ist ein mehrstufiges Pumpsystem unabdingbar \textbf{QUELLE}.
     In dem vorliegenden Aufbau wird dies durch Turbomolekularpumpen mit vorgeschalteten Scrollpumpen realisert.
     Ferner werden diese durch Titansublimationspumpen sowie Ionenpumpen unterstützt.
-    Diese tiefen Drücke sind erforderlich, da schon bei einem Druck von xx bar die Oberfläche innerhalb von nur xx min vollständig mit den im Restgas vorhandenen Teilchen bedeckt wäre \textbf{Quelle, Zahlen}.
+    Diese tiefen Drücke sind erforderlich, da schon bei einem Druck von \SI{1e-6}{\milli\bar} die Oberfläche innerhalb von \SI{10}{\milli\second} zu \SI{1}{\percent} mit den im Restgas vorhandenen Teilchen bedeckt wäre \cite{henzler}.
 
     Es gibt auch die Möglichkeit gezielt Gase in die Präperationskammer zu leiten, in der die Proben für die anschließenden Messungen vorbereitet werden.
     Dies geschieht dann durch sogenannte Leckventiele.
@@ -21,9 +21,9 @@
 
     Das Vakuum dient allerdings nicht nur der Reinheit der Probe, sondern auch das die später emittierten Elektronen auch den Raum durchdringen und den Analysator erreichen können.
     Dies hat damit zu Tun, dass Teilchen durch Streuung an anderen Teilchen abgebremst werden.
-    Elektronen hätten bei einem Druck von xx bar nur eine Reichweite von \textbf{QUELLE, Zahlen}.
+    % Elektronen hätten bei einem Druck von xx bar nur eine Reichweite von \textbf{QUELLE, Zahlen}.
     Da es sich um die Untersuchung von Oberflächen handelt ist somit auch bei den Techniken auf die Oberflächensensitivität zu achten.
-    Relevant wird also die mittlere freie Weglänge der verwendeten Sonde.
+    Relevant wird damit die mittlere freie Weglänge der verwendeten Sonde.
     Als perfekte Sonden stellten sich die Elektronen heraus, ihre inelastische mittlere freie Weglänge ist Abbildung \ref{fig:Weg} graphisch dargestellt.
     % \begin{figure}
     %     \centering
@@ -37,12 +37,20 @@
     Um Elektronen von der Probe kommend zu erhalten gibt es zwei Möglichkeiten.
     Zunächst kann man die Probe mit Elektronen im entsprechenden Energiebereich beschießen, die zurückkommenden Elektronen mit identischer kinetischen Energie können also nur aus oberflächen Nahemn bereichen kommen.
     Die zweite Möglichkeit ist es freie Elektronen in der Probe zu erzeugen, die dann aus der Oberfläche austreten und detektiert werden können.
-    Die erste Möglichkeit wird bei der Beugung niederenergergetischer Elektronen verwendet und die zweite bei der Photoelektronenspektroskopie.
+    Die erste Möglichkeit wird bei der Beugung niederenergetischer Elektronen verwendet und die zweite bei der Photoelektronenspektroskopie.
 
 
     \section{Beugung niederenergetischer Elektronen} \label{sec:LEED}
-    Um sich die geometrische Oberflächenbeschaffenheit genau anzusehen wir die Beugung niederenergergetischer Elektronen (\textit{Low energy electron diffraction}, LEED) eingestezt.
+    Um sich die geometrische Oberflächenbeschaffenheit genau anzusehen wir die Beugung niederenergetischer Elektronen (\textit{Low energy electron diffraction}, LEED) eingestezt.
     Hierbei werden Elektronen mit einer kinetischen Energie im Bereich der Oberflächensensitivität auf die Probe geschossen.
+    Der Aufbau mit seinen Optiken für die Beugung niederenergetischer Elektronen ist in Abbildung \ref{fig:LEED} abgebildet.
+
+    % \begin{figure}
+    %     \centering
+    %     \includegraphics[width=0.7\textwidth]{./content/LEED.png}
+    %     \caption{Innerer Aufbau der Apperatur zur Beugung niederenergetischer Elektronen. Aus \textbf{Quelle}.}
+    %     \label{fig:LEED}
+    % \end{figure}
     Die Elektronen werden zunächst durch den Glühelektrischen Effekt erzeugt und durch einen Wehnelt-Zylinder gebündet.
     Diese beiden Komponenten bilden zusammen die Elektronenkanone.
     Anschließend werden Sie zur Probe hin beschleunigt.
@@ -76,7 +84,7 @@
     %     \centering
     %     \includegraphics[width=0.7\textwidth]{./content/3Stufen.png}
     %     \caption{Schematische Darstellung des drei Stufen Models für den photoelektrischen Effekt. Aus \textbf{Quelle}.}
-    %     \label{fig:Weg}
+    %     \label{fig:3Stufen}
     % \end{figure}
 
     Dieser Prozess der Emittation eines Elektrons nach einfall eines Photons lässt sich in einem drei Stufen Model erklären.
@@ -93,39 +101,36 @@
     Diese erste Methode wird XPS genannt, wohingegen die zweite Methode mit UPS abgekürzt wird.
 
     \subsection{Röntgenphotoelektronenspektroskopie}
-    In den Energiebereich der Röntgenstrahlung fallen Photonen mit einer Energie von \SIrange{0}{0}{\electronvolt} \textbf{Quelle, Zahlen}.
-    Diese Energien sind nur mit klassischen Röntgenquellen oder einem Synchrotron erreichbar.
-    Mit dieser Methode lässt sich besonders gut die chemische Zusammensetzung untersuchen, da die kernnahen Zustände nur geringfügig beinflusst werden.
-
+        In den Energiebereich der Röntgenstrahlung fallen Photonen mit einer Energie von \SIrange{0}{0}{\electronvolt} \textbf{Quelle, Zahlen}.
+        Diese Energien sind nur mit klassischen Röntgenquellen oder einem Synchrotron erreichbar.
+        Mit dieser Methode lässt sich besonders gut die chemische Zusammensetzung untersuchen, da die kernnahen Zustände nur geringfügig beinflusst werden.
 
     \subsection{Ultraviolettphotoelektronenspektroskopie}
-    Die Ultraviolette Strahlung besitzt einer Energie der Photonen im Bereich von \SIrange{0}{0}{\electronvolt} \textbf{Quelle, Zahlen}.
-    Photonen in diesem Energiebereich können auch in Laboren mit Gasentladungslapen erzeugt werden, sind aber ebenfalls an Synchrotrons verfügbar.
-    Diese Energien eignen sich besonders gut für Zustände nähe der Fermikante, also auch den Oberflächenzuständen.
-    In diesen Bereich fallen auch die Energien die zur Molekülorbital Tomographie genutzt werden, welche in Kapitel \ref{sec:MOT} eingeführt wird.
+        Die Ultraviolette Strahlung besitzt einer Energie der Photonen im Bereich von \SIrange{0}{0}{\electronvolt} \textbf{Quelle, Zahlen}.
+        Photonen in diesem Energiebereich können auch in Laboren mit Gasentladungslapen erzeugt werden, sind aber ebenfalls an Synchrotrons verfügbar.
+        Diese Energien eignen sich besonders gut für Zustände nähe der Fermikante, also auch den Oberflächenzuständen.
+        In diesen Bereich fallen auch die Energien die zur Molekülorbital Tomographie genutzt werden, welche in Kapitel \ref{sec:MOT} eingeführt wird.
 
     \subsection{Winkelaufgelöste Photoelektronenspektroskopie}
-    Bisher wurde  auf den Austrittswinkel der Elektronen nicht genauer eingegangen, zumal bei XPS und UPS auch egeal ist unterwelchem Winkel die Elektronen die Probe verlassen.
-    Diese Messungen werden meist auch in normaler Emission, also parallel zur Oberflächennormalen, vermessen.
-    Über alle Austrittswinkel gemittelten Spektren werden auch als integrierte Spektren bezeichnet.
-    % \begin{figure}
-    %     \centering
-    %     \includegraphics[width=0.7\textwidth]{./content/ARPES.png}
-    %     \caption{Darstellung zur Anschaulichkeit von ARPES Messungen. Aus \textbf{Quelle}.}
-    %     \label{fig:Weg}
-    % \end{figure}
+        Bisher wurde  auf den Austrittswinkel der Elektronen nicht genauer eingegangen, zumal bei XPS und UPS auch egeal ist unterwelchem Winkel die Elektronen die Probe verlassen.
+        Diese Messungen werden meist auch in normaler Emission, also parallel zur Oberflächennormalen, vermessen.
+        Über alle Austrittswinkel gemittelten Spektren werden auch als integrierte Spektren bezeichnet.
+        % \begin{figure}
+        %     \centering
+        %     \includegraphics[width=0.7\textwidth]{./content/ARPES.png}
+        %     \caption{Darstellung zur Anschaulichkeit von ARPES Messungen. Aus \textbf{Quelle}.}
+        %     \label{fig:ARPES}
+        % \end{figure}
 
-    Die genaue Winkelverteilung der Elektronen wird bei der Winkelaufgelösten Photoelektronenspektroskopie genauer untersucht.
-    Hierzu wird vom Analysator nur ein kleiner Winkelbreich akzeptiert und der Winkel zwischen Probe und Analysator stets varriert.
-    Schematisch ist dies auch in Abbildung \ref{fig:ARPES} \textbf{BILD} dargstellt.
-    Für jeden Messpunkt wird ein UPS Spektrum aufgezeichnet.
+        Die genaue Winkelverteilung der Elektronen wird bei der Winkelaufgelösten Photoelektronenspektroskopie genauer untersucht.
+        Hierzu wird vom Analysator nur ein kleiner Winkelbreich akzeptiert und der Winkel zwischen Probe und Analysator stets varriert.
+        Schematisch ist dies auch in Abbildung \ref{fig:ARPES} \textbf{BILD} dargstellt.
+        Für jeden Messpunkt wird ein UPS Spektrum aufgezeichnet.
 
         \begin{itemize}
             \item Integrierte Spektren
         \end{itemize}
 
-
-    
 
     \section{2D Photoelektronen Mikroskopie} \label{sec:2D-PES}
         Bei der 2D Photoelektronen Mikroskopie ist eine sehr viel versprechende Technik, die für immer mehr Aufsehen in den letzten Jahren gesorgt hat.
@@ -189,8 +194,6 @@
             Bei der Impuls Mikroskopie ist die zeitgleich Erfassung des polaren und azimuntalen Austrittswinkel von großer Bedeutung. 
             So entsteht durch die zusätzlich Sortierung der Elektronen nach ihrer kinetsichen Energie ein dreidimensionaler Datensatz.
 
-        
-
         \subsection{Realraum Aufnahmen}
             Es ist ferner möglich Bilder im Realraum aufzunehmen.
             Dies geschieht durch Einsetzen einer Blende in dem hinteren Brennpunkt, die Kontrastblende (\textit{contrast aperture}).
@@ -211,8 +214,6 @@
             \end{figure}
             Der gesamte Aufbau aus dem PEEM und der Präperationskammer ist in Abbildung \ref{fig:aufbau} zu finden.
         
-
-
         \subsection{Erweiterungen}
             Als erweiterung der 2D Photoelektronen Mikroskopie sind auch zeitaufeglöste Messungen möglich.
             Hierbei erfolgt die Anregung mit zwei zeitlich versetzten Pulsen. 
