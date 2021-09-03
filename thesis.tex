@@ -94,8 +94,12 @@
 % allow figures to be placed in the running text by default:
 \usepackage{scrhack}
 \usepackage{float}
+\usepackage{sidecap} % makes Caption and figure byside
 \floatplacement{figure}{htbp}
+\floatplacement{SCfigure}{htbp} % makes Caption and figure byside
+\sidecaptionvpos{figure}{c} % set if the sidecaption is centered to image
 \floatplacement{table}{htbp}
+
 
 % keep figures and tables in the section
 \usepackage[section, below]{placeins}

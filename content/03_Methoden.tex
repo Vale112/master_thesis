@@ -57,13 +57,24 @@
     Da die Probe geerdet ist geschieht dies durch eine positive Vorspannung zwischen Probe und Elektronenkanone.
     Die gestreuten Elektronen bewegen sich in alle Richtungen von der Probe weg.
     Damit die Flugbahn nicht durch elektrische Felder beeinflusst wird befindet sich das erste von der Probe aus gesehen Netz ebenfalls auf Erdpotential.
-    Das dahinter liegende Netz hat dann eine zur Probe negativ Spannung angelegt, die genau der Vorspannung entspricht.
-    Diese Spannung sorgt dafür, dass nur inelastisch gestreute Elektronen die weiteren Netze durchlaufen.
+    Genau der Vorspannung entsprechend wird durch das dahinter liegende Netz  ein elektrisches Feld aufgebaut, gegen das die Elektronen anlaufen.
+    So können nur elastisch gestreute Elektronen die weiteren Netze durchlaufen.
     Das nächste Gitter leigt wieder auf dem Erdpotential, damit das vom dahinter liegenden Gitter erzeugte Beschleunigungsfeld nicht durchgreift.
     Diese Beschleunigungsfeld wir durch eine hohe Spannung hervorgerufen und ist dafür notwendig, damit die Elektronen auf dem Leuchtschirm das Beugungsmuster erzeugen können.
+    Mit Hilfe einer Kamera wird dieses Beugungsmuster erfasst.
 
     Die Entstehung des Beugungsmusters geschieht durch Interferenz Effekte, es ist also eine periodische Struktur von Nöten.
-    Das entstehende Beugungsmuster ist charakteristisch für die Oberflächenbeschaffenheit.
+    Ebenso muss damit die Wellenlänge der Elektronen im Größenbereich der Gitterkonstanten liegen.
+    Folglich haben die Elektronen einer Energie zwischen \SIrange{50}{200}{\electronvolt} \textbf{Quelle}.
+    Das entstehende Beugungsmuster ist charakteristisch für die Oberflächenbeschaffenheit und stellt die Oberfläche im reziproken Raum da.
+    Intensitäten der einzelnen Spots $I$ ergeben sich dabei aus dem Formfaktor $F$ und dem Gitterfaktor $G$ zu
+    \begin{equation}
+        I = \left|F^2\right|\left|G^2\right|.
+        \label{eqn:LEED}
+    \end{equation}
+    Mathematisch kommt der Formfaktor aus der Position der Atome innerhalb der Einheitszelle, wohingegen der Gitterfaktor die Periodizität der Gitters wiederspiegelt.
+    \textbf{Lauebedingung?}
+
         \begin{itemize}
             \item Geometrische Struktur
             \item Mathematische Methoden
@@ -172,12 +183,12 @@
         Einer der Nachteile ist die geringe Abtastrate auf Grund der hohen Erholungszeit\cite{CMOS}.
 
         Es gibt zwei verschiedene Betribsmodi welche ferner erläutert werden.
-        \begin{figure}
+        \begin{SCfigure}
             \centering
-            \includegraphics[width=0.7\textwidth]{./content/Real_k.PNG}
             \caption{Die verschiedenen Konfiguration der Blenden um zwischen Realraum Bild und Impulsraum Bild umzuschalten. Aus \cite{Focus}.}
             \label{fig:real_k}
-        \end{figure}
+            \includegraphics[width=0.7\textwidth]{./content/Real_k.PNG}
+        \end{SCfigure}
         Für den Impulsraum ist dies in Abbildung \ref{fig:real_k}\,a und für den Realraum in Abbildung \ref{fig:real_k}\,b dargestellt.
 
         \subsection{Impulsraum Aufnahmen}
