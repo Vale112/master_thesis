@@ -62,6 +62,8 @@
 % nice, small fracs for the text with \sfrac{}{}
 \usepackage{xfrac}
 
+\DeclarePairedDelimiter{\abs}{\lvert}{\rvert}
+
 
 %------------------------------------------------------------------------------
 %---------------------------- Numbers and Units -------------------------------
@@ -76,6 +78,15 @@
 \sisetup{math-micro=\text{µ},text-micro=µ}
 \DeclareSIUnit[]{\langmuir}{\text{L}}
 \DeclareSIUnit[]{\torr}{\text{torr}}
+
+%------------------------------------------------------------------------------
+%---------------------------- chemische Formeln -------------------------------
+%------------------------------------------------------------------------------
+\usepackage[
+  version=4,
+  math-greek=default,
+  text-greek=default,
+] {mhchem}
 
 %------------------------------------------------------------------------------
 %-------------------------------- tables  -------------------------------------
@@ -110,6 +121,7 @@
 %------------------------------------------------------------------------------
 
 \usepackage{enumitem}
+\usepackage{pdfpages} % to include the Eidesstaatliche Versicherung
 
 %------------------------------------------------------------------------------
 %------------------------------ Bibliographie ---------------------------------
@@ -131,7 +143,6 @@
 \usepackage[pdfusetitle, unicode, linkbordercolor=tugreen, citebordercolor=tugreen]{hyperref}
 \usepackage{bookmark}
 \usepackage[shortcuts]{extdash}
-\usepackage{pdfpages} % to include the Eidesstaatliche Versicherung
 
 %------------------------------------------------------------------------------
 %-------------------------    Angaben zur Arbeit   ----------------------------
