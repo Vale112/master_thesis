@@ -141,6 +141,20 @@
             Diese Energien eignen sich besonders gut für Zustände nähe der Fermikante, also auch den Oberflächenzuständen.
             In diesen Bereich fallen auch die Energien die zur Molekülorbital Tomographie genutzt werden, welche in Kapitel \ref{sec:MOT} eingeführt wird.
 
+            Es können somit Elektronen aus dem Valenz- und Leitungsband angeregt und emittiert werden. 
+            Auf Grund der geringen Photonenenergie können damit keine stark gebundenen Zustände wie die Rumpfniveaus untersucht werden.
+            Hier werden Elektronen aus ihrem Anfangszustand $\Psi_\text{i}$ (\textit{i = intinal}) mit der Energie $E_\text{i}$ und mit $N$ Elektronen gefüllt ist, in einen höheren Zustand $\Psi_\text{f}$ (\textit{f = final}) mit der Energie $E_\text{f}$  angeregt.
+            Der höher liegende Energie Zustand kann nur erreicht werden, wenn die eingestrahlte Photonenenergie dafür ausreicht.
+            So ergibt sich nach Fermis goldenen Regel die Übergangswahrscheinlichkeitsmatrixelmente
+            \begin{equation}
+                _\text{fi} \propto \frac{2\pi}{\hbar} \abs{\bigl<\Psi_\text{f}|\Delta|\Psi_\text{i}\bigr>}^2 \, \delta\left(E_\text{f}-E_\text{i}-h\nu\right).
+                \label{eqn:Fermi_gold}
+            \end{equation}
+            Sie enthält den Polarisationsfaktor $\Delta \approx \frac{\symup{e}\hbar}{m}\vec{A}\cdot\vec{\nabla}$ welcher die Interaktion mit dem Photonenfeld berücksichtigt.
+            Dabei beschreibt $\vec{A}$ das klassische Vektorpotential des externen elektrischen Feldes \cite{cao_theory_2010}.
+
+
+
         \subsection{Winkelaufgelöste Photoelektronenspektroskopie}
             Bisher wurde  auf den Austrittswinkel der Elektronen nicht genauer eingegangen, zumal bei XPS und UPS auch egeal ist unterwelchem Winkel die Elektronen die Probe verlassen.
             Diese Messungen werden meist auch in normaler Emission, also parallel zur Oberflächennormalen, vermessen.
@@ -156,6 +170,9 @@
             Hierzu wird vom Analysator nur ein kleiner Winkelbreich akzeptiert und der Winkel zwischen Probe und Analysator stets varriert.
             Schematisch ist dies auch in Abbildung \ref{fig:ARPES} \textbf{BILD} dargstellt.
             Für jeden Messpunkt wird ein UPS Spektrum aufgezeichnet.
+            \begin{itemize}
+                \item nur $k_{||}$ erhalten
+            \end{itemize}
 
 
     \section{2D Photoelektronen Mikroskopie} \label{sec:2D-PES}
@@ -229,6 +246,9 @@
             Bei der Impuls Mikroskopie ist die zeitgleich Erfassung des polaren und azimuntalen Austrittswinkel von großer Bedeutung. 
             So entsteht durch die zusätzlich Sortierung der Elektronen nach ihrer kinetsichen Energie ein dreidimensionaler Datensatz.
 
+            Wird über das gesamte Bild also alle Winkel integriert so ergibt sich die Kurve der Elektronendichte (EDC, \textit{electron density curve}).
+            Sie ist vergleichbar mit der Zustandsdichte.
+
         \subsection{Realraum Aufnahmen}
             Es ist ferner möglich Bilder im Realraum aufzunehmen.
             Dies geschieht durch Einsetzen einer Blende in dem hinteren Brennpunkt, die Kontrastblende (\textit{contrast aperture}).
@@ -240,7 +260,7 @@
 
             Der Modi wird auch als PEEM (\textit{Photon emitted electron microscopy}) bezeichnet.
 
-           
+        
         
         \subsection{Erweiterungen}
             Als erweiterung der 2D Photoelektronen Mikroskopie sind auch zeitaufeglöste Messungen möglich.
