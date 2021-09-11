@@ -1,36 +1,67 @@
 \chapter{Grundlagen}
-    \section{Einkristalloberflächen}
+    \section{Einkristalle}
         \begin{itemize}
-            \item Oberflächen aus FK
-            \item Rekonstruktion
-            \item Elektronische Struktur (Oberflächenzustände)
-            \item Antiferromagneten
+            \item fcc Gitter
+            \item Gitter vektoren
+            \item real und reziproker Raum
+            \item Bandstruktur
         \end{itemize}
+
+    \section{Einkristalloberflächen}
+        Wird ein Einkristall entlang einer Kristalleben durchschnitten so ergibt sich eine Oberfläche.
+        Die Ebene erhält den Namen der Indizes des auf ihr senkrecht stehenden Gittervektors $g_{hkl}$, also $(hkl)$.
+        Aufgrund der nun fehlenden Bindungen nach oben ergeben sich neue elektronische und geometrische Eigenschaften.
+        So kann es zu lateralen und transversalen Verschiebungen, so genannte Rekonstruktionen (laterale Änderung) und Relaxation (Änderung parallel zur Oberfläche) kommen.
+        Dabei ordnen sich die Atome neu um einen energetisch günstigeren Zustand zu erhalten.
+        Auch die elektronische Struktur kann sich durch die fehlenden Bindungen verändern.
+        Dies führt zum Teil zu Oberflächenzuständen, die unterscheiden sich energetisch von denen im Volumenkristall und können somit nur in dessen Bandlücke auftreten.
+
+        Wie im Volumenkristall kann auch die Oberfläche durch eins von fünf Bravais-Gittern beschrieben werden, wobei auf jedem Gitterpunkt eine atomare Basis gesetzt wird.
+        Geimeinsam legt das Bravais-Gitter und die atomare Basis die Symmetrien der Oberfläche fest.
+
 
     \section{Antiferromagneten}
         Antiferromagneten (AFM) seichen sich dadurch aus, dass Sie nach außen hin kein permanetes magnetisches Moment aufweisen.
         Vereinfacht sind im Inneren die magnetischen Momente vom gleichen Betrag und nebeneinander liegende Momente sind antiparallel unterinander ausgerichtet.
-        Dieser Zustand ist allerdings nur unterhalb der Néel-Temperatur stabil, oberhalb verhält sich die AFM paramagnetisch.
-        Tritt nur unterhalb der Neél-Temperatur $T_\text{N}$ auf, oberhalb paramagnetisch.
+        Dieser Zustand ist allerdings nur unterhalb der Néel-Temperatur $T_\text{N}$ stabil, oberhalb verhälten sich die Antiferromagneten paramagnetisch.
+        Um das Phänomen des Antiferromagnetismus zu erklären bedarf der quantenmechanischen Erklärung unter Beachtung des Pauli Verbots und der Hundschen Regeln.
+        Es ergibt sich so Austauschwechselwirkungshamiltonien $H_\text{A} = - J_{ik} \vec{S_i}\cdot\vec{S_k}$ der die direkte Wechselwirkung der Spins berücksichtigt.
+        Für $J_{ik} < 0$ ergibt sich die antiferromagnetische Kopplung und für $J_{ik} > 0$ eine ferromagnetische Kopplung.
+        $J_{ik}$ spiegelt dabei die Stärke der Austauschwechselwirkung wieder und folgt aus dem Überlapp der Wellenfunktionen der beteiligten Elektronen.
+
 
         \subsection{Superaustausch}
         \label{sec:Super}
-            Beim Superaustausch koppeln zwei Atome über ein weiteres Atom. 
-            Dabei kann die Kopplung ferro- oder antiferromagnetisch sein.
+            Beim Superaustausch koppeln zwei Atome mit einem magnetischen Moment über ein weiteres nicht magnetische Atom. 
+            Dabei kann die Kopplung ferro- oder antiferromagnetisch sein, meist jedoch antiferromagnetisch \cite{AFM_1}.
+            Sind die beiden koppelnden magnetischen Momente nicht gleich groß, so tritt Ferrimagnetismus auf, es gibt dann eine makroskopische Magnetisierung.
+            Der Superaustausch ist winkelabhängig, da es dabei um den Überlapp der Orbitale geht.
+            Für die Erklärung wird sich hier nur auf die \SI{180}{\degree} Wechselwirkung beschränkt.
+            Es kommt bei diesem indirekten Austausch nicht zu einem Überlapp der spintragenden Wellenfunktionen sondern zu der vermittlung der langreichweitigen Ordnung über einen Liganden.
+
+            Direkter Austausch sorgt für ferromagnetische Kopplung benachbarter andersartige (nicht magnetische) Atome.
+            Zwischen Metall und Ligand herscht also direkte Austauschwechselwirkung, und damit eine indirekte Austauschwechselwirkung, der Superaustausch zum übernächsten Atom, einem weiteren Metallatom.
             Bei den vorliegenden Metalloxiden ist es so, dass die Elektronen der Metallatom des nicht vollen 3d Oribtals über die 2p Orbitale des Sauerstoffs koppeln.
             Da dieses Orbital voll ist, müssen die Elektronen unterschiedliche Spinrichtung haben und besitzt somit auch kein eigenes magnetisches Moment.
             Somit ist dann die Wechselwirkung über das Sauerstoffatom hinweg dann antiferromagnetisch.
-            Es ergeben sich so zwei Untergitter, welche unterschiedlicher Spinrichtung sind, die gesamt Magnetisierung ist also wie für Antiferromagneten erwartet Null.
+            Es ergeben sich so zwei Untergitter, welche unterschiedlicher Spinrichtung sind, die gesamtmagnetisierung ist also wie für Antiferromagneten erwartet Null.
+            % Die Wellenfunktionen der Kationen überlappen nur gering und da die Austauschwechselwirkung nur geringe Reichweiten hat können nur die 3d und 2p überlappen.
+            
+            
     
     \section{WW von Oberfläche mit Molekülen}
+        Werden Molekül auf eine Oberfläche aufgebracht so kommt es zur Wechselwirkung zwischen diesen und der Struktur der Oberfläche.
+        Bei der Wechselwirkung (WW) von Molekülen mit Oberflächen wird in zwei Arten der Adsorption unterschieden. 
+        Zum Einen der Physisorption und der Chemisorption, welche wiederum in stark und schwach unterschieden wird.
+        Zwischen den beiden Adsorptionsarten lässt sich durch ihre Bindungsstärke von den Molekülen auf dem Substrat unterscheiden.
+        In beiden Fällen handelt es sich um eine Absorption die auch die Oberflächenstruktur des Substrates beeinflussen können.
        ~\cite{ma-DJ}
         \begin{itemize}
             \item Selbstanordnung
             \item Energie level anpassung
+            \item Position bzgl des Substrahts Hole, on top, bridgh
         \end{itemize}
-        Bei der Wechselwirkung (WW) von Molekülen mit Oberflächen wird in zwei Arten der Adsorption unterschieden. 
-        Zum Einen der Physisorption und der Chemisorption, welche wiederum in stark und schwach unterschieden wird.
-        Zwischen den beiden Adsorptionsarten lässt sich durch ihre Bindungsstärke von den Molekülen auf dem Substrat unterscheiden.
+        
 
         \subsection{Physisorption}
             Bei der Physisorption spielt maßgeblich die Van-der-Waals-Kraft eine Rolle, hat also eine eher eine geringer Bindungsenergie der Moleküle zum Substrat.
@@ -82,6 +113,8 @@
         Warum NiO - weil AFM -> Spinwellen, und Isolator keine Elektronen bewegung keine Joulsche Wärme
 
         AFM und Moleküle? -> Interface: Molekül anregen -> durch Kopplung SW in AFM auslösen -> anderes Molekül nimmt Spinwelle auf (THz, also sehr schnell)
+        \textbf{muss geprüft werden: Spins in (111) Ebene alle parallel, darauffolgende (111)-Ebene sind innerhalb alle parallel orientiert aber antiparallel zur vorherigen Ebene, also der senkrechten Achse zu (111) AFM Kopplung}
+
         \begin{figure}
             \centering
             \includegraphics[width=4cm]{./content/NiO-structure}
@@ -90,7 +123,9 @@
         \end{figure}
 
         Nickeloxid besitzt die Struktur von \ce{NaCl} und ist in \autoref{fig:NiO-structure} dargestellt~\cite{kunz_chemisorption_1985}. 
-        Die Gitterkonstante beträgt \SI{4.17}{\angstrom}~\cite{sebbari_uranyl_2012}.
+        Die geometrische Gitterkonstante beträgt \SI{4.17}{\angstrom}~\cite{sebbari_uranyl_2012}.
+        Für die magnetische Ordnung ergibt sich die dopplte Gitterkonstante zwischen zwei gleich ausgerichteten Spins. \textbf{(Suterskript)}
+        Neutronenbeugung auf Spin empfindlich also dopplte Einheitszelle, anders als die chemisch empfinliche Röntgenbeugung.
 
     \section{Eisenoxid (100) Oberfläche}
         \begin{itemize}
