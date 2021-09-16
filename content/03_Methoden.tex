@@ -25,13 +25,13 @@
         Da es sich um die Untersuchung von Oberflächen handelt ist somit auch bei den Techniken auf die Oberflächensensitivität zu achten.
         Relevant wird damit die mittlere freie Weglänge der verwendeten Sonde.
         Als perfekte Sonden stellten sich die Elektronen heraus, ihre inelastische mittlere freie Weglänge ist \autoref{fig:Weg} graphisch dargestellt.
-        % \begin{figure}
-        %     \centering
-        %     \includegraphics[width=0.7\textwidth]{./content/Weg.png}
-        %     \caption{Die mittlere freie Weglänge für Elektronen in verschiedenen Materialien. Aus \textbf{Quelle}.}
-        %     \label{fig:Weg}
-        % \end{figure}
-        Es ist zu erkennen, dass Elektronen mit einer kinetischen Energie im Bereich von \SIrange{30}{150}{\electronvolt} aus einer Tiefe von nicht mehr als \SI{5}{\angstrom} kommen.
+        \begin{figure}
+            \centering
+            \includegraphics[width=0.7\textwidth]{./content/Weg}
+            \caption{Die mittlere freie Weglänge für Elektronen in verschiedenen Materialien. Aus~\cite{Hüfner}.}
+            \label{fig:Weg}
+        \end{figure}
+        Es ist zu erkennen, dass Elektronen mit einer kinetischen Energie im Bereich von \SIrange{50}{100}{\electronvolt} aus einer Tiefe von nicht mehr als \SI{5}{\angstrom} kommen.
         Werden also Elektronen als Sonden verwendet und ihre kinetische Energie angepasst, so kann davon ausgegagngen werden, dass sie nur aus Oberflächen nahen Bereichen kommen.
 
         Um Elektronen von der Probe kommend zu erhalten gibt es zwei Möglichkeiten.
@@ -43,7 +43,7 @@
     \section{Beugung niederenergetischer Elektronen} \label{sec:LEED}
         \begin{figure}
             \centering
-            \includegraphics[width=0.5\textwidth]{./content/LEED.PNG}
+            \includegraphics[width=0.5\textwidth]{./content/LEED}
             \caption{Innerer Aufbau der Apperatur zur Beugung niederenergetischer Elektronen. Aus~\cite{Fauster}.}
             \label{fig:LEED}
         \end{figure}
@@ -89,8 +89,6 @@
         \begin{itemize}
             \item Bespielspektrum mit den Bereichen
             \item Auger
-            \item XPS
-            \item UPS
             \item Fermikante
             \item Energieauflösung (Analysator, Thermisch, Photonenquelle)
             \item Sekundärelektronen
@@ -110,12 +108,12 @@
         \end{equation}
         mit der Bindungsenergie des Elektrons $E_{\symup{B}}$, der Energie des einfallenden Photons $h \nu$ und der Austrittsarbeit $\psi$.
         Die Austrittsarbeit ist der Energieunterschied zwischen der Fermienergie und der Vakuumenergie.
-        % \begin{figure}
-        %     \centering
-        %     \includegraphics[width=0.7\textwidth]{./content/3Stufen.png}
-        %     \caption{Schematische Darstellung des drei Stufen Models für den photoelektrischen Effekt. Aus \textbf{Quelle}.}
-        %     \label{fig:3Stufen}
-        % \end{figure}
+        \begin{figure}
+            \centering
+            \includegraphics[width=0.7\textwidth]{./content/3Stufen}
+            \caption{Schematische Darstellung des drei Stufen Models für den photoelektrischen Effekt. Aus~\cite{zhang_synchrotron_2018}.}
+            \label{fig:3Stufen}
+        \end{figure}
 
         Dieser Prozess der Emittation eines Elektrons nach einfall eines Photons lässt sich in einem drei Stufen Model erklären.
         Das Model mit den Stufen ist in \autoref{fig:3Stufen} \textbf{BILD} schematisch zu sehen.
@@ -130,12 +128,12 @@
         Die verschiedenen Energiebereich sind notwendig, damit die angeregten Elektronen eine kinetische Energie im oberflächensensitiven Bereich haben.
         Diese erste Methode wird XPS genannt, wohingegen die zweite Methode mit UPS abgekürzt wird.
 
-        \subsection{Röntgenphotoelektronenspektroskopie}
+        \subsection{Röntgenphotoelektronenspektroskopie - XPS}
             In den Energiebereich der Röntgenstrahlung fallen Photonen mit einer Energie von \SIrange{0}{0}{\electronvolt} \textbf{Quelle, Zahlen}.
             Diese Energien sind nur mit klassischen Röntgenquellen oder einem Synchrotron erreichbar.
             Mit dieser Methode lässt sich besonders gut die chemische Zusammensetzung untersuchen, da die kernnahen Zustände nur geringfügig beinflusst werden.
 
-        \subsection{Ultraviolettphotoelektronenspektroskopie}
+        \subsection{Ultraviolettphotoelektronenspektroskopie - UPS}
             Die Ultraviolette Strahlung besitzt einer Energie der Photonen im Bereich von \SIrange{0}{0}{\electronvolt} \textbf{Quelle, Zahlen}.
             Photonen in diesem Energiebereich können auch in Laboren mit Gasentladungslapen erzeugt werden, sind aber ebenfalls an Synchrotrons verfügbar.
             Diese Energien eignen sich besonders gut für Zustände nähe der Fermikante, also auch den Oberflächenzuständen.
@@ -155,7 +153,7 @@
 
 
 
-        \subsection{Winkelaufgelöste Photoelektronenspektroskopie} \label{sec:UPS}
+        \subsection{Winkelaufgelöste Photoelektronenspektroskopie - ARPES} \label{sec:UPS}
             Bisher wurde  auf den Austrittswinkel der Elektronen nicht genauer eingegangen, zumal bei XPS und UPS auch egeal ist unterwelchem Winkel die Elektronen die Probe verlassen.
             Diese Messungen werden meist auch in normaler Emission, also parallel zur Oberflächennormalen, vermessen.
             Über alle Austrittswinkel gemittelten Spektren werden auch als integrierte Spektren bezeichnet.
@@ -283,6 +281,7 @@
         Dies ist nur möglich, wenn sich die Moleküle ordnen wie z.B. auf metalischen Oberflächen.
 
     \section{Versuchsaufbau}
+    \label{sec:Versuchsaufbau}
         \begin{figure}
             \centering
             \includegraphics[width=0.7\textwidth]{./content/MM.png}
