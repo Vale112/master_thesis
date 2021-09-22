@@ -54,7 +54,7 @@
         
         Die Elektronen werden zunächst durch den Glühelektrischen Effekt erzeugt und durch einen Wehnelt-Zylinder gebündet.
         Diese beiden Komponenten bilden zusammen die Elektronenkanone.
-        Anschließend werden Sie zur Probe hin beschleunigt.
+        Anschließend werden Sie zur Probe hin beschleunigt, welche sich im Zentrum der Gitter befindet.
         Da die Probe geerdet ist geschieht dies durch eine positive Vorspannung zwischen Probe und Elektronenkanone.
         Die gestreuten Elektronen bewegen sich in alle Richtungen unter dem Winkel $\alpha$ zum senkrecht auftreffenden Elektronenstrahl von der Probe weg.
         Damit die Flugbahn nicht durch elektrische Felder beeinflusst wird befindet sich das erste von der Probe aus gesehen Netz ebenfalls auf Erdpotential.
@@ -70,21 +70,39 @@
         Kinematisch betrachtet wird die Oberfläche von einer Primärwelle getroffen.
         Der von einem Streuer zurückgeworfene Anteil ohne zusätzliche Streuung interferiert mit den von anderen Streuen kommenden Sekundärwelle.
         Für elastisch gestreute Elektronen muss also für den Impuls gelten $\abs*{\vec{k}_\text{i}} = \abs*{\vec{k}_\text{f}}$.
-        Folglich darf der Impulsübertrag $\increment \vec{k}_{||}$ nur einen reziproken Gittervektor $\vec{g}_\text{hk}$ betragen, dies ist die Lauebedingung.     
         Intensitäten der einzelnen Spots $I$ ergeben sich dabei aus dem Formfaktor $F$ und dem Gitterfaktor $G$ zu
         \begin{equation}
             I = \abs*{F^2}\abs*{G^2}.
             \label{eqn:LEED}
         \end{equation}
-        Mathematisch kommt der Formfaktor aus der Position der Atome innerhalb der Einheitszelle, wohingegen der Gitterfaktor die Periodizität der Gitters wiederspiegelt.
+        Mathematisch kommt der Formfaktor aus der Position und chemischen Natur der Atome innerhalb der Einheitszelle, wohingegen der Gitterfaktor die Periodizität der Gitters wiederspiegelt.
         Der Gitterfaktor ist nur ungleich Null, wenn die Lauebedingungerfüllt ist.
-        Jeder Spot kann einem Impulsübertrag mit den Indizes $hk$ zugeordnet werden. 
-        Größere Abstände im Realraum werden im reziproken Raum kleiner abgebildet.
+        Folglich darf der Impulsübertrag $\increment \vec{k}_{||}$ nur einen reziproken Gittervektor $\vec{g}_\text{hk}$ betragen, dies ist die Lauebedingung.
+        Jeder Spot kann damit einem Impulsübertrag mit den Indizes $hk$ zugeordnet werden.
+        Der Gitterfaktor gibt also nur Auskunft darüber ob ein Beugungsreflex auftaucht und wo, die Intensitäten hingegen wird rein durch den Formfaktor beschrieben.
 
-            \begin{itemize}
-                \item Geometrische Struktur
-                \item Mathematische Methoden
-            \end{itemize}
+        Da aber wie oben beschrieben die Impulserhaltung gelten muss und die Transaltionssymetrie senkrecht zur Oberfläche gebrochen ist ergibt sich für diese Komponente ein Impuls von $\vec{k}_{\text{f}\perp} = \pm \sqrt{\vec{k}_\text{i}^2 - (\vec{k}_{\text{i}||} + \vec{g}_\text{hk})^2}$.
+        Positives Vorzeichen entspricht der Beugung in die Oberfläche hinein und negatives Vorzeichen für eine Beugung von der Oberfläche weg.
+        $\vec{k}_{\text{f}\perp}$ kann auch imaginär werden, was zur Folge hat, dass keine Rückstreuung erfolgt.
+        \begin{figure}
+            \centering
+            \includegraphics[width=0.5\textwidth]{./content/Ewald}
+            \caption{Die Konstruktion der Ewaldkugel. Aus~\cite{Fauster}.}
+            \label{fig:Ewald}
+        \end{figure}
+        Die Beugungsreflexe lassen sich für nahezu senkrechten Einfall mit Hilfe der Ewaldkugel konstruieren, veranschaulicht zu sehen in \autoref{fig:Ewald}.
+        Hierzu wird das reziproke Gitter aufgespannt, es ergeben sich auf Grund der gebrochenen Symmetrie Gitterstangen.
+        Zeichnet man um einen beliebiegen Startpunkt eine Kugel mit dem Raius $\vec{k}_\text{i}$ so ergeben sich für alle schneidenen Gitterstangen der Kugel auch Beugungsreflexe.
+        Der Schnittpunkt mit der Kugel zum Ursprung hin ergibt dann den gebeugten Wellenzahlvektor $\vec{k}_\text{f}$.
+
+        Größere Abstände im Realraum werden im reziproken Raum kleiner abgebildet.
+        Mit steigeneder Energie der Elektronen rücken die Beugungsmaxima dichter zum Zentrum hin.
+        Die Annahme ohne Mehrfachstreuung der Elektronen ist zu einfach gefasst, weswegen lange keine Strukturanalyse mittels LEED möglich war.
+        Ursache der mehrfachstreuung ist der verhältnissmäßig große Streuquerschnitt der langsamen Elektronen an Atomen.
+        Es kommt vermehrt zur Streuung mit den nächsten nachbarn der Primär- wie auch Sekundärwelle, die sich wiederum gegenseitig beinflussen.
+        Tendenziell ist es möglich aus der Position der Beugungsreflexe auf die Größe der Einheitszelle zu schließen, durch Adsorbate und Domänen, kann dies allerdings erschwert werden.
+        Werden die Intensitäten der Spots durch Variation der Energie aufgezeichnet ergeben sich charakteristische IV-Kurven.
+        Ihre theoretische Brechnung ist sehr aufwendig, da sie den Formfaktor und zahlreiche Streuueffekte berücksichtigen müssen.
 
     
     \section{Photoelektronenspektroskopie} \label{sec:PES}

@@ -84,8 +84,8 @@
         Für $J_{ik} < 0$ ergibt sich die antiferromagnetische Kopplung und für $J_{ik} > 0$ eine ferromagnetische Kopplung.
         $J_{ik}$ spiegelt dabei die Stärke der Austauschwechselwirkung wieder und folgt aus dem Überlapp der Wellenfunktionen der beteiligten Elektronen.
 
-        Um eine Aussage über die Ordnung im Antiferromagnet zutreffen gibt es den Ordnungsparameter $L = S^{\arrowup} - S^{\arrowdown}$.
-        Hierbei ist $S^{\arrowup}, S^{\arrowdown}$ der Spin der Untergitter.
+        Um eine Aussage über die Ordnung im Antiferromagnet zutreffen gibt es den Ordnungsparameter $L = S^{\uparrow} - S^{\downarrow}$.
+        Hierbei ist $S^{\uparrow}, S^{\downarrow}$ der Spin der Untergitter.
 
 
         % \subsection{Superaustausch}
@@ -113,7 +113,7 @@
     \section{Wechselwirkung von Oberfläche mit Molekülen}
         Moleküle haben im Gegensatz zu Festkörpern, energetisch separierte Zustände, die Orbitale.
         Werden Molekül auf eine Oberfläche aufgebracht so kommt es zur Wechselwirkung zwischen diesen und der Struktur der Oberfläche.
-        Bei der Wechselwirkung (WW) von Molekülen mit Oberflächen wird in zwei Arten der Adsorption unterschieden. 
+        Bei der Wechselwirkung von Molekülen mit Oberflächen wird in zwei Arten der Adsorption unterschieden. 
         Zum Einen der Physisorption und der Chemisorption, welche wiederum in stark und schwach unterschieden wird.
         Zwischen den beiden Adsorptionsarten lässt sich durch ihre Bindungsstärke von den Molekülen auf dem Substrat unterscheiden.
         Dabei wird als Bindungsstärke die Energie bezeichnet, die nötig ist um ein Molekül von der Oberfläche zu lösen.
@@ -136,6 +136,12 @@
                 \item \textbf{Dipol-induzierter-Dipol-Kraft:} Die Wechselwirkung zwischen einem induziertem Dipol und einem Dipol wird auch als Debye-Wechselwirkung bezeichnet.
                 \item \textbf{Londonsche Dispersions-Wechselwirkung:} Zwischen zwei induzierten Dipolen wirkt die Londonsche Dispersions-Wechselwirkung, sie dominiert meist die Van-der-Waals Kraft.
             \end{itemize}
+
+            Die Physisorption kann durch zwei Potetiale beschrieben werden.
+            Das eine Potential wirkt repulsiv und resultiert aus dem Pauliverbot, kommen sich Molekülorbital und Substratorbital zunah, überlappen diese.
+            Attraktives Potentential resultiert dabei aus der Debye-Wechselwirkung.
+            So kommt es beim Gleichgewicht zu einem stabilen Substrat-Molekül-Abstand.
+            vermehrt tritt dies bei Halbleitern und Isolatoren auf, da die Molekülzustände in der Bandlücke liegen und so keine Bindung mit dem Substrat eigegangen werden kann~\cite{IF_1}.
         
         \subsection{Chemisorption}
             % Im Gegensatz zur Physisorption findet bei der Chemisorption  ein Austausch von Elektronen stattfinden.
@@ -145,8 +151,22 @@
             Dabei kann es sich um kovalente und ionische Bindungen handeln und es kann zum Ladungsaustausch und/oder Hybridisierung kommen~\cite{harutyunyan_hybridisation_2013}.
             Beim Ladungsaustausch kann ein zunächst unbesetztes Orbital unter die Fermikante rutschen und besetzt werden, es kann also neben den strukturellen auch zu elektronischen Veränderungen kommen.
             Im Gegensatz dazu können bei der Hybridisierung mehrer Zustände vom Molekül und/oder Oberfläche durchmischt werden.
+            Verbreiterungen, Verschiebungen und auch Aufspaltungen von Molekülzuständen kann die Folge sein~\cite{IF_1}.
 
-            NiO zeigt für einige Moleküle Chemisorption, was durch enthaltene Defekt hervorgerufen wird~\cite{kunz_chemisorption_1985}.
+            \begin{figure}
+                \centering
+                \includegraphics[width=0.6\textwidth]{./content/Chemisorption2.PNG}
+                \caption{Das Absorbierte Molekül hybridiziert mit dem s-/p-Band des Substartes (1), der schwachen Chemisorption.
+                In einem weiteren Schritt kommt es dann zur straken Chemisorption durch Einbindung der d-Bänder (2, oben). es entsteht an bindendes und ein antibindenes Orbital.
+                Durch die Lage der d-Bänder werden nun das bindenden und antibindendene Orbital besetzt, dadurch kommt es zu einer repulsiven Kraft und die Bindung wird wieder schwach (unten). Aus~\cite{IF_1}.}
+                \label{fig:Chemisorption}
+            \end{figure}
+            Schwache Bindungen werden meist durch die Wechselwirkung mit den breiten s- oder p-Bändern hervorgerufen.
+            Wodurch sich das Energieniveau der Moleküle absenkt und verbreitert, siehe dazu in \autoref{fig:Chemisorption}.
+            Für die starke Chemisorption folgt ein weiterer Schritt, der nun abgesenkte Zustand überlappt mit dem der näherungsweise d-Bänder.
+            Es bilden sich bindende und antibindendene Zustände aus.
+            Ja nach Lage des Ferminiveaus wird nur der bindenden Zustand (starke Adsorption) oder auch (nur teilweise) der antibindene Zustand gefüllt, wodurch repulsiv Kräfte auftreten.
+            Ferner beeinflusst auch die Ausdehnung der d-Bänder die Stärke der Chemisorption.
         
         \subsection{Selbstanordnung}
             \begin{figure}
@@ -169,7 +189,35 @@
             Naheliegend ist, dass es mit der Wechselwirkung zusammenhängt und der Affinität Elektronen auszutauschen.
             Dies wurde bereits auf die Austrittsarbeit für einige Metaloxide hinweg untersucht \cite{greiner_universal_2012}.
 
+            Das Wechselspiel zwischen der Molekül-Molekül-Wechselwirkung und Molekül-Substrat-Wechselwirkung definiert die finale Struktur \cite{IF_1}.
+            Dabei sind vor Allem gerichtete Kräfte wichtig um die Regelmäßigkeit zu erhalten.
+            Schwächste und ungerichteste Kraft ist die Van-der-Waals-Kraft, genauer die Debye-Wechselwirkung (\SIrange{0.02}{0.1}{\electronvolt}), die allerdings sehr langreichweitig ist.
+            Weitere Ursache ist der Einfluss des Substrates auf die Wechselwirkung den Molekülen untereinander, z.B. durch Oszillationen des Oberflächenpotentials.
+            Die Keeson-Wechselwirkung als Ursache der Dipol-Dipol-Interaktion hat ebenfalls Beteiligung an der Anordnung der Molekühle, allerdings nur wenn die Molekühle ein permanetes Dipolmoment haben.
+            Mit der Wasserstoff-Brücken-Bindung (\SIrange{0.01}{1.73}{\electronvolt})unter den Molekülen bindet sich ein Wasserstoffatom an ein elektronegativeres Atom, hierdurch kommt es zu Ladungsverschiebung innerhalb der Bindung.
+            Das positivere Wasserstoffatom kann nunmehr eine elektrostatische Bindung zu einem weiteren Atom einnehmen.
+            Wasserstoff-Brücken-Bindungen sind je stärker sie werden eher geradlienig gerichtete Bindungen mit einer kurzen Bindungslänge.
+            Metallisch Koordination ist eine weiter Form der Bindung (\SIrange{0.5}{2}{\electronvolt}), die Moleküle funkieren als Linker zwischen einzelenen Metallatomen.
+            Die stärkste und gerichteste Kraft ist jedoch die covalente Bindung, welche gleichzeitig auch die elektronische Struktur stark beeinflusst.
+            Sie ist sogar so stark, dass die teilweise eine perfekte Selbstanordnung behindert und damit eher zu weniger geordneten Strukturen tendieren kann \cite{IF_1}.
+
         \subsection{Energieniveau-Anpassung}
+        Für die Anwendung besonders bedeutsam ist die Energieniveau-Anpassung, welche Einfluss auf den Elektronen- und Lochtransport hat~\cite{IF_4}.
+        Bei Metalloxiden verschiebt sich durch die Austrittsarbeit die relative Position des Valenz- und Leitungsbandes zum Vakuumniveau \cite{IF_3}.
+        Die meisten der Metalloxide haben keine besetzten Zustände nahe der Fermikante, da diese in eine Bandlücke fällt.
+        Folglich ist auch Ladungsübertrag vom Substrat auf die Moleküle nur vom Valenz- oder Leitungsband aus möglich.
+        Auch wenn einige Oxide Ladungsaustausch zwischen Valenzband und HOMO zulassen so  gibt es noch kein Model, dass dies beschreibt.
+        Verbreitet ist jedoch der Ansatz der Ferminiveau-Anheftung für nicht reaktive Grenzflächen zwischen Molekülen und Oxiden.
+
+        Greiner u.a. \cite{IF_3} fanden heraus, dass die Bandstruktur des Substartes dabei nur eine untergeordnete Rolle spielt.
+        Ausschlaggebend für die Energieniveau-Anpassung ist das elektrochemische Potential des Substrates mit dem Reduktionspotentials des Moleküls. \textbf{<->}
+        Beeinflusst wird dies weiter noch durch die Differenz zwischen der Austrittsarbeit des Substrates und der Ionisationsenergie.
+        \begin{itemize}
+            \item push-back Effekt
+            \item charge transfer from HOMO to Ef
+            \item 
+        \end{itemize}
+
 
     \section{Substrate and Molecules}
         \subsection{Gold (111) Oberfläche}
@@ -213,6 +261,8 @@
             Die geometrische Gitterkonstante beträgt \SI{4.17}{\angstrom}~\cite{sebbari_uranyl_2012}.
             Für die magnetische Ordnung ergibt sich die dopplte Gitterkonstante zwischen zwei gleich ausgerichteten Spins. \textbf{(Suterskript)}
             Neutronenbeugung auf Spin empfindlich also dopplte Einheitszelle, anders als die chemisch empfinliche Röntgenbeugung.
+
+            NiO zeigt für einige Moleküle Chemisorption, was durch enthaltene Defekt hervorgerufen wird~\cite{kunz_chemisorption_1985}.
         
         \subsection{Eisen (100) Oberfläche}
 
