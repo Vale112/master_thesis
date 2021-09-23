@@ -27,7 +27,7 @@
         Als perfekte Sonden stellten sich die Elektronen heraus, ihre inelastische mittlere freie Weglänge ist \autoref{fig:Weg} graphisch dargestellt.
         \begin{figure}
             \centering
-            \includegraphics[width=0.7\textwidth]{./content/Weg}
+            \includegraphics[width=0.7\textwidth]{./content/pictures/Weg}
             \caption{Die mittlere freie Weglänge für Elektronen in verschiedenen Materialien. Aus~\cite{Hüfner}.}
             \label{fig:Weg}
         \end{figure}
@@ -43,7 +43,7 @@
     \section{Beugung niederenergetischer Elektronen} \label{sec:LEED}
         \begin{figure}
             \centering
-            \includegraphics[width=0.5\textwidth]{./content/LEED}
+            \includegraphics[width=0.5\textwidth]{./content/pictures/LEED}
             \caption{Innerer Aufbau der Apperatur zur Beugung niederenergetischer Elektronen. Aus~\cite{Fauster}.}
             \label{fig:LEED}
         \end{figure}
@@ -66,7 +66,7 @@
 
         Die Entstehung des Beugungsmusters geschieht durch Interferenz Effekte, es ist also eine periodische Struktur von Nöten.
         Ebenso muss damit die Wellenlänge der Elektronen im Größenbereich der Gitterkonstanten liegen.
-        Folglich haben die Elektronen einer Energie zwischen \SIrange{50}{200}{\electronvolt} \textbf{Quelle}.
+        Folglich haben die Elektronen einer Energie zwischen \SIrange{30}{200}{\electronvolt}~\cite{oura_surface_2003}.
         Kinematisch betrachtet wird die Oberfläche von einer Primärwelle getroffen.
         Der von einem Streuer zurückgeworfene Anteil ohne zusätzliche Streuung interferiert mit den von anderen Streuen kommenden Sekundärwelle.
         Für elastisch gestreute Elektronen muss also für den Impuls gelten $\abs*{\vec{k}_\text{i}} = \abs*{\vec{k}_\text{f}}$.
@@ -86,7 +86,7 @@
         $\vec{k}_{\text{f}\perp}$ kann auch imaginär werden, was zur Folge hat, dass keine Rückstreuung erfolgt.
         \begin{figure}
             \centering
-            \includegraphics[width=0.4\textwidth]{./content/Ewald}
+            \includegraphics[width=0.4\textwidth]{./content/pictures/Ewald}
             \caption{Die Konstruktion der Ewaldkugel. Aus~\cite{Fauster}.}
             \label{fig:Ewald}
         \end{figure}
@@ -106,13 +106,6 @@
 
     
     \section{Photoelektronenspektroskopie} \label{sec:PES}
-        \begin{itemize}
-            \item Fermikante
-            \item Energieauflösung (Analysator, Thermisch, Photonenquelle)
-            \item k senkrecht wegen gebrochener Periodizität nicht erhalten, k parallel berechenbar
-            \item WKF Kontrast
-            \item NanoESCA
-        \end{itemize}
         Die Grundlage ist der Photoelektronenspektroskopie ist der Photoelektrische Effekt, der 1905 zum ersten Mal von Albert Einstein erklärt wurde~\cite{Einstein}.
         Hierbei werden Elektronen durch ein einfallendes Photon angeregt, ist die Energie hoch genug, so treten diese aus der Probenoberfläche aus.
         In Formeln ergibt sich so die kinetische Energie der Elektronen, die die Probe verlassen zu 
@@ -126,7 +119,7 @@
         
         \begin{figure}
             \centering
-            \includegraphics[width=0.6\textwidth]{./content/3Stufen}
+            \includegraphics[width=0.6\textwidth]{./content/pictures/3Stufen}
             \caption{Schematische Darstellung des drei Stufen Models für den photoelektrischen Effekt. Aus~\cite{zhang_synchrotron_2018}.}
             \label{fig:3Stufen}
         \end{figure}
@@ -136,10 +129,12 @@
         Dieses kann dann innerhalb des Festkörpers zur Probenoberfläche wandern.
         In diesem zweiten Schritt kommt auch die mittlere freie Weglänge der Elektroen zu tragen, weshalb die Methode oberflächensensitiv ist.
         Im dritten Schritt verlässt das Elektron die Oberfläche und wird auf Grund fehlender periodischer Strukturen gebeugt.
+        Hier tritt auch der Effekt auf, dass die Periodizität des Festkörpers verlassen wird und somit die senkrechte Komponente des Impulsvektors nicht erhalten bleibt.
+        Dabei bleibt aber der Impulsvektor parallel zur Oberfläche $k_{||}$ erhalten.
 
         \begin{figure}
             \centering
-            \includegraphics[width=0.6\textwidth]{./content/Band}
+            \includegraphics[width=0.6\textwidth]{./content/pictures/Band}
             \caption{Ein Photoemissionsspektrum von Kufer.
             Im niedrigen Bindungsenergiebereich befindet sich das Valenzband. 
             Zu höheren Bindungsenergien treten dann die Kernniveaus in den Vordergrund, gemeinsam mit den Augerelektronen-Peaks.
@@ -197,6 +192,10 @@
             Diese rühren daher, dass die emittierten Elektronen an Nachbaratomen streuen und zurück zum emittierenden Atom gestreut werden.
             Hier beeinflussen diese dann die Wellennatur des Elektrons und es kommt zu konstruktiver und destruktiven Interferenzen~\cite{Fauster}.
             Je nach kinetischer Energie der emittierten Elektronen müssen dabei nur nächste Nachbarn oder auch weiter entfernte Nachbarn berücksichtigt werden.
+            
+            Neben der Abhänigkeit von der Photonenenergien ist die Absorption auch von der Polarisation des Lichts selbst abhängig.
+            So lässt sich aus den Unterschieden der Absorptionsintensitäten für s- und p-polarisiertem Licht die Neigung von Molekülen auf der Oberfläche kalkulieren. \textbf{Quelle 65 Hennings Disserattion}
+            Für zirkularpolarisiertes Licht ergibt sich aus dem Intensitätsunterschied der links- und rechtszirkularpolarisertem Licht die Magnetisierung.
 
         \subsection{Ultraviolettphotoelektronenspektroskopie - UPS}
             Die Ultraviolette Strahlung besitzt einer Energie der Photonen im Bereich von \SIrange{10}{1000}{\electronvolt}~\cite{Fauster}.
@@ -223,21 +222,26 @@
             Über alle Austrittswinkel gemittelten Spektren werden auch als integrierte Spektren bezeichnet.
             \begin{figure}
                 \centering
-                \includegraphics[width=0.5\textwidth]{./content/ARPES}
+                \includegraphics[width=0.5\textwidth]{./content/pictures/ARPES}
                 \caption{Darstellung zur Anschaulichkeit von ARPES Messungen. Aus~\cite{ARPES}.}
                 \label{fig:ARPES}
             \end{figure}
 
             Die genaue Winkelverteilung der Elektronen wird bei der Winkelaufgelösten Photoelektronenspektroskopie genauer untersucht.
             Hierzu wird vom Analysator nur ein kleiner Winkelbreich akzeptiert und der Winkel zwischen Probe und Analysator stets varriert.
-            Schematisch ist dies auch in \autoref{fig:ARPES} \textbf{BILD} dargestellt.
-            Für jeden Messpunkt wird ein UPS Spektrum aufgezeichnet.
-            \begin{itemize}
-                \item nur $k_{||}$ erhalten
-            \end{itemize}
+            Schematisch ist dies auch in \autoref{fig:ARPES} dargestellt.
+            Für jede Winkelkombination wird ein UPS Spektrum aufgezeichnet.
+            Der entsprechnde Impulsvektor lässt sich dann aus den Winkeln und der kinetischen Energie nach
+            \begin{gather}
+                k_\text{x} = \sqrt{\frac{2 \text{m}_\text{e} E_\text{Kin}}{\hbar^2}} \sin\theta \cos\phi \\
+                k_\text{y} = \sqrt{\frac{2 \text{m}_\text{e} E_\text{Kin}}{\hbar^2}} \sin\theta \sin\phi
+            \end{gather}
+            berechnen~\cite{MM_4}.
+            Wird für eine feste Energie über alle Winkel integriert und dies für jede gemessene Energie aufgetragen ergibt sich eine integriertes Spektrum.
+            Dies hat die Bezeichnung \textit{electron density curve} (EDC), da sie die Zustandsdichte des Valenzbandes wiederspiegelt.
 
             Von der Seite der Theorie wird das ein Stufen Model der Photonelektronenemission verwendet, welches den Prozess der Photoemission besser beschreibt, aber nicht so anschaulich wie das drei Stufen Model ist.
-            Es berücksichtigt unter Anderem, den Austrittswinkel der Elektronen (polar $\theta$ und azimuthal $\phi$) sowie das der finale Zustand $\Psi_\text{f}$ mit einer Energie $E_\text{Kin}$.
+            Es berücksichtigt unter Anderem, den Austrittswinkel der Elektronen (polar $\theta$ und azimuthal $\phi$) sowie den finale Zustand $\Psi_\text{f}$ mit einer Energie $E_\text{Kin}$.
             So ergibt sich die Photoelektroneintensität in entsprechende Richtung 
             \begin{equation}
                 I(\theta, \phi, E_\text{Kin}) \propto \sum_i \abs*{\bigl<\Psi_\text{f}(\theta, \phi, E_\text{Kin})|\vec{A}\cdot\vec{p}|\Psi_\text{i}\bigr>}^2 \times \delta\left(E_\text{i}+E_\text{Kin}+\Phi-h\nu\right))
@@ -245,15 +249,8 @@
             vom Anfangszustand $\Psi_\text{i}$ in der Dipolapproximation~\cite{MM_2}.
             Durch die ebene Wellen Approximation des Endzustands ist der Photoelektronenstrom proportinal zur Fouriertransformation des Anfangszustandes.
             So ergibt sich unter Beachtung des Polarisationsfaktors $\abs*{\tilde{\Psi}_\text{i}(\vec{k})} \propto \frac{\sqrt{I_\text{i}(\theta, \phi)}}{\abs*{\vec{A}\cdot\vec{k}}}$.
-            ...
 
     \section{2D Photoelektronen Mikroskopie} \label{sec:2D-PES}
-        \begin{enumerate}
-            \item $E_\text{Pass}$
-            \item Iris
-            \item Integrierte Spektren (EDC, Electron density curve) spiegelt Zustandsdichte wieder
-            \item kin. Energie zum Vakuum vermessen (Fermienergie plus Analysator Austrittsarbeit)
-        \end{enumerate}
         Bei der 2D Photoelektronen Mikroskopie ist eine sehr viel versprechende Technik, die für immer mehr Aufsehen in den letzten Jahren gesorgt hat.
         Der größte Vorteil liegt wohl in der Kombination von spektroskopischen Methoden und mikroskopischen Methoden.
         Zuerst wurde dies 1933 durch E. Brüche entdeckt, der eine Zinkplatte mit Hilfe von Photoelektronen und einer magnetischen Linse auf einem Leuchtschirm abbildete~\cite{bruche_elektronenmikroskopische_1933}.
@@ -261,7 +258,7 @@
 
         \begin{figure}
             \centering
-            \includegraphics[width=0.7\textwidth]{./content/PEEM_schemaneu.png}
+            \includegraphics[width=0.7\textwidth]{./content/pictures/PEEM_schemaneu.png}
             \caption{Vereinfachter Aufbau eines 2D Photoelektronen Mikroskop. Vorlage aus~\cite{KUCH}, modifiziert.}
             \label{fig:MM}
         \end{figure}
@@ -269,7 +266,7 @@
         Die durch die Photonen angeregten Elektronen werden durch ein starkes elektrisches Feld von einigen \si{\kilo\volt} von der Probe zum Analysator hin beschleunigt.
         Das Extractorfeld kann bis auf \SI{29}{\kilo\volt} erhöht werden, wird standardmäßig auf \SI{10}{\kilo\volt} festgesetzt.
         Durch diese große Spannung zwischen Probe und Extraktor ist es möglich ein ein großen Sichtbereich im Impulsraum abzudecken.
-        Dies ist nötig, da durch den streifenden Einfall der Photonen und der Abberation der elektrostatischen Linsen nur einen kleinen Akzeptanzwinkel zur Verfügung stehen würde. \textbf{QUELLE}
+        Dies ist nötig, da durch den streifenden Einfall der Photonen und der Abberation der elektrostatischen Linsen nur einen kleinen Akzeptanzwinkel zur Verfügung stehen würde.
         Wichtig bei der Kathoden Linse ist, dass das Feld zwischen Probe und Linse sehr homogen ist, damit der Austrittswinkel erhalten bleibt, dies hat zur Folge, dass die Probe auch eine möglichst ebene Oberfläche aufweisen muss.
         Anschließend werden die Elektronen durch elektrostatische Linsen fokusiert und durch die einzelnen Blenden geleitet.
         Sie sind so konzipiert, dass die Bildebene und die hintere Brennebene immer an der selben Position, der Blenden bleiben.
@@ -283,6 +280,7 @@
         Als Energiealysator kommt ein hemisphärischer Analysator zum Einsatz, für gepulste Photonenquellen würde sich auch ein \textit{Time of flight - TOF} (Flugzeit) Analysator eignen.
         Bei dem hemisphärischer Analysator werden die Elektronen zwischen zwei Halbkugeln durch ein statisches elektrisch Feld auf eine Kreisbahn gezwungne.
         Dabei ist das Feld so gewählt, dass nur die mit der richtigen kinetischen Energie eintretenden Elektronen auch auf die Austrittsblende abgebildet werden.
+        Ferner wird der Analysators so eingestellt, dass Elektronen mit einer Energie von \SI{50}{\milli\electronvolt} um die eingestellte Energie den Analysator passieren können, dies ist die Pass-Energie.
         Bei einem TOF Analysators wird die kinetische Energie aus der Flugzeit der Elektronen bestimmt, weswegen es nur für gepulste Photonenquellen möglich ist.
         Nach dem Detektor gibt es eine weiter Linseneinheit, welche zusammen mit einer Blende das gewünschte energieaufgelöst Bild auswählt und es auf die Detektorgröße aufweitet.
         Anschließend durchlaufen die Elektronen eine Mikrokanalplate (eine Art Elektronenvervielfacher) und prallen auf den Phosphorschirm, der an den entsprechenden Stellen aufleuchtet.
@@ -298,7 +296,7 @@
             \centering
             \caption{Die verschiedenen Konfiguration der Blenden um zwischen Realraum Bild und Impulsraum Bild umzuschalten. Aus~\cite{Focus}.}
             \label{fig:real_k}
-            \includegraphics[width=0.5\textwidth]{./content/Real_k.PNG}
+            \includegraphics[width=0.5\textwidth]{./content/pictures/Real_k.PNG}
         \end{SCfigure}
         Für den Impulsraum ist dies in \autoref{fig:real_k}\,a und für den Realraum in \autoref{fig:real_k}\,b dargestellt.
         Vorteil der Umschaltung zwischen den Modis ist, dass auf sehr kleinen Bereichen die im Realraum bestimmt wurden dann auch Messungen im reziproken Raum durchgeführt werden können.
@@ -358,19 +356,19 @@
             \centering
             \begin{subfigure}{0.3\textwidth}
                 \centering
-                \includegraphics[width=0.9\textwidth]{./content/DFT1.PNG}
+                \includegraphics[width=0.9\textwidth]{./content/pictures/DFT1.PNG}
                 \caption{}
                 \label{fig:DFT1}
             \end{subfigure}
             \begin{subfigure}{0.3\textwidth}
                 \centering
-                \includegraphics[width=0.9\textwidth]{./content/DFT2.PNG}
+                \includegraphics[width=0.9\textwidth]{./content/pictures/DFT2.PNG}
                 \caption{}
                 \label{fig:DFT2}
             \end{subfigure}
             \begin{subfigure}{0.3\textwidth}
                 \centering
-                \includegraphics[width=0.9\textwidth]{./content/DFT3.PNG}
+                \includegraphics[width=0.9\textwidth]{./content/pictures/DFT3.PNG}
                 \caption{}
                 \label{fig:DFT3}
             \end{subfigure}
@@ -394,7 +392,7 @@
     \label{sec:Versuchsaufbau}
         \begin{figure}
             \centering
-            \includegraphics[width=0.7\textwidth]{./content/MM.png}
+            \includegraphics[width=0.7\textwidth]{./content/pictures/MM.png}
             \caption{Der für die durchgeführten Experimente verwendete Aufbau.}
             \label{fig:aufbau}
         \end{figure}
