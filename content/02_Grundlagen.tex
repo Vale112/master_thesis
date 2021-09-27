@@ -1,4 +1,10 @@
 \chapter{Grundlagen}
+In diesem Kapitel wird eine Einführung in die Grundlegenden Eigenschaften der untersuchten Systeme gegeben.
+Zunächst geht es um die Oberflächen von Festkörpern, da dies in der vorliegenden Arbeit genauer untersucht werden.
+Anschließend geht es um den Antiferromagnetismus, welcher die magnetischen Strukturen innerhalb der Proben beschreibt.
+Dann geht es um die Wechselwirkung zwischen Oberflächen und Molekühle und wie diese sich auf der Oberfläche bezüglich ihrer geometrischen und elektronischen Struktur verändern.
+Zuletzt werden dann die Oberflächen und Molekühle eingeführt, welche zur Präperation der verwendeten Proben genutzt wurden.
+
     \section{Einkristalloberflächen}
         Die geordneten Strukturen eines Einkristalls kommen durch die Wechselwirkung der Elektronen zwischen den einzelnen Atomen.
         So ergibt sich eine periodische Anordnung der Atome im thermischen Gleichgewicht.
@@ -237,88 +243,89 @@
 
     \section{Substrate and Molecules}
         \subsection{Gold (111) Oberfläche}
-            \textbf{\cite{5A_1}}
-            Ebenenabstand in Au(111) $d_0 = \SI{2.35}{\angstrom}$.
-
+            Gold gehört zu den Edelmetallen und kristallisiert in der flächenzentrierten Struktur mit einer Gitterkonstanten von \SI{4.08}{\angstrom}~\cite{Marx}.
+            Es ist besonders leitfähig, stabil und wenig reaktiv.
+            Dennoch rekosntruiert die Oberfläche in einer Fischgräten-Struktur.
+            Die Austrittsarbeit der (111)-Oberfläche wurde dabei auf \SI{5.31}{\electronvolt} bestimmt~\cite{Hüfner}.
+            Ebenfalls bildet sich auch ein sehr präsenter Oberflächenzustand aus.
+            
+            
             \begin{itemize}
-                \item Rekonstruktion
-                \item WKF
-                \item fcc Struktur, Gitterkonstante  $a=\SI{4.08}{\angstrom}$~\cite{Marx}.
-                \item Gold (Au) is a noble metal. Its conductivity, stability and the fact that it is not reacting much with the adsorbate, make it a common substrate for the PES measurement in UHV conditions.
-            \end{itemize}
-
+                \item Ebenenabstand in Au(111) $d_0 = \SI{2.35}{\angstrom}$.\textbf{\cite{5A_1}}
+                \item Symmetrie
+            \end{itemize} 
 
         \subsection{Nickeloxid (111) Oberfläche}
-            \begin{itemize}
-                \item AFM
-                \item Charge-Transferisolator (vergleich Mott-Hubbard)
-                \item WKF
-                \item Rekonstruktionen
-                \item Instabil
-                \item Polar
-            \end{itemize}
-            NiO ist eine Antiferromagnet mit einer Neél-Temperatur von \SI{525}{\kelvin}~\cite{kunz_chemisorption_1985}.
-            Das 3d Ni Band ist nur teilgefüllt mit acht von zehn möglichen Elektronen und doch ein Isolator~\cite{kunz_chemisorption_1985}.
-            Die thermische Bandlücke liegt bei \SI{3.6}{\electronvolt}~\cite{kunz_chemisorption_1985}.
-
-            Warum NiO - weil AFM -> Spinwellen, und Isolator keine Elektronen bewegung keine Joulsche Wärme
-
-            AFM und Moleküle? -> Interface: Molekül anregen -> durch Kopplung SW in AFM auslösen -> anderes Molekül nimmt Spinwelle auf (THz, also sehr schnell)
-            \textbf{muss geprüft werden: Spins in (111) Ebene alle parallel, darauffolgende (111)-Ebene sind innerhalb alle parallel orientiert aber antiparallel zur vorherigen Ebene, also der senkrechten Achse zu (111) AFM Kopplung}
-
             \begin{figure}
                 \centering
                 \includegraphics[width=4cm]{./content/pictures/NiO-structure}
                 \caption{Die Krsiatllstruktur von Nickeloxid. Das $\ce{Ni}^{2+}$ Ion befindet sich in einer oktraedischen Umgebung von $\ce{O}^{2-}$ Ionen. Aus~\cite{NiO-structure}.}
                 \label{fig:NiO-structure}
             \end{figure}
-
             Nickeloxid besitzt die Struktur von \ce{NaCl} und ist in \autoref{fig:NiO-structure} dargestellt~\cite{kunz_chemisorption_1985}. 
             Die geometrische Gitterkonstante beträgt \SI{4.17}{\angstrom}~\cite{sebbari_uranyl_2012}.
             Für die magnetische Ordnung ergibt sich die dopplte Gitterkonstante zwischen zwei gleich ausgerichteten Spins~\cite{Suter}.
-            Neutronenbeugung auf Spin empfindlich also dopplte Einheitszelle, anders als die chemisch empfinliche Röntgenbeugung.
+            % Neutronenbeugung auf Spin empfindlich also dopplte Einheitszelle, anders als die chemisch empfinliche Röntgenbeugung.
 
-            NiO zeigt für einige Moleküle Chemisorption, was durch enthaltene Defekt hervorgerufen wird~\cite{kunz_chemisorption_1985}.
+            Nickeloxid gehört zu der Familie der Antiferromagneten mit einer Neél-Temperatur von \SI{525}{\kelvin}.
+            Da das 3d Band des Nickels im Oxid nur teilweise gefüllt ist (acht von zehn möglichen Elektronen) würde man erwarten, dass es sich hierbei um einen Leiter handelt~\cite{kunz_chemisorption_1985}.
+            Dies ist allerdings nicht so und Nickeloxid ist ein Isolator, genauer ein Ladungs-Transferisolator.
+            Die thermische Bandlücke liegt bei \SI{3.6}{\electronvolt}~\cite{kunz_chemisorption_1985}.
+
+            Ein Oberflächendipolelement ist besonders stark in der (111)-Orientierung ausgeprägt, da bei der polaren Oberfläche entweder nur Sauerstoff oder nur Nickelatome in der obersten Lage vorhanden sind~\cite{NiO_8}.
+            Dies liegt an der Bindung zwischen den Sauerstoff und Nickelatomen.
+            Ferner ist auch die Magnetisierung abwechseln geschichtet. 
+            So tritt zunächst eine Ebene mit Nickelauf, in der die Magnetisierung antiparallel zu der nächsten Schicht Nickel ist.
+            Denn die Spins innerhalb einer (111)-Ebene koppeln ferromagnetisch wohingegen die Kopplung unter den Ebenen antiferromagnetisch ist~\cite{Fe0_6}.
+
+            Nickeloxid zeigt bereits für andere Orientierung für einige Moleküle Chemisorption, was durch enthaltene Defekt hervorgerufen wird~\cite{kunz_chemisorption_1985}.
+
+            \begin{itemize}
+                \item WKF
+                \item Rekonstruktionen
+                \item Instabil
+                \item Symmetrie
+            \end{itemize}
+            Warum NiO - weil AFM -> Spinwellen, und Isolator keine Elektronen bewegung keine Joulsche Wärme
+
+            AFM und Moleküle? -> Interface: Molekül anregen -> durch Kopplung SW in AFM auslösen -> anderes Molekül nimmt Spinwelle auf (THz, also sehr schnell)
         
         \subsection{Eisen (100) Oberfläche}
+            \begin{itemize}
+                \item WKF
+                \item Symmetrie
+            \end{itemize}
 
         \subsection{Eisenoxid (100) Oberfläche}
+            Ebenso wie das Nickeloxid kristallisiert auch das Eisenoxid, welches auch Wüstite genannt wird, in der \ce{NaCl}-Struktur~\cite{FeO_4}.
+            Dabei beträgt die Gitterkonstante \SI{3.07}{\angstrom}~\cite{FeO_1} und die $\ce{Fe}^{2+}$-Ionen befinden sich einer oktraedischen Position zum Suaerstoff~\cite{FeO_4}.
+            Es handelt sich ebenfalls um einen Isolator mit antiferromagnetischen Eigenschaften und einer Neél-Temperatur von \SI{198}{\kelvin}~\cite{FeO_4}.
+
+            Genau wie in Nickeloxid sind auch hier die (111)-Ebenen untereinander antiferromagnetisch gekoppelt.
+            So ergibt sich auf der (100)-Oberfläche ... 
+
             \begin{itemize}
-                \item AFM
-                \item Isolator
-                \item 
+                \item WKF
+                \item Symmetrie
             \end{itemize}
-            FeO hat eine Gitterkonstante von \SI{3.07}{\angstrom}~\cite{FeO_1}.
-            FeO wird auch Wüstite genannt und besitzt wie das NiO auch eine \ce{NaCl}-Struktur~\cite{FeO_4}.
 
-            Die Neél-Temperatur liegt bei \SI{198}{\kelvin}.
-            Es handelt sich ebenfalls um einen Isolator mit antiferromagnetischen Eigenschaften~\cite{FeO_4}.
-
-            Das Eisenoxid hat ebenfalls die \ce{NaCl}-Struktur wie schon das Nickeloxid~\cite{FeO_4}.
-            Die $\ce{Fe{2+}}$ Ionen befinden sich einer oktraedischen Position zum Suaerstoff~\cite{FeO_4}.
-
-        \subsection{Pentacene/PEN/5A}
-            \begin{itemize}
-                \item Geometrische Struktur
-                \item Orbital Struktur
-                \item einfache Synthese
-                \item Große Elektronenmobilität (als FK)
-                \item ist ein \pi-konjugiertes Molekühl \cite{MM_2}
-            \end{itemize}
-            Pentacene oder auch PEN, 5A genannt hat eine Dichte von \SI{1.232(6)}{\gram\per\cubic\centi\meter}~\cite{CAS}.
-
-            \ce{C22H14}
+        \subsection{Pentacene} \label{sec:5A}         
             \begin{figure}
                 \centering
                 \includegraphics[width=0.6\textwidth]{./content/pictures/PEN.jpg}
                 \caption{Geometrische Struktur des Pentacene sowei die vier höchsten besetzten und vier niedrigesten unbesetzen Orbitale. Vorlage aus~\cite{PEN}.}
                 \label{fig:PEN}
             \end{figure}
+            Bei Pentacene ($\ce{C22H14}$) oder auch kurz 5A handelt es sich um einen Elektronendonator und gehört zu den p-Typ Halbleiter~\cite{5A_1}.
+            Seine Struktur ist in \autoref{fig:PEN} dargestellt, welche sich aus linear an Kanten verschmolzenen Phenylringen zusammengesetzt~\cite{MM_2}.
+            Ebenfalls zu sehen sind jeweils die ersten vier höchsten besetzen und niedrigesten unbesetzten Zustände.
+            Die Synthese des Pentacene ist auf Grund der einfachen Struktur ebenfalls einfach.
+            Pentacene bringt ebenfalls die perfekten Eigenschaften für Molekülorbitaltomographie mit, da es sich um ein \pi-konjugiertes Molekühl handelt~\cite{MM_2}.
 
-            \textbf{\cite{5A_1}}
-            Pentacene ist ein Elektronendonator (gibt gerne Elektronen ab) und zeigt Physisorption auf Au(111).
-            Ist ein p-Typ Halbleiter
-            Pentacene hat eine hohe Elktronenbeweglichkeit in dünnen Filmen
-            PEN auf Au(111) zeigt einen Substrat Molekülabstand von \SI{3.28}{\angstrom} - typisch für Physisorption
-            PEN liegt glatt auf Au(111)
-    
+            In dünnen Filmen aus Pentacene zeigt sich eine hohe Elektronenbeweglichkeit.
+            Auf der Gold(111)-Oberfläche ordnet es sich an und liegt parallel zum Substrat.
+            Der Abstand zwischen den Molekülen und Substrat wird auf \SI{3.28}{\angstrom} bestimmt, was auch in der Größenordnung für Physisorption liegt~\cite{5A_1}.
+            
+
+            Dichte von \SI{1.232(6)}{\gram\per\cubic\centi\meter}~\cite{CAS}.
+            
