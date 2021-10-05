@@ -7,9 +7,6 @@
 
     \section{Vorbereitung und Präperation}
         \label{sec:Praep}
-        \begin{itemize}
-            \item IV Kurven? NiO und Gold
-        \end{itemize}
             \begin{figure}
                 \centering
                 \begin{subfigure}{0.48\textwidth}
@@ -63,12 +60,17 @@
             Beide Filme werden erneut mittels LEED überprüft, das Eisenoxid zusätzlich mittels Augerelektronenspektroskopie.
             Die entsprechenden LEED-Bilder sind in \autoref{fig:Filme} dargestellt.
 
-            Bei dem Nickeloxidfilm wie auch dem Eisenoxidfilm fällt auf, dass im Gegensatz zur Goldprobe die Spots eher ausgewaschen scheinen.
-            Die Positionen der Punkte hat sich bei dem Nickeloxidfilm im Vergleich zum Gold nicht wesentlich verändert.
-            Auch die Intensitäten der Reflexe ist nun gleich groß für alle Punkte.
-            Hingegen sind beim Eisenoxid die Intensitäten invertiert, wobei die zuvor straken Spots nicht mehr sichtbar sind.
+            Bei dem Nickeloxidfilm wie auch dem Eisenoxidfilm fällt auf, dass im Gegensatz zu den Substraten die Spots eher ausgewaschen scheinen.
+            Deutbar ist dies als nicht perfekt geordnete Oberflächen \cite{NiO_34}.
+            Die Positionen der Punkte hat sich bei dem Nickeloxidfilm im Vergleich zum Gold nicht wesentlich verändert, ihre Gitterkonstanten sind also nahezu gleich.
+            Auch die Intensitäten der Reflexe beim Nickeloxid sind nun gleich groß für alle Punkte.
+            Aus der gleichen Symmetrie der Spots und der Abwesenheit zusätzlicher Spots kann eine $\text{p}(2 \times 2)$ Rekonstruktion \cite{NiO_37} und Domänenbildung der (100)-Orientierung \cite{NiO_36} ausgeschlossen werden.
+            Die hier wahrscheinlichste Stabilisierung der Oberfläche ist die \ce{OH-}-Terminierung mit der $\text{p}(1 \times 1)$-Rekonstruktion \cite{NiO_35}.
+            Hierbei wird das Oberflächenpotential durch Reduzierung der Oberflächenladung verkleinert und die Oberfläche wird thermodynamisch stabil.
+
+            Hingegen sind beim Eisenoxid die Intensitäten invertiert, wobei die zuvor starken Spots nicht mehr sichtbar sind.
             Trotz der gleichen Elektronenenergie von \SI{125}{\electronvolt} sind die Spots leicht nach außen gewandert.
-            Dies Widerspricht sich mit der eigentlich größeren Gitterkonstante von Eisenoxid im Bezug auf die p$(1 \times 1)$O Überstruktur des passivierten Eisens.
+            Dies Widerspricht sich mit der eigentlich größeren Gitterkonstante von Eisenoxid im Bezug auf die $\text{p}(1 \times 1)\ce{O}$ Überstruktur des passivierten Eisens.
 
             Anschließend werden die beiden nun antiferromagnnetischen Substrate vermessen und anschließend wird eine Monolage Pentacene aufgedampft.
             Nach dem Aufdampfen wurde versucht LEED-Bilder aufzunehmen, es waren allerdings nur leichte Substratspots sichtbar.
@@ -86,8 +88,7 @@
 
     \section{Datenformat und Bearbeitung}
     \begin{itemize}
-        \item Kreios vorgehen
-        \item NanoESCA vorgehen
+        \item Kreios Vorgehen
     \end{itemize}
         Für die Auswertung der dreidimensionalen Datenwird die Software IGOR Pro \cite{IGOR} genutzt.
         Alle Messungen der winkelaufgelösten Bandstruktur wurden als dreidimensionale Datensätze aufgenommen.
@@ -248,22 +249,40 @@
         \subsection{FeO}
             \begin{figure}
                 \centering
-                \includegraphics[width=0.7\textwidth]{./content/pictures/FeO/XMCD.png}
-                \caption{XAS Spektren für links- und rechtzirkular polarisiertes Licht und ihre Differenz.}
+                \includegraphics[width=0.65\textwidth]{./content/pictures/FeO/XMCD.png}
+                \caption{XAS Spektren für links- und rechtzirkular polarisiertes Licht und ihre Differenz. XMCD}
                 \label{fig:XMCD}
             \end{figure}
             \begin{figure}
                 \centering
-                \includegraphics[width=0.7\textwidth]{./content/pictures/FeO/XMCD.png}
-                \caption{XAS Spektren für s- und p- polarisiertes Licht, sowie dessen Differenz.}
+                \includegraphics[width=0.65\textwidth]{./content/pictures/FeO/XMCD.png}
+                \caption{XAS Spektren für s- und p- polarisiertes Licht, sowie dessen Differenz. XMLD}
                 \label{fig:XMLD}
             \end{figure}
             \begin{figure}
                 \centering
-                \includegraphics[width=0.7\textwidth]{./content/pictures/FeO/XPS_Fe3p.png}
+                \includegraphics[width=0.65\textwidth]{./content/pictures/FeO/Fe3p.png}
                 \caption{XPS Spektrum des $\ce{Fe}_{3\text{p}}$ Übergang.}
                 \label{fig:XPSFe3p}
             \end{figure}
+            \begin{figure}
+                \centering
+                \includegraphics[width=0.65\textwidth]{./content/pictures/FeO/O1s.png}
+                \caption{XPS Spektrum des $\ce{O}_{1\text{s}}$ Übergang.}
+                \label{fig:XPSO1s}
+            \end{figure}
+            \begin{figure}
+                \centering
+                \includegraphics[width=0.7\textwidth]{./content/pictures/FeO/Fermi.png}
+                \caption{XPS Spektrum der Fermikante? bei einer Photonenenergie von \SI{200}{\electronvolt}.}
+                \label{fig:XPSFermi}
+            \end{figure}
+
+            Die Bindungsnergie des $\ce{Fe}^{2+}$ liegt bei \SI{53.7}{\electronvolt} und die des $\ce{Fe}^{3+}$ bei \SI{55.6}{\electronvolt} \cite{FeO_7}.
+            Der  $\ce{O}_{1\text{s}}$ Peak liegt bei \SI{529.7}{\electronvolt} \cite{}
+            Der $\ce{Fe}_{3\text{p}} (\SI{54.52}{\electronvolt})$ wie auch der $\ce{O}_{1\text{s}} (\SI{529.15}{\electronvolt})$ lassen sich durch einen Peak fitten.
+
+            The XMLD effect arises from a nonspherical distortion of the atomic charge by the spin–orbit interaction when the atomic spins are axially aligned by the exchange interaction.\textbf{Stöhr Magnetism}
 
 
         \subsection{5A auf FeO}
