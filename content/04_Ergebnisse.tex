@@ -119,10 +119,35 @@
             \caption{Die integrierten Spektren für zwei verschiedene Schichtdicken von \ce{NiO}. Als Referenz dient das integrierte Spektrum von Gold.}
             \label{fig:NiO_Filmdicke}
         \end{figure}
+        \begin{figure}
+            \centering
+            \includegraphics[width=0.7\textwidth]{./content/pictures/FeO/Fermi_FeO.png}
+            \caption{Valenzbandspektrum der des \ce{FeO} bei einer Photonenenergie von \SI{64}{\electronvolt}. Zusätzlich eingetragen ist der Fit der Fermikante.}
+            \label{fig:FeO}
+        \end{figure}
+        In der \autoref{fig:NiO_Filmdicke} ist das Valenzbandspektrum für verschiedene Schichtdicken von Nickeloxid aufgetragen. 
+        Das Signal des Substrates, in diesem Fall Gold nimmt immer weiter ab und das des Nickeloxid zu. 
+        Erkennbar ist somit auch die Oberflächenemfindlichkeit, dass tiefere Lagen nicht mehr erfasst werden.
+        Ebenso ist in \autoref{fig:FeO} die Elektronendichtekurve für den Valenzbandbereich des \ce{FeO} aufgetragen.
+        \begin{figure}
+            \centering
+            \includegraphics[width=0.6\textwidth]{./content/pictures/EDC_Au_5A.png}
+            \caption{Die integrierten Spektren für reines Gold, Gold mit einer Monolage Pentacene und deren Differenz.}
+            \label{fig:Au+5A}
+        \end{figure}
+        \begin{figure}
+            \centering
+            \includegraphics[width=0.6\textwidth]{./content/pictures/NiO_thick_5A.png}
+            \caption{Die integrierten Spektren für einen dicken Nickeloxidfilm, mit zusaätzlich einer Monolage Pentacene und deren Differenz.}
+            \label{fig:Int_NiO+5A}
+        \end{figure}
         % \end{wrapfigure}
-        Die Elektronendichtekurven für die reinen Substrate sind gemeinsam mit den der zusätzlich aufgebrachten Molekülen in den Abbildungen~\ref{fig:NiO+5A} und~\ref{fig:FeO+5A} dargestellt.
+        Die Elektronendichtekurve für das Nickeloxid Substrat ist gemeinsam mit dem der zusätzlich aufgebrachten Molekülen in \autoref{fig:Int_NiO+5A} dargestellt.
         Es lassen sich bei den in den Spektren erkennbare zusätzliche Merkmale erkennen die somit den Molekülen zugeordnet werden können.
         An diesen Punkten werden einzelne Bilder mit einer erhöhten Statistik aufgenommen.
+
+        Die Bindungsenergie wurde ermittelt in dem die Photonenenergie von \SI{21.22}{\electronvolt} angenommen wurde und die Fermikante des Goldes bei \SI{16.55}{\electronvolt} gefittet wurde.
+        Damit wird die Austrittsarbeit des Analysators zu \SI{4.72}{electronvolt} bestimmt, nur dies fließt dann noch in die Gleichung \ref{eqn:Photoeffekt} ein.
         %   \begin{figure}
         %     \centering
         %     \includegraphics[width=0.7\textwidth]{./content/pictures/NiO_Filmdicke.png}
@@ -136,24 +161,13 @@
         Die Austrittsarbeit des dicken Nickeloxidfilms passt \textbf{Quelle und Wert}.
         Für das Eisenoxid ergibt sich eine Austrittsarbeit von \textbf{Wert sowie Literatur}.
 
-        \begin{figure}
-            \centering
-            \includegraphics[width=0.6\textwidth]{./content/pictures/EDC_Au_5A.png}
-            \caption{Die integrierten Spektren für reines Gold, Gold mit einer Monolage Pentacene und deren Differenz.}
-            \label{fig:Au+5A}
-        \end{figure}
-
-        \begin{figure}
-            \centering
-            \includegraphics[width=0.6\textwidth]{./content/pictures/NiO_thick_5A.png}
-            \caption{Die integrierten Spektren für einen dicken Nickeloxidfilm, mit zusaätzlich einer Monolage Pentacene und deren Differenz.}
-            \label{fig:NiO+5A}
-        \end{figure}
+        
 
         \begin{itemize}
             \item Sieht Features später Zuordnung
             \item Ändert sich was
             \item Verbreiterung Lebenszeit, Linienbreite Photonenquelle, Thermisch, Analysator
+            \item peaks in integrierten Spektren zugeordnen
         \end{itemize}
 
     \section{Bandstruktur}
@@ -243,62 +257,99 @@
             %     \caption{Zuordnung eines Bildes zu einem der Molekülorbitale.}
             % \end{figure}
         \subsection{5A auf NiO}
-                Die Abwesenheit sehr ausgeprägter Merkmale in den impulsaufgelösten Bildern bestätigt die Annahme aus \autoref{sec:Praep}, dass sich die Moleküle auf der Oberfläche nicht regelmäßig anordnen.
-                Auch wenn sich in den integrierten Spektren in \autoref{fig:NiO_Filmdicke} klar zeigt, dass sich bei einigen Energien die Intensität erhöht ist in den entsprechenden Bildern keine klare Zuordnung möglich.
+            \begin{figure}
+                \centering
+                \includegraphics[width=0.65\textwidth]{./content/pictures/NiO_thick_5A_KE12_7.png}
+                \caption{Map für Pentacene auf dicken Nickeloxidfilm bei einer kinetischen Energie von \SI{7.5}{\electronvolt}. Also Bindungsenergie von \SI{3.85}{\electronvolt}.}
+                \label{fig:NiO+5A}
+            \end{figure}
+            Die Abwesenheit sehr ausgeprägter Merkmale in den impulsaufgelösten Bildern bestätigt die Annahme aus \autoref{sec:Praep}, dass sich die Moleküle auf der Oberfläche nicht regelmäßig anordnen.
+            Auch wenn sich in den integrierten Spektren in \autoref{fig:NiO_Filmdicke} klar zeigt, dass sich bei einigen Energien die Intensität erhöht ist in den entsprechenden Bildern keine klare Zuordnung möglich.
+            Ein Beispiel ist in \autoref{fig:NiO+5A} zu sehen, dieses Bild wurde gewählt da ein deutliches Signal im integrierten Spektrum zu erkennen ist und die entsprechende Energie nicht zu weit weg von der Fermikante liegt.
 
         \subsection{FeO}
             \begin{figure}
                 \centering
-                \includegraphics[width=0.65\textwidth]{./content/pictures/FeO/XMCD.png}
+                \includegraphics[width=0.65\textwidth]{./content/pictures/FeO/XMCD_FeO.png}
                 \caption{XAS Spektren für links- und rechtzirkular polarisiertes Licht und ihre Differenz. XMCD}
                 \label{fig:XMCD}
             \end{figure}
             \begin{figure}
                 \centering
-                \includegraphics[width=0.65\textwidth]{./content/pictures/FeO/XMCD.png}
+                \includegraphics[width=0.65\textwidth]{./content/pictures/FeO/XMLD_FeO.png}
                 \caption{XAS Spektren für s- und p- polarisiertes Licht, sowie dessen Differenz. XMLD}
                 \label{fig:XMLD}
             \end{figure}
             \begin{figure}
                 \centering
-                \includegraphics[width=0.65\textwidth]{./content/pictures/FeO/Fe3p.png}
-                \caption{XPS Spektrum des $\ce{Fe}_{3\text{p}}$ Übergang.}
-                \label{fig:XPSFe3p}
+                \includegraphics[width=0.6\textwidth]{./content/pictures/FeO/Fe3p_Fe.png}
+                \caption{XPS Spektrum des $\ce{Fe}_{3\text{p}}$ Übergang des reinen Eisens. Hier passt der Fit mit einem Voigt (+Tougaard) sehr gut!}
+                \label{fig:XPSFe3p_Fe}
             \end{figure}
             \begin{figure}
                 \centering
-                \includegraphics[width=0.65\textwidth]{./content/pictures/FeO/O1s.png}
-                \caption{XPS Spektrum des $\ce{O}_{1\text{s}}$ Übergang.}
-                \label{fig:XPSO1s}
+                \includegraphics[width=0.6\textwidth]{./content/pictures/FeO/Fe3p_FeO.png}
+                \caption{XPS Spektrum des $\ce{Fe}_{3\text{p}}$ Übergang des \ce{FeO}. Zuornung sehr schwierig, ein großer Peak bei kleinen BE und ein kleiner bei großen BE passen. Aber auch zwei etwa gleichgroße Peaks. Je nach dem wie die Parameter gewählt und festgestzt werden.}
+                \label{fig:XPSFe3p_FeO}
             \end{figure}
             \begin{figure}
                 \centering
-                \includegraphics[width=0.7\textwidth]{./content/pictures/FeO/Fermi.png}
-                \caption{XPS Spektrum der Fermikante? bei einer Photonenenergie von \SI{200}{\electronvolt}.}
-                \label{fig:XPSFermi}
+                \includegraphics[width=0.6\textwidth]{./content/pictures/FeO/Fe3p_Fe3O4.png}
+                \caption{XPS Spektrum des $\ce{Fe}_{3\text{p}}$ Übergang des \ce{Fe3O4}. Gleiches Problem wie beim \ce{FeO} (s. \autoref{fig:XPSFe3p_Fe}) funktioniert abenfalls besser mit Tougaard als Shirley.}
+                \label{fig:XPSFe3p_Fe3O4}
+            \end{figure}
+            \begin{figure}
+                \centering
+                \includegraphics[width=0.6\textwidth]{./content/pictures/FeO/O1s_FeO.png}
+                \caption{XPS Spektrum des $\ce{O}_{1\text{s}}$ Übergang von \ce{FeO}. Fit mit einem Peak (kleiner Shirley) sehr gut.}
+                \label{fig:XPSO1s_FeO}
+            \end{figure}
+            \begin{figure}
+                \centering
+                \includegraphics[width=0.6\textwidth]{./content/pictures/FeO/O1s_Fe3O4.png}
+                \caption{XPS Spektrum des $\ce{O}_{1\text{s}}$ Übergang von \ce{Fe3O4}. Fit mit zwei Peaks (kleiner Shirley) sehr gut (einer O, der andere OH - Kontamination evtl vom Aufdampfen?).}
+                \label{fig:XPSO1s_Fe3O4}
+            \end{figure}
+            \begin{figure}
+                \centering
+                \includegraphics[width=0.7\textwidth]{./content/pictures/FeO/Photonenenergie.png}
+                \caption{Vergleich des VB-Spektrums bei \SI{64}{\electronvolt} und \SI{40}{\electronvolt} Photonenenergie.}
+                \label{fig:Photonenenergie}
             \end{figure}
 
-            Die Bindungsnergie des $\ce{Fe}^{2+}$ liegt bei \SI{53.7}{\electronvolt} und die des $\ce{Fe}^{3+}$ bei \SI{55.6}{\electronvolt} \cite{FeO_7}.
-            Der  $\ce{O}_{1\text{s}}$ O2- Peak liegt bei \SI{529.7}{\electronvolt} \cite{FeO_9}.
-            OH- bei \SI{531.2}{\electronvolt} \cite{FeO_9}.
-            FeO kann durch ioneninduzierte Zerstäubung aus anderen Eisenoxiden gewonnen werden, da der Wirkungsquerschnitt für Sauerstoff dabei größer ist und somit diese in der Konzentration reduziert werden. \cite{FeO_12}
-            Einen Einfluss auf das FeO hat das Sputtern wohl nicht \cite{FeO_12}.
+            \begin{itemize}
+                \item Zuordnung des Fe3p Peaks schwer. Manche sagen sechs Peaks voraus \cite{FeO_14, FeO_17, FeO_15} wegen der Finestruktur, andere zwei (Fe2+, Fe3+) \cite{FeO_15, FeO_11, FeO_10, FeO_7} manche drei (Fe2+, Fe3+tetra, Fe3+octa) \cite{FeO_12}. es kommt dabei auf das Material an, zum Identifizieren ist es also schwierig durch den einen Peak.
+                \item Die Bindungsnergie des $\ce{Fe}^{2+}$ liegt bei \SI{53.7}{\electronvolt} und die des $\ce{Fe}^{3+}$ bei \SI{55.6}{\electronvolt} \cite{FeO_7}.
+                \item Der Peak des reinen Eisens (\autoref{fig:XPSFe3p_FeO}) ist nicht dem Fe2+ oder Fe3+ zuzuornden. FeO besitzt hingegen nur Fe2+, ist aber recht anfällig weiter zu oxidieren, so dass sich ein Fe3O4 (Fe2+, Fe3+tetra, Fe3+octa) oder Fe2O3 (nur Fe3+) Film bilden kann. 
+                \item Bei dem O1s Peak ist man sich einig, dass sich der Hauptpeak nicht verschiebt, eine Unterscheidung der verschiednen Eisenoxide ist also damit nicht möhlich. es können zusätzlich Peaks durch Adsorbate (z.B. OH) auftauchen.
+                \item Der  $\ce{O}_{1\text{s}}$ O2- Peak liegt bei \SI{529.7}{\electronvolt} \cite{FeO_9} OH- bei \SI{531.2}{\electronvolt} \cite{FeO_9}., \SI{530.1}{\electronvolt} \cite{FeO_15} (unabhängig welches Eisenoxid).
+                \item XAS-Messungen mit Teilelektronen ausbeute von Sekundärelektronen bei einer Energie von $E_\text{Kin} = \SI{7}{\electronvolt}$.
+                \item XAS Messungen wurden duch Multiplikation an Preedge ausgerichtet, dann wurde ein linear Untergrund abgezogen (pre-edge gefittet) und anschließend die Preedge auf Null gesetzt und die Postedge auf 1 (durch Division)
+                \item Das XMCD Signal sollte für L3 und L2 umegkehrt sein, wenn es Ferromagnetisch ist, Signal lässt sich aber nur bei L3 erkennen.
+                \item Auch XMLD für Antiferromagnetismus auf Grund der nicht spärischen Oribtale durch die Spin-Bahn-Kopplung (Spins ausgerichtet) \cite{stohr_magnetism_2006} - kann auch eben sein, dass die Spins nicht ausgerichtet waren. T war unter Neel Temperatur.
+                \item Fermikante beim Isolator wie \ce{FeO} (was vermutet wird vorliegen zu haben) ist schwierig (Austrittsarbeit des Analyseres liegt bei \SI{5.07}{\electronvolt}). Also bei reinem Eisen gefittet (ebenfalls schwierig da mit Peak des VB überlappt) und damit über die Austrittsarbeit des Analysators \SI{4.5}{\electronvolt} und der Photonenenergie die Bindungsenergie bestimmt.
+                \item FeO kann durch ioneninduzierte Zerstäubung aus anderen Eisenoxiden gewonnen werden, da der Wirkungsquerschnitt für Sauerstoff dabei größer ist und somit diese in der Konzentration reduziert werden. \cite{FeO_12}
+                      Dann verschwinden auch Signale des Fe3+ \cite{FeO_15}, Einen Einfluss auf das FeO hat das Sputtern wohl nicht \cite{FeO_12, FeO_15}.
+                \item Abschnitt des Spektrums des FeO bei \SI{-1.02}{\electronvolt}, Beginn bei \SI{58.93}{\electronvolt} -> Austrittsarbeit des \ce{FeO} \SI{4.05}{\electronvolt}, da $h\nu = \SI{64}{\electronvolt}$
+            \end{itemize}
+            % Der $\ce{Fe}_{3\text{p}} (\SI{54.52}{\electronvolt})$ wie auch der $\ce{O}_{1\text{s}} (\SI{529.15}{\electronvolt})$ lassen sich durch einen Peak fitten.
 
-            Der $\ce{Fe}_{3\text{p}} (\SI{54.52}{\electronvolt})$ wie auch der $\ce{O}_{1\text{s}} (\SI{529.15}{\electronvolt})$ lassen sich durch einen Peak fitten.
-
-            The XMLD effect arises from a nonspherical distortion of the atomic charge by the spin–orbit interaction when the atomic spins are axially aligned by the exchange interaction.\textbf{Stöhr Magnetism}
-
-
-        \subsection{5A auf FeO}
+            \subsection{5A auf FeO}
                 Im Widerspruch zu den Interpretation aus \autoref{sec:Praep} wo das nicht Vorhandensein die Interpretation zulies, dass sich die Moleküle nicht auf der Oberfläche ordnen sind in den Tomographiebildern merkmale von Molekülen zu erkennen.
                 Diese Merkmale können sich nur ausbilden, wenn sich die Moleküle regelmäßig und in gleicher Orientierung anordnen.
                 Anderenfalls würden sich die Photoemissionströme überlagern und es gäbe verschwommene Bilder.
+
+                \begin{itemize}
+                    \item Schaut man sich die integrierten Spektren für zwei verschiedene Photonenenergien an (s. \autoref{fig:Photonenenergie}), so erkennt man schon mein passivierten Eisenoxid deutliche Unterschiede.
+                    \item Auch die Stacks zeigen markante Unterschiede und zeigen bei den gleichen Energien wie die HOMO bis HOMO-2 Orbitale sehr ähnliche Signale wie mit den Molekülen. Eindeutige Zurnung ohne Refernzmessung nicht möglich, die für die Photonenenergie von \SI{40}{\electronvolt} mit der auch die Moleküle vermessen wurden fehlt.
+                \end{itemize}
+                 
                 \begin{figure}
                     \centering
                     \begin{subfigure}[t]{0.48\textwidth}
                         \centering
                         \includegraphics[height=5cm]{./content/pictures/FeO+5A/FeO_5A_34_80eV.png}
-                        \subcaption{Das Bild für eine kinetische Energie von \SI{34.80}{\electronvolt}.}
+                        \subcaption{Das Bild für eine kinetische Energie von \SI{34.80}{\electronvolt}, also \SI{0.70}{\electronvolt} Bindungsenergie.}
                     \end{subfigure}
                     \begin{subfigure}[t]{0.48\textwidth}
                         \centering
@@ -313,7 +364,7 @@
                     \begin{subfigure}[t]{0.48\textwidth}
                         \centering
                         \includegraphics[height=5cm]{./content/pictures/FeO+5A/FeO_5A_33_75eV.png}
-                        \subcaption{Das Bild für eine kinetische Energie von \SI{33.75}{\electronvolt}.}
+                        \subcaption{Das Bild für eine kinetische Energie von \SI{33.75}{\electronvolt}, also \SI{1.75}{\electronvolt} Bindungsenergie.}
                     \end{subfigure}
                     \begin{subfigure}[t]{0.48\textwidth}
                         \centering
@@ -328,7 +379,7 @@
                     \begin{subfigure}[t]{0.48\textwidth}
                         \centering
                         \includegraphics[height=5cm]{./content/pictures/FeO+5A/FeO_5A_32_15eV.png}
-                        \subcaption{Das Bild für eine kinetische Energie von \SI{32.15}{\electronvolt}.}
+                        \subcaption{Das Bild für eine kinetische Energie von \SI{32.15}{\electronvolt}, also \SI{3.35}{\electronvolt} Bindungsenergie.}
                     \end{subfigure}
                     \begin{subfigure}[t]{0.48\textwidth}
                         \centering
@@ -343,7 +394,7 @@
                     \begin{subfigure}[t]{0.48\textwidth}
                         \centering
                         \includegraphics[height=5cm]{./content/pictures/FeO+5A/FeO_5A_30_95eV.png}
-                        \subcaption{Das Bild für eine kinetische Energie von \SI{30.95}{\electronvolt}.}
+                        \subcaption{Das Bild für eine kinetische Energie von \SI{30.95}{\electronvolt}, also \SI{4.55}{\electronvolt} Bindungsenergie.}
                     \end{subfigure}
                     \begin{subfigure}[t]{0.48\textwidth}
                         \centering
