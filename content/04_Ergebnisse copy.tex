@@ -5,6 +5,36 @@
     In dieser Arbeit untersuchten Gold und Nickeloxid Proben wurden alle in dem Versuchsaufbau aus \autoref{sec:Versuchsaufbau} vorbereitet und vermessen.
     Die Eisenoxid Proben wurden an der NanoESCA Beamline am Synchrotron Elettra in Triest präperiert und charakterisiert \footnote{Näheres zu diesem Versuchsaufbau und der Behandlung der Daten kann in \cite{ma-DJ} gefunden werden.}.
 
+    \section{Gold}
+        Zunächst geht es hier um das Substrat auf dem später der antiferromagnetische Nickeloxidfilm gewachsen wird.
+        Dies dient ebenfalls zur Kalibrierung der Monolage von Pentacene, da bereits bekannt ist, dass sich diese flach auf der Oberfläche ordnet.
+        \begin{figure}
+            \centering
+            \begin{subfigure}{0.48\textwidth}
+                \centering
+                \includegraphics[height=5cm]{./content/pictures/Au/2021_06_08_002_Au(111)_75eV}
+                \subcaption{Gold (111) bei einer Elektronenenergie von \SI{75}{\electronvolt}.}
+                \label{fig:LEED_Au}
+            \end{subfigure}
+            \begin{subfigure}{0.48\textwidth}
+                \centering
+                \includegraphics[height=5cm]{./content/pictures/Au+5A/021_Au(111)+5A(40)_16eV.png}
+                \subcaption{Eine Monolage Pentacene auf dem sauberen Gold bei einer Energie von \SI{16}{\electronvolt}.}
+                \label{fig:LEED_Au+5A}
+            \end{subfigure}
+            \caption{Die LEED-Bilder für die Kalibrierung des Pentacene.}
+        \label{fig:Substrate}
+        \end{figure}
+        Das Substrat wurde zunächste mehrer Male durch ioneninduziertes Zerstäuben und anschließendes Aufheizen gereinigt.
+        Es ergibt sich eine wohldefinierte Struktur der Oberfläche, was sich ebenfalls in dem Beugungsbild der niederenergetischen Elektronen in \autoref{fig:LEED_Au} erkennen lässt.
+
+
+
+
+
+
+
+
     \section{Vorbereitung und Präperation} \label{sec:Praep}
         \begin{figure}
             \centering
@@ -79,34 +109,34 @@
             \centering
             \includegraphics[width=0.6\textwidth]{./content/pictures/FeO/2021_09_09_001_AES_FeO.png}
             \caption{Das Augerspektrum für den Eisenoxidfilm.}
-            \label{fig:Auger}
+            \label{fig:Auger_FeO}
         \end{figure}
-        Auch das Augerspektrum in \autoref{fig:Auger} mit dem bereits von Carpa u.A. \cite{FeO_1} entdecken Augerelektronenspektrum für Eisenoxid zeigt gute Übereinstimmung.
+        Auch das Augerspektrum in \autoref{fig:Auger_FeO} mit dem bereits von Carpa u.A. \cite{FeO_1} entdecken Augerelektronenspektrum für Eisenoxid zeigt gute Übereinstimmung.
         Ebenfalls deutet das Peakverhältnis von dem Sauerstoffsignal bei \SI{503}{\electronvolt} und dem Signal für Eisen bei \SI{651}{\electronvolt} mit \num{2.53} auf $\ce{FeO}$ hin \cite{FeO_1, Auger}.
         
 
-    \section{Datenformat und Bearbeitung}
-    \begin{itemize}
-        \item Kreios Vorgehen
-    \end{itemize}
-        Für die Auswertung der dreidimensionalen Datenwird die Software IGOR Pro \cite{IGOR} genutzt.
-        Alle Messungen der winkelaufgelösten Bandstruktur wurden als dreidimensionale Datensätze aufgenommen.
-        Da die Bilder auf Grund nicht perfekt eingestellter Linsen nicht kreisrund sind, werden die Elipsen angepasst.
-        Hierfür wird die kleiner der beiden Achsen entlang der Achse gestreckt.
-        Ferner muss der Polarisationsfaktor unter Beachtung der Substratgeometrie kompensiert werden.
-        Hierfür werden die Bilder jeweils um \SI{\pm120}{} gedreht und auf das ursprüngliche Bild aufaddiert.
-        Um die gemessene kinetische Energie in die relevante Bindungsenergie umzurechnen wird bei den integrierten Spektren aus \autoref{sec:EDC} eine Faltung aus \textbf{...} an die Fermikante durchgeführt.
-        Zusätzlich müssen die gemessenen Bilder von ihren Pixelwerten noch in die entsprechenden Impulswerte umgerechnet werden.
-        Dies geschieht mit Hilfe der Sekundärelektronen aus dem Spektrum der Austrittsarbeit (niedrige kinetische Energie).
-        Ihre kinetische Energie kann durch 
-        \begin{equation}
-            E_\text{Kin} = \frac{\hbar^2 {k_{||}}^2}{2 m}
-            \label{eqn:WKF}
-        \end{equation}
-        beschrieben werden, wobei $m$ die Elektronenmasse und $k_{||}$ ihr Impuls parallel zur Oberfläche ist.
-        Die langsamsten Elektronen treten mit einer kinetischen Energie von \SI{0}{\electronvolt} aus der Probe aus und bilden damit den unteren Punkt der Parabel in \autoref{fig:WKF}.
-        Durch ihren parabolischen Verlauf kann nun bei einer höher liegenden Energie ein Linienprofil genommen werden.
-        Da sich die Elektronen wie in \autoref{eqn:WKF} verhalten können damit die Pixel in entsprechende Impulswerte umgerechnet werden.
+    % \section{Datenformat und Bearbeitung}
+    % \begin{itemize}
+    %     \item Kreios Vorgehen
+    % \end{itemize}
+    %     Für die Auswertung der dreidimensionalen Datenwird die Software IGOR Pro \cite{IGOR} genutzt.
+    %     Alle Messungen der winkelaufgelösten Bandstruktur wurden als dreidimensionale Datensätze aufgenommen.
+    %     Da die Bilder auf Grund nicht perfekt eingestellter Linsen nicht kreisrund sind, werden die Elipsen angepasst.
+    %     Hierfür wird die kleiner der beiden Achsen entlang der Achse gestreckt.
+    %     Ferner muss der Polarisationsfaktor unter Beachtung der Substratgeometrie kompensiert werden.
+    %     Hierfür werden die Bilder jeweils um \SI{\pm120}{} gedreht und auf das ursprüngliche Bild aufaddiert.
+    %     Um die gemessene kinetische Energie in die relevante Bindungsenergie umzurechnen wird bei den integrierten Spektren aus \autoref{sec:EDC} eine Faltung aus \textbf{...} an die Fermikante durchgeführt.
+    %     Zusätzlich müssen die gemessenen Bilder von ihren Pixelwerten noch in die entsprechenden Impulswerte umgerechnet werden.
+    %     Dies geschieht mit Hilfe der Sekundärelektronen aus dem Spektrum der Austrittsarbeit (niedrige kinetische Energie).
+    %     Ihre kinetische Energie kann durch 
+    %     \begin{equation}
+    %         E_\text{Kin} = \frac{\hbar^2 {k_{||}}^2}{2 m}
+    %         \label{eqn:WKF}
+    %     \end{equation}
+    %     beschrieben werden, wobei $m$ die Elektronenmasse und $k_{||}$ ihr Impuls parallel zur Oberfläche ist.
+    %     Die langsamsten Elektronen treten mit einer kinetischen Energie von \SI{0}{\electronvolt} aus der Probe aus und bilden damit den unteren Punkt der Parabel in \autoref{fig:WKF}.
+    %     Durch ihren parabolischen Verlauf kann nun bei einer höher liegenden Energie ein Linienprofil genommen werden.
+    %     Da sich die Elektronen wie in \autoref{eqn:WKF} verhalten können damit die Pixel in entsprechende Impulswerte umgerechnet werden.
 
 
     \section{Integrierte Spektren}
