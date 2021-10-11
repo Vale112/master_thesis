@@ -48,6 +48,7 @@
         Durch Schneiden entlang der Linien zwischen den Hochsymmetriepunkten ergibt sich die Bandstruktur, welche in \autoref{fig:Band_Au} dargestellt ist.
         Die Bindungsenergie wurde ermittelt in dem die Photonenenergie von \SI{21.22}{\electronvolt} angenommen wurde und die Fermikante des Goldes bei \SI{16.55}{\electronvolt} in einem winkelintegrierten Spektrum gefittet wurde.
         Damit wird die Austrittsarbeit des Analysators zu \SI{4.72}{electronvolt} bestimmt, nur dies fließt dann noch in die Gleichung \ref{eqn:Photoeffekt} ein.
+        Dies ist vorallem für spätere messungen des Nickeloxidfilms wichtig, da es sich hierbei um einen Isolator handelt und somit die Fermienergie in den Bandlücke liegt.
         Wird die gesamte Länge des Spektrums betrachtet, also der Energieunterschied zwischen Fermikante und Ende des Sekundärelektronen, so lässt sich die Austrittsarbeit der Probe bestimmen.
         Für Gold lässt sich die Austrittsarbeit auf \SI{5.46}{\electronvolt} ermitteln, was in der selben Ornung wie Literaturwerte liegt~\cite{Hüfner}.
 
@@ -84,6 +85,12 @@
         Dies ist für einige Energien und Orbitale in \autoref{fig:MOT_Au+5A} geschehen.
         Dabei wurden die gemessenen wie auch berechneten Bilder entsprechend der Geometrie aus dem Beugungsbild \autoref{fig:LEED_Au+5A} jeweils um \SI{120}{\degree} gedreht und aufsummiert.
         Die theoretisch berechneten Bilder wurden mit Hilfe des Python Programms \textit{kmap.py} erstellt~\cite{brandstetter_kmappy_2021}.
+
+        Eine Zuordnung einer der markanten Elemente zu einem zuvor unbestzten Orbital, dem LUMO ist nicht zu erkennen.
+        Es scheint also so als würden keine Elektronen zwischen Substrat und Molekül ausgetauscht werden. 
+        Dies lässt sich auch aus der Literatur erkennen, dass sich bei den Anornung von Pentacene auf Gold um den Prozess der Physisorption handelt~\cite{5A_4}.
+        Abwesenheit des LUMOs in den Spektren und Bildern muss aber nicht zwangsläufig auf die Physisorption hindeuten.
+        So ist Pentacene auf Kupfer (111) chemisch adsorbiert und zeigt dennoch keine Anzeichen der Besetzung des LUMO~\cite{koch_adsorption-induced_2008}.
         \begin{itemize}
             \item Peaks der Moleküle kennzeichnen
             \item Alle Molekülorbital zuordnungen vereinigen und ergänzen
@@ -179,8 +186,8 @@
         \end{figure}
         \begin{figure}
             \centering
-            \includegraphics[height=5cm]{./content/pictures/pFe/2021_09_07_002_passivatedFe(100)_125eV.png}
-            \caption{Passiviertes Eisen (100) bei einer Elektronenenergie von \SI{125}{\electronvolt}.}
+            \includegraphics[height=5cm]{./content/pictures/pFe/2021_09_07_001_passivatedFe(100)_44eV.png}
+            \caption{Passiviertes Eisen (100) bei einer Elektronenenergie von \SI{44}{\electronvolt}.}
             \label{fig:LEED_pFe}
         \end{figure}
         Bei der verwendeten Eisenprobe handelt es sich um einen dünnen Eisenfilm, der auf einem Magnesiumoxid Substrat gewachsen wurde.
@@ -195,6 +202,12 @@
         Sie Spots sind scharf und zeigen auch die Geometrie der $\ce{Fe}-\text{p}(1 \times 1)\ce{O}$ Struktur.
         Die gesamten Spots sind dabei nicht zentrosymmetrisch, da die Probe verkippt ist, wodurch auch der (0,0)-Reflex zu sehen ist.
 
+        Um ebefalls die kinetische Energie in die übliche Bindungsenergie umzurechnen muss die Austrittsrabeit des Analysators bestimmt werden.
+        Dies ist nötig, da es sich bei den Eisenmonooxid um einen Isolator handelt und hier also die Fermikante nicht ermittelt werden kann.
+        Aus der Anpassung an der Fermikante des Eisens lässt sich dessen Position auf \SI{59.5}{\electronvolt} bei einer Photonenenergie von \SI{64}{\electronvolt} bestimmen.
+        Dadurch lässt sich für die spätere Umrechnung in die Bindungsenergie die Austrittsarbeit des Analysators bei NanoESCA auf \SI{4.5}{\electronvolt} festlegen.
+        Anzumerken ist, dass die Genauigkeit dieser Annahme nicht exakt ist, da zusätzlich die Fermikante durch ein starkes Signal überlagert wird.
+        Aus dem Abschnitt der Sekundärelektronen lässt sich ferner dann die Austrittsarbeit der Eisenprobe auf \SI{4.06}{\electronvolt} bestimmen.
         \begin{figure}
             \centering
             \includegraphics[width=0.5\textwidth]{./content/pictures/Fe/BZ_Fe.png}
@@ -220,6 +233,7 @@
         Dabei wird die Probe auf eine Temperatur von \SI{230}{\celsius} gehalten.
         Zum abschluss wird die Temperatur auf \SI{600}{\degree} für fünf Minuten erhöht.
         So ergibt sich in \autoref{fig:LEED_Fe3O4} das Beugungsbild der Oberfläche.
+        Es sind klar deutlich mehr Spots zu erkennen, die auf eine $\text{p}(1 \times 1)$-Überstruktur hindeuten.
 
         \begin{figure}
             \centering
@@ -233,6 +247,15 @@
         Aus der Literatur ist bekannt das für Magnetit ein Wert von \num{3.86} erwartet wird~\cite{FeO_1}.
         Der ermittelte Wert weicht dabei nach unten ab, was durch das zusätzliche Aufheizen auf \SI{600}{\degree} erklärt werden kann.
         Dabei kommt es zur Umstrukturierung der Oberfläche und in Folge dessen auch zur Desorption von Sauerstoff.
+
+        \begin{figure}
+            \centering
+            \includegraphics[height=5cm]{./content/pictures/Fe3O4/Fermi_Fe3O4.png}
+            \caption{Das Spektrum des valenzbandes bei einer Photonenenergie von \SI{64}{\electronvolt} des \ce{Fe3O4}.}
+            \label{fig:EDC_Fe3O4}
+        \end{figure}
+        Wird sich das Valenzband erneut genauer angeschaut so ergibt sich das winkelintegrierte Spektrum in \autoref{fig:EDC_Fe3O4}.
+        Zusammen mit dem Ende der Sekundärelektronen ergibt sich die Austrittsarbeit dabei zu \SI{4.35}{\electronvolt}.
 
         \begin{figure}
             \centering
@@ -251,7 +274,6 @@
             \caption{Die XPS Spektren der Kernniveaus für das Magnetit.}
             \label{fig:XPS_Fe3O4}
         \end{figure}
-
         Um genauer zu überprüfen wird auch die chemisch sensetive Methode der Röntgenphotoelektronenspektroskopie angewendet.
         Die entsprechenden Spektren des $\ce{O}_{1\text{s}}$ Signals, sowie des $\ce{Fe}_{3\text{p}}$ Signals sind in \autoref{fig:XPS_Fe3O4} dargstellt.
 
@@ -264,8 +286,8 @@
     \section{Wüstit}
         \begin{figure}
             \centering
-            \includegraphics[height=5cm]{./content/pictures/FeO/2021_09_09_001_FeO_125eV.png}
-            \caption{\ce{FeO} (100) bei einer Elektronenenergie von \SI{125}{\electronvolt}.}
+            \includegraphics[height=5cm]{./content/pictures/FeO/2021_09_09_004_FeO_44eV.png}
+            \caption{\ce{FeO} (100) bei einer Elektronenenergie von \SI{44}{\electronvolt}.}
             \label{fig:LEED_FeO}
         \end{figure}
         Um die Wüstitstruktur zu erhalten wird die Magnetitstruktur zunächst auf \SI{650}{\celsius} aufgeheizt.
@@ -275,6 +297,7 @@
         Die Intensitäten sind beim Eisenoxid im Gegensatz zu dem passivierten Eisen invertiert, wobei die zuvor starken Spots nicht mehr sichtbar sind.
         Trotz der gleichen Elektronenenergie von \SI{125}{\electronvolt} sind die Spots leicht nach außen gewandert.
         Dies Widerspricht sich mit der eigentlich größeren Gitterkonstante von Eisenoxid im Bezug auf die $\text{p}(1 \times 1)\ce{O}$ Überstruktur des passivierten Eisens.
+        Was dennoch auffällig ist, sind die nicht mehr präsenten zusätzlichen Punkte durch die Überstruktur wie beim \ce{Fe3O4} in \autoref{fig:LEED_Fe3O4}.
 
         \begin{figure}
             \centering
@@ -308,10 +331,13 @@
         \begin{figure}
             \centering
             \includegraphics[width=0.5\textwidth]{./content/pictures/FeO/Fermi_FeO.png}
-            \caption{Valenzbandspektrum der des \ce{FeO} bei einer Photonenenergie von \SI{64}{\electronvolt}. Zusätzlich eingetragen ist der Fit der Fermikante.}
+            \caption{Valenzbandspektrum der des \ce{FeO} bei einer Photonenenergie von \SI{64}{\electronvolt}. Zusätzlich eingetragen ist der Fit des Beginns des Spektrums.}
             \label{fig:EDC_FeO}
         \end{figure}
         Ebenso ist in \autoref{fig:EDC_FeO} die Elektronendichtekurve für den Valenzbandbereich des \ce{FeO} aufgetragen.
+        Zusätzlich wurde der Beginn des Spektrums in der kinetischen Energie auf \SI{58.93}{\electronvolt} bestimmt.
+        Der Beginn des Spektrums sieht einer Fermikante sehr ähnlich.
+        Aus dem Punkt an dem die Sekundärelektronen aufhören und der durchs   
 
         \begin{figure}
             \centering
