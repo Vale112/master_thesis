@@ -31,17 +31,21 @@
 
         \begin{figure}
             \centering
-            \includegraphics[width=0.5\textwidth]{./content/pictures/Au/BZ_Au.png}
-            \caption{Die gemessene Winkelverteilung von Gold (111) an der Fermifläche.
-            Eingezeichnet in rot ist die erste Brillouinzone und drei Hochsymmetriepunkte, entlang deren Richtung der Stack für die Bandstruktur geschnitten wird.}
-            \label{fig:BZ_Au}
+            \begin{subfigure}[t]{0.34\textwidth}
+                \centering
+                \includegraphics[height=4cm]{./content/pictures/Au/BZ_Au.png}
+                \subcaption{Die gemessene Winkelverteilung von Gold (111) an der Fermifläche.
+                Eingezeichnet in rot ist die erste Brillouinzone und drei Hochsymmetriepunkte, entlang deren Richtung der Stack für die Bandstruktur geschnitten wird.}
+                \label{fig:BZ_Au}
+            \end{subfigure}
+            \begin{subfigure}[t]{0.62\textwidth}
+                \centering
+                \includegraphics[height=4cm]{./content/pictures/Au/Band_Au111.png}
+                \subcaption{Die gemessene Bandstruktur von Gold (111).}
+                \label{fig:Band_Au}
+            \end{subfigure}
         \end{figure}
-        \begin{figure}
-            \centering
-            \includegraphics[width=0.8\textwidth]{./content/pictures/Au/Band_Au111.png}
-            \caption{Die gemessene Bandstruktur von Gold (111).}
-            \label{fig:Band_Au}
-        \end{figure}
+        
         Die Eigenschaft, dass Gold einen Oberflächenzustand besitzt ist nützlich um festzustellen ob es sich um eine gut präperierte Oberfläche handelt.
         Der Oberflächenzustand lässt sich in \autoref{fig:BZ_Au} klar erkennen.
         Zusätzlich ist die erste Brillouinzone eingetragen sowie einige Hochsymmetriepunkte.
@@ -50,7 +54,10 @@
         Damit wird die Austrittsarbeit des Analysators zu \SI{4.72}{electronvolt} bestimmt, nur dies fließt dann noch in die Gleichung \ref{eqn:Photoeffekt} ein.
         Dies ist vorallem für spätere messungen des Nickeloxidfilms wichtig, da es sich hierbei um einen Isolator handelt und somit die Fermienergie in den Bandlücke liegt.
         Wird die gesamte Länge des Spektrums betrachtet, also der Energieunterschied zwischen Fermikante und Ende des Sekundärelektronen, so lässt sich die Austrittsarbeit der Probe bestimmen.
-        Für Gold lässt sich die Austrittsarbeit auf \SI{5.46}{\electronvolt} ermitteln, was in der selben Ornung wie Literaturwerte liegt~\cite{Hüfner}.
+        Für Gold lässt sich die Austrittsarbeit auf \SI{5.46}{\electronvolt} ermitteln, was das genau dem Literaturwerte entspricht~\cite{5A_4}.
+        Durch die Verschiebung des Abschnitt der Sekundärelektronen nach aufbringen des Pentacene ändert sich die Austrittsarbeit zu \SI{4.62}{\electronvolt}, was dabei sehr nah am Literaturwert von \SI{4.63}{\electronvolt} liegt~\cite{5A_4}.
+        Die Austrittsarbeit verschiebt sich also um \SI{0.84}{\electronvolt}, was auf ein starkes Oberflächendipolmoment hindeutet~\cite{5A_3}.
+        Auf Grund der Abwesenheit eines permaneten Dipols in den Molekülen und der Physisorption kann dies auf den Push-back Effekt zurück geführt werden.
 
         \begin{figure}
             \centering
@@ -61,7 +68,7 @@
         Das Goldsubstrat eignet sich ebenfalls zur Kalibrierung der Monolage von Pentacene, da bereits bekannt ist, dass sich diese flach auf der Oberfläche ordnet \cite{5A_1}.
         Bei der Wechselwirkung mit dem Substrat handelt es sich um die Physisorption durch einen Substrat-Molekülabstand von \SI{3.28}{\angstrom} \cite{5A_1}.
         % Es ergibt sich so das LEED-Bild in \autoref{fig:LEED_Au+5A}, was auch die bekannte \textbf{Überstruktur} (5A_1, 5A_5) aufweist.
-        Schaut man sich das winkelintegrierte Spektrum im Bereich der Valenzzustände in \autoref{fig:EDC_Au+5A} an, so sind auch deutlich Elemente zu erkennen, die durch die Molekühle hervorgerufen werden.
+        Schaut man sich das winkelintegrierte Spektrum im Bereich der Valenzzustände in \autoref{fig:EDC_Au+5A} an, so sind auch deutlich Elemente zu erkennen, die durch die Moleküle hervorgerufen werden.
 
         \begin{figure}
             \centering
@@ -349,14 +356,21 @@
         Aus dem Punkt an dem die Sekundärelektronen aufhören und der durchs   
 
         \begin{figure}
-            \centering
-            \includegraphics[width=0.5\textwidth]{./content/pictures/FeO/BZ_FeO.png}
-            \caption{Die Brillouinzone des Eisensoxid bei einer Bindungsenergie von \SI{1.95}{\electronvolt}.
-            Eigezeichnet sind auch die Vektoren, sowie einige Hochsymmetrierichtungen.
-            Die Kantenlänge der BZ ist $\frac{2\pi}{a}\sqrt{2} = \SI[per-mode=reciprocal]{2.89}{\per\angstrom}$.
-            Im Zentrum liegt der $\overline{\Gamma}$-Punkt, der Abstand zum $\overline{X}$-Punkt ist $\frac{2\pi}{2 \cdot a}\sqrt{2} = \SI[per-mode=reciprocal]{1.45}{\per\angstrom}$ und zum $\overline{M}$-Punkt $\frac{2\pi}{a} = \SI[per-mode=reciprocal]{2.05}{\per\angstrom}$ \cite{Hüfner}.
-            \textbf{Problem with px-> k, WKF was Driffting up and down}}
-            \label{fig:BZ_FeO}
+            \begin{subfigure}[t]{0.34\textwidth}
+                \centering
+                \includegraphics[height=4cm]{./content/pictures/FeO/BZ_FeO.png}
+                \subcaption{Die Brillouinzone des Eisensoxid bei einer Bindungsenergie von \SI{1.95}{\electronvolt}.
+                Eigezeichnet sind auch die Vektoren, sowie einige Hochsymmetrierichtungen.
+                Die Kantenlänge der BZ ist $\frac{2\pi}{a}\sqrt{2} = \SI[per-mode=reciprocal]{2.89}{\per\angstrom}$.
+                Im Zentrum liegt der $\overline{\Gamma}$-Punkt, der Abstand zum $\overline{X}$-Punkt ist $\frac{2\pi}{2 \cdot a}\sqrt{2} = \SI[per-mode=reciprocal]{1.45}{\per\angstrom}$ und zum $\overline{M}$-Punkt $\frac{2\pi}{a} = \SI[per-mode=reciprocal]{2.05}{\per\angstrom}$ \cite{Hüfner}.}
+                \label{fig:BZ_FeO}
+            \end{subfigure}
+            \begin{subfigure}[t]{0.62\textwidth}
+                \centering
+                \includegraphics[height=4cm]{./content/pictures/FeO/Band_FeO.png}
+                \subcaption{Die Bandstruktur des Eisenmonooxid entlang einiger Hochsymmetrierichtungen.}
+                \label{fig:Band_FeO}
+            \end{subfigure}
         \end{figure}
         Auch für das Wüstit lässt sich die Oberflächenbrillouinzone definieren, die in \autoref{fig:BZ_FeO} abgebildet ist.
         ferner auch die Bandstruktur
@@ -455,7 +469,7 @@
         Teilweise zeigen die Bilder bei den gleichen Energien wie die HOMO bis HOMO-2 Orbitale sehr ähnliche Signale wie mit den Molekülen.
 
         Es kann davon ausgegangen werden, dass es sich bei der Wechselwirkung um die Chemisorption handelt, denn auch das LUMO wird besetzt.
-        Um dies zu erlangen muss vorher Ladung zwischen dem Molekühlen und dem Substart ausgetauscht worden sein, was das Merkmal der Chemisorption ist.
+        Um dies zu erlangen muss vorher Ladung zwischen dem Molekülen und dem Substart ausgetauscht worden sein, was das Merkmal der Chemisorption ist.
 
   
     \section{NOTIZEN}
@@ -478,6 +492,7 @@
             \item XAS probt die leeren Valenzbandzustände,  The empty oxide states are more localized than metal states and their energies are determined by crystal field and multiplet effects. (\cite{XMCD_XMLD})
             \item Die Absorption ist dabei sogar $\cos(2\theta)^2$ abhängig, wobei$\theta$ der Winkel zwischen der magnetischen Achse und dem E-Feld Vektor ist.
             \item Kleine XMLD Effekte können auch durch die Liganden zu stande kommen, da diese ja auch das Orbital verformen können (besser T abhänig messen)
+            \item Die Energiedifferenz zwischen Fermi und HOMO bzw LUMO sind entscheidene Schlüssel für die Anwendung \cite{5A_4}
         \end{itemize}
         % Der $\ce{Fe}_{3\text{p}} (\SI{54.52}{\electronvolt})$ wie auch der $\ce{O}_{1\text{s}} (\SI{529.15}{\electronvolt})$ lassen sich durch einen Peak fitten.
 
