@@ -3,6 +3,7 @@
     Weiter geht es es um den Umgang mit dem dreidimensionalen Datensatz sowie dessen Bearbeitung.
     Die verschiedenen extrahierten Darstellungen werden dann aufgenommen und analysiert.
     In dieser Arbeit untersuchten Gold und Nickeloxid Proben wurden alle in dem Versuchsaufbau aus \autoref{sec:Versuchsaufbau} vorbereitet und vermessen.
+    Dabei betrug die Photonenenergie immer \SI{21.22}{\electronvolt}.
     Die Eisenoxid Proben wurden an der NanoESCA Beamline am Synchrotron Elettra in Triest präperiert und charakterisiert \footnote{Näheres zu diesem Versuchsaufbau und der Behandlung der Daten kann in \cite{ma-DJ} gefunden werden.}.
 
     \section{Gold}
@@ -10,13 +11,13 @@
             \centering
             \begin{subfigure}{0.48\textwidth}
                 \centering
-                \includegraphics[height=5cm]{./content/pictures/Au/2021_06_08_002_Au(111)_75eV}
+                \includegraphics[height=5cm]{Au/2021_06_08_002_Au(111)_75eV}
                 \subcaption{Gold (111) bei einer Elektronenenergie von \SI{75}{\electronvolt}.}
                 \label{fig:LEED_Au}
             \end{subfigure}
             \begin{subfigure}{0.48\textwidth}
                 \centering
-                \includegraphics[height=5cm]{./content/pictures/Au+5A/021_Au(111)+5A(40)_16eV.png}
+                \includegraphics[height=5cm]{Au+5A/021_Au(111)+5A(40)_16eV.png}
                 \subcaption{Eine Monolage Pentacene auf dem sauberen Gold bei einer Energie von \SI{16}{\electronvolt}.}
                 \label{fig:LEED_Au+5A}
             \end{subfigure}
@@ -33,24 +34,34 @@
             \centering
             \begin{subfigure}[t]{0.34\textwidth}
                 \centering
-                \includegraphics[height=4cm]{./content/pictures/Au/BZ_Au.png}
+                \includegraphics[height=4cm]{Au/BZ_Au.png}
                 \subcaption{Die gemessene Winkelverteilung von Gold (111) an der Fermifläche.
                 Eingezeichnet in rot ist die erste Brillouinzone und drei Hochsymmetriepunkte, entlang deren Richtung der Stack für die Bandstruktur geschnitten wird.}
                 \label{fig:BZ_Au}
             \end{subfigure}
             \begin{subfigure}[t]{0.62\textwidth}
                 \centering
-                \includegraphics[height=4cm]{./content/pictures/Au/Band_Au111.png}
+                \includegraphics[height=4cm]{Au/Band_Au111.png}
                 \subcaption{Die gemessene Bandstruktur von Gold (111).}
                 \label{fig:Band_Au}
             \end{subfigure}
         \end{figure}
-        
         Die Eigenschaft, dass Gold einen Oberflächenzustand besitzt ist nützlich um festzustellen ob es sich um eine gut präperierte Oberfläche handelt.
         Der Oberflächenzustand lässt sich in \autoref{fig:BZ_Au} klar erkennen.
         Zusätzlich ist die erste Brillouinzone eingetragen sowie einige Hochsymmetriepunkte.
         Durch Schneiden entlang der Linien zwischen den Hochsymmetriepunkten ergibt sich die Bandstruktur, welche in \autoref{fig:Band_Au} dargestellt ist.
-        Die Bindungsenergie wurde ermittelt in dem die Photonenenergie von \SI{21.22}{\electronvolt} angenommen wurde und die Fermikante des Goldes bei \SI{16.55}{\electronvolt} in einem winkelintegrierten Spektrum gefittet wurde.
+        So lassen sich dann auch die Merkmale in dem integrierten Spektrum aus \autoref{fig:EDC_Au+5A} für das Gold indetifizieren.
+        Direkt an der Oberfläche und nahe dem $\overline{\Gamma}$-Punkt befindet sich der Oberflächenzustand.
+        Von der Fermikante bis hin zu etwa \SI{3.2}{\electronvolt} erstreckt sich parabelförmig das s-Band des Gold.
+        Im Bereich zwischen \SIrange{2}{6.2}{\electronvolt} befinden sich die fünf d-Bänder, welche durch ihre flache Form und damit der lokalisierung auffallen.
+
+        \begin{figure}
+            \centering
+            \includegraphics[width=0.5\textwidth]{Au/Fermi_Au.png}
+            \caption{Die integrierten Spektren an der Fermikante gemeinsam mit dem durchgeführtem Fit dessen für das Gold.}
+            \label{fig:Fermi_Au}
+        \end{figure}
+        Die Bindungsenergie wurde ermittelt in dem die Photonenenergie von \SI{21.22}{\electronvolt} angenommen wurde und die Fermikante des Goldes bei \SI{16.55}{\electronvolt} in dem winkelintegrierten Spektrum aus \autoref{fig:Fermi_Au} gefittet wurde.
         Damit wird die Austrittsarbeit des Analysators zu \SI{4.72}{electronvolt} bestimmt, nur dies fließt dann noch in die Gleichung \ref{eqn:Photoeffekt} ein.
         Dies ist vorallem für spätere messungen des Nickeloxidfilms wichtig, da es sich hierbei um einen Isolator handelt und somit die Fermienergie in den Bandlücke liegt.
         Wird die gesamte Länge des Spektrums betrachtet, also der Energieunterschied zwischen Fermikante und Ende des Sekundärelektronen, so lässt sich die Austrittsarbeit der Probe bestimmen.
@@ -61,7 +72,7 @@
 
         \begin{figure}
             \centering
-            \includegraphics[width=0.5\textwidth]{./content/pictures/Au+5A/EDC_Au_5A.png}
+            \includegraphics[width=0.5\textwidth]{Au+5A/EDC_Au_5A_mod.png}
             \caption{Die integrierten Spektren für reines Gold, Gold mit einer Monolage Pentacene und deren Differenz.}
             \label{fig:EDC_Au+5A}
         \end{figure}
@@ -69,22 +80,48 @@
         Bei der Wechselwirkung mit dem Substrat handelt es sich um die Physisorption durch einen Substrat-Molekülabstand von \SI{3.28}{\angstrom} \cite{5A_1}.
         % Es ergibt sich so das LEED-Bild in \autoref{fig:LEED_Au+5A}, was auch die bekannte \textbf{Überstruktur} (5A_1, 5A_5) aufweist.
         Schaut man sich das winkelintegrierte Spektrum im Bereich der Valenzzustände in \autoref{fig:EDC_Au+5A} an, so sind auch deutlich Elemente zu erkennen, die durch die Moleküle hervorgerufen werden.
+        Die senkrechten Linien stellen die Punkte da, an denen Bilder mit höherer Statistik aufgenommen wurden und die später zur Molekülorbitalanalyse herangezogen werden.
 
         \begin{figure}
             \centering
             \begin{subfigure}[t]{0.48\textwidth}
                 \centering
-                \includegraphics[height=5cm]{./content/pictures/Au+5A/IMAGE_2021_06_17_005_BE0_8}
+                \includegraphics[height=4cm]{Au+5A/MOT_Au_5A_exp_1.png}
                 \subcaption{Gemmesen, symmetrisiertes Bild bei einer Bindungsenergie von \SI{0.8}{\electronvolt}.}
-                \label{fig:MOT_Au+5A_exp}
+                \label{fig:MOT_Au+5A_exp_1}
             \end{subfigure}
             \begin{subfigure}[t]{0.48\textwidth}
                 \centering
-                \includegraphics[height=5cm]{./content/pictures/Au+5A/HOMO1_all_CT}
-                \subcaption{Theorie Oribtale mit Symmetrisierung zweimal um 120 Grad gedreht und zum Ursprungsbild addiert.}
-                \label{fig:MOT_Au+5A_theo}
+                \includegraphics[height=4cm]{Au+5A/HOMO_all_CT}
+                \subcaption{Das theoretisch erwartete HOMO.}
+                \label{fig:MOT_Au+5A_theo_1}
             \end{subfigure}
-            \caption{Zuordnung eines Bildes zu einem der Molekülorbitale.}
+            \centering
+            \begin{subfigure}[t]{0.48\textwidth}
+                \centering
+                \includegraphics[height=4cm]{Au+5A/MOT_Au_5A_exp_2.png}
+                \subcaption{Gemmesen, symmetrisiertes Bild bei einer Bindungsenergie von \SI{1.85}{\electronvolt}.}
+                \label{fig:MOT_Au+5A_exp_2}
+            \end{subfigure}
+            \begin{subfigure}[t]{0.48\textwidth}
+                \centering
+                \includegraphics[height=4cm]{Au+5A/HOMO1_all_CT}
+                \subcaption{Theorie Oribtale mit Symmetrisierung des HOMO-1.}
+                \label{fig:MOT_Au+5A_theo_2}
+            \end{subfigure}
+            \begin{subfigure}[t]{0.48\textwidth}
+                \centering
+                \includegraphics[height=4cm]{Au+5A/MOT_Au_5A_exp_3.png}
+                \subcaption{Gemmesen, symmetrisiertes Bild bei einer Bindungsenergie von \SI{2.65}{\electronvolt}.}
+                \label{fig:MOT_Au+5A_exp_3}
+            \end{subfigure}
+            \begin{subfigure}[t]{0.48\textwidth}
+                \centering
+                \includegraphics[height=4cm]{Au+5A/HOMO2_all_CT}
+                \subcaption{Berechnetes Theoriebild zum HOMO-2.}
+                \label{fig:MOT_Au+5A_theo_3}
+            \end{subfigure}
+            \caption{Zuordnung eines Bildes zu einem der Molekülorbitale. Theorie Oribtale mit Symmetrisierung zweimal um 120 Grad gedreht und zum Ursprungsbild addiert.}
             \label{fig:MOT_Au+5A}
         \end{figure}
         Winkelaufgelöste Bilder bei den entsprechenden Energien zeigen auch zusätzliche Merkmale im Bezug zum reinen Gold.
@@ -98,17 +135,12 @@
         Dies lässt sich auch aus der Literatur erkennen, dass sich bei den Anornung von Pentacene auf Gold um den Prozess der Physisorption handelt~\cite{5A_4}.
         Abwesenheit des LUMOs in den Spektren und Bildern muss aber nicht zwangsläufig auf die Physisorption hindeuten.
         So ist Pentacene auf Kupfer (111) chemisch adsorbiert und zeigt dennoch keine Anzeichen der Besetzung des LUMO~\cite{koch_adsorption-induced_2008}.
-        \begin{itemize}
-            \item Peaks der Moleküle kennzeichnen
-            \item Alle Molekülorbital zuordnungen vereinigen und ergänzen
-            \item Bandstruktur deuten von Gold, Bänder zuordnen?
-        \end{itemize}
 
         
     \section{Nickeloxid}    
         \begin{figure}
             \centering
-            \includegraphics[height=5cm]{./content/pictures/NiO/2021_06_15_019_NiO(111)_73eV_Thicklayer}
+            \includegraphics[height=5cm]{NiO/2021_06_15_019_NiO(111)_73eV_Thicklayer}
             \caption{Der Nickeloxidfilm (111) bei einer Elektronenenergie von \SI{73}{\electronvolt}.}
             \label{fig:LEED_NiO}
         \end{figure}
@@ -128,19 +160,18 @@
             \centering
             \begin{subfigure}[t]{0.48\textwidth}
                 \centering
-                \includegraphics[height=5cm]{./content/pictures/NiO/NiO_Filmdicke.png}
+                \includegraphics[height=5cm]{NiO/NiO_Filmdicke.png}
                 \subcaption{Die integrierten Spektren für zwei verschiedene Schichtdicken von \ce{NiO}. Als Referenz dient das integrierte Spektrum von Gold.}
                 \label{fig:EDC_NiO}
             \end{subfigure}
             \begin{subfigure}[t]{0.48\textwidth}
                 \centering
-                \includegraphics[height=5cm]{./content/pictures/NiO/NiO_WKF_thickness.png}
+                \includegraphics[height=5cm]{NiO/NiO_WKF_thickness.png}
                 \caption{Die integrierten Spektren im Bereich der Sekundärelektronen für verschiedene Schichtdicken von \ce{NiO}.}
                 \label{fig:WKF_NiO}
             \end{subfigure}
             \caption{Integrierte Spektren für verschidene Schichtdicken und Bereiche des Nickeloxidfilms.}
         \end{figure}
-        
         Durch Variation der Aufdampfzeiten lassen sich verschiedene Schichtdicken von Nickeloxidfilmen herstellen.
         Für zwei ausgewählte Zeiten sind die winkelintegrierten Spektren des Valenzbandbereiches in \autoref{fig:EDC_NiO} gemeinsam mit dem Spektrum des Substrates dargestellt.
         Zu erkennen ist, dass mit zunehmender Schichtdicke die charakteristischen Merkmale des Substrates abnehmen.
@@ -151,18 +182,40 @@
         Kleine Verschiebungen können durch unterschiedliche Aufdampfbedingungen erklärt werden, denn es ist bekannt das durch Variation der Parameter gezielt die Eigenschaften manipuliert werden können.
         Vom dünnen Nickeloxidfilm zum dickeren Nickeloxidfilm wechselt sie von \SI{4.25}{\electronvolt} zu \SI{3.90}{\electronvolt}.
         Die Austrittsarbeit des dicken Nickeloxidfilms passt \textbf{oder passt nicht zu Quelle und Wert}.
+        Für den dünnen Nickeloxidfilm liegt die Austrittsarbeit mit den Molekülen dann bei \SI{4.14}{\electronvolt}.
+
+        \begin{figure}
+            \centering
+            \includegraphics[height=7cm]{NiO/EDC_NiO_thick+exp.png}
+            \caption{Winkelintegriertes Spektrum des dicken Nickeloxidfilms (rot), gemeinsam mit den identifizierten Merkmalen (blau).
+            Überlagert dargestellt (schwarz) ist das gemessene Spektrum von Marre und Neddermeyer \cite{NiO_7}.} 
+            \label{fig:EDC_NiO_thick}
+        \end{figure}
+        In der \autoref{fig:EDC_NiO_thick} ist das Valenzbandspektrum des dicken Nickeloxidfilms aufgetragen.
+        Ebenfalls sind die Zuordnungen des Ursprungs der Merkmale gekennzeichnet.
+        Bei einem Vergleich zwischen der gemessenen Kurve und der von Marre und Neddermeyer fällt auf, dass es eine konstante Verschiebung gibt.
+        Ursache könnte die Bestimmung der Fermikante sein, denn bei Nickeloxid handelt es sich ja um einen Isolator.
+
+        \begin{figure}
+            \centering
+            \includegraphics[height=4cm]{NiO/Band_NiO.png}
+            \caption{Die gemessene Bandstruktur des dicken Nickeloxidfilms.}
+            \label{fig:Band_NiO}
+        \end{figure}
+        Auch für Nickeloxid lässt sich aus dem dreidimensionalen Datensatz der Winkel und Energie aufgelöst ist die Bandstruktur extrahieren.
+        Diese ist in \autoref{fig:Band_NiO} dargestellt.
 
         \begin{figure}
             \centering
             \begin{subfigure}[t]{0.48\textwidth}
                 \centering
-                \includegraphics[height=5cm]{./content/pictures/NiO+5A/NiO_thick_5A.png}
+                \includegraphics[height=5cm]{NiO+5A/NiO_thick_5A.png}
                 \subcaption{Die integrierten Spektren für einen dicken Nickeloxidfilm, mit zusaätzlich einer Monolage Pentacene und deren Differenz.}
                 \label{fig:EDC_NiO+5A}
             \end{subfigure}
             \begin{subfigure}[t]{0.48\textwidth}
                 \centering
-                \includegraphics[height=5cm]{./content/pictures/NiO+5A/NiO_thick_5A_KE12_7.png}
+                \includegraphics[height=5cm]{NiO+5A/NiO_thick_5A_KE12_7.png}
                 \subcaption{Map für Pentacene auf dicken Nickeloxidfilm bei einer kinetischen Energie von \SI{7.5}{\electronvolt}. Also Bindungsenergie von \SI{3.85}{\electronvolt}.}
                 \label{fig:NiO+5A}
             \end{subfigure}
@@ -187,13 +240,13 @@
     \section{Eisen}
         \begin{figure}
             \centering
-            \includegraphics[width=0.5\textwidth]{./content/pictures/Fe/Fe3p_Fe.png}
-            \caption{XPS Spektrum des $\ce{Fe}_{3\text{p}}$ Übergang des reinen Eisens. Hier passt der Fit mit einem Voigt (+Tougaard) sehr gut!}
+            \includegraphics[width=0.5\textwidth]{Fe/Fe3p_Fe.png}
+            \caption{XPS Spektrum des $\ce{Fe}_{3\text{p}}$ Übergang des reinen Eisens. Hier passt der Fit mit einem Voigt (+Tougaard) sehr gut! $h\nu = \SI{200}{\electronvolt}$ und Polarisation s.}
             \label{fig:XPSFe3p_Fe}
         \end{figure}
         \begin{figure}
             \centering
-            \includegraphics[height=5cm]{./content/pictures/pFe/2021_09_07_001_passivatedFe(100)_44eV.png}
+            \includegraphics[height=5cm]{pFe/2021_09_07_001_passivatedFe(100)_44eV.png}
             \caption{Passiviertes Eisen (100) bei einer Elektronenenergie von \SI{44}{\electronvolt}.}
             \label{fig:LEED_pFe}
         \end{figure}
@@ -219,17 +272,19 @@
         \begin{figure}
             \begin{subfigure}[t]{0.34\textwidth}
                 \centering
-                \includegraphics[height=4cm]{./content/pictures/Fe/BZ_Fe.png}
+                \includegraphics[height=4cm]{Fe/BZ_Fe.png}
                 \subcaption{Die Brillouinzone des reinen Eisens bei einer Bindungsenergie von \SI{0.3}{\electronvolt}.
                 Eigezeichnet sind auch die Vektoren, sowie einige Hochsymmetrierichtungen.
                 Die Kantenlänge der BZ ist $\frac{2\pi}{a} = \SI[per-mode=reciprocal]{2.20}{\per\angstrom}$.
-                Im Zentrum liegt der $\overline{\Gamma}$-Punkt, der Abstand zum $\overline{X}$-Punkt ist $\frac{2\pi}{2 \cdot a} = \SI[per-mode=reciprocal]{1.10}{\per\angstrom}$ und zum $\overline{M}$-Punkt $\frac{2\pi}{2 \cdot a} \sqrt{2} = \SI[per-mode=reciprocal]{1.55}{\per\angstrom}$.}
+                Im Zentrum liegt der $\overline{\Gamma}$-Punkt, der Abstand zum $\overline{X}$-Punkt ist $\frac{2\pi}{2 \cdot a} = \SI[per-mode=reciprocal]{1.10}{\per\angstrom}$ und zum $\overline{M}$-Punkt $\frac{2\pi}{2 \cdot a} \sqrt{2} = \SI[per-mode=reciprocal]{1.55}{\per\angstrom}$.
+                Verwendete Photonenenergie war \SI{64}{\electronvolt} und die Polarisation p.}
                 \label{fig:BZ_Fe}
             \end{subfigure}
             \begin{subfigure}[t]{0.62\textwidth}
                 \centering
-                \includegraphics[height=4cm]{./content/pictures/Fe/Band_Fe.png}
-                \subcaption{Die Bandstruktur des reinen Eisens entlang einiger Hochsymmetrierichtungen.}
+                \includegraphics[height=4cm]{Fe/Band_Fe.png}
+                \subcaption{Die Bandstruktur des reinen Eisens entlang einiger Hochsymmetrierichtungen.
+                Verwendete Photonenenergie war \SI{64}{\electronvolt} und die Polarisation p.}
                 \label{fig:Band_Fe}
             \end{subfigure}
         \end{figure}
@@ -241,7 +296,7 @@
     \section{Magnetit}
         \begin{figure}
             \centering
-            \includegraphics[height=5cm]{./content/pictures/Fe3O4/2021_09_07_012_FeO(100)_44eV.png}
+            \includegraphics[height=5cm]{Fe3O4/2021_09_07_012_FeO(100)_44eV.png}
             \caption{\ce{Fe3O4} (100) bei einer Elektronenenergie von \SI{44}{\electronvolt}.}
             \label{fig:LEED_Fe3O4}
         \end{figure}
@@ -253,7 +308,7 @@
 
         \begin{figure}
             \centering
-            \includegraphics[height=5cm]{./content/pictures/Fe3O4/AES_Fe3O4.png}
+            \includegraphics[height=5cm]{Fe3O4/AES_Fe3O4.png}
             \caption{Das Augerspektrum der Magnetitprobe.}
             \label{fig:Auger_Fe3O4}
         \end{figure}
@@ -266,8 +321,8 @@
 
         \begin{figure}
             \centering
-            \includegraphics[height=5cm]{./content/pictures/Fe3O4/Fermi_Fe3O4.png}
-            \caption{Das Spektrum des valenzbandes bei einer Photonenenergie von \SI{64}{\electronvolt} des \ce{Fe3O4}.}
+            \includegraphics[height=5cm]{Fe3O4/Fermi_Fe3O4.png}
+            \caption{Das Spektrum des Valenzbandes bei einer Photonenenergie von \SI{64}{\electronvolt} und der p Polarisation des \ce{Fe3O4}.}
             \label{fig:EDC_Fe3O4}
         \end{figure}
         Wird sich das Valenzband erneut genauer angeschaut so ergibt sich das winkelintegrierte Spektrum in \autoref{fig:EDC_Fe3O4}.
@@ -277,14 +332,16 @@
             \centering
             \begin{subfigure}[t]{0.48\textwidth}
                 \centering
-                \includegraphics[height=5cm]{./content/pictures/Fe3O4/O1s_Fe3O4.png}
-                \subcaption{Spektrum des $\ce{O}_{1\text{s}}$ Übergang. Fit mit zwei Peaks (kleiner Shirley) sehr gut (einer O, der andere OH - Kontamination evtl vom Aufdampfen?).}
+                \includegraphics[height=5cm]{Fe3O4/O1s_Fe3O4.png}
+                \subcaption{Spektrum des $\ce{O}_{1\text{s}}$ Übergang. Fit mit zwei Peaks (kleiner Shirley) sehr gut (einer O, der andere OH - Kontamination evtl vom Aufdampfen?).
+                Verwendete Photonenenergie war \SI{650}{\electronvolt} und die Polarisation s.}
                 \label{fig:XPSO1s_Fe3O4}
             \end{subfigure}
             \begin{subfigure}[t]{0.48\textwidth}
                 \centering
-                \includegraphics[height=5cm]{./content/pictures/Fe3O4/Fe3p_Fe3O4.png}
-                \subcaption{Spektrum des $\ce{Fe}_{3\text{p}}$ Übergang. Gleiches Problem wie beim \ce{FeO} (s. \autoref{fig:XPSFe3p_Fe}) funktioniert abenfalls besser mit Tougaard als Shirley.}
+                \includegraphics[height=5cm]{Fe3O4/Fe3p_Fe3O4.png}
+                \subcaption{Spektrum des $\ce{Fe}_{3\text{p}}$ Übergang. Gleiches Problem wie beim \ce{FeO} (s. \autoref{fig:XPSFe3p_Fe}) funktioniert abenfalls besser mit Tougaard als Shirley.
+                Verwendete Photonenenergie war \SI{200}{\electronvolt} und die Polarisation s.}
                 \label{fig:XPSFe3p_Fe3O4}
             \end{subfigure}
             \caption{Die XPS Spektren der Kernniveaus für das Magnetit.}
@@ -293,16 +350,13 @@
         Um genauer zu überprüfen wird auch die chemisch sensetive Methode der Röntgenphotoelektronenspektroskopie angewendet.
         Die entsprechenden Spektren des $\ce{O}_{1\text{s}}$ Signals, sowie des $\ce{Fe}_{3\text{p}}$ Signals sind in \autoref{fig:XPS_Fe3O4} dargstellt.
 
-        Mit Hilfe des magnetischen Röntgen-Zirkular-Dikorismus und magnetischen Röntgen-Linear-Dikorismus lassen sich die magnetischen Eigeschaften des Substrates untersuchen.
-        Beide Spektren der Röntgenabsorptionsmessungen sind in \autoref{fig:XAS_Fe3O4} zu sehen.
-
         Wie bereits schon bei dem Nickeloxid brachte das Aufdampfen von einer Monolage Pentacene keine geordnete Struktur mit sich.
 
 
     \section{Wüstit}
         \begin{figure}
             \centering
-            \includegraphics[height=5cm]{./content/pictures/FeO/2021_09_09_004_FeO_44eV.png}
+            \includegraphics[height=5cm]{FeO/2021_09_09_004_FeO_44eV.png}
             \caption{\ce{FeO} (100) bei einer Elektronenenergie von \SI{44}{\electronvolt}.}
             \label{fig:LEED_FeO}
         \end{figure}
@@ -317,7 +371,7 @@
 
         \begin{figure}
             \centering
-            \includegraphics[height=5cm]{./content/pictures/FeO/AES_FeO.png}
+            \includegraphics[height=5cm]{FeO/AES_FeO.png}
             \caption{Das Augerspektrum der Wüstitprobe.}
             \label{fig:Auger_FeO}
         \end{figure}
@@ -325,14 +379,16 @@
             \centering
             \begin{subfigure}[t]{0.48\textwidth}
                 \centering
-                \includegraphics[height=5cm]{./content/pictures/FeO/O1s_FeO.png}
-                \subcaption{Spektrum des $\ce{O}_{1\text{s}}$ Übergang. Fit mit einem Peak (kleiner Shirley) sehr gut.}
+                \includegraphics[height=5cm]{FeO/O1s_FeO.png}
+                \subcaption{Spektrum des $\ce{O}_{1\text{s}}$ Übergang. Fit mit einem Peak (kleiner Shirley) sehr gut.
+                Verwendete Photonenenergie war \SI{650}{\electronvolt} und die Polarisation s.}
                 \label{fig:XPSO1s_FeO}
             \end{subfigure}
             \begin{subfigure}[t]{0.48\textwidth}
                 \centering
-                \includegraphics[height=5cm]{./content/pictures/FeO/Fe3p_FeO.png}
-                \subcaption{Spektrum des $\ce{Fe}_{3\text{p}}$ Übergang. Zuornung sehr schwierig, ein großer Peak bei kleinen BE und ein kleiner bei großen BE passen. Aber auch zwei etwa gleichgroße Peaks. Je nach dem wie die Parameter gewählt und festgestzt werden.}
+                \includegraphics[height=5cm]{FeO/Fe3p_FeO.png}
+                \subcaption{Spektrum des $\ce{Fe}_{3\text{p}}$ Übergang. Zuornung sehr schwierig, ein großer Peak bei kleinen BE und ein kleiner bei großen BE passen. Aber auch zwei etwa gleichgroße Peaks. Je nach dem wie die Parameter gewählt und festgestzt werden.
+                Verwendete Photonenenergie war \SI{200}{\electronvolt} und die Polarisation s.}
                 \label{fig:XPSFe3p_FeO}
             \end{subfigure}
             \caption{}
@@ -344,31 +400,41 @@
         Einen genaueren Einblick welche Struktur vorliegt kann erneut die Röntgenphotoelektronenspektroskopie bieten.
         Die entsprechenden Spektren sind in \autoref{fig:XPS_FeO} zu finden.
 
+        % \begin{figure}
+        %     \centering
+        %     \includegraphics[width=0.5\textwidth]{FeO/Fermi_FeO.png}
+        %     \caption{Valenzbandspektrum der des \ce{FeO} bei einer Photonenenergie von \SI{64}{\electronvolt}. Zusätzlich eingetragen ist der Fit des Beginns des Spektrums.}
+        %     \label{fig:Fermi_FeO}
+        % \end{figure}
+        % Ebenso ist in \autoref{fig:Fermi_FeO} die Elektronendichtekurve für den Valenzbandbereich des \ce{FeO} aufgetragen.
+        % Zusätzlich wurde der Beginn des Spektrums in der kinetischen Energie auf \SI{58.93}{\electronvolt} bestimmt.
+        % Der Beginn des Spektrums sieht einer Fermikante sehr ähnlich.
         \begin{figure}
             \centering
-            \includegraphics[width=0.5\textwidth]{./content/pictures/FeO/Fermi_FeO.png}
-            \caption{Valenzbandspektrum der des \ce{FeO} bei einer Photonenenergie von \SI{64}{\electronvolt}. Zusätzlich eingetragen ist der Fit des Beginns des Spektrums.}
+            \includegraphics[width=0.5\textwidth]{FeO/EDC_FeO.png}
+            \caption{Valenzbandspektrum der des \ce{FeO} bei einer Photonenenergie von \SI{64}{\electronvolt}. Blau gestrichelt sind die identifizierten Merkmale, die das Spektrum bestimmen.}
             \label{fig:EDC_FeO}
         \end{figure}
-        Ebenso ist in \autoref{fig:EDC_FeO} die Elektronendichtekurve für den Valenzbandbereich des \ce{FeO} aufgetragen.
-        Zusätzlich wurde der Beginn des Spektrums in der kinetischen Energie auf \SI{58.93}{\electronvolt} bestimmt.
-        Der Beginn des Spektrums sieht einer Fermikante sehr ähnlich.
-        Aus dem Punkt an dem die Sekundärelektronen aufhören und der durchs   
+        Das Valenzbandspektrum in \autoref{fig:EDC_FeO} setzt sich aus maßgeblich vier Signalen zusammen bei den Energien \SI{1.5}{\electronvolt} (Fe3p \cite{Grenet et al. - 1980 - On the FeO valence band photoemission spectra.pdf}), \SI{4}{\electronvolt}, \SI{5.4}{\electronvolt} und \SI{6.2}{\electronvolt} (vermutlich O 2p).
+        Aus dem Punkt an dem die Sekundärelektronen aufhören und der Fermikante lässt sich die Austrittsarbeit auf \SI{3.06}{\electronvolt} bestimmen.
+        Durch das Aufdampfen der Moleküle verschiebt sich diese dann zu \SI{3.51}{\electronvolt}.
 
         \begin{figure}
             \begin{subfigure}[t]{0.34\textwidth}
                 \centering
-                \includegraphics[height=4cm]{./content/pictures/FeO/BZ_FeO.png}
+                \includegraphics[height=4cm]{FeO/BZ_FeO.png}
                 \subcaption{Die Brillouinzone des Eisensoxid bei einer Bindungsenergie von \SI{1.95}{\electronvolt}.
                 Eigezeichnet sind auch die Vektoren, sowie einige Hochsymmetrierichtungen.
                 Die Kantenlänge der BZ ist $\frac{2\pi}{a}\sqrt{2} = \SI[per-mode=reciprocal]{2.89}{\per\angstrom}$.
-                Im Zentrum liegt der $\overline{\Gamma}$-Punkt, der Abstand zum $\overline{X}$-Punkt ist $\frac{2\pi}{2 \cdot a}\sqrt{2} = \SI[per-mode=reciprocal]{1.45}{\per\angstrom}$ und zum $\overline{M}$-Punkt $\frac{2\pi}{a} = \SI[per-mode=reciprocal]{2.05}{\per\angstrom}$ \cite{Hüfner}.}
+                Im Zentrum liegt der $\overline{\Gamma}$-Punkt, der Abstand zum $\overline{X}$-Punkt ist $\frac{2\pi}{2 \cdot a}\sqrt{2} = \SI[per-mode=reciprocal]{1.45}{\per\angstrom}$ und zum $\overline{M}$-Punkt $\frac{2\pi}{a} = \SI[per-mode=reciprocal]{2.05}{\per\angstrom}$ \cite{Hüfner}.
+                Verwendete Photonenenergie war \SI{64}{\electronvolt} und die Polarisation p.}
                 \label{fig:BZ_FeO}
             \end{subfigure}
             \begin{subfigure}[t]{0.62\textwidth}
                 \centering
-                \includegraphics[height=4cm]{./content/pictures/FeO/Band_FeO.png}
-                \subcaption{Die Bandstruktur des Eisenmonooxid entlang einiger Hochsymmetrierichtungen.}
+                \includegraphics[height=4cm]{FeO/Band_FeO.png}
+                \subcaption{Die Bandstruktur des Eisenmonooxid entlang einiger Hochsymmetrierichtungen.
+                Verwendete Photonenenergie war \SI{64}{\electronvolt} und die Polarisation p.}
                 \label{fig:Band_FeO}
             \end{subfigure}
         \end{figure}
@@ -377,87 +443,88 @@
 
         \begin{figure}
             \centering
-            \includegraphics[height=5cm]{./content/pictures/FeO/XMCD_FeO.png}
-            \caption{XAS Spektren für links- und rechtzirkular polarisiertes Licht und ihre Differenz. XMCD}
-            \label{fig:XMCD}
+            \begin{subfigure}[t]{0.48\textwidth}
+                \centering
+                \includegraphics[height=5cm]{FeO/XMCD_FeO.png}
+                \caption{Spektren für links- und rechtzirkular polarisiertes Licht und ihre Differenz dem XMCD Signal.}
+                \label{fig:XMCD}
+            \end{subfigure}
+            \begin{subfigure}[t]{0.48\textwidth}
+                \centering
+                \includegraphics[height=5cm]{FeO/XMLD_FeO.png}
+                \caption{Spektren für s- und p- polarisiertes Licht, sowie dessen Differenz dem XMLD Signal.}
+                \label{fig:XMLD}
+            \end{subfigure}
+            \caption{Die verschiedenen XAS Messungen mit unterschiedlichen Polarisationen. Aus der Differenz ergeben sich dann die XMCD und XMLD Signale.}
+            \label{fig:XAS_FeO}
         \end{figure}
-        \begin{figure}
-            \centering
-            \includegraphics[height=5cm]{./content/pictures/FeO/XMLD_FeO.png}
-            \caption{XAS Spektren für s- und p- polarisiertes Licht, sowie dessen Differenz. XMLD}
-            \label{fig:XMLD}
-        \end{figure}
-        Um sich erneut die magnetischen Eigenschaften des Substrat anzuschauen werden Röntgenabsorptionsmessungen durchgeführt.
-        In \autoref{fig:XAS_FeO} sind die entsprechende Spektren dargestellt.
+        Mit Hilfe des magnetischen Röntgen-Zirkular-Dikorismus und magnetischen Röntgen-Linear-Dikorismus lassen sich die magnetischen Eigeschaften des Substrates untersuchen.
+        Beide Spektren der Röntgenabsorptionsmessungen sind in \autoref{fig:XAS_FeO} zu sehen.
         
         \begin{figure}
             \centering
             \begin{subfigure}[t]{0.48\textwidth}
                 \centering
-                \includegraphics[height=5cm]{./content/pictures/FeO+5A/FeO_5A_34_80eV.png}
+                \includegraphics[height=3.5cm]{FeO+5A/FeO_5A_34_80eV.png}
                 \subcaption{Das Bild für eine kinetische Energie von \SI{34.80}{\electronvolt}, also \SI{0.70}{\electronvolt} Bindungsenergie.}
+                \label{fig:MOT_FeO+5A_exp_1}
             \end{subfigure}
             \begin{subfigure}[t]{0.48\textwidth}
                 \centering
-                \includegraphics[height=5cm]{./content/pictures/FeO+5A/MO_LUMO_RT_RT.png}
+                \includegraphics[height=3.5cm]{FeO+5A/MO_LUMO_RT_RT.png}
                 \subcaption{Das LUMO mit Symmetrisierung zweier um \SI{90}{\degree} verdrehten Übergitter.}
+                \label{fig:MOT_FeO+5A_theo_1}
             \end{subfigure}
-            \caption{Vergleich der gemessenen Intensitätsverteilung mit der des symmetrisierten LUMO.}
-            \label{fig:FeO5A1}
-        \end{figure}
-        \begin{figure}
             \centering
             \begin{subfigure}[t]{0.48\textwidth}
                 \centering
-                \includegraphics[height=5cm]{./content/pictures/FeO+5A/FeO_5A_33_75eV.png}
+                \includegraphics[height=3.5cm]{FeO+5A/FeO_5A_33_75eV.png}
                 \subcaption{Das Bild für eine kinetische Energie von \SI{33.75}{\electronvolt}, also \SI{1.75}{\electronvolt} Bindungsenergie.}
+                \label{fig:MOT_FeO+5A_exp_2}
             \end{subfigure}
             \begin{subfigure}[t]{0.48\textwidth}
                 \centering
-                \includegraphics[height=5cm]{./content/pictures/FeO+5A/MO_HOMO_RT_RT.png}
+                \includegraphics[height=3.5cm]{FeO+5A/MO_HOMO_RT_RT.png}
                 \subcaption{Das HOMO mit Symmetrisierung zweier um \SI{90}{\degree} verdrehten Übergitter.}
+                \label{fig:MOT_FeO+5A_theo_2}
             \end{subfigure}
-            \caption{Vergleich der gemessenen Intensitätsverteilung mit der des symmetrisierten HOMO.}
-            \label{fig:FeO5A2}
-        \end{figure}
-        \begin{figure}
             \centering
             \begin{subfigure}[t]{0.48\textwidth}
                 \centering
-                \includegraphics[height=5cm]{./content/pictures/FeO+5A/FeO_5A_32_15eV.png}
+                \includegraphics[height=3.5cm]{FeO+5A/FeO_5A_32_15eV.png}
                 \subcaption{Das Bild für eine kinetische Energie von \SI{32.15}{\electronvolt}, also \SI{3.35}{\electronvolt} Bindungsenergie.}
+                \label{fig:MOT_FeO+5A_exp_3}
             \end{subfigure}
             \begin{subfigure}[t]{0.48\textwidth}
                 \centering
-                \includegraphics[height=5cm]{./content/pictures/FeO+5A/MO_HOMO1_RT_RT.png}
+                \includegraphics[height=3.5cm]{FeO+5A/MO_HOMO1_RT_RT.png}
                 \subcaption{Das HOMO-1 mit Symmetrisierung zweier um \SI{90}{\degree} verdrehten Übergitter.}
+                \label{fig:MOT_FeO+5A_theo_3}
             \end{subfigure}
-            \caption{Vergleich der gemessenen Intensitätsverteilung mit der des symmetrisierten HOMO-1.}
-            \label{fig:FeO5A3}
-        \end{figure}
-        \begin{figure}
             \centering
             \begin{subfigure}[t]{0.48\textwidth}
                 \centering
-                \includegraphics[height=5cm]{./content/pictures/FeO+5A/FeO_5A_30_95eV.png}
+                \includegraphics[height=3.5cm]{FeO+5A/FeO_5A_30_95eV.png}
                 \subcaption{Das Bild für eine kinetische Energie von \SI{30.95}{\electronvolt}, also \SI{4.55}{\electronvolt} Bindungsenergie.}
+                \label{fig:MOT_FeO+5A_exp_4}
             \end{subfigure}
             \begin{subfigure}[t]{0.48\textwidth}
                 \centering
-                \includegraphics[height=5cm]{./content/pictures/FeO+5A/MO_HOMO2_RT_RT.png}
+                \includegraphics[height=3.5cm]{FeO+5A/MO_HOMO2_RT_RT.png}
                 \subcaption{Das HOMO-2 mit Symmetrisierung zweier um \SI{90}{\degree} verdrehten Übergitter.}
+                \label{fig:MOT_FeO+5A_theo_4}
             \end{subfigure}
-            \caption{Vergleich der gemessenen Intensitätsverteilung mit der des symmetrisierten HOMO-2.}
-            \label{fig:FeO5A4}
+            \caption{Vergleich der gemessenen Intensitätsverteilung mit den theoretisch berechneten.}
+            \label{fig:MOT_FeO_5A}
         \end{figure}
         Das Aufdampfen wie einer Monolage Pentacene brachte erneut kein homogenes und von einer geordneten Struktur herrührendes LEED-Bild zustande.
         Im Widerspruch zu dem nicht Vorhandensein entsprechnder Beugungsreflexe und damit sich die Moleküle nicht auf der Oberfläche ordnen sind in den Tomographiebildern Merkmale von Molekülen zu erkennen.
         Diese Merkmale können sich nur ausbilden, wenn sich die Moleküle regelmäßig und in gleicher Orientierung anordnen.
         Anderenfalls würden sich die Photoemissionströme überlagern und es gäbe verschwommene Bilder.
-        Einige Zuordnungen sind in den Abbildungen \ref{fig:FeO5A1} bis \ref{fig:FeO5A4} zu finden.
+        Einige Zuordnungen sind in \autoref{fig:MOT_FeO_5A} zu finden.
         \begin{figure}
             \centering
-            \includegraphics[height=5cm]{./content/pictures/pFe/Photonenenergie.png}
+            \includegraphics[height=5cm]{pFe/Photonenenergie.png}
             \caption{Vergleich des VB-Spektrums bei \SI{64}{\electronvolt} und \SI{40}{\electronvolt} Photonenenergie des passivierten Eisens.}
             \label{fig:Photonenenergie}
         \end{figure}

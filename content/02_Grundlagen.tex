@@ -71,9 +71,15 @@
     
         % Ein wichtiger Ansatz für die periodische Struktur der Oberfläche und dessen elektronischen Zustände ist das Bloch Theorem.
         % Die Oberfläche entspricht einer Anordung äquivalenter Punkte welche durch den Gittervektor aus \autoref{eqn:Gittervek} ineinander überführt werden können
+    
+    \section{Übergangsmetalloxide}
+        Übergangsmetalloxide finden sich in einer Vielzahl in unserer Umwelt, meist jedoch unter anderem Namen.
+        So ist der Rost wohl eins der bekanntesten, dabei handelt es sich um eine Form des Eisenoxids.
+        Magnetit hingegen ist in der Wissenschaft sehr bekannt, da es zu den ersten entdecken magnetischen Materialien gehört.
 
+    
     \section{Antiferromagneten}
-        Antiferromagneten (AFM) Zeichen sich dadurch aus, dass Sie nach außen hin kein permanetes magnetisches Moment aufweisen.
+        Antiferromagneten (AFM) zeichen sich dadurch aus, dass Sie nach außen hin kein permanetes magnetisches Moment aufweisen.
         Vereinfacht sind im Inneren die magnetischen Momente vom gleichen Betrag und nebeneinander liegende Momente sind antiparallel unterinander ausgerichtet \cite{Suter}.
         Dieser Zustand ist allerdings nur unterhalb der Néel-Temperatur $T_\text{N}$ stabil, oberhalb verhälten sich die Antiferromagneten paramagnetisch.
         Um das Phänomen des Antiferromagnetismus zu erklären bedarf der quantenmechanischen Erklärung unter Beachtung des Pauli Verbots und der Hundschen Regeln \cite{TUChemnitz}.
@@ -94,7 +100,7 @@
         % \label{sec:Super}
         \begin{figure}
             \centering
-            \includegraphics[width=0.6\textwidth]{./content/pictures/AFM2.pdf}
+            \includegraphics[width=0.6\textwidth]{AFM2.pdf}
             \caption{Darstellung zur Veranschaulichung der antiferromagnetischen Kopplung.
             Als Ligand fungiert hier ein Sauerstoffatom mit seinem p-Orbital (blau).
             Die Spins der d-Orbitale der Metalle (rot) koppeln ferromagnetische mit denen des Sauerstoffs.
@@ -172,7 +178,7 @@
 
             \begin{figure}
                 \centering
-                \includegraphics[width=0.6\textwidth]{./content/pictures/Chemisorption2.PNG}
+                \includegraphics[width=0.6\textwidth]{Chemisorption2.PNG}
                 \caption{Das adsorbierte Molekül hybridiziert mit dem s-/p-Band des Substartes (1), der schwachen Chemisorption.
                 In einem weiteren Schritt kommt es dann zur starken Chemisorption durch Einbindung der d-Bänder (2, oben), es entsteht ein bindendes und ein antibindenes Orbital.
                 Durch die Lage der d-Bänder werden nun das bindenden und antibindendene Orbital besetzt, dadurch kommt es zu einer repulsiven Kraft und die Bindung wird wieder geschwächt (unten). Aus~\cite{IF_1}.}
@@ -188,7 +194,7 @@
         \subsection{Selbstanordnung}
             \begin{figure}
                 \centering
-                \includegraphics[width=0.6\textwidth]{./content/pictures/Adsorbate}
+                \includegraphics[width=0.6\textwidth]{Adsorbate}
                 \caption{Die Adsorbateplätze für verschieden orientierte Oberflächen eines flächenzentrierten Kristalls.
                 Es gibt Plätze direkt oberhalb eines Substratatoms (\textit{on top} - t).
                 Zwischen zwei Substratatomen gibt es kurze (b) und lange (b') Brückenplätze (\textit{bridge}), sowie Muldenplätze hexagonaler dicht gepacktester Struktur (\textit{hollow} - h) und flächenzentrierter Struktur (h'). Aus~\cite{Fauster}.}
@@ -267,7 +273,7 @@
         \subsection{Nickeloxid (111) Oberfläche}
             \begin{figure}
                 \centering
-                \includegraphics[width=4cm]{./content/pictures/NiO/NiO-structure.jpg}
+                \includegraphics[width=4cm]{NiO/NiO-structure.jpg}
                 \caption{Die Krsiatllstruktur von Nickeloxid. Das $\ce{Ni}^{2+}$ Ion befindet sich in einer oktraedischen Umgebung von $\ce{O}^{2-}$ Ionen. Aus~\cite{NiO-structure}.}
                 \label{fig:NiO-structure}
             \end{figure}
@@ -298,17 +304,26 @@
             \begin{itemize}
                 \item elektronische Struktur
             \end{itemize}
+
         \subsection{Eisen (100) Oberfläche}
             \begin{itemize}
                 \item WKF
                 \item Symmetrie - p4mm
-                \item Gitterkonstante ist $a = \SI{2.866}{\angstrom}$
+                \item Gitterkonstante ist $a = \SI{2.862}{\angstrom}$~\cite{springer_database}
                 \item bcc Struktur
             \end{itemize}
 
-        \subsection{Eisenoxid (100) Oberfläche}
-            Ebenso wie das Nickeloxid kristallisiert auch das Eisenoxid, welches auch Wüstite genannt wird, in der \ce{NaCl}-Struktur~\cite{FeO_4}.
-            Dabei beträgt die Gitterkonstante \SI{3.07}{\angstrom}~\cite{FeO_1} und die $\ce{Fe}^{2+}$-Ionen befinden sich einer oktraedischen Position zum Suaerstoff~\cite{FeO_4}.
+        \subsection{Magnetit}
+            Das Magnetit ist chemisch gesehen ein Eisenoxid (\ce{Fe3O4}), welches in der inversen Spinellstruktur kristallisiert.
+            Die Gitterkonstante beträgt dabei \SI{8.397}{\angstrom}~\cite{springer_database}.
+            % und hat damit eine Abweichung um \SI{2.4}{\percent} von der dreifachen Gitterkonstante des Eisens. - Orientierung beachten
+
+
+        
+        \subsection{Eisenmonooxid (100) Oberfläche}
+            Ebenso wie das Nickeloxid kristallisiert auch das Eisenmonooxid, welches auch Wüstite genannt wird, in der \ce{NaCl}-Struktur~\cite{FeO_4}.
+            \textbf{Dabei beträgt die Gitterkonstante \SI{3.07}{\angstrom}~\cite{FeO_1} - ist da sowas wie Einheitszelle der 100 gemeint}
+            Dabei beträgt die Gitterkonstante \SI{4.308}{\angstrom}~\cite{springer_database} und die $\ce{Fe}^{2+}$-Ionen befinden sich einer oktraedischen Position zum Suaerstoff~\cite{FeO_4}.
             Es handelt sich ebenfalls um einen Isolator mit antiferromagnetischen Eigenschaften und einer Neél-Temperatur von \SI{198}{\kelvin}~\cite{FeO_4}.
 
             Genau wie in Nickeloxid sind auch hier die (111)-Ebenen untereinander antiferromagnetisch gekoppelt.
@@ -326,7 +341,7 @@
         \subsection{Pentacene} \label{sec:5A}         
             \begin{figure}
                 \centering
-                \includegraphics[width=0.6\textwidth]{./content/pictures/PEN.jpg}
+                \includegraphics[width=0.6\textwidth]{PEN.jpg}
                 \caption{Geometrische Struktur des Pentacene sowei die vier höchsten besetzten und vier niedrigesten unbesetzen Orbitale. Vorlage aus~\cite{PEN}.}
                 \label{fig:PEN}
             \end{figure}
