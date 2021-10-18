@@ -13,6 +13,7 @@
         Grund dafür ist ihre straken Elektron-Elektron-Wechselwirkung, sowie dessen einfachen Herstellung.
         Durch die Reduktion auf dünne Filme und damit verbundenen Einschränkung ergeben sich neue spannende Eigenschaften.
         So zählt auch einige der Hochtemperatur Supraleiter zu den Übergangsmetalloxiden~\cite{IF_5}.
+        Anwendungen finden Sie schon heute zum Beispiel in organischen Transistoren, Solarzellen und LEDs~\cite{IF_3}.
 
         Viele der Übergangsmetalloxide zeigen Ferro- oder Antiferromagnetismus. 
         Auch ihre chemischen und elektrochemischen Eigenschaften lassen sie sich durch unterschiedliche Präperationsprozesse perfekt anpassen~\cite{Uni-Tübingen}.
@@ -65,6 +66,9 @@
         
         Die so entstandenen neuen Energieniveaus lassen durch die Wechselwirkung zwischen Ladung, Orbitalen, Gitter und Spin auch magnetische eigenschaften aufleben.
         So kann durch die Kristallfeldaufspaltung sich \textit{High}- und \textit{Low}-Spin Konfiguration ausbilden.
+
+        Durch die perfekte Anpassung der Austrittsarbeit der Oxide und der damit verbundenen Energieniveauanpassung von aufgebrachten Molekülen lassen sich effiziente organische Halbleiter mit Molekülzuständen nahe der Fermikante erstellen und damit einfachem Ladungstransfer erlauben \iet{IF_3}.
+        Alleine durch die Veränderung des Oxidationszustands oder einbringen von Defekten lässt sich dies realisieren, ohen dass ein neues Material genutzt werden muss.
 
         \begin{itemize}
             \item Oberflächen und Grenzflächen zeigen neue Eigenschaften und Phasen -> Anwendung 
@@ -218,17 +222,34 @@
 
         \subsection{Energieniveau-Anpassung}
             Für die Anwendung besonders bedeutsam ist die Energieniveau-Anpassung, welche Einfluss auf den Elektronen- und Lochtransport hat~\cite{IF_4}.
-            Bei Metalloxiden verschiebt sich durch die Austrittsarbeit die relative Position des Valenz- und Leitungsbandes zum Vakuumniveau~\cite{IF_3}.
+            Bei Metalloxiden verschiebt sich durch die Austrittsarbeit $\Psi$ die relative Position des Valenz- und Leitungsbandes zum Vakuumniveau~\cite{IF_3}.
             Die meisten der Metalloxide haben keine besetzten Zustände nahe der Fermikante, da diese in eine Bandlücke fällt.
             Folglich ist auch Ladungsübertrag vom Substrat auf die Moleküle nur vom Valenz- oder Leitungsband aus möglich.
-            Auch wenn einige Oxide Ladungsaustausch zwischen Valenzband und dem höcsten bestzten Molekülorbital (HOMO, \textit{highest occoupied molecular orbital}) zulassen so  gibt es noch kein Model, dass dies beschreibt.
+            Dies unterscheidet den Prozess maßgeblich von vielen Modellen von Metal-organischen-Grenzflächen.
+            Auch wenn einige Oxide Ladungsaustausch zwischen Valenzband und dem höchsten besetzten Molekülorbital (HOMO, \textit{highest occoupied molecular orbital}) zulassen so  gibt es noch kein Model, dass dies beschreibt~\cite{IF_3}.
             Verbreitet ist jedoch der Ansatz der Ferminiveau-Anheftung für nicht reaktive Grenzflächen zwischen Molekülen und Oxiden.
 
             Greiner u.a.~\cite{IF_3} fanden heraus, dass die Bandstruktur des Substartes dabei nur eine untergeordnete Rolle spielt.
             Ausschlaggebend für die Energieniveau-Anpassung ist das elektrochemische Potential des Substrates mit dem Reduktionspotentials des Moleküls.
-            Genauer die Differenz zwischen der Austrittsarbeit des Substrates und der Ionisationsenergie.
+            Genauer die Differenz zwischen der Austrittsarbeit des Substrates und der Ionisationsenergie $IE_\text{org}$.
             Als Ionisationsenergie wird die Energie zwischen höchsten besetztem Molekülorbital und dem Vakuumlevel verstanden.
-            Die Elektronenaffinität entspricht der Energie zwischen dem Vakuumlevel und dem niedrigsten unbestzten Molekülorbital (LUMO, \textit{lowest unoccoupied molecular orbital}).
+            Die Elektronenaffinität entspricht der Energie zwischen dem Vakuumlevel und dem niedrigsten unbesetzten Molekülorbital (LUMO, \textit{lowest unoccoupied molecular orbital}).
+            Als Energie-Offset $\Delta E_\symup{H}$ wird der Energiebetrag zwischen HOMO und Fermikante des Substartes verstanden.
+
+            \begin{figure}
+                \centering
+                \includegraphics[width=0.6\textwidth]{E_align.PNG}
+                \caption{Veranschaulichung des Energieniveaus für Energieniveauanpassung des Übergangsmetalloxide und Molekülen. Kopiert aus \cite{IF_3}.}
+                \label{fig:E_align}
+            \end{figure}
+            \textbf{\cite{IF_3}}
+            Ferner gilt das HOMO als des Moleküls Donator-Zustand und das LUMO als Akzeptor-Zustand.
+            Bei den Übergangsmetalloxiden gilt das Leitungsband als Akzeptor und das Valenzband als Donator. 
+            Nur wenn sich die Donor und Akzeptor der unterschiedlichen Partner stark annähern, kann ein Ladungsaustausch stattfinden.
+            Dabei ist zu beachten, dass sich durch die Wechselwirkung die energetisch Lage der Molekülorbital hinsichtlich der Gasphase verschieben können.
+            Diese Energieniveaus sind in \autoref{fig:E_align} dargestellt.
+            Bei der Verschiebung der Bindungsenergie des HOMOs fällt auf, dass diese sich linear immer weiter einem konstanten Wert annähert, wenn die Differenz zwischen Austrittsarbeit und Ionisationsenergie schrumpft.
+            Somit wird das HOMO mit einer gewissen Bindungsenergie an das Fermilevel angeheftet, die nur von der Differenz der Austrittsarbeit und des Ionisationspotential abhängt.
 
             Auch bei Isolatoren kann sich ein Oberflächendipol ausbilden.
             Wegen des Pauliverbot und den zusätzlichen Elektronen der Moleküle an der Grenzfläche werden die Elektronen an der Oberfläche in den Festkörper zurück gedrenkt.
@@ -238,7 +259,8 @@
 
             \begin{itemize}
                 \item charge transfer from HOMO to Ef?~\cite{IF_4}
-                \item \textbf{Ferminiveau Anheftung}
+                \item \textbf{Ferminiveau Anheftung} 
+                \item Nur für nicht reaktive Oberflächen 
             \end{itemize}
 
 
@@ -284,6 +306,7 @@
 
             \begin{itemize}
                 \item (111) Orientierung
+                \item Nickeloxid ist ein gutes Lochinjektion Material \cite{IF_3} (reduziert die Bindungsenergie des HOMOs)
             \end{itemize}
 
         
