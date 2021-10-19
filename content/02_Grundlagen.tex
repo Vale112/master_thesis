@@ -67,7 +67,7 @@
         Die so entstandenen neuen Energieniveaus lassen durch die Wechselwirkung zwischen Ladung, Orbitalen, Gitter und Spin auch magnetische eigenschaften aufleben.
         So kann durch die Kristallfeldaufspaltung sich \textit{High}- und \textit{Low}-Spin Konfiguration ausbilden.
 
-        Durch die perfekte Anpassung der Austrittsarbeit der Oxide und der damit verbundenen Energieniveauanpassung von aufgebrachten Molekülen lassen sich effiziente organische Halbleiter mit Molekülzuständen nahe der Fermikante erstellen und damit einfachem Ladungstransfer erlauben \iet{IF_3}.
+        Durch die perfekte Anpassung der Austrittsarbeit der Oxide und der damit verbundenen Energieniveauanpassung von aufgebrachten Molekülen lassen sich effiziente organische Halbleiter mit Molekülzuständen nahe der Fermikante erstellen und damit einfachem Ladungstransfer erlauben~\cite{IF_3}.
         Alleine durch die Veränderung des Oxidationszustands oder einbringen von Defekten lässt sich dies realisieren, ohen dass ein neues Material genutzt werden muss.
 
         \begin{itemize}
@@ -116,6 +116,10 @@
         Somit ist dann die Wechselwirkung über das Sauerstoffatom hinweg dann antiferromagnetisch.
         Es ergeben sich so zwei Untergitter, welche unterschiedlicher Spinrichtung sind, die Gesamtmagnetisierung ist also wie für Antiferromagneten erwartet Null.
         % Die Wellenfunktionen der Kationen überlappen nur gering und da die Austauschwechselwirkung nur geringe Reichweiten hat können nur die 3d und 2p überlappen.
+
+        Antiferromagnetismus tritt dabei immer nur unterhalb einer kritischen Temperatur, der Neél-Temperatur $T_\text{C}$ auf.
+        Oberhalb dieser Temperatur verhalten sich die Materialien paramagnetisch.
+        Die inneren magnetischen Momente richten sich dabei parallel zum äußeren Feld aus und verstärken es somit.
         
         Die Anwenungen des Antiferromagnetismus ist zum Beispiel der nutzen als \textit{Pinning}-Lage, die in spinelektronischen Bauteilen die Orientierung einer ferromagnetischen Schicht festlegt.
         Eine neue Forschungsidee des europäischen Forschungsprojekt Sinfonia beschäftigt sich mit der Kopplung zwischen Molekülen und Antiferromagneten.
@@ -225,7 +229,7 @@
             Bei Metalloxiden verschiebt sich durch die Austrittsarbeit $\Psi$ die relative Position des Valenz- und Leitungsbandes zum Vakuumniveau~\cite{IF_3}.
             Die meisten der Metalloxide haben keine besetzten Zustände nahe der Fermikante, da diese in eine Bandlücke fällt.
             Folglich ist auch Ladungsübertrag vom Substrat auf die Moleküle nur vom Valenz- oder Leitungsband aus möglich.
-            Dies unterscheidet den Prozess maßgeblich von vielen Modellen von Metal-organischen-Grenzflächen.
+            Dies unterscheidet den Prozess maßgeblich von vielen Modellen von Metall-organischen-Grenzflächen.
             Auch wenn einige Oxide Ladungsaustausch zwischen Valenzband und dem höchsten besetzten Molekülorbital (HOMO, \textit{highest occoupied molecular orbital}) zulassen so  gibt es noch kein Model, dass dies beschreibt~\cite{IF_3}.
             Verbreitet ist jedoch der Ansatz der Ferminiveau-Anheftung für nicht reaktive Grenzflächen zwischen Molekülen und Oxiden.
 
@@ -234,11 +238,11 @@
             Genauer die Differenz zwischen der Austrittsarbeit des Substrates und der Ionisationsenergie $IE_\text{org}$.
             Als Ionisationsenergie wird die Energie zwischen höchsten besetztem Molekülorbital und dem Vakuumlevel verstanden.
             Die Elektronenaffinität entspricht der Energie zwischen dem Vakuumlevel und dem niedrigsten unbesetzten Molekülorbital (LUMO, \textit{lowest unoccoupied molecular orbital}).
-            Als Energie-Offset $\Delta E_\symup{H}$ wird der Energiebetrag zwischen HOMO und Fermikante des Substartes verstanden.
+            Als Energie-Offset $\Delta E_\text{H}$ wird der Energiebetrag zwischen HOMO und Fermikante des Substartes verstanden.
 
             \begin{figure}
                 \centering
-                \includegraphics[width=0.6\textwidth]{E_align.PNG}
+                \includegraphics[height=5cm]{E_align.PNG}
                 \caption{Veranschaulichung des Energieniveaus für Energieniveauanpassung des Übergangsmetalloxide und Molekülen. Kopiert aus \cite{IF_3}.}
                 \label{fig:E_align}
             \end{figure}
@@ -249,28 +253,27 @@
             Dabei ist zu beachten, dass sich durch die Wechselwirkung die energetisch Lage der Molekülorbital hinsichtlich der Gasphase verschieben können.
             Diese Energieniveaus sind in \autoref{fig:E_align} dargestellt.
             Bei der Verschiebung der Bindungsenergie des HOMOs fällt auf, dass diese sich linear immer weiter einem konstanten Wert annähert, wenn die Differenz zwischen Austrittsarbeit und Ionisationsenergie schrumpft.
-            Somit wird das HOMO mit einer gewissen Bindungsenergie an das Fermilevel angeheftet, die nur von der Differenz der Austrittsarbeit und des Ionisationspotential abhängt.
+            Somit wird das HOMO mit einer gewissen Bindungsenergie an das Fermilevel angeheftet, die nur von der Differenz der Austrittsarbeit und des Ionisationspotential abhängt~\cite{IF_3}.
+            Der ganze Prozess der Ausrichtung der Molekülzustände an das Ferminiveau des Substartes wird auch Ferminiveau-Anheftung genannt.
 
-            Auch bei Isolatoren kann sich ein Oberflächendipol ausbilden.
+            Weiter gehend ist zu beachten, dass auch bei Isolatoren sich ein Oberflächendipol ausbilden kann.
             Wegen des Pauliverbot und den zusätzlichen Elektronen der Moleküle an der Grenzfläche werden die Elektronen an der Oberfläche in den Festkörper zurück gedrenkt.
             Durch die Unabhängigkeit vom Adsorptionstyp tritt dieser \textit{Push-Back}-Effekt immer auf~\cite{IF_4} und reduziert damit das Oberflächendipolmoment~\cite{IF_1}.
             Zusätzlich kann das Oberflächendipolmoment durch Ladungsaustausch zwischen Molekül und Substrat geschwächt oder andersherum gestärkt werden.
             Hinzukommend gibt es gegebenfalls noch einen permanenten Dipol des Moleküls, welcher beachtet werden muss.
+            Diese Effekte beeinflussen die Austrittsarbeit des Materials und somit auch die Ferminiveau-Anheftung.
 
-            \begin{itemize}
-                \item charge transfer from HOMO to Ef?~\cite{IF_4}
-                \item \textbf{Ferminiveau Anheftung} 
-                \item Nur für nicht reaktive Oberflächen 
-            \end{itemize}
-
+            Als Folge des Energieniveauanpassung und dem eventuellem Ladungsaustausch oder Hybridisierung kommt es zur Verkürzung der Lebenszeit der Molekülorbital.
+            Ihre Energieniveaus verbreitern sich, was ebenfalls bei integrierte Spektren zu erkennen ist, das die Signale eine gewisse Breite aufweisen.
 
     \section{Substrate und Molekül Eigenschaften}
         In diesem Abschnitt geht es um die verschiedenen Substrate die zur Anwendung kommen.
         Des Weiteren geht es ebenso um die verwendeten Moleküle.
+
         \subsection{Nickeloxid}
             \begin{figure}
                 \centering
-                \includegraphics[width=4cm]{NiO/NiO-structure.jpg}
+                \includegraphics[height=5cm]{NiO/NiO-structure.jpg}
                 \caption{Die Krsiatllstruktur von Nickeloxid. Das $\ce{Ni}^{2+}$ Ion befindet sich in einer oktaedrischen Umgebung von $\ce{O}^{2-}$ Ionen. Aus~\cite{NiO-structure}.}
                 \label{fig:NiO-structure}
             \end{figure}
@@ -304,47 +307,66 @@
             Hinsichtlich der elektronischen und geometrischen Struktur gibt es bereits zahlreiche Arbeiten~\cite{NiO_7, NiO_34, NiO_35, NiO_37, NiO_8, NiO_13}.
             Ferner besitzt Nickeloxid eine Gitterkonstante die ähnlich zu Gold ist, auf der sich die Moleküle wohldefiniert anordnen~\cite{5A_1}.
 
-            \begin{itemize}
-                \item (111) Orientierung
-                \item Nickeloxid ist ein gutes Lochinjektion Material \cite{IF_3} (reduziert die Bindungsenergie des HOMOs)
-            \end{itemize}
-
-        
+            Als zukünfiges Material in der Anwendung zeigt Nickeloxid ebenfalls bereits wichtige Eigenschaften.
+            So ist Nickeloxid nicht nur ein Antiferromagnet sondern zeichnet sich auch durch aus, dass es die Bindungsenergie von addsorbierten Molekülen reduziert.
+            Durch die geringe Bindungsenergie des HOMOs eignet sich diese Kombination dabei bestens als Lochinjektion-Material~\cite{IF_3}.
+            Damit kann es in organischen Halbleitern und Bauteilen zum Einsatz kommen.
 
         \subsection{Magnetit}
-            Das Magnetit ist chemisch gesehen ein Eisenoxid (\ce{Fe3O4}), welches in der inversen Spinellstruktur kristallisiert.
+        \begin{figure}
+            \centering
+            \includegraphics[height=5cm]{Spinell_mod.PNG}
+            \caption{Die Krsiatllstruktur von Magnetit. Aus \textbf{Bertram - 2009 - Röntgenstrukturanalyse von Oxidschichten.pdf}}
+            \label{fig:Spinell}
+        \end{figure}
+            Das wohl älteste bekannte magnetische Material ist das Magnetit.
+            Chemisch gesehen ist es ein Eisenoxid (\ce{Fe3O4}).
+            Magnetit kristallisiert in der in \autoref{fig:Spinell} dargestellten inversen Spinellstruktur, einer kubisch-flächenzentrierten Struktur.
             Die Gitterkonstante beträgt dabei \SI{8.397}{\angstrom}~\cite{springer_database}.
+            Zusammen gesetzt ist das Magnetit aus zwei $\ce{Fe}^{3+}$ und einem $\ce{Fe}^{2+}$ zu vier $\ce{O}^{2-}$-Ionen.
+            Hierbei befinden sich die $\ce{Fe}^{2+}$-Ionen auf $\sfrac{1}{4}$ der oktaedrischen Lücken.
+            Dahingegen sitzen die $\ce{Fe}^{3+}$ zu $\sfrac{1}{4}$ auf oktaedrischen Plätzen und zu $\sfrac{1}{8}$ auf tetraedischen Plätzen.
+
             Bei \ce{Fe3O4} handelt es sich um einen Ladungstransfer Isolator~\cite{FeO_19}.
 
             Die Austrittsarbeit lässt sich dabei auf \SI{5.2}{\electronvolt} bestimmen \textbf{Surface electronic structure of the Fe 3 O 4 ( 100 ) : Evidence of a half-metal to metal transition}.
             % und hat damit eine Abweichung um \SI{2.4}{\percent} von der dreifachen Gitterkonstante des Eisens. - Orientierung beachten
             \begin{itemize}
                 \item (100) Orientierung
+                \item Bandlücke \SI{0.1}{\electronvolt} \textbf{Park et al. - 1999 - A New Synthetic Route to Wüstite.pdf} Bei Raum Temperatur
+                \item unter 125K soll Phasenwechsel stattfinden -> Leitend??? \textbf{Zimmermann 16 und 57} wird es mehr leitend oder isolierend?
+                \item Vielversprechend für den Einsatz in MTJs als Elektrodenmaterial ist das ferrimagnetische
+                halbmetallische Eisenoxid Magnetit (Fe3O4), dem eine einhundertprozentige Spinpolarisation
+                an der Fermi-Kante und damit ein theoretisch unendliche großer TMR-Effekt
+                zugewiesen wird. Darüber hinaus liegt die Curie-Temperatur mit 858K weit über der
+                Raumtemperatur [9]. \textbf{Anfangsstadium des epitaktischen Wachstums von MgO auf Fe3O4 (001)-Schichten}
+                \item ferromagetisches Halbmetall mit Curie-Temperatur von \SI{858}{\kelvin} und \SI{100}{\percent} Spinpolarisation \textbf{Arora et al. - 2005 - Magnetoresistance enhancement in epitaxial magneti.pdf}
+                \item Anwendung in Magnetbändern und als Katalysator \textbf{Zimmermann - 2010 - Epitaktisches Wachstum und Charakterisierung ultra.pdf}
+                \item (100) Orientierung hat $(1\times 1)\text{R}\SI{45}{\degree}$ Oberflächen Einheitszelle mit $\frac{a}{\sqrt{2}}$ Kantenlänge \textbf{Buß - 2015 - Studies on the Epitaxial Growth of Ultrathin Metal.pdf}
+                \item Im gegensatz zu den anderen Eisenoxiden zeigt die Oberfläche eine $(\sqrt{2}\times\sqrt{2})$R\SI{45}{\degree} Rekonstruktion der (100)-Orientierung \textbf{Ruwisch - 2016 - VSM-Untersuchung magnetischer Eigenschaften von ep.pdf}
+                \item 
             \end{itemize}
 
-        
         \subsection{Eisenmonooxid}
             Ebenso wie das Nickeloxid kristallisiert auch das Eisenmonooxid, welches auch Wüstite genannt wird, in der \ce{NaCl}-Struktur~\cite{FeO_4}.
-            \textbf{Dabei beträgt die Gitterkonstante \SI{3.07}{\angstrom}~\cite{FeO_1} - ist da sowas wie Einheitszelle der 100 gemeint}
-            Dabei beträgt die Gitterkonstante \SI{4.308}{\angstrom}~\cite{springer_database} und die $\ce{Fe}^{2+}$-Ionen befinden sich einer oktaedrischen Position zum Sauerstoff~\cite{FeO_4}.
+            % \textbf{Dabei beträgt die Gitterkonstante \SI{3.07}{\angstrom}~\cite{FeO_1} - ist da sowas wie Einheitszelle der 100 gemeint}
+            Dabei beträgt die Gitterkonstante \SI{4.308}{\angstrom}~\cite{springer_database} und die $\ce{Fe}^{2+}$-Ionen befinden sich einer oktaedrischen Position zum Sauerstoff.
             Es handelt sich ebenfalls um einen Isolator mit antiferromagnetischen Eigenschaften und einer Neél-Temperatur von \SI{198}{\kelvin}~\cite{FeO_4}.
-            Die Bandlücke wurde dabei auf \SI{2.4}{\electronvolt} bestimmt. \textbf{Wdowik - 2013 - Strong effects of cation vacancies on the electron.pdf}
-            Wie schon das \ce{Fe3O4} und \ce{NiO} ist auch \ce{FeO} ein Ladungstransfer Isolator.
+            Genauer wie schon das \ce{Fe3O4} und \ce{NiO} ist auch \ce{FeO} ein Ladungstransfer Isolator mit einer Bandlücke von \SI{2.4}{\electronvolt}~\cite{FeO_21}.
+
+            \ce{FeO} ist nur oberhalb von \SI{560}{\celsius} stabil.
+            Ansonsten handelt es sich um eine nichtstöchiometrische Verbindung.
+            So reduziert sich der Anteil an $\ce{Fe}^{2+}$-Ionen und der Anteil an $\ce{Fe}^{3+}$-Ionen steigt~\cite{FeO_11}.
+            Es sind also Defekte im Kationenteilgitter und somit wird von $\ce{Fe}_x\ce{O} (x=\num{0.95}-\num{0.88})$ gesprochen~\cite{Chalkogenide}.
+            Die Verbindung kann auch in Anteile von Magnetit und Eisen übergehen.
 
             Genau wie in Nickeloxid sind auch hier die (111)-Ebenen untereinander antiferromagnetisch gekoppelt.
             Und die magnetischen Momente der $\ce{Fe}^{2+}$-Ionen sind parallel zu den (111)-Ebenen ausgerichtet.
-            So ergibt sich auf der (100)-Oberfläche abwechselnd Spin ausgerichtete
-
-            \ce{FeO} ist als Hochtemperaturphase nur oberhalb von \SI{560}{\celsius} stabil.
-            Ansonsten handelt es sich um eine nichtstöchiometrische Verbindung.
-            So reduziert sich der Anteil an $\ce{Fe}^{2+}$-Ionen und der Anteil an $\ce{Fe}^{3+}$-Ionen steigt~\cite{FeO_11}.
-            Es sind also Defekte im Kationenteilgitter und somit wird von $\ce{Fe}_x\ce{O} (x=\num{0.95}-\num{0.88})$ gesprochen. \url{http://ruby.chemie.uni-freiburg.de/Vorlesung/metalle_8_5.html}
-            Die Verbindung kann auch in Anteile von Magnetit und Eisen übergehen. 
+            So ergibt sich auf der (100)-Oberfläche eine abwechselnde Spinausrichtung.
+            Die Austrittsarbeit aus dieser Oberfläche lässt sich zu \SI{3.5}{\electronvolt} bestimmen \textbf{(Caspary Toroker et al. - 2011 - First principles scheme to evaluate band edge posi.pdf)}
             
             \begin{itemize}
-                \item WKF - \SI{3.5}{\electronvolt} (Caspary Toroker et al. - 2011 - First principles scheme to evaluate band edge posi.pdf)
                 \item Symmetrie - p4mm
-                \item (100) Orientierung
             \end{itemize}
 
         \subsection{Pentacene} \label{sec:5A}         
@@ -365,9 +387,17 @@
             In dünnen Filmen aus Pentacene zeigt sich eine hohe Elektronenbeweglichkeit.
             Auf der Gold(111)-Oberfläche ordnet es sich an und liegt parallel zum Substrat.
             Der Abstand zwischen den Molekülen und Substrat wird auf \SI{3.28}{\angstrom} bestimmt, was auch in der Größenordnung für Physisorption liegt~\cite{5A_1}.
-            
 
-            Dichte von \SI{1.232(6)}{\gram\per\cubic\centi\meter}~\cite{CAS}.
+            Pentacene findet auf Grund seiner Größe und dabei hohen Elektronenbeweglichkeit Anwendung in elektronischen Bauteilen als organischer halbleiter.
+            Zum Bespiel in Transistoren \textbf{Lin et al. - 1997 - Pentacene-based organic thin-film transistors.pdf} und Luftfeuchtigkeitssensoren \textbf{Demelas et al. - 2015 - Chemical sensors using organic thin-film transisto.pdf} oder auch bei Solarzellen sind diese denkbar \textbf{Shirota und Kageyama - 2019 - 1 - Organic materials for optoelectronic applicati.pdf}.
+            
+            \begin{itemize}
+                \item Einfach herzustellen \textbf{Kus et al. - 2018 - Chapter 24 - Synthesis of Nanoparticles.pdf}
+                \item ist schlecht löslich und empfindlich gegenüber Sauerstoff, \textbf{Kus et al. - 2018 - Chapter 24 - Synthesis of Nanoparticles.pdf}
+                \item Dichte von \SI{1.232(6)}{\gram\per\cubic\centi\meter}~\cite{CAS}.
+                \item 
+            \end{itemize}
+            
 
             \section{IDEEN}
             \begin{itemize}

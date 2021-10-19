@@ -171,8 +171,8 @@
         Die Abwesenheit sehr ausgeprägter Merkmale in den impulsaufgelösten Bildern bestätigt die Annahme, dass sich die Moleküle auf der Oberfläche nicht regelmäßig anordnen.
         Ferner überlappen dann die einzelnen Merkmale im Impulsraum, sodass ein ausgewaschenes Bild entsteht.
         Auch wenn sich in den integrierten Spektren in \autoref{fig:EDC_NiO} klar zeigt, dass sich bei einigen Energien die Intensität erhöht ist in den entsprechenden Bildern keine klare Zuordnung möglich.
-        Ein Beispiel ist in \autoref{fig:NiO+5A} zu sehen, dieses Bild wurde gewählt da ein deutliches Signal im integrierten Spektrum zu erkennen ist und die entsprechende Energie nicht zu weit weg von der Fermikante liegt.
-        Tendenziell sollten entsprechend winkelaufgelöste Bilder den theoretischen Berechnungen wie in \autoref{fig:MOT_Au+5A} entsprechen, da Substrate gleiche Symmetrien aufweisen.
+        Ein Beispiel ist in \autoref{fig:MOT_NiO+5A} zu sehen, dieses Bild wurde gewählt da ein deutliches Signal im integrierten Spektrum zu erkennen ist und die entsprechende Energie nicht zu weit weg von der Fermikante liegt.
+        % Tendenziell sollten entsprechend winkelaufgelöste Bilder den theoretischen Berechnungen wie in \autoref{fig:MOT_Au+5A} entsprechen, da Substrate gleiche Symmetrien aufweisen.
         \begin{itemize}
             \item WKF Shift für dicken
             \item NiO-Spektrum Peaks zuordnen
@@ -261,10 +261,18 @@
         \end{figure}
         Die Konzentrationen an Sauerstoff und Eisen werden mittels Augerelektronenspektroskopie analysiert.
         So ergibt sich das Augerspektrum in \autoref{fig:Auger_Fe3O4}.
+        Hierbei kann das Signal bei \SI{503}{\electronvolt} dem KLL-Übergang des Sauerstoffs und dem Eisen die Signale bei \SI{598}{\electronvolt}, \SI{651}{\electronvolt} und \SI{703}{\electronvolt} für den LMM-Übergang zugeordnen werden. 
+        Die drei unterschiedlichen Energien für das Eisen tauchen durch die Spin-Bahn-Aufspaltung des Eisens auf.
         Das Peakverhältnis zwischen dem Sauerstoffsignal bei \SI{503}{\electronvolt} und dem Signal für Eisen bei \SI{651}{\electronvolt} ergibt einen Wert von \num{3.14}~\cite{FeO_1, Auger}.
         Aus der Literatur ist bekannt das für Magnetit ein Wert von \num{3.86} erwartet wird~\cite{FeO_1}.
         Der ermittelte Wert weicht dabei nach unten ab, was durch das zusätzliche Aufheizen auf \SI{600}{\degree} erklärt werden kann.
         Dabei kommt es zur Umstrukturierung der Oberfläche und in Folge dessen auch zur Desorption von Sauerstoff.
+
+        Wird das Verhältnis der Intensitäten der Signale bei \SI{503}{\electronvolt} und \SI{703}{\electronvolt} unter Beachtung der elementspezifischen Sensetivität ausgewärtet ergibt sich das stöchimetrischen Verhältnis.
+        Die Sensetivität für Sauerstoff liegt bei \num{0.5} und die des Eisens bei \num{0.2} bei der Verwendung von \SI{3}{\kilo\electronvolt} Primärelektronen.
+        Konzentration $c_i = \frac{I_i/S_i}{\sum_j I_j/S_j}$.
+        Dies lässt sich hier auf $\ce{O}:\ce{Fe} = \num{0.55}:\num{0.45}$ bestimmen.
+        Problem bereitet natürlich das Substrat, was ebenfalls aus Eisen besteht und auch die passivierte Schicht enthält bereits Sauerstoff.
 
         \begin{figure}
             \centering
@@ -343,7 +351,7 @@
         \end{figure}
         Das Verhältnis aus Sauerstoff und Eisen kann dabei erneut mittels Augerelektronenspektroskopie überprüft werden.
         Auch das Augerspektrum in \autoref{fig:Auger_FeO} mit dem bereits von Carpa u.A. \cite{FeO_1} entdecken Augerelektronenspektrum für Eisenoxid zeigt gute Übereinstimmung.
-        Ebenfalls deutet das Peakverhältnis von dem Sauerstoffsignal und Eisen mit \num{2.53} auf $\ce{FeO}$ hin, da dies nur leicht unterhalb des Wertes aus der Literatur von \num{2.89} liegt \cite{FeO_1}.
+        Ebenfalls deutet das Peakverhältnis von dem Sauerstoffsignal und Eisen mit \num{2.68} auf $\ce{FeO}$ hin, da dies nur leicht unterhalb des Wertes aus der Literatur von \num{2.89} liegt \cite{FeO_1}.
         Einen genaueren Einblick welche Struktur vorliegt kann erneut die Röntgenphotoelektronenspektroskopie bieten.
         Die entsprechenden Spektren sind in \autoref{fig:XPS_FeO} zu finden.
 
@@ -522,6 +530,7 @@
             \item Die Absorption ist dabei sogar $\cos(2\theta)^2$ abhängig, wobei$\theta$ der Winkel zwischen der magnetischen Achse und dem E-Feld Vektor ist.
             \item Kleine XMLD Effekte können auch durch die Liganden zu stande kommen, da diese ja auch das Orbital verformen können (besser T abhänig messen)
             \item Die Energiedifferenz zwischen Fermi und HOMO bzw LUMO sind entscheidene Schlüssel für die Anwendung \cite{5A_4}
+            \item $\ce{Fe} 3p1/2$- und $\ce{Fe} 3p3/2$ nicht auflösbar nach FeO7 nutze zwei Peaks
         \end{itemize}
         % Der $\ce{Fe}_{3\text{p}} (\SI{54.52}{\electronvolt})$ wie auch der $\ce{O}_{1\text{s}} (\SI{529.15}{\electronvolt})$ lassen sich durch einen Peak fitten.
 
