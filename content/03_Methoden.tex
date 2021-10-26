@@ -9,7 +9,7 @@
         Hierzu wird Ultrahochvakuum (UHV) eingesetzt.
         Da es keine Pumpe gibt, die direkt vom Atmosphärendruck bis in den UHV Bereichen kleiner \SI{1e-9}{\milli\bar} reicht, ist ein mehrstufiges Pumpsystem unabdingbar \cite{Henzler}.
         In dem vorliegenden Aufbau wird dies durch Turbomolekularpumpen mit vorgeschalteten Scrollpumpen realisert.
-        Ferner werden diese durch Titansublimationspumpen sowie Ionenpumpen unterstützt.
+        Ferner werden diese durch Titansublimationspumpen, sowie Ionenpumpen unterstützt.
         Diese tiefen Drücke sind erforderlich, da schon bei einem Druck von \SI{1e-6}{\milli\bar} die Oberfläche innerhalb von \SI{10}{\milli\second} zu \SI{1}{\percent} mit den im Restgas vorhandenen Teilchen bedeckt wäre~\cite{Henzler}.
 
         Es gibt auch die Möglichkeit gezielt Gase in die Präperationskammer zu leiten, in der die Proben für die anschließenden Messungen vorbereitet werden.
@@ -17,10 +17,10 @@
         Ein Maß für die Oberflächenbedeckung ist die Einheit Langmuir \si{\langmuir}, welcher einer Dosis entspricht.
         Dabei ist $\SI{1}{\langmuir} = \SI{1}{\torr} \cdot \si{\micro\second}$ also etwa $\SI{1.33e-6}{\milli\bar} \cdot \si{\second}$.
         Hier wird zu Grunde gelegt, dass jedes auf die Oberfläche auftreffende Teilchen auch haften bleibt. 
-        Die Oberfläche besäße also einen Haftkoeffizienten von \num{1}, was in der Realität so nicht vorkommt.
+        Die Oberfläche besäße also einen Haftkoeffizienten von Eins, was in der Realität so nicht vorkommt.
 
-        Das Vakuum dient allerdings nicht nur der Reinheit der Probe, sondern auch das die später emittierten Elektronen auch den Raum durchdringen und den Analysator erreichen können.
-        Andernfalls würden die Teilchen durch Streuung an anderen Teilchen abgebremst werden und somit Informationen verlieren.
+        Das Vakuum dient allerdings nicht nur der Reinheit der Probe, sondern auch das die später emittierten Elektronen den Raum durchdringen und den Analysator erreichen können.
+        Andernfalls würden die Elektronen durch Streuung an anderen Teilchen abgebremst werden und somit ihre Informationen verlieren.
         % Elektronen hätten bei einem Druck von xx bar nur eine Reichweite von \textbf{QUELLE, Zahlen}.
         Da es sich um die Untersuchung von Oberflächen handelt ist somit auch bei den Techniken auf die Oberflächensensitivität zu achten.
         Relevant wird damit die mittlere freie Weglänge der verwendeten Sonde.
@@ -32,13 +32,13 @@
             \label{fig:Weg}
         \end{figure}
         Es ist zu erkennen, dass Elektronen mit einer kinetischen Energie im Bereich von \SIrange{30}{100}{\electronvolt} aus einer Tiefe von nicht mehr als \SI{5}{\angstrom} kommen.
-        Werden also Elektronen als Sonden verwendet und ihre kinetische Energie angepasst, so kann davon ausgegagngen werden, dass sie nur aus Oberflächen nahen Bereichen kommen.
+        Werden also Elektronen als Sonden verwendet und ihre kinetische Energie angepasst, so kann davon ausgegagngen werden, dass sie nur aus oberflächennahen Bereichen kommen.
 
         Um Elektronen von der Probe kommend zu erhalten gibt es zwei Möglichkeiten.
-        Zünächst können Elektronen in der Probe angeregt werden, die dann aus der Oberfläche austreten und detektiert werden können.
+        Zünächst können Elektronen in der Probe angeregt werden, die dann aus der Oberfläche austreten und detektiert werden.
         Dies wird bei der Photoelektronenspektroskopie genutzt und in \autoref{sec:PES} genauer erläutert.
         Die zweite Möglichkeit ist es die Probe mit Elektronen im entsprechenden Energiebereich zu beschießen.
-        Zurückkommenden Elektronen mit identischer kinetischen Energie können also nur aus Oberflächen nahen Bereichen kommen.
+        Zurückkommenden Elektronen mit identischer kinetischen Energie können also nur aus oberflächennahen Bereichen kommen.
         Bei der Beugung niederenergetischer Elektronen wird dieses Prinzip verwendet und nun genauer beschrieben.
 
     \section{Beugung niederenergetischer Elektronen} \label{sec:LEED}
@@ -72,7 +72,7 @@
         Ebenso muss damit die Wellenlänge der Elektronen im Größenbereich der Gitterkonstanten liegen.
         Folglich haben die Elektronen einer Energie zwischen \SIrange{30}{200}{\electronvolt}~\cite{oura_surface_2003}.
         Kinematisch betrachtet wird die Oberfläche von einer Primärwelle getroffen.
-        Der von einem Streuer zurückgeworfene Anteil ohne zusätzliche Streuung interferiert mit den von anderen Streuen kommenden Sekundärwelle.
+        Der von einem Streuer zurückgeworfene Anteil (ohne zusätzliche Streuung) interferiert mit den von anderen Streuen kommenden Sekundärwelle.
         Für elastisch gestreute Elektronen muss also für den Impuls gelten $\abs*{\vec{k}_\text{i}} = \abs*{\vec{k}_\text{f}}$.
         Intensitäten der einzelnen Spots $I$ ergeben sich dabei aus dem Formfaktor $F$ und dem Gitterfaktor $G$ zu
         \begin{equation}
@@ -114,13 +114,14 @@
     
     \section{Photoelektronenspektroskopie} \label{sec:PES}
         Die Grundlage ist der Photoelektronenspektroskopie ist der photoelektrische Effekt, der 1905 zum ersten Mal von Albert Einstein erklärt wurde~\cite{Einstein}.
-        Hierbei werden Elektronen durch ein einfallendes Photon angeregt, ist die Energie hoch genug, so treten diese aus der Probenoberfläche aus.
+        Hierbei werden Elektronen durch ein einfallendes Photon angeregt.
+        Ist die Energie hoch genug, so treten diese aus der Probenoberfläche aus.
         In Formeln ergibt sich so die kinetische Energie der Elektronen, die die Probe verlassen zu 
         \begin{equation}
-            E_{\text{Kin}} = h \nu - E_{\symup{B}} - \psi
+            E_{\text{Kin}} = h \nu - E_{\symup{B}} - \phi
             \label{eqn:Photoeffekt}
         \end{equation}
-        mit der Bindungsenergie des Elektrons $E_{\symup{B}}$, der Energie des einfallenden Photons $h \nu$ und der Austrittsarbeit $\psi$.
+        mit der Bindungsenergie des Elektrons $E_{\symup{B}}$, der Energie des einfallenden Photons $h \nu$ und der Austrittsarbeit $\phi$.
         Die Austrittsarbeit ist der Energieunterschied zwischen der Fermienergie $E_\text{F}$ und der Vakuumenergie $E_\text{V}$.
         Erkennbar ist also, dass sich die kinetische Energie immer auf die Vakuumenergie bezieht wohin gegen die Bindungsenergie sich auf die Fermienergie bezieht und für gebundene Zustände stets positiv dargestellt wird.
         
@@ -152,8 +153,8 @@
         \end{figure}
         Ein beispielhaftes Spektrum ist in \autoref{fig:Band} zu finden.
         Die Fermikante, bis wohin alle Zustände besetzt sind ist im Spektrum nicht zu erkennen, legt allerdings die Bindungsenergie \SI{0}{\electronvolt} fest.
-        Im niederenergetischen Bindungsenergiebereich handelt es sich um Zustände des Valenzbandes zu höheren Energien treten dann Zustände der Kernniveaus auf.
-        Zusätzlich treten auch diskrete Linien auf, die durch Augerelektronen hervorgerufen werden.
+        Im niederenergetischen Bindungsenergiebereich handelt es sich um Zustände des Valenzbandes zu höheren Energien treten Zustände der Kernniveaus auf.
+        Zusätzlich treten diskrete Linien auf, die durch Augerelektronen hervorgerufen werden.
         Diese Augerelektronen besitzen immer eine feste kinetische Energie, da sie durch den Übergang zwischen zwei Schalen stammen und somit unabhängig von der verwendeten Photonenenergie.
         Zum Ende des Spektrums nimmt der Untergrund stetig zu, was durch inelastisch gestreute Elektronen zustande kommt.
         Nach jedem Peak steigt der Untergrund stufenartig an, da vermehrt Elektronen für die Streuung bereitstehen.
@@ -173,7 +174,7 @@
             % Die kernnahen Niveaus sind schwieriger zu beeinflussen und eigenen sich besonders gut zur Elementanalyse.
             Mit dieser Methode lässt sich ebenfalls die chemische Zusammensetzung untersuchen.
             Leicht unterschiedliche Positionen für verschiedene Ionisationszustände und Bindungszuständen können dabei Rückschlüsse auf chemische Umgebungen zulassen.
-            So verschiebt sich die Energie auch, je nach dem ob die Atome an der Oberfläche oder tiefer im Festkörper sind von denen die Elektroen emittiert werden.
+            So verschiebt sich die Energie auch, je nach dem ob die Atome an der Oberfläche oder tiefer im Festkörper sind von denen die Elektronen emittiert werden.
 
             Ein einzelnes so detektierte Merkmal unterliegt dabei mehrern Effekten. 
             Die Breite des charakteristischen Merkmals wird durch die Energiebreite der verwendeten Photonen und der Auflösung des Detekters beschränkt.
@@ -183,18 +184,18 @@
             Einseitige Verbreiterungen treten durch inelastische Streuungen der Photoelektronen auf.
 
             Hinzukommt, dass sich einzelne Linien als Dubletts ausbilden.
-            Dies rührt von der Spin-Bahn-Kopplung also der Aufspaltung auf Grund des Spins.
+            Dies rührt von der Spin-Bahn-Kopplung, also der Aufspaltung auf Grund des Spins.
             Ihre Intensitätsverhältnisse ergeben sich aus ihrem Entartungsgrad. 
             Ein Beispiel stellen die $\text{L}_2$- und $\text{L}_3$-Linien in \autoref{fig:Band} dar.
             Die Intensitäten der $\text{M}_{1,2,3}$ sind deutlich geringer, da ihr Wirkungsquerschnitt für die Anregung mit der Photonenenergie von \SI{1486.6}{\electronvolt} geringer ausfällt.
         
         \subsection{Röntgenabsorptionspektroskopie - XAS}
             Für die Durchfürung von Röntgenabsorptionsmessungen ist eine durchstimmbare Photonenquelle im weichen Röntgenbereich notwendig.
-            Dies ist aktuell nur durch Synchrotrons und Freielektronenlaser realisierbar.
-            Hierbei wird die Photonenenergie $h\nu$ über einen bestimmtren Bereich verriert. % in der eine Abosrptionskante liegt abgetastet.
+            Dies ist aktuell nur durch Synchrotrons und Freieelektronenlaser realisierbar.
+            Hierbei wird die Photonenenergie $h\nu$ über einen bestimmtren Bereich varriert. % in der eine Abosrptionskante liegt abgetastet.
             Trifft ein Photon auf die Oberfläche so wird dieses absorbiert und kann ein Photoelektron auslösen.
-            Wie viele Photonen diesen Prozess anregen können hängt davon ab, ob sich Elektronen bei der Energie $h\nu = E_\text{B}+\Psi$ befinden.
-            Energien an den schlagartig die absorption steigt werden auch Absorptionskanten genannt und sind charakteristisch für verschiedene Elemente. 
+            Wie viele Photonen diesen Prozess anregen können hängt davon ab, ob sich Elektronen bei der Energie $h\nu = E_\text{B}+\phi$ befinden.
+            Energien an den schlagartig die Absorption steigt werden auch Absorptionskanten genannt und sind charakteristisch für verschiedene Elemente. 
             Es handelt sich dabei dann um einen Übergang aus einem bestimmten kernnahen Zustand in einen unbestzten Zustand.
             Durch die Wahl der Polarisation des Lichtes kann auch spinsensetiv selktiert werden, welche Elektronen ausgelöst werden.
 
@@ -205,7 +206,15 @@
             
             Neben der Abhänigkeit von der Photonenenergien ist die Absorption auch von der Polarisation des Lichts selbst abhängig.
             So lässt sich aus den Unterschieden der Absorptionsintensitäten für s- und p-polarisiertem Licht die Neigung von Molekülen auf der Oberfläche kalkulieren\cite{floreano_periodic_2008}.
-            Für zirkularpolarisiertes Licht ergibt sich aus dem Intensitätsunterschied der links- und rechtszirkularpolarisertem Licht die Magnetisierung~\cite{stohr_magnetism_2006}.
+            Ebenso wird durch die Ausrichtung der magetischen Momente die Orbitalstruktur ebenfalls in diese Richtung gestreckt.
+            Nun kommt der Polarisationfaktor für den Photoemissionsstrom zu tragen.
+            Sind Polarisation der Photonen und Orbitalgeometrie parallel gerichtet kommt es zur verstärkten Absorption, im Gegensatzt dazu, wenn diese senkrecht aufeinander stehen.
+            Aus der Differenz der beiden Anteile ergibt sich dann das Signal der Röntgen linear magnetischer Dichroismus (XMLD, \textit{X-ray magnetic linear dichroism}).
+            Dieser Effekt tritt für antiferromagnetisch wie auch für ferromagnetisch Materialien auf.
+            Für zirkularpolarisiertes Licht ergibt sich aus dem Intensitätsunterschied der links- und rechtszirkularpolarisertem Licht die Magnetisierung für ferromagnetisch Materialien.
+            Durch die unterschiedelichen Polarisationen wird die eine oder andere Spinsorte vermehrt angeregt.
+            An der Fermikante sind nur Zustände einer gewissen Spinsorte unbesetz.
+            Da ein Spinflip verboten ist, dienen diese Zustände als Detektor für den Spin der angeregten Elektronen~\cite{stohr_magnetism_2006}.
 
         \subsection{Ultraviolettphotoelektronenspektroskopie - UPS} \label{sec:UPS}
             Die ultraviolette Strahlung besitzt eine Energie der Photonen im Bereich von \SIrange{10}{1000}{\electronvolt}~\cite{Fauster}.
@@ -274,27 +283,27 @@
         \end{figure}
         Ein exemplarischer Aufbau ist in \autoref{fig:MM} zu sehen.
         Die durch die Photonen angeregten Elektronen werden durch ein starkes elektrisches Feld von einigen \si{\kilo\volt} von der Probe zum Analysator hin beschleunigt.
-        Das Extraktorfeld kann bis auf \SI{29}{\kilo\volt} erhöht werden, wird standardmäßig aber auf \SI{10}{\kilo\volt} festgesetzt.
+        Das Extraktorfeld kann bis auf \SI{29}{\kilo\volt} erhöht werden.
         Durch diese große Spannung zwischen Probe und Extraktor ist es möglich einen großen Sichtbereich im Impulsraum abzudecken.
         Dies ist nötig, da durch den streifenden Einfall der Photonen und der Abberation der elektrostatischen Linsen nur einen kleinen Akzeptanzwinkel zur Verfügung stehen würde.
         Wichtig bei der Kathodenlinse ist, dass das Feld zwischen Probe und Linse sehr homogen ist, damit der Austrittswinkel erhalten bleibt, dies hat zur Folge, dass die Probe auch eine möglichst ebene Oberfläche aufweisen muss.
         Anschließend werden die Elektronen durch elektrostatische Linsen fokussiert und durch einzelne optische Elemente geleitet.
         Zusätzlich gibt es im Linsensystem noch elektrostatische Verschiebungslinsen, welche den Strahl ablenken und zentrieren.
         Die ersten Linsen sind so konzipiert, dass die Bildebene und die hintere Brennebene immer an der selben Position auftreten.
-        An diesen beiden Stellen kann dann eine Blende eingestzt werden, die entscheidet ob sich ein Bild im Realraum oder im Impulsraum auf den Detektor abbildet.
+        An diesen beiden Stellen kann eine Blende eingestzt werden, die entscheidet ob sich ein Bild im Realraum oder im Impulsraum auf den Detektor abbildet.
 
-        Im anschluss an das erste Linsensystem folgt ein weiters Linsensystem aus elektrostatischen Linsen, welche das Bild auf den Ausgang des Linsensystems fokussieren.
+        Im Anschluss an das erste Linsensystem folgt ein weiters Linsensystem aus elektrostatischen Linsen, welche das Bild auf den Ausgang des Linsensystems fokussieren.
         Hier befinden sich zwei magnetische Verschiebungslinsen um Drift zu korrigieren.
         Im Anschluss gehen die Elektronen in ein Transferlinsensystem über, welches dafür sorgt, dass ein einszueins Abbild auf die Eingangsblende des Analysators trifft.
-        Die Eingangsblende kann in ihrer Größe varriert werden, sodass nur ein Teil der Elektronen in den Analysator eintreten.
+        Die Eingangsblende kann in ihrer Größe varriert werden, sodass nur ein Teil der Elektronen in den Analysator eintritt.
         Je kleiner die Blende gewählt wird, desto besser ist die Energieauflösung aber so kleiner die Gesamtintensität.
         Als Energieanalysator kommt ein hemisphärischer Analysator zum Einsatz.
         Bei dem hemisphärischer Analysator werden die Elektronen zwischen zwei Halbkugeln durch ein statisches elektrisch Feld auf eine Kreisbahn gezwungen.
-        Dabei ist das Feld so gewählt, dass nur die mit der richtigen kinetischen Energie eintretenden Elektronen auch auf die Austrittsblende abgebildet werden.
+        Dabei ist das Feld so gewählt, dass nur die mit der richtigen kinetischen Energie eintretenden Elektronen auf die Austrittsblende abgebildet werden.
         % Ferner wird der Analysators so eingestellt, dass Elektronen mit einer Energie von \SI{50}{\milli\electronvolt} um die eingestellte Energie den Analysator passieren können, dies ist die Pass-Energie.
         
         Nach dem Detektor gibt es eine weiter Linseneinheit, welche zusammen mit einer Blende das gewünschte energieaufgelöst Bild auswählt und es auf die Detektorgröße aufweitet.
-        Anschließend durchlaufen die Elektronen eine Mikrokanalplate (eine Art Elektronenvervielfacher) und prallen auf den Phosphorschirm, der an den entsprechenden Stellen aufleuchtet.
+        Anschließend durchlaufen die Elektronen eine Mikrokanalplatte (eine Art Elektronenvervielfacher) und prallen auf den Phosphorschirm, der an den entsprechenden Stellen aufleuchtet.
         Durch die Kamera wird dieses Leuchten regestriert und das räumliche oder rekrusive Bild kann rekostruiert werden~\cite{SPECS-MM}.
         % Bei dem Detektor handelt es sich um eine CMOS Kamera die das Bild der auf den Leuchtschirm auftreffenden Elektronen aufnimmt.
         CCD (\textit{Charge Coupled Device}) Detektoren sind ein Standard bei ARPES Messungen, sie integrieren die analoge Photonenintensitäten oder einzelne Lichtblitze werden aufgezeichnet.
@@ -327,16 +336,15 @@
             Dies wird auch Impuls Mikroskopie (\textit{Momentum Microscopy}) bezeichnet.
             Bei der Impuls Mikroskopie ist die zeitgleich Erfassung des polaren und azimuntalen Austrittswinkel von großer Bedeutung. 
             So entsteht durch die zusätzlich Sortierung der Elektronen nach ihrer kinetischen Energie ein dreidimensionaler Datensatz.
-            Wird über das gesamte Bild also alle Winkel integriert so ergibt sich die Kurve der Elektronendichte (EDC, \textit{electron density curve}).
-            Sie ist vergleichbar mit der Zustandsdichte.
+            Wird über das gesamte Bild also alle Winkel integriert so ergibt sich die Kurve der Elektronendichte.
 
         \subsection{Realraum Aufnahmen}
             Es ist ferner möglich Bilder im Realraum aufzunehmen.
             Dies geschieht durch Einsetzen einer Blende in dem hinteren Brennpunkt, die Kontrastblende (\textit{contrast aperture}).
             Dabei können sehr kleine Spots von \SIrange{50}{200}{\micro\meter} ausgewählt werden.
             Um den Kontrast im Bild zu erhöhen werden nur Elektronen mit einem bestimmten Austrittswinkel für die Erstellung des Bildes erfasst.
-            Mit Hilfe der Kontrastblenden kann dann eine Auflößung von einigen \si{\nano\meter} erreicht werden \textbf{QUELLE}. 
-            Auf dem Eintrittsspalt des Energyanalysators wird dann das Bild der Oberfläche projeziert.
+            Mit Hilfe der Kontrastblenden kann eine Auflößung von einigen \si{\nano\meter} erreicht werden. 
+            Auf dem Eintrittsspalt des Energieanalysators wird das Bild der Oberfläche projeziert.
             Das Bild wird bei festen Energiefilter-Einstellungen aufgenommen.
             Der Modi wird auch als PEEM (\textit{Photon emitted electron microscopy}) bezeichnet.
 
@@ -350,11 +358,11 @@
             In einem TOF Analysators wird die kinetische Energie aus der Flugzeit der Elektronen bestimmt, weswegen es nur für gepulste Photonenquellen möglich ist.
             Der Vorteil liegt darin, dass direkt ein ganzer Datensatz für alle Impuls- und Energiewerte erfasst werden kann.
 
-            Mögliche Erweiterung wäre auch die Elektronen nach der Energieselection auch noch nach ihrem Spin zu sortieren.
-            So lassen sich dann auch die magnetischen Eigenschaften genauer veranschaulichen.
+            Mögliche Erweiterung wäre auch die Elektronen nach der Energieselektion auch noch nach ihrem Spin zu sortieren.
+            So lassen sich die magnetischen Eigenschaften genauer veranschaulichen.
         
     \section{Molekül Orbital Tomographie} \label{sec:MOT}
-        Die Molekül Orbital Tomographie vereinigt nun die Vorteile der Impulsmikroskopie mit der Theorie der Dichtefunktionaltheorie (DFT) um Molekülorbitale zu identifizieren.
+        Die Molekül Orbital Tomographie vereinigt die Vorteile der Impulsmikroskopie mit der Dichtefunktionaltheorie (DFT) um Molekülorbitale zu identifizieren.
         Aus der Theorie können die Orbitale der Moleküle in der Gasphase im Realraum berechnet werden~\cite{database}.
         Werden diese dann Fourier transformiert, so ergibt sich die Aufenthaltswahrscheinlichkeiten der Elektronen abhängig von ihrem Impuls.
         Nun können die Moleküle bei einer bestimmten kinetischen Energie geschnitten werden und es ergibt sich ein zweidimensionales Bild~\cite{brandstetter_kmappy_2021}.
@@ -414,9 +422,9 @@
         Dieser besteht aus einer Präperationskammer (links im Bild) und dem 2D Photoelektronen Mikroskop KREIOS 150MM von SPECS (rechts im Bild).
 
         Für die Reinigung der Probe steht eine Ionenquelle zur Verfügung, um die Probe mittels ioneninduzierter Zerstäubung zu reinigen.
-        Auf dem Manipulator, mit dem die Probe im Ultrahochvakuum verfahren werden kann, ist eine Elektronenstoßheizung montiert um die Probe aufzuheizen.
+        Auf dem Manipulator, mit dem die Probe im Ultrahochvakuum verfahren werden kann, ist eine Elektronenstoßheizung montiert, um die Probe aufzuheizen.
         Die Präperationskammer ist mit einer LEED-Optik ausgestattet um die Oberflächenbeschaffenheit zu kontrollieren.
-        Ferner befindet sich noch ein Leckventil für Sauerstoff sowie Molekül- und Metallaufdampfer an der Kammer.
+        Ferner befindet sich noch ein Leckventil für Sauerstoff, sowie Molekül- und Metallaufdampfer an der Kammer.
         
         Vor der Extraktorlinse des 2D Photoelektronen Mikroskopes befindet sich eine 6-Achsen-Piezostage (Hexapod) mit der die Probe in Position gebracht und ausgerichtet werden kann.
         Messungen erfordern eine exakte Ausrichtung der Oberflächennormalen parallel zur Linsenachse und ferner einen Abstand von \SI{4}{\milli\meter} zum Extraktor.
