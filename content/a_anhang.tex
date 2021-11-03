@@ -160,3 +160,51 @@ Im Normalfall stehen jedoch alle Ihre Resultate im Hauptteil der Bachelorarbeit 
             Dies lässt sich auch aus der Literatur erkennen, dass sich bei den Anornung von Pentacene auf Gold um den Prozess der Physisorption handelt~\cite{5A_4}.
             Abwesenheit des LUMOs in den Spektren und Bildern muss aber nicht zwangsläufig auf die Physisorption hindeuten.
             So ist Pentacene auf Kupfer (111) chemisch adsorbiert und zeigt dennoch keine Anzeichen der Besetzung des LUMO~\cite{koch_adsorption-induced_2008}.
+
+            \section{Sonstiges}
+            \begin{itemize}
+                \item Die mittlere freie Weglänge $\lambda$ ist die in der \SI{63}{\percent} der Elektronen Energieverlust erfahren \cite{vickerman_surface_2009}
+                \item VB Spektrum UPS zeigt 'alles' und XPS VB mehr die Metalle!
+            \end{itemize}
+
+            \subsection{XMCD/XMLD}
+            Neben der Abhänigkeit von der Photonenenergien ist die Absorption auch von der Polarisation des Lichts selbst abhängig.
+            So lässt sich aus den Unterschieden der Absorptionsintensitäten für s- und p-polarisiertem Licht die Neigung von Molekülen auf der Oberfläche kalkulieren\cite{floreano_periodic_2008}.
+            Ebenso wird durch die Ausrichtung der magetischen Momente die Orbitalstruktur ebenfalls in diese Richtung gestreckt.
+            Nun kommt der Polarisationfaktor für den Photoemissionsstrom zu tragen.
+            Sind Polarisation der Photonen und Orbitalgeometrie parallel gerichtet kommt es zur verstärkten Absorption, im Gegensatzt dazu, wenn diese senkrecht aufeinander stehen.
+            Aus der Differenz der beiden Anteile ergibt sich dann das Signal der Röntgen linear magnetischer Dichroismus (XMLD, \textit{X-ray magnetic linear dichroism}).
+            Dieser Effekt tritt für antiferromagnetisch wie auch für ferromagnetisch Materialien auf.
+            Für zirkularpolarisiertes Licht ergibt sich aus dem Intensitätsunterschied der links- und rechtszirkularpolarisertem Licht die Magnetisierung für ferromagnetisch Materialien.
+            Durch die unterschiedelichen Polarisationen wird die eine oder andere Spinsorte vermehrt angeregt.
+            An der Fermikante sind nur Zustände einer gewissen Spinsorte unbesetz.
+            Da ein Spinflip verboten ist, dienen diese Zustände als Detektor für den Spin der angeregten Elektronen~\cite{stohr_magnetism_2006}.
+
+            \subsection{Wüstit}
+            \begin{figure}
+                \centering
+                \begin{subfigure}[t]{0.48\textwidth}
+                    \centering
+                    \includegraphics[height=5cm]{FeO/XMCD_FeO.png}
+                    \caption{Spektren für links- und rechtzirkular polarisiertes Licht und ihre Differenz dem XMCD Signal.}
+                    \label{fig:XMCD}
+                \end{subfigure}
+                \begin{subfigure}[t]{0.48\textwidth}
+                    \centering
+                    \includegraphics[height=5cm]{FeO/XMLD_FeO.png}
+                    \caption{Spektren für s- und p- polarisiertes Licht, sowie dessen Differenz dem XMLD Signal.}
+                    \label{fig:XMLD}
+                \end{subfigure}
+                \caption{Die verschiedenen XAS Messungen mit unterschiedlichen Polarisationen. Aus der Differenz ergeben sich dann die XMCD und XMLD Signale.}
+                \label{fig:XAS_FeO}
+            \end{figure}
+            Mit Hilfe des magnetischen Röntgen-Zirkular-Dikorismus und magnetischen Röntgen-Linear-Dikorismus lassen sich die magnetischen Eigeschaften des Substrates untersuchen.
+            Beide Spektren der Röntgenabsorptionsmessungen sind in \autoref{fig:XAS_FeO} zu sehen.
+            \begin{itemize}
+                \item Das XMCD Signal sollte für L3 und L2 umegkehrt sein, wenn es Ferromagnetisch ist, Signal lässt sich aber nur bei L3 erkennen.
+                \item Auch XMLD für Antiferromagnetismus auf Grund der nicht spärischen Oribtale durch die Spin-Bahn-Kopplung (Spins ausgerichtet) \cite{stohr_magnetism_2006} - kann auch eben sein, dass die Spins nicht ausgerichtet waren. T war unter Neel Temperatur.
+                \item Eventuell kein XMLD Signal, falls Probe nicht geordnet oder viele Domänen aufweist. Die Easy-Axis des Fe lag auch genau 45° zu p und s.
+                \item Kleine XMLD Effekte können auch durch die Liganden zu stande kommen, da diese ja auch das Orbital verformen können (besser T abhänig messen)
+                \item Warum kein XMCD und XMLD Signal? Es bilden sich Domänen mit einer Größe von \SIrange{50}{500}{\nano\meter} aus. Diese müssen erst durch ein hinreichend großes Feld ausgerichtet werden. Ansonsten haben die Domänen alle Magnetisierungen in unterschiedliche Richtungen. \cite{cornell_iron_2003}
+
+            \end{itemize}
