@@ -110,6 +110,55 @@
         Tendenziell ist es möglich aus der Position der Beugungsreflexe auf die Größe der Einheitszelle zu schließen, durch Adsorbate und Domänen, kann dies allerdings erschwert werden.
         Werden die Intensitäten der Spots durch Variation der Energie aufgezeichnet ergeben sich charakteristische IV-Kurven.
         Ihre theoretische Berechnung ist sehr aufwendig, da sie den Formfaktor und zahlreiche Streueffekte berücksichtigen müssen.
+    
+    \section{Augerelektronenspektroskopie} \label{sec:Auger}
+        \begin{figure}
+            \centering
+            \includegraphics[width=0.4\textwidth]{Auger-Effekt.png}
+            \caption{Schamtische Darstellung des Augerprozesses. Kopiert aus \cite{Auger-Bild}.}
+            \label{fig:Auger}
+        \end{figure}
+        Um sich die Zusammensetzung von Materialien genauer zu betrachten ist die Auger Methode eine einfache Methode.
+        Der da hintersteckende Augerprozess wurde von L.~Meitner und P.~Auger unabhängig von einander im Jahre \num{1920} entdeckt \cite{Auger-Prozess}.
+        Da die Atomorbitale für verschiedene Elements bei unterschiedlichen Energien liegen ist auch der Übergang zwischen zwei dieser Zustande eine charakteristische Energie.
+        Für die Augerelektronenspektroskopie wird sich dieses von Nutzen gemacht.
+        Hierfür muss zunächst ein Loch in einem der Kernniveaus erzeugt werden.
+        Dies kann auf zwei verschiedene Arten geschehen.
+        Eine ist in dem die Probe mit hochenergetischen Elektronen von eigenen Kilovolt beschossen werden und dabei ein Elektron herausschlägt.
+        Dieser Prozess ist schematisch in \autoref{fig:Auger} dargestellt.
+        Die zweite Methode ist die Anregung mittels Photonen, welche dann ein Photoelektron auslösen.
+        Dieser Prozess wird genauer in \autoref{sec:PES} behandelt.
+
+        Nach dem Auslösen eines Elektrons befindet sich das Atom in einem angeregten Zustand.
+        Um wieder eine energetisch günstigere Konfiguration einzunehmen muss ein Elektronen von einem energetisch niedrigerem Zustand (weiter außen liegend) das Loch auffüllen.
+        Dabei kann die frei werdene Energie über ein Photon emittiert werden oder an ein weiteres Elektron abgegeben werden, dem Augerelektronen.
+        Letzterer Prozess ist ebenfalls in \autoref{fig:Auger} zu erkennen und beruht auf der Coulombwechselwirkung.
+        Die kinetische Energie diese Elektrons ergibt sich dabei zu
+        \begin{equation}
+            E_\text{Kin} = E_\text{X} - E_\text{Y} -E_\text{Z} - \Delta U - \phi
+        \end{equation}
+        mit den Bindungsenergien des Zustandes in dem das Loch erzeugt wird $E_\text{X}$, des auffüllenden Elektrons $E_\text{Y}$ und dem emittierten Elektronen $E_\text{Z}$.
+        Abgezogen werden muss noch die Austrittsarbeit $\phi$, welche der Energieunterschied zwischen der Fermienergie $E_\text{F}$ und der Vakuumenergie $E_\text{V}$ ist.
+        Ferner muss noch eine Korrektur $\Delta U$ (meist klein) beachtet werden, da das Atom im zweifach ionisierten Zustand hinterlassen wird~\cite{Fauster}.
+        Wie zuvor angemerkt ist diese Energiedifferenz charakteristisch für jedes Element.
+        Werden die emittierten Elektronen auf ihre Energie hin untersucht.
+        Dies kann zum einen durch ein weiteres Gitter in der LEED Optik geschehen, dann ist nur eine Elektronenkanone von Nöten.
+        Andernfalls wird meist ein Zylinderspiegelanalysator verwendet, in dem die Elektronen nach ihrer Energie selektiert werden und anschließend vervielfältigt werden.
+        Entsprechende Linien in Energie aufgelösten Spektren werden dabei einem Element und entsprechendem Übergang in der Röntgennotation mit Großbuchstaben (K, L, M) zugeordnet.
+        Die Notataion setzt sich dabei aus den drei Buchstaben XYZ der Schalen zusammen, vobei das Valenzband durch den Buchstaben V ausgedrückt werden kann~\cite{Fauster}.
+
+        Für die Auslösung eines Augerelektronens ist dabei maßgeblich die Wechselwirkungswahrscheinlichtkeit zwischen der verwendeten Anregung und entsprechendem Kernniveaus Auschlag gebend.
+        Hinzukommt, dass für große Energiedifferenz der Prozess der Abregung durch Aussendung eine Photons, der Röntfluoreszenz dominiert wird.
+        Für eine maximale Ausbeute sollten die anregenden Primärelektronen etwa dem dreifachen Bindungsenergie des Rumpfniveaus $E_\text{X}$ entsprechen~\cite{Fauster}.
+        Dies kann zusammen gefasst werden in ein Sensetivitätsfaktor $S_i$ für entsprechendes Element.
+        Entsprechende Werte für verschiedene Anregungen sind tabelliert \cite{Auger}.
+        Gemeinsam mit den Intensitäten $I_j$ der verschiedene Augerlinien im Spektrum kann anschließend die Konzentration einzelner Elemente
+        \begin{equation}
+            c_i = \frac{I_i/S_i}{\sum_j I_j/S_j}
+            \label{eqn:Auger}
+        \end{equation}
+        der verschiedenen Bestandteile in der Probe bestimmt werden.
+        Da die experimentell verwendeten kinetischen Energien im Bereich zwischen \SIrange[range-phrase=\:und\:]{100}{1200}{\electronvolt} lässt sich aus \autoref{fig:Weg} erkennen, dass diese Methode nicht immer Oberflächensensetiv ist.
 
     
     \section{Photoelektronenspektroskopie} \label{sec:PES}
@@ -121,8 +170,7 @@
             E_{\text{Kin}} = h \nu - E_{\symup{B}} - \phi
             \label{eqn:Photoeffekt}
         \end{equation}
-        mit der Bindungsenergie des Elektrons $E_{\symup{B}}$, der Energie des einfallenden Photons $h \nu$ und der Austrittsarbeit $\phi$.
-        Die Austrittsarbeit ist der Energieunterschied zwischen der Fermienergie $E_\text{F}$ und der Vakuumenergie $E_\text{V}$.
+        mit der Bindungsenergie des Elektrons $E_{\symup{B}}$ und der Energie des einfallenden Photons $h \nu$.
         Erkennbar ist also, dass sich die kinetische Energie immer auf die Vakuumenergie bezieht wohin gegen die Bindungsenergie sich auf die Fermienergie bezieht und für gebundene Zustände stets positiv dargestellt wird.
         
         \begin{figure}
