@@ -83,14 +83,14 @@
 
         
     \section{Nickeloxid}    
+        Auf die saubere Goldprobe wird bei Raumtemperatur ein Nickeloxidfilm aufgebracht.
+        Dies geschieht durch das Aufdampfen von Nickel mit einer Rate von \SI{0.3}{\angstrom\per\minute} in einer Sauerstoffatmosphäre von \SI{2e-6}{\milli\bar}.
         \begin{figure}
             \centering
             \includegraphics[height=5cm]{NiO/2021_06_15_019_NiO(111)_73eV_Thicklayer}
             \caption{Der Nickeloxidfilm (111) bei einer Elektronenenergie von \SI{73}{\electronvolt}.}
             \label{fig:LEED_NiO}
         \end{figure}
-        Auf die saubere Goldprobe wird bei Raumtemperatur ein Nickeloxidfilm aufgebracht.
-        Dies geschieht durch das Aufdampfen von Nickel mit einer Rate von \SI{0.3}{\angstrom\per\minute} in einer Sauerstoffatmosphäre von \SI{2e-6}{\milli\bar}.
         Es ergibt sich das LEED Bild in \autoref{fig:LEED_NiO}.
         Im Vergleich zu den klaren und scharfen Spots des sauberen Gold scheinen diese etwas ausgewaschen zu sein.
         Die Ursache daran liegt in der nicht ganz perfekten Oberflächenbeschaffenheit \cite{NiO_34}.
@@ -127,8 +127,10 @@
         Dies ist auch in \autoref{fig:WKF_NiO} für verschiedene Aufdampfzeiten dargestellt. 
         Kleine Verschiebungen können durch unterschiedliche Aufdampfbedingungen erklärt werden, denn es ist bekannt das durch Variation der Parameter gezielt die Eigenschaften manipuliert werden können.
         Vom dünnen Nickeloxidfilm zum dickeren Nickeloxidfilm wechselt sie von \SI{4.25}{\electronvolt} zu \SI{3.80}{\electronvolt}.
-        Dies liegt daran, dass Sauerstofffehlstellen als negative Defekte gelten und somit die Austrittsarbeit verringern~\cite{IF_3}. \textbf{Eigenlich bindet NiO lieber zusätzlichen Sauerstoff ein, was einer Erhöhung der Austrittsarbeit entsprechen würde}
-        Die Austrittsarbeit des dicken Nickeloxidfilms liegt damit im erwartetn Bereich~\cite{poulain_electronic_2020}.
+        Dies liegt daran, dass Sauerstofffehlstellen als negative Defekte gelten und somit die Austrittsarbeit verringern~\cite{IF_3}.
+        Hinzukommend sind Adsorbate wie bei der \ce{OH}-Terminierung die die Austrittsarbeit weiter verringern~\cite{NiO_40}.
+        Weitere Verunreinigungen können durch die verwendete Heliumlampe auftreten, da der Druck in der Analysekammer stark ansteigt.
+        Dennoch liegt die Austrittsarbeit des dicken Nickeloxidfilms im erwartetn Bereich~\cite{poulain_electronic_2020}.
 
         \begin{figure}
             \centering
@@ -156,8 +158,9 @@
         Der Oberflächenzustand des Gold ist verschwunden, da nun sich Nickeloxid auf der Oberfläche befindet.
         Im Bereich zwischen Fermikante und etwa \SI{3.5}{\electronvolt} ist noch das s-Band des Golds zu erkennen.
         In den Bereichen \SI{2}{\electronvolt}, \SI{4}{\electronvolt} und \SI{6}{\electronvolt} lassen sich jeweils ein bis zwei flach verlaufenden Bänder erkennen.
-        Das Band bei \SI{2}{\electronvolt} lässt sich dabei klar dem Nickel d-Band zuordnen.
-        Die restlichen Bänder, die erkennbar sind stammen dabei noch vom Substrat.
+        Das nahezu gerade Band bei \SI{2}{\electronvolt} lässt sich dabei klar dem Nickel d-Band zuordnen, da es nur schwach dispersiv ist.
+        Starke Intensitäten bei \SI{6}{\electronvolt} lassen sich ebenfalls dem Sauerstoff 2p zuordnen, wie es schon beim integrierten Spektrum in \autoref{fig:EDC_NiO_thick} geschehen ist.
+
 
         \begin{figure}
             \centering
@@ -198,18 +201,21 @@
         Bei größeren Energien in \autoref{fig:LEED_NiO+5A_73} hingegen sind leichte Substrateffekte sichtbar.
         So lässt sich schlussfolgern, dass sich die Moleküle auf der Oberfläche nicht in einer regelmäßigen Struktur anordnen.
         Dabei zeigt der direkte Vergleich der integrierten Spektren in \autoref{fig:EDC_NiO+5A} des reinen Nickeloxid und des mit Pentacene drauf deutliche zusätzliche Spitzen.
+        Wie für adsorbierte Moleküle erwartet sind die Strukturen eher breit, da die Lebenszeit der Zustände verkürzt und damit die Energieniveaus aufgeweitet werden.
+        Weiter verschiebt sich die Austrittsarbei zu einem Wert von \SI{4.14}{\electronvolt}, dies ist eine Verschiebung um \SI{0.11}{\electronvolt} hinsichtlich dem dünnen Nickeloxidfilm.
+        Dieser Effekt wird erwartet, da durch den Push-Back-Effekt die Austrittsarbeit verringert wird.
         Die Abwesenheit sehr ausgeprägter Merkmale in den impulsaufgelösten Bildern bestätigt die Annahme, dass sich die Moleküle auf der Oberfläche nicht regelmäßig anordnen.
         Ferner überlappen die einzelnen Merkmale im Impulsraum, sodass ein ausgewaschenes Bild entsteht.
         Auch wenn sich in den integrierten Spektren in \autoref{fig:EDC_NiO} klar zeigt, dass sich bei einigen Energien die Intensität erhöht ist in den entsprechenden Bildern keine klare Zuordnung möglich.
         Ein Beispiel ist in \autoref{fig:MOT_NiO+5A} zu sehen
         Dieses Bild wurde gewählt da ein deutliches Signal im integrierten Spektrum zu erkennen ist und die entsprechende Energie nicht zu weit weg von der Fermikante liegt.
+
+        Das sich die Moleküle nicht auf der Oberfläche ordnen kann die Ursache von zu starker oder zu schwachen Wechselwirkung sein.
+        Da sich ander Oberfläche der (111)-Orientierung Nickeloxid auf Grund der Polarität ein Dipolmoment ausbildet führ dies zu einer stärkeren Wechselwirkung.
+        Liegt die Oberfläche auch noch in der \ce{O} beziehungsweise \ce{OH} Terminierung vor so ist eine Abwesenheit von kovalenten Bindungen nicht auszuschließen.
+        Starke kovalente Bindungen, können wie bereits erwähnt die Selbstanordnung behindern (s. \autoref{sec:Selbstanordnung}).
         % Tendenziell sollten entsprechend winkelaufgelöste Bilder den theoretischen Berechnungen wie in \autoref{fig:MOT_Au+5A} entsprechen, da Substrate gleiche Symmetrien aufweisen.
-        \begin{itemize}
-            \item linear ansteigender Untergrund bei Molekülen ? zu sehen in der Differenz
-            \item Für den dünnen Nickeloxidfilm liegt die Austrittsarbeit mit den Molekülen bei \SI{4.14}{\electronvolt}.
-        \end{itemize}
-
-
+    \FloatBarrier
     \section{Eisen}
         \begin{figure}
             \centering
@@ -339,6 +345,8 @@
         Es zeigt dabei gute Übereinstimmung mit der Literatur die durch schwarze Punkte angedeutet ist~\cite{FeO_35}.
         Ein kleiner Unterschied bei den Spitzen kann durch die Evaluation der Fermikante herrühren.
         Zusammen mit dem Ende der Sekundärelektronen ergibt sich die Austrittsarbeit zu \SI{4.35}{\electronvolt}.
+        Damit liegt diese deutlich unter dem erwarteten Wert von \SI{5.2}{\electronvolt}~\cite{FeO_40}.
+        Besonders für Oxide kann die Austrittsarbeit deutlich vom Präperationsprozess und Stochimetrie abhängen, sodass ein Unterschied von einem Elektronenvolt keine Besonderheit darstellt~\cite{IF_11}.
 
         \begin{figure}
             \centering
@@ -411,25 +419,6 @@
             \caption{Das Augerspektrum der Wüstitprobe.}
             \label{fig:Auger_FeO}
         \end{figure}
-        \begin{figure}
-            \centering
-            \begin{subfigure}[t]{0.48\textwidth}
-                \centering
-                \includegraphics[height=5cm]{FeO/O1s_FeO.png}
-                \subcaption{Spektrum des $\ce{O}_{1\text{s}}$ Übergang. Fit mit einem Peak (kleiner Shirley) sehr gut.
-                Verwendete Photonenenergie war \SI{650}{\electronvolt} und die Polarisation s.}
-                \label{fig:XPSO1s_FeO}
-            \end{subfigure}
-            \begin{subfigure}[t]{0.48\textwidth}
-                \centering
-                \includegraphics[height=5cm]{FeO/Fe3p_FeO.png}
-                \subcaption{Spektrum des $\ce{Fe}_{3\text{p}}$ Übergang. Zuornung sehr schwierig, ein großer Peak bei kleinen BE und ein kleiner bei großen BE passen. Aber auch zwei etwa gleichgroße Peaks. Je nach dem wie die Parameter gewählt und festgestzt werden.
-                Verwendete Photonenenergie war \SI{200}{\electronvolt} und die Polarisation s.}
-                \label{fig:XPSFe3p_FeO}
-            \end{subfigure}
-            \caption{}
-            \label{fig:XPS_FeO}
-        \end{figure}
         Das Verhältnis aus Sauerstoff und Eisen kann dabei erneut mittels Augerelektronenspektroskopie überprüft werden.
         Auch das Augerspektrum in \autoref{fig:Auger_FeO} mit dem bereits von Carpa u.A. \cite{FeO_1} entdecken Augerelektronenspektrum für Eisenoxid zeigt gute Übereinstimmung.
         Ebenfalls deutet das Peakverhältnis von dem Sauerstoffsignal und Eisen mit \num{2.68} auf $\ce{FeO}$ hin, da dies nur leicht unterhalb des Wertes aus der Literatur von \num{2.89} liegt \cite{FeO_1}.
@@ -437,23 +426,6 @@
         Die Augerelektronen mit iherer für Eisen typischen kinetischen Energie weisen eine mittlere freie Weglänge von etwa \SI{14}{\angstrom} auf.
         Hierdurch ist die Oberflächensensetivität nicht mehr gegeben.  
         
-        Einen genaueren Einblick welche Struktur vorliegt kann die Röntgenphotoelektronenspektroskopie bieten, da hier die kinetsichen Energien so gewählt werden, dass sie Oberflächensensetiv wirkt.
-        Das entsprechende Spektrum ist in \autoref{fig:XPS_FeO} zu finden.
-        Wie erwartet zeigt sich hinsichtlich des Sauerstoffsignals keine Veränderung bis auf die Abwesenheit der \ce{OH} Kontamination.
-        Wohingegen die Änderung im $\ce{Fe}_\text{3p}$-Signal deutliche Modifikationen aufweist.
-
-        \begin{figure}
-            \centering
-            \includegraphics[height=5cm]{FeO/XAS_FeO_cp.png}
-            \caption{Das Spektrum Röntgenabsorptionsspektrum des \ce{Fe3O4} mit rechtszirkularer Polarisation.}
-            \label{fig:XAS_FeO}
-        \end{figure}
-        In \autoref{fig:XAS_FeO} ist das Röntgenabsorptionsspektrum des Eisenmonoxoids dargestellt.
-        EinVergleich mit der Lieteratur zeigt die $L_3$-Kante eine kleine Verschiebung hin zu einem größeren Anteil \ce{Fe3O4}.
-        Erwartet wird ein starkes Signal bei \SI{707}{\electronvolt} mit einer kleiner Schulter hin zu \SI{709}{\electronvolt}~\cite{FeO_45}.
-        Hinsichtlich dem $L_2$-Signal ist eine deutliche Übereinstimmung mit der Lieteratur zu erkennen.
-
-
         % \begin{figure}
         %     \centering
         %     \includegraphics[width=0.5\textwidth]{FeO/Fermi_FeO.png}
@@ -478,7 +450,13 @@
         Der Beitrag bei \SI{5.5}{\electronvolt} \cite{FeO_44} und \SI{6.2}{\electronvolt} \cite{FeO_18} haben ihren Ursprung beim Sauerstoff 2p.
         Es ist dabei ein deutlicher Unterschied zu dem Spektrum des \ce{Fe3O4} in \autoref{fig:EDC_Fe3O4} zu erkennen.
         Aus dem Punkt an dem die Sekundärelektronen aufhören und der Fermikante lässt sich die Austrittsarbeit auf \SI{3.06}{\electronvolt} bestimmen.
-        Durch das Aufdampfen der Moleküle verschiebt sich diese dann zu \SI{3.51}{\electronvolt}.
+        Dieser Wert liegt leicht unterhalb des Literaturwertes von \SI{3.5}{\electronvolt} \cite{FeO_28}, aus vermutlich den selben Gründen wie schon bei der Mischphase.
+        Hinzu kommt bei einem dünnen Film die Austrittsarbeit auch maßgeblich von dem Übergang zwischen Metall und Oxid und dessen Defektstruktur abhängt~\cite{IF_10}.
+        Eine Absenkung der Austrittsarbeit kann dabei auf Sauerstofffehlstellen hindeuten~\cite{IF_11}, was ebenfalls durch das Augerspektrum bestätigt werden kann.
+        Durch das Aufdampfen der Moleküle verschiebt sich die Austrittsarbeit zu \SI{3.51}{\electronvolt}.
+        Der Anstieg der Austrittsarbeit kann dabei auf den Push-Back-Effekt zurück geführt werden, dies ist typisch für Adsorbate. \cite{Goiri}
+        Allerdings wird später festgestellt, dass ebenfalls das LUMO besetzt wird, was einen Ladungsaustausch voraussetzt. 
+        % Dieser Ladungsaustausch würde dabei zu einer Erniedrigung der Austrittsarbeit führen. \cite{Calloni}
 
         \begin{figure}
             \begin{subfigure}[t]{0.34\textwidth}
@@ -507,6 +485,41 @@
         Daraus lässt sich durch Schneiden des dreidimensionalen Datensatzes die Bandstruktur gewinnen, welche in \autoref{fig:Band_FeO} zu sehen ist.
         Wie schon beim Eisen reicht die Auflösung nicht aus um die Bänder klar zu erkennen.
         Auffällig ist allerdings, dass sich die Intensität bezüglich des Eisens (s. \autoref{fig:Band_Fe}) hin zu größeren Bindungsenergien verschoben hat.
+
+        \begin{figure}
+            \centering
+            \begin{subfigure}[t]{0.48\textwidth}
+                \centering
+                \includegraphics[height=5cm]{FeO/O1s_FeO.png}
+                \subcaption{Spektrum des $\ce{O}_{1\text{s}}$ Übergang. Fit mit einem Peak (kleiner Shirley) sehr gut.
+                Verwendete Photonenenergie war \SI{650}{\electronvolt} und die Polarisation s.}
+                \label{fig:XPSO1s_FeO}
+            \end{subfigure}
+            \begin{subfigure}[t]{0.48\textwidth}
+                \centering
+                \includegraphics[height=5cm]{FeO/Fe3p_FeO.png}
+                \subcaption{Spektrum des $\ce{Fe}_{3\text{p}}$ Übergang. Zuornung sehr schwierig, ein großer Peak bei kleinen BE und ein kleiner bei großen BE passen. Aber auch zwei etwa gleichgroße Peaks. Je nach dem wie die Parameter gewählt und festgestzt werden.
+                Verwendete Photonenenergie war \SI{200}{\electronvolt} und die Polarisation s.}
+                \label{fig:XPSFe3p_FeO}
+            \end{subfigure}
+            \caption{}
+            \label{fig:XPS_FeO}
+        \end{figure}
+        Einen genaueren Einblick welche Struktur vorliegt kann die Röntgenphotoelektronenspektroskopie bieten, da hier die kinetsichen Energien so gewählt werden, dass sie Oberflächensensetiv wirkt.
+        Das entsprechende Spektrum ist in \autoref{fig:XPS_FeO} zu finden.
+        Wie erwartet zeigt sich hinsichtlich des Sauerstoffsignals keine Veränderung bis auf die Abwesenheit der \ce{OH} Kontamination.
+        Wohingegen die Änderung im $\ce{Fe}_\text{3p}$-Signal deutliche Modifikationen aufweist.
+
+        \begin{figure}
+            \centering
+            \includegraphics[height=5cm]{FeO/XAS_FeO_cp.png}
+            \caption{Das Spektrum Röntgenabsorptionsspektrum des \ce{Fe3O4} mit rechtszirkularer Polarisation.}
+            \label{fig:XAS_FeO}
+        \end{figure}
+        In \autoref{fig:XAS_FeO} ist das Röntgenabsorptionsspektrum des Eisenmonoxoids dargestellt.
+        EinVergleich mit der Lieteratur zeigt die $L_3$-Kante eine kleine Verschiebung hin zu einem größeren Anteil \ce{Fe3O4}.
+        Erwartet wird ein starkes Signal bei \SI{707}{\electronvolt} mit einer kleiner Schulter hin zu \SI{709}{\electronvolt}~\cite{FeO_45}.
+        Hinsichtlich dem $L_2$-Signal ist eine deutliche Übereinstimmung mit der Lieteratur zu erkennen.
 
         \begin{figure}
             \centering
@@ -573,7 +586,7 @@
                 \centering
                 \includegraphics[width=6cm]{Farbskala.png}
             \end{subfigure}
-            \caption{Vergleich der gemessenen Intensitätsverteilung für verschiedene Bindungsenergien mit den theoretisch berechneten Intensitätsverteilungen.}
+            \caption{Vergleich der gemessenen Intensitätsverteilung für verschiedene Bindungsenergien (links) mit den theoretisch berechneten Intensitätsverteilungen (rechts).}
             \label{fig:MOT_FeO_5A}
         \end{figure}
         Das Aufdampfen einer Monolage Pentacene brachte kein homogenes und von einer geordneten Struktur herrührendes LEED-Bild zustande.
@@ -602,7 +615,7 @@
 
   
     \section{NOTIZEN}
-    \subsection{datendeutung}
+    \subsection{Datendeutung}
         \begin{itemize}
             \item Zuordnung des Fe3p Peaks schwer. Manche sagen sechs Peaks voraus \cite{FeO_14, FeO_17, FeO_15} wegen der Finestruktur, andere zwei (Fe2+, Fe3+) \cite{FeO_15, FeO_11, FeO_10, FeO_7} manche drei (Fe2+, Fe3+tetra, Fe3+octa) \cite{FeO_12}. es kommt dabei auf das Material an, zum Identifizieren ist es also schwierig durch den einen Peak.
             \item Die Bindungsnergie des $\ce{Fe}^{2+}$ liegt bei \SI{53.7}{\electronvolt} und die des $\ce{Fe}^{3+}$ bei \SI{55.6}{\electronvolt} \cite{FeO_7}.
@@ -624,16 +637,8 @@
 
     \subsection{Ideen}
     \begin{itemize}
-        \item Bandstruktur mit Molekülen - Oberflächenzustände? Extra Features
-        \item Austrittsarbeiten
         \item XPS Fe/O Ratio - Nordmann Formel (2.20)
         \item Inselwachstum durch Annealing? Mehr Fe zu sehen?
-    \end{itemize}
-
-    \subsection{Anmerkungen}
-    \begin{itemize}
-        \item Voigt ist eine Faltung aus Lorentz, der natürlichen Linienbreite, ihre Inverse ist proportinal zur Lebenszeit des Zustands. Gauß hingegen nimmt die experimentelle Verbreiterung auf.
-        \item Die Fermikante wird aus einer Faltung aus Gauß und ??? gefittet. Gauß ist ebenfalls wieder für die experimentelle Verbreiterung zuständig. Die Stufenfuktion bildet die Verbreiuterung durch die Temperatur und auch die Besetzung wieder.
     \end{itemize}
 
     \subsection{Überbleibsel/ToDos}
