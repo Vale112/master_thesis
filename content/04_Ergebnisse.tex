@@ -1,43 +1,28 @@
 \chapter{Ergebnisse}
-    Innerhalb diese Kapitels geht es zunächst um die Vorbereitung der Proben, sowie deren elektronischen Eigenschaften.
-    Hier wird zunächst immer auf die Präperation eingegangen, anschließend erfolgt die Charakterisierung des Substartes.
-    Im Anschluss werden die Pentacene Moleküle aufgebracht um sie mit Hilfe der Molekülorbitaltomographie zu untersuchen.
-    % Weiter geht es um den Umgang mit dem dreidimensionalen Datensatz sowie dessen Bearbeitung.
-    % Die verschiedenen extrahierten Darstellungen werden dann aufgenommen und analysiert.
-    In dieser Arbeit untersuchten Nickeloxid Proben wurden alle in dem Versuchsaufbau aus \autoref{sec:Versuchsaufbau} vorbereitet und vermessen.
+    Um verschiedene antiferromagnetische Oberflächen zu untersuchen werden diese zunächst präperiert und anschließend charakterisiert.
+    Dabei werden zwei unterschiedliche Substrate auf unterschiedliche Weise hergestellt.
+    Die Nickeloxidfilm wurden alle in dem Versuchsaufbau aus \autoref{sec:Versuchsaufbau} vorbereitet und vermessen.
     Dabei betrug die Photonenenergie immer \SI{21.22}{\electronvolt} und die Probe befands sich bei Raumtemperatur.
-    Die Eisenoxid Proben wurden an der NanoESCA Beamline am Synchrotron Elettra in Triest präperiert und charakterisiert \footnote{Näheres zu diesem Versuchsaufbau und der Behandlung der Daten kann in~\cite{ma-DJ} gefunden werden.}.
-    Analyse und Bearbeitung der Daten erfolge mittels der Software IGOR Pro 8~\cite{IGOR} und Inkscape~\cite{Inkscape}
+    Ergebnisse der Präperation finden sich in \autoref{sec:Prep_NiO}.
+    Das zweite Substrat, das Eisenmonooxid wurde an der NanoESCA Beamline am Synchrotron Elettra in Triest präperiert und charakterisiert \footnote{Näheres zu diesem Versuchsaufbau und der Behandlung der Daten kann in~\cite{ma-DJ} gefunden werden.}.
+    Die Details dieses Prozesses sind in \autoref{sec:Prep_FeO} zusammen gefasst.
+    Auf beide Substrate wurden dann Pentacene Molekühle aufgedampft und mittels der Beugung niederenergetischer Elektronen sowie der Moleküle Orbitale Tomographie betrachtet.
+    Dessen Ergebnisse sind in \autoref{sec:Ergeb} zusammen gestellt.
+    Zur Analyse und Bearbeitung der Daten finden die Software IGOR Pro 8~\cite{IGOR} und Inkscape~\cite{Inkscape} Anwendung.
 
-    \section{Gold}
+
+    \section{Präperation Nickeloxid} \label{sec:Prep_NiO}
         \begin{figure}
             \centering
-            \begin{subfigure}{0.48\textwidth}
-                \centering
-                \includegraphics[height=5cm]{Au/2021_06_08_002_Au(111)_75eV_mod.png}
-                \subcaption{}
-                \label{fig:LEED_Au}
-            \end{subfigure}
-            \begin{subfigure}{0.48\textwidth}
-                \centering
-                \includegraphics[height=5cm]{Au+5A/021_Au(111)+5A(40)_16eV.png}
-                \subcaption{}
-                \label{fig:LEED_Au+5A}
-            \end{subfigure}
-            \caption{Das Beugungsbild der sauberen Gold (111)-Oberfläche bei einer Elektronenenergie von \SI{75}{\electronvolt} (\subref{fig:LEED_Au}).
-            Und in (\subref{fig:LEED_Au+5A}) das LEED-Bild für die Kalibrierung des Pentacene bei einer Energie von \SI{16}{\electronvolt}.}
-        \label{fig:Substrate}
+            \includegraphics[height=5cm]{Au/2021_06_08_002_Au(111)_75eV_mod.png}            
+            \caption{Das Beugungsbild der sauberen Gold (111)-Oberfläche bei einer Elektronenenergie von \SI{75}{\electronvolt}.}
+            \label{fig:LEED_Au}
         \end{figure}
-        Zunächst geht es hier um das Substrat auf dem später der antiferromagnetische Nickeloxidfilm gewachsen wird.
+        Zur Präperation des antiferromagnetische Nickeloxidfilms wird die Gold (111)-Oberfläche verwendet.
         Das Substrat wurde zunächste mehrer Male durch ioneninduziertes Zerstäuben und anschließendes Aufheizen auf \SI{500}{\celsius} gereinigt.
         Es ergibt sich eine wohldefinierte Struktur der Oberfläche, was sich ebenfalls in dem Beugungsbild der niederenergetischen Elektronen in \autoref{fig:LEED_Au} erkennen lässt.
         Ferner sind scharfe Spots zu erkennen, ebenso wie die charakteristischen kleineren Spots um die Hauptspots, die von der Fischgräten-Rekonstruktion herrühren.
         Die unterschiedlichen Intensität der einzelnen Reflexe rühren ebenfalls von der Rekonstruktion her.
-
-        Um die Monolage an Molekülen, genauer dem Pentacene zu kalibrieren wird ebenfalls das Gold Substrat genutzt.
-        Hier ist bekannt, dass sich die Moleküle in einer wohldefinierten Struktur anordnen~\cite{5A_4}.
-        Das entrsprechende Beugungsbild ist in \autoref{fig:LEED_Au+5A} zu erkennen.
-        Somit ist für die späteren Substrate ebenfalls die Molekülbedeckung evaluiert.
 
         \begin{figure}
             \centering
@@ -81,9 +66,7 @@
         % Durch die Verschiebung des Abschnitt der Sekundärelektronen nach aufbringen des Pentacene ändert sich die Austrittsarbeit zu \SI{4.62}{\electronvolt}, was dabei sehr nah am Literaturwert von \SI{4.63}{\electronvolt} liegt~\cite{5A_4}.
         % Die Austrittsarbeit verschiebt sich also um \SI{0.84}{\electronvolt}, was auf ein starkes Oberflächendipolmoment hindeutet~\cite{5A_3}.
         % Auf Grund der Abwesenheit eines permaneten Dipols in den Molekülen und der Physisorption kann dies auf den Push-back Effekt zurück geführt werden.
-
-        
-    \section{Nickeloxid}    
+   
         Auf die saubere Goldprobe wird bei Raumtemperatur ein Nickeloxidfilm aufgebracht.
         Dies geschieht durch das Aufdampfen von Nickel mit einer Rate von \SI{0.3}{\angstrom\per\minute} in einer Sauerstoffatmosphäre von \SI{2e-6}{\milli\bar}.
         \begin{figure}
@@ -161,65 +144,13 @@
         In den Bereichen \SI{2}{\electronvolt}, \SI{4}{\electronvolt} und \SI{6}{\electronvolt} lassen sich jeweils ein bis zwei flach verlaufenden Bänder erkennen.
         Das nahezu gerade Band bei \SI{2}{\electronvolt} lässt sich dabei klar dem Nickel d-Band zuordnen, da es nur schwach dispersiv ist.
         Starke Intensitäten bei \SI{6}{\electronvolt} lassen sich ebenfalls dem Sauerstoff 2p zuordnen, wie es schon beim integrierten Spektrum in \autoref{fig:EDC_NiO_thick} geschehen ist.
-
-
-        \begin{figure}
-            \centering
-            \begin{subfigure}[t]{0.48\textwidth}
-                \centering
-                \includegraphics[height=5cm]{NiO+5A/2021_06_18_005_NiO111_5A_16eV.png}
-                \subcaption{}
-                \label{fig:LEED_NiO+5A_16}
-            \end{subfigure}
-            \begin{subfigure}[t]{0.48\textwidth}
-                \centering
-                \includegraphics[height=5cm]{NiO+5A/2021_06_18_003_NiO111_5A_73eV.png}
-                \subcaption{}
-                % Die Bandstruktur des reinen Eisens entlang einiger Hochsymmetrierichtungen.
-                % Verwendete Photonenenergie war \SI{64}{\electronvolt} und die Polarisation p.
-                \label{fig:LEED_NiO+5A_73}
-            \end{subfigure}
-            \caption{Beugungsbild der niederenergetischen Elektronen für eine Monolage Pentacene auf der Nickeloxid (111) Oberfläche bei einer Elektronenenergie von \SI{16}{\electronvolt} (\subref{fig:LEED_NiO+5A_16}) und \SI{73}{\electronvolt} (\subref{fig:LEED_NiO+5A_73}).}
-            \label{fig:LEED_NiO+5A}
-        \end{figure}
-        \begin{figure}
-            \centering
-            \begin{subfigure}[t]{0.48\textwidth}
-                \centering
-                \includegraphics[height=5cm]{NiO+5A/NiO_thick_5A_new.png}
-                \subcaption{}
-                \label{fig:EDC_NiO+5A}
-            \end{subfigure}
-            \begin{subfigure}[t]{0.48\textwidth}
-                \centering
-                \includegraphics[height=5cm]{NiO+5A/NiO_thick_5A_KE12_7.png}
-                \subcaption{} % Map für Pentacene auf dicken Nickeloxidfilm bei einer kinetischen Energie von \SI{7.5}{\electronvolt}. Also Bindungsenergie von \SI{3.85}{\electronvolt}.
-                \label{fig:MOT_NiO+5A}
-            \end{subfigure}
-            \caption{Integriertes Spektrum des Valenzband Bereiches für reines Nickeloxid und mit einer Monolage Pentacene (\subref{fig:EDC_NiO+5A}), sowie ein winkelaufgelöstes Bild bei einer Bindungsenergie von \SI{3.85}{\electronvolt} (\subref{fig:MOT_NiO+5A}).}
-        \end{figure}
-        Das Aufdampfen von einer Monolage Pentacene brachte kein LEED-Bild bei niedrigen Energien zustande (s. \autoref{fig:LEED_NiO+5A_16}), wie es für eine größere Überstruktur (z.B. bei Pentacene auf Gold in \autoref{fig:LEED_Au+5A}) erwartet wird.
-        Bei größeren Energien in \autoref{fig:LEED_NiO+5A_73} hingegen sind leichte Substrateffekte sichtbar.
-        So lässt sich schlussfolgern, dass sich die Moleküle auf der Oberfläche nicht in einer regelmäßigen Struktur anordnen.
-        Dabei zeigt der direkte Vergleich der integrierten Spektren in \autoref{fig:EDC_NiO+5A} des reinen Nickeloxid und des mit Pentacene drauf deutliche zusätzliche Spitzen.
-        Wie für adsorbierte Moleküle erwartet sind die Strukturen eher breit, da die Lebenszeit der Zustände verkürzt und damit die Energieniveaus aufgeweitet werden.
-        Weiter verschiebt sich die Austrittsarbei zu einem Wert von \SI{4.14}{\electronvolt}, dies ist eine Verschiebung um \SI{0.11}{\electronvolt} hinsichtlich dem dünnen Nickeloxidfilm.
-        Dieser Effekt wird erwartet, da durch den Push-Back-Effekt die Austrittsarbeit verringert wird.
-        Die Abwesenheit sehr ausgeprägter Merkmale in den impulsaufgelösten Bildern bestätigt die Annahme, dass sich die Moleküle auf der Oberfläche nicht regelmäßig anordnen.
-        Ferner überlappen die einzelnen Merkmale im Impulsraum, sodass ein ausgewaschenes Bild entsteht.
-        Auch wenn sich in den integrierten Spektren in \autoref{fig:EDC_NiO} klar zeigt, dass sich bei einigen Energien die Intensität erhöht ist in den entsprechenden Bildern keine klare Zuordnung möglich.
-        Ein Beispiel ist in \autoref{fig:MOT_NiO+5A} zu sehen.
-        Dieses Bild wurde gewählt da ein deutliches Signal im integrierten Spektrum zu erkennen ist und die entsprechende Energie nicht zu weit weg von der Fermikante liegt.
-
-        Das sich die Moleküle nicht auf der Oberfläche ordnen kann die Ursache von zu starker oder zu schwachen Wechselwirkung sein.
-        Da sich auf der Oberfläche der (111)-Orientierung des Nickeloxid auf Grund der Polarität ein Dipolmoment ausbildet, führ dies zu einer stärkeren Wechselwirkung.
-        Liegt die Oberfläche auch noch in der \ce{O} beziehungsweise \ce{OH-}-Terminierung vor so ist eine Abwesenheit von kovalenten Bindungen nicht auszuschließen.
-        Starke kovalente Bindungen, können wie bereits erwähnt die Selbstanordnung behindern (s. \autoref{sec:Selbstanordnung}).
-        Vermutlich handelt es sich um den Effekt der zu starken Wechselwirkung, da sich dann die Pentacene Moleküle nicht ordnen.
-        Allerdings kann auch die Ausbildung von verschiedenen Domänen und Orientierungen entlang der Substratachsen zu einer Verschmierung in der Winkelauflösung führen~\cite{Schöll und Schreiber - 2018 - Chapter 24 - Thin Films of Organic Molecules Inte.pdf}.
-        % Tendenziell sollten entsprechend winkelaufgelöste Bilder den theoretischen Berechnungen wie in \autoref{fig:MOT_Au+5A} entsprechen, da Substrate gleiche Symmetrien aufweisen.
+        
     \FloatBarrier
-    \section{Eisen}
+    \section{Präperation Eisenmonooxid} \label{sec:Prep_FeO}
+        Um den Film aus Eisenmonooxid herzustellen wird zunächst eine Eisenprobe verwendet.
+        Diese ist dabei ein dünner Film auf Magnesiumoxid(100).
+        Auf diese wird dann ein Film Magnetit aufgedampft und mittels Heizen und ioneninduziertes Zerstäuben in Eisenmonooxid umgewandelt.
+
         \begin{figure}
             \centering
             \includegraphics[width=0.5\textwidth]{Fe/Fe3p_Fe.png}
@@ -243,16 +174,15 @@
             \caption{Beugungsbild der niederenergetischen Elektronen der passiviertes Eisen (100) Oberfläche bei einer Elektronenenergie von \SI{44}{\electronvolt} (\subref{fig:LEED_pFe_44}) und \SI{125}{\electronvolt} (\subref{fig:LEED_pFe_125}).}
             \label{fig:LEED_pFe}
         \end{figure}
-        Bei der verwendeten Eisenprobe handelt es sich um einen dünnen Eisenfilm, der auf einem Magnesiumoxid Substrat gewachsen wurde.
-        Durch leichtes ioneninduziertes Zerstäuben und aufheizen auf \SI{600}{\celsius} wurde die Probe zunächst gereinigt.
+        Zunächst wird die Eisenprobe mittels leichtem ioneninduziertem Zerstäuben und aufheizen auf \SI{600}{\celsius} gereinigt.
         Die Reinheit der Probe lässt sich auch am Spektrum des $\ce{Fe}_{3\text{p}}$ Übergangs in \autoref{fig:XPSFe3p_Fe} erkennen.
-        Das Signal bei \SI{52.83}{\electronvolt} lässt sich nach Abzug eines Pseudo-Tougaard Untergrund sehr gut mit einer Pseudo-Voigt Funktion approximieren.
-        Die Position des $\ce{Fe}_{3\text{p}}$ Siganls passt dabei sehr gut zur Literatur mit einer Position von \SI{53.8}{\electronvolt} und einer Halbwertsbreite von \SI{1.73}{\electronvolt}~\cite{FeO_50}.
-        Mit \SI{2.11}{\electronvolt} ist die gemessene Halbwertsbreite etwas größer, wobei die Probe auch bei Raumtemperatur vermessen wurde.
+        Das Signal bei \SI{52.83}{\electronvolt} lässt sich nach Abzug eines Pseudo-Tougaard Untergrund sehr gut mit einer Pseudo-Voigt Funktion approximieren~\cite{schmid_new_2014}.
+        Mit dieser Position des $\ce{Fe}_{3\text{p}}$ Signals passt dies zur Literatur mit einer Position von \SI{53.8}{\electronvolt} und einer Halbwertsbreite von \SI{1.73}{\electronvolt}~\cite{FeO_50}.
+        Hierbei ist die gemessene Halbwertsbreite mit \SI{2.11}{\electronvolt} etwas größer. % , wobei die Probe auch bei Raumtemperatur vermessen wurde.
         
         Um Verunreinigungen des sehr reaktiven sauberen Eisens zu vermeiden, wird die Probe anschließend direkt passiviert.
         Dies geschieht in einer Sauerstoffatmosphäre von \SI{1.3e-7}{\milli\bar} für fünf Minuten, während die Probe bei \SI{550}{\celsius} gehalten wird.
-        Die Probe wird anschließend kurz auf \SI{600}{\celsius} aufgeheizt.
+        Anaschließend wird die Probe kurz auf \SI{600}{\celsius} aufgeheizt.
         Nun wird auch dessen Oberflächenbeschaffenheit kontrolliert und entsprechende LEED-Bilder sind in \autoref{fig:LEED_pFe} zu sehen.
         Die Spots sind scharf und zeigen auch die Geometrie der $\ce{Fe}-\text{p}(1 \times 1)\ce{O}$ Struktur.
         Alle Spots sind dabei nicht zentrosymmetrisch, da die Probe verkippt ist, wodurch auch der (0,0)-Reflex zu sehen ist.
@@ -264,8 +194,7 @@
         Dadurch lässt sich für die spätere Umrechnung in die Bindungsenergie die Austrittsarbeit des Analysators bei NanoESCA auf \SI{4.5}{\electronvolt} festlegen. 
         % \textbf{nach Vitaly liegt die bei 4,25eV (kann sich aber nach dem Flashen ändern~\cite{vickerman_surface_2009})}
         Anzumerken ist, dass die Genauigkeit dieser Annahme nicht exakt ist, da zusätzlich die Fermikante durch ein starkes Signal von d-Bändern überlagert wird.
-        % Auf Grund dessen wird die von den Mitarbeitern der Beamline ermittlte Austrittsarbeit von \SI{4.25}{\electronvolt} verwendet.
-        % Aus dem Abschnitt der Sekundärelektronen lässt sich ferner dann die Austrittsarbeit der paasivierten Eisenprobe auf \SI{4.06}{\electronvolt} bestimmen.
+        Aus dem Abschnitt der Sekundärelektronen lässt sich die Austrittsarbeit der paasivierten Eisenprobe auf \SI{4.06}{\electronvolt} bestimmen.
         
         \begin{figure}
             \begin{subfigure}[t]{0.34\textwidth}
@@ -293,15 +222,23 @@
         Wie schon für das Gold lässt sich auch die Oberflächenbrillouinzone des Eisens darstellen. 
         Dies ist in \autoref{fig:BZ_Fe} geschehen.
         Aus ihr lässt sich anschließend die Bandstruktur extrahieren, welche in \autoref{fig:Band_Fe} abgebildet ist.
-        Die Auflössung lässt es allerdings nicht zu einzelne Bänder aufzulösen, auch wenn die winkelaufgelöste Messung in \autoref{fig:BZ_Fe} sehr gut aufgelöst ist.
-        
+        Die Auflössung und Messstatistik lässt es allerdings nicht zu einzelne Bänder aufzulösen, auch wenn die winkelaufgelöste Messung in \autoref{fig:BZ_Fe} sehr gut aufgelöst ist.    
 
-    \section{Magnetit}
         \begin{figure}
-            \centering
-            \includegraphics[height=5cm]{Fe3O4/2021_09_07_012_FeO(100)_44eV.png}
-            \caption{\ce{Fe3O4} (100) bei einer Elektronenenergie von \SI{44}{\electronvolt}.}
-            \label{fig:LEED_Fe3O4}
+            \begin{subfigure}[t]{0.48\textwidth}
+                \centering
+                \includegraphics[height=5cm]{Fe3O4/2021_09_07_012_FeO(100)_44eV.png}
+                \subcaption{}
+                \label{fig:LEED_Fe3O4}
+            \end{subfigure}
+            \begin{subfigure}[t]{0.48\textwidth}
+                \centering
+                \includegraphics[height=5cm]{FeO/2021_09_09_001_FeO_125eV.png}
+                \subcaption{}
+                \label{fig:LEED_FeO}
+            \end{subfigure}
+            \caption{Das Beugungsbild der Oberfläche nach dem Aufdampfen bei einer Elektronenenergie von \SI{44}{\electronvolt} (\subref{fig:LEED_Fe3O4}).
+            Sowie das Beugungsbild der modifizierten Oberfläche bei einer Elektronenenergie von \SI{125}{\electronvolt}.bei einer Elektronenenergie von \SI{125}{\electronvolt}.}
         \end{figure}
         Auf die passivierte Eisenoberfläche wird Eisen mit einer Rate von \SI{0.6}{\ML\per\minute} und einem Sauerstoffdruck von \SI{2e-7}{\milli\bar} aufgedampft.
         Dabei wird die Probe auf eine Temperatur von \SI{230}{\celsius} gehalten.
@@ -314,14 +251,36 @@
         Allerdings ist die Kantenlänge der Einheitszelle des Magnetits bereits um \SI{7}{\percent} größer als die dopplete Kantenlänge der Eisen Einheitszelle (\SI{2.862}{\angstrom}~\cite{springer_database}).
         Dies kann zu Gitterverzerrungen in den ersten Lagen führen und wird für größere Schichtdicken wieder der ursprünglichen Gitterkonstante entsprechen.
 
+        Um die Wüstitstruktur zu erhalten wird der aufgedampfte Film zunächst auf \SI{650}{\celsius} aufgeheizt.
+        Anschließend werden vermehrt Sauerstoffatome durch ioneninduziertes Zerstäuben ausgelöst, um so die Wüstit Zusammensetzung zu erhalten~\cite{FeO_36}.
+        Im Anschluss wird die Probe nochmal auf \SI{650}{\celsius} erwärmt um die Fehlstellen auszuheilen.
+        Dies sollte unabhängig von dem vorherschenden Eisenoxid zu dem gewünschten Wüstit führen~\cite{FeO_12, FeO_15}.
+        Durch die induzierte Umordnung der Atome ergibt sich dann die gewünschte Struktur, welche in dem LEED Bild aus \autoref{fig:LEED_FeO} zu erkennen ist.
+        Die Intensitäten sind beim Eisenoxid im Gegensatz zu dem passivierten Eisen invertiert, wobei die zuvor starken Spots nicht mehr sichtbar sind.
+        Trotz der gleichen Elektronenenergie von \SI{125}{\electronvolt} sind die Spots leicht nach außen gewandert.
+        Dies Widerspricht sich mit der eigentlich größeren Gitterkonstante von Eisenoxid im Bezug auf die $\text{p}(1 \times 1)\ce{O}$ Überstruktur des passivierten Eisens.
+        Ein klarer Unterschied ist auch zu dem frisch aufgedampften Film in \autoref{fig:LEED_Fe3O4} zu sehen.
+        Die ursprünglichen Spots der Überstruktur sind verschwunden und es ergibt sich die erwartete Intensitätsverteilung.
+
         \begin{figure}
             \centering
-            \includegraphics[height=5cm]{Fe3O4/AES_Fe3O4.png}
-            \caption{Das Augerspektrum der Magnetitprobe.}
-            \label{fig:Auger_Fe3O4}
+            \begin{subfigure}[t]{0.48\textwidth}
+                \centering
+                \includegraphics[height=6cm]{Fe3O4/AES_Fe3O4.png}
+                \subcaption{}
+                \label{fig:Auger_Fe3O4}
+            \end{subfigure}
+            \begin{subfigure}[t]{0.48\textwidth}
+                \centering
+                \includegraphics[height=6cm]{FeO/AES_FeO.png}
+                \subcaption{}
+                \label{fig:Auger_FeO}
+            \end{subfigure}
+            \caption{Die Augerspektren für den aufgedampften Film (\subref{fig:Auger_Fe3O4}) und den modifizierten Film (\subref{fig:Auger_FeO}).}
+            \label{fig:Auger}
         \end{figure}
-        Die Konzentrationen an Sauerstoff und Eisen werden mittels Augerelektronenspektroskopie analysiert.
-        So ergibt sich das Augerspektrum in \autoref{fig:Auger_Fe3O4}.
+        Die Konzentrationen an Sauerstoff und Eisen werden in beiden Filmen mittels Augerelektronenspektroskopie analysiert.
+        So ergibt sich das Augerspektrum in \autoref{fig:Auger_Fe3O4} für den frisch aufgedampften Film.
         Hierbei kann das Signal bei \SI{503}{\electronvolt} dem KLL-Übergang des Sauerstoffs und dem Eisen die Signale bei \SI{598}{\electronvolt}, \SI{651}{\electronvolt} und \SI{703}{\electronvolt} für den LMM-Übergang zugeordnen werden. 
         Die drei unterschiedlichen Energien für das Eisen tauchen durch die Spin-Bahn-Aufspaltung des Eisens auf.
         Das Peakverhältnis zwischen dem Sauerstoffsignal bei \SI{503}{\electronvolt} und dem Signal für Eisen bei \SI{651}{\electronvolt} ergibt einen Wert von \num{3.14}~\cite{Auger}.
@@ -337,62 +296,164 @@
         Auf Grund der Dicke des Films von etwa \SI{45}{\angstrom} ist ein Beitrag durch das Eisen-Substrat zu vernachlässigen.
         % Problem bereitet natürlich das Substrat, was ebenfalls aus Eisen besteht und auch die passivierte Schicht enthält bereits Sauerstoff.
 
+        Für den modifizierten Film ergibt sich ein Verhältnis von \num{2.68} in \autoref{fig:Auger_FeO}.
+        Dies deutet auf $\ce{FeO}$ hin, da dies nur leicht unterhalb des Wertes aus der Literatur von \num{2.89} liegt~\cite{FeO_1}.
+        Die kleien Abweichung nach unten kann dadurch erklärt werden, dass es sich um einen sehr dünnen Film auf Eisen handelt.
+        Die Augerelektronen mit ihrer für Eisen typischen kinetischen Energie weisen eine mittlere freie Weglänge von etwa \SI{14}{\angstrom} auf.
+        Hierdurch ist die Oberflächensensetivität nicht mehr gegeben und es könnte einen Beitrag durch das Eisensubstrat geben. 
+        Ebenso zeigt das Augerspektrum mit dem bereits von Carpa u.A.~\cite{FeO_1} entdecken Augerelektronenspektrum für Eisenoxid zeigt gute Übereinstimmung.
+
         \begin{figure}
-            \centering
-            \includegraphics[height=5cm]{Fe3O4/VB_Fe3O4.png}
-            \caption{Das Spektrum des Valenzbandes bei einer Photonenenergie von \SI{64}{\electronvolt} und der p Polarisation des \ce{Fe3O4} (grün).
-            Ebenfalls dargestellt die Messung aus Referenz~\cite{FeO_35} bei einer Photonenenergie von \SI{59}{\electronvolt} (schwarze Punkte).}
-            \label{fig:EDC_Fe3O4}
+            \begin{subfigure}[t]{0.48\textwidth}
+                \centering
+                \includegraphics[height=5.5cm]{Fe3O4/VB_Fe3O4.png}
+                \subcaption{}
+                \label{fig:EDC_Fe3O4}
+            \end{subfigure}
+            \begin{subfigure}[t]{0.48\textwidth}
+                \centering
+                \includegraphics[height=5.5cm]{FeO/VB_FeO.png}
+                \subcaption{}
+                \label{fig:EDC_FeO}
+            \end{subfigure}
+            \caption{Die Valenzbandspektren (grün) bei einer Photonenenergie von \SI{64}{\electronvolt} und der p Polarisation für den aufgedampften Film (\subref{fig:EDC_Fe3O4}) und den modifizierten Film (\subref{fig:EDC_FeO}).
+            Ebenso sind jeweils Referenzmessungen aus der Literatur in schwarz eingetragen.
+            Diese stammen für (\subref{fig:EDC_Fe3O4}) aus \cite{FeO_35} und wurde bei einer Photonenenergie von \SI{59}{\electronvolt} aufgenommen.
+            Für (\subref{fig:EDC_FeO}) wurde ein Photonenenergie von \SI{65}{\electronvolt} verwendet und entstammt aus \cite{FeO_14}.
+            Zusätzlich sind auch die identifizierten Merkmale mit blau gestrichelten Linien eingetragen.}
+            \label{fig:EDCs}
         \end{figure}
-        Wird sich das Valenzband genauer angeschaut so ergibt sich das winkelintegrierte Spektrum in \autoref{fig:EDC_Fe3O4}.
-        Es zeigt dabei gute Übereinstimmung mit der Literatur die durch schwarze Punkte angedeutet ist~\cite{FeO_35}.
-        Ein kleiner Unterschied bei den Spitzen kann durch die Evaluation der Fermikante herrühren.
+        Bei der Betrachtung der Valenzbandspektren in \autoref{fig:EDCs} fallen deutliche Unterschiede auf.     
+        Ein Vergleich zwischen dem winkelintegrierte Spektrum des Valenzbands des aufgedampften Films in \autoref{fig:EDC_Fe3O4} (grün) zeigt gute Übereinstimmung mit der Literatur die durch schwarze Punkte angedeutet ist~\cite{FeO_35}.
+        Ein kleine Vererschiebung bei den Spitzen kann durch die Evaluation der Fermikante herrühren.
         Zusammen mit dem Ende der Sekundärelektronen ergibt sich die Austrittsarbeit zu \SI{4.35}{\electronvolt}.
         Damit liegt diese deutlich unter dem erwarteten Wert von \SI{5.2}{\electronvolt}~\cite{FeO_40}.
         Besonders für Oxide kann die Austrittsarbeit deutlich vom Präperationsprozess und Stochimetrie abhängen, sodass ein Unterschied von einem Elektronenvolt keine Besonderheit darstellt~\cite{IF_11}.
-
+        Das Valenzbandspektrum des modifizierten Fimls in \autoref{fig:EDC_FeO} (grün) zeigt im niederenergetischen Bereich recht gute Übereinstimmung mit der Literatur (schwarz)~\cite{FeO_14}.
+        Es ist ein kleiner Offset unter den beiden zu erkennen, wird dieser vernachlässigt so ist bei der hier verwendeten Probe ein gößerer Sauerstoffanteil zu erkennen.
+        Denn das Spektrum lässt durch vier maßgebliche Beiträge beschreiben.
+        Hierbei handelt es sich bei \SI{1.5}{\electronvolt} um den Beitrag des hybridiserten Zustand $\ce{Fe}\:\text{d}^6\text{L}^{-1}$ und bei \SI{4}{\electronvolt} um den Beitrag des $\ce{Fe}\:\text{d}^5$ Zustands~\cite{FeO_19}.
+        Der Beitrag bei \SI{5.5}{\electronvolt}~\cite{FeO_44} und \SI{6.2}{\electronvolt}~\cite{FeO_18} haben ihren Ursprung beim Sauerstoff 2p.
+        Es ist dabei ein deutlicher Unterschied zu dem Spektrum des \ce{Fe3O4} in \autoref{fig:EDC_Fe3O4} zu erkennen.
+        Aus dem Punkt an dem die Sekundärelektronen aufhören und der Fermikante lässt sich die Austrittsarbeit auf \SI{3.48}{\electronvolt} bestimmen.
+        Dieser Wert passt damit zum Literaturwertes von \SI{3.5}{\electronvolt}~\cite{FeO_28}..
+        % Hinzu kommt bei einem dünnen Film die Austrittsarbeit auch maßgeblich von dem Übergang zwischen Metall und Oxid und dessen Defektstruktur abhängt~\cite{IF_10}.
+        % Eine Absenkung der Austrittsarbeit kann dabei auf Sauerstofffehlstellen hindeuten~\cite{IF_11}, was ebenfalls durch das Augerspektrum bestätigt werden kann.
+        
         \begin{figure}
             \centering
             \begin{subfigure}[t]{0.48\textwidth}
                 \centering
-                \includegraphics[height=5cm]{Fe3O4/O1s_Fe3O4.png}
-                \subcaption{Spektrum des $\ce{O}_{1\text{s}}$ Übergangs. Fit mit zwei Peaks (kleiner Shirley) sehr gut (einer O, der andere OH - Kontamination evtl vom Aufdampfen?).}
+                \includegraphics[height=6cm]{Fe3O4/O1s_Fe3O4.png}
+                \subcaption{}
                 \label{fig:XPSO1s_Fe3O4}
             \end{subfigure}
             \begin{subfigure}[t]{0.48\textwidth}
                 \centering
-                \includegraphics[height=5cm]{Fe3O4/Fe3p_Fe3O4.png}
-                \subcaption{Spektrum des $\ce{Fe}_{3\text{p}}$ Übergang. Gleiches Problem wie beim \ce{FeO} funktioniert ebenfalls besser mit Tougaard als Shirley.}
-                \label{fig:XPSFe3p_Fe3O4}
-            \end{subfigure}
-            \caption{Die XPS Spektren der Kernniveaus für das Magnetit.
-            Für das $\ce{O}_\text{1s}$-Siganl (\subref{fig:XPSO1s_Fe3O4}) wurde eine Photonenenergie von \SI{650}{\electronvolt} und für das $\ce{Fe}_\text{3p}$-Signal (\subref{fig:XPSFe3p_Fe3O4}) eine Photonenenergie von \SI{200}{\electronvolt} verwendet.
-            Die Polarisation der Strahlung ist s.}
-            \label{fig:XPS_Fe3O4}
+                \includegraphics[height=6cm]{FeO/O1s_FeO.png}
+                \subcaption{}
+                \label{fig:XPSO1s_FeO}
+            \end{subfigure}            
+            \caption{Die XPS Spektren der beiden Filme des $\ce{O}_\text{1s}$-Niveaus wurde mit einer Photonenenergie von \SI{650}{\electronvolt} und s Polarisation aufgenommen.
+            Links zu sehen in (\subref{fig:XPSO1s_Fe3O4}) ist der aufgedampfte Film und rechts in (\subref{fig:XPSO1s_FeO}) der Modifizierte.}
+            \label{fig:XPS_O1s}
         \end{figure}
         Um genauer die Zusammensetzung zu überprüfen wird auch die chemisch sensetive Methode der Röntgenphotoelektronenspektroskopie angewendet.
         Die entsprechenden Spektren des $\ce{O}_{1\text{s}}$ Signals, sowie des $\ce{Fe}_{3\text{p}}$ Signals sind in \autoref{fig:XPS_Fe3O4} dargstellt.
         Das $\ce{O}_{1\text{s}}$-Signal zeigt dabei einen kleinen Anteil einer $OH$ Kontamination~\cite{FeO_9}.
         Aus der Position des $\ce{O}_{1\text{s}}$ lässt sich nach der Literatur keine Information über das vorhandene Eisenoxid gewinnen~\cite{FeO_9, FeO_64, FeO_15}.
-        Die ermittelte Position von \SI{529.2}{\electronvolt} liegt dabei immer leicht unterhalb der erwarteten Position des Siganls bei \SI{529.7}{\electronvolt}.
-        Ursache könnte sein, dass es an einer Refernzmessung zur Bestimmung der Photonenenergie fehlt, welche mit \SI{650}{\electronvolt} angenommen wurde.
-        Ermittelte Halbwertsbreiten hingegen passen recht gut zur Literautur von etwa \SI{1.6}{\electronvolt} und sind mit \SI{1.4}{\electronvolt} sogar etwas kleiner~\cite{FeO_53}.
-        Allerdings ist aus der Literatur bekannt, dass für das \ce{O}1s-Siganl keine Verschiebung zwischen den Oxiden erwartet wird.
         Somit lässt dies auch keine Identifizierung des vorhandenen Eisenoxids zu~\cite{wandelt_photoemission_1982}.
-
+        Die Approximation wurde mittels zwei Pseudo-Voigt-Funktionen, sowie einem Shirley-Untergrund ermittelt~\cite{schmid_new_2014}.
+        Für den Sauerstoffanteil liegt die ermittelte Position bei \SI{529.2}{\electronvolt} und damit unterhalb der erwarteten Position des Signals bei \SI{530.3}{\electronvolt}~\cite{wandelt_photoemission_1982}.
+        Der \ce{OH}-Anteil liegt ebenfalls unterhalb \SI{0.9}{\electronvolt} unterhalb des erwarteten Wertes von \SI{531.5}{\electronvolt}~\cite{wandelt_photoemission_1982}.
+        Ursache könnte sein, dass es an einer Refernzmessung zur Bestimmung der Photonenenergie fehlt, welche mit \SI{650}{\electronvolt} angenommen wurde und damit zu einer konstanten Verschiebung.
+        Ermittelte Halbwertsbreiten hingegen passen recht gut zur Literautur von etwa \SI{1.6}{\electronvolt} und sind mit \SI{1.5}{\electronvolt} sogar etwas kleiner~\cite{FeO_53}.
+        Beim modifizierten Film zeigt sich in \autoref{fig:XPSO1s_FeO} hingegen die Abwesenheit der \ce{OH} Kontamination.
+        Die Position lässt sich dabei auf \SI{529.7}{\electronvolt} bestimmen und liegt wie schon für den unmodifizierten Film leicht unterhalb des erwarteten Wertes.
+        Da zwischen den beiden Messungen am Monochromator die Gitter getauscht wurden sind leichte unterschiedliche Shifts in der Photonenenergie anzunehmen.
+        Dies würde auch den relativen Shift der beiden Peaks von \SI{0.5}{\electronvolt} untereinander erklären, welcher nicht erwartet wird~\cite{FeO_9, FeO_64, FeO_15, wandelt_photoemission_1982}.
 
         \begin{figure}
             \centering
-            \includegraphics[height=5cm]{Fe3O4/XAS_Fe3O4_cp.png}
-            \caption{Das Spektrum Röntgenabsorptionsspektrum des \ce{Fe3O4} mit rechtszirkularer Polarisation.}
-            \label{fig:XAS_Fe3O4}
+            \begin{subfigure}[t]{0.48\textwidth}
+                \centering
+                \includegraphics[height=6cm]{Fe3O4/Fe3p_Fe3O4_3.png}
+                \subcaption{}
+                \label{fig:XPSFe3p_Fe3O4}
+            \end{subfigure}
+            \begin{subfigure}[t]{0.48\textwidth}
+                \centering
+                \includegraphics[height=6cm]{FeO/Fe3p_FeO_3.png}
+                \subcaption{}
+                \label{fig:XPSFe3p_FeO}
+            \end{subfigure}
+            \caption{Die Röntgenphotoelektronenspektroskopie Spektren bei einer Photonenergie von \SI{200}{\electronvolt} der $\ce{Fe}_\text{3p}$-Übergang mit s-polarisierter Strahlung.
+            In (\subref{fig:XPSFe3p_Fe3O4}) das Spektrum des aufgedampften Films, sowie des modifizierten in (\subref{fig:XPSFe3p_FeO}).}
+            \label{fig:XPS_Fe3p}
         \end{figure}
-        In \autoref{fig:XAS_Fe3O4} ist das Röntgenabsorptionsspektrum des Magnetits dargestellt.
-        Im Vergleich mit der Literatur zeigt sich eine kleine Verschiebung hin zu einem größeren Anteil \ce{FeO} bei der $L_3$-Absorptionskante~\cite{FeO_45}.
-        Erwartet wird ein starkes Signal bei \SI{709}{\electronvolt} mit einer kleiner Schulter hin zu \SI{707}{\electronvolt}.
-        Die dopplete Spitze bei der $L_2$-Kante lässt sich ebenfalls leicht in den Messdaten wiederfinden, da das Siganl verbreitert scheint.
+        Im Gegensatz zu dem Kerniveau des Sauerstoffs zeigen sich beim Kernniveau $\ce{Fe}_{3\text{p}}$ in \autoref{fig:XPS_Fe3p} deutliche Veränderungen.
+        So zeigt das Spektrum nach dem ioneninduzierten Zerstäuben und Aufheizen keine ausgeprägte Schulter zu höheren Bindungsenergien.
+        Diese Schulter wird maßgeblich durch den Anteil an $\ce{Fe}^{3+}$-Ionen hervorgerufen~\cite{FeO_7}.
+        Unter der Annahme, dass es sich bei dem aufgedampften Film um Magnetit handelt werden drei beitragende Signale erwartet~\cite{FeO_55}.
+        Diese rühren vom $\ce{Fe}^{2+}$ bei niedrigen Bindungsenergien und bei höheren vom $\ce{Fe}^{3+}$ her.
+        Letzteres befindet sich in zum Einen in einer okatedrischen wie auch tetraedrischen Umgebung, was ebenfalls zu einem Energieverschiebung führt~\cite{FeO_12}.
+        Um die Gesamtintensität zu beschreiben wurde ein Shirley-Untergrung gemeinsam mit drei Pseudo-Voigt-Funktionen mit einer Asymmetrie von \num{0.3} und einer Halbweirtsbreite von \SI{2.7}{\electronvolt} angepasst.
+        So ergaben sich die einzelnen Positionen zu \SI{54.1}{\electronvolt}, \SI{55.3}{\electronvolt} und \SI{56.8}{\electronvolt}.
+        Der Beitrag des niederenergetisten Signals liegt bei etwa \SI{60}{\percent} und wird dem $\ce{Fe}^{2+}$ zugeordnet.
+        Für den $\ce{Fe}^{3+}$-Beitrag ergeben sich dann noch \SI{40}{\percent}.
+        Bei Magnetit sollte diese Verhältnis bei 1:1 liegen.
 
-        Im Zusammenspiel der zur Charakterisierung genutzten Methoden lässt sich wohl sagen, dass es sich um keine sauber präperierte Magnetit Oberfläche handelt.
+        Bei dem behandelten Film zeigt sich eine Verschmalerung der Gesamtintensität.
+        Eine gute Approximation mit nur zwei Pseudo-Voigt-Funktionen mit der Halbwertsbreite von \SI{3.7}{\electronvolt} und einer Asymmetrie von \num{0.4} zeigt gute Evoluation des Signals.
+        Dabei ergebn sich die beiden Peakpositionen zu \SI{54.5}{\electronvolt} und \SI{55.7}{\electronvolt}.
+        Erneut lässt sich ein relative verschiebung der Bindungsenergien zum unbehandelten Film sehen, dies ist ebenfalls durch den Wechsel des Gitters zu erklären und liegt im selben Größenbereich von wenigen Elektronenvolt Zehnteln.
+        Es lässt sich klar die Intensitätsverschiebung zu niedrigeren Energien hin erkennen.
+        Der relative Anteil des $\ce{Fe}^{2+}$-Anteils liegt bei \SI{86}{\percent} wohingegen der des $\ce{Fe}^{3+}$ auf \SI{14}{\percent} gesunken ist.
+        Damit liegt dies im Bereich des erwarteten Wertes für das nicht-stochimetrische Wüstit \textbf{Referenz}.
+
+        Ein Vergleich mit der Literatur zeigt, dass zwischen dem $\ce{Fe}^{2+}$-Signal und $\ce{Fe}^{3+}$-Signal eine Verschiebung von etwa \SI{1.8}{\electronvolt} einstellt~\cite{FeO_15, FeO_12}.
+        Für den unbehandelten Film passt dies recht gut, wenn die gewichtete Position der beiden Beitrage \SI{55.9}{\electronvolt} verwendet wird.
+        Wohingegen für den behandelten Film sich nur eine Verschiebung von \SI{1.2}{\electronvolt} einstellt.
+        Eine Deutung der genauen Positionen der einzelnen Beiträge gestaltet sich als schwierig.
+        Die Werte des $\ce{Fe}^{2+}$-Signal reichen in der Literatur von \SI{53.7}{\electronvolt} \cite{FeO_7} bis zu \SI{54.9}{\electronvolt} \cite{FeO_12}.
+        Auch mit unter verschieben Kompositionen verschiedene Positionen hervorrufen \cite{FeO_12}.
+        Ein weitere Fehlerquelle könnte die Wahl der Asymmetrie und Anzahl der verwendeten Voigt-Funktionen sein.
+        Manche Quellen sagen sechs Peaks voraus~\cite{FeO_14, FeO_17, FeO_15} wegen der Feinstruktur, andere zwei (Fe2+, Fe3+)~\cite{FeO_15, FeO_11, FeO_10, FeO_7} oder drei (Fe2+, Fe3+tetra, Fe3+octa)~\cite{FeO_12} oder auch vier um die Spin-Bahn-Aufspaltung mit etwa \SI{1}{\electronvolt} einzubeziehen~\cite{FeO_55}.
+        Die Asymmetrie kann durch Mehrfachionisation bei innere Prozesse wie Augerzerfall oder durch mehrere Photonen begründet werden~\cite{FeO_55}.
+        Die Halbwertsbreite ist recht groß, da es sich bei High-Spin Zuständen zur Ausbildung von Multipletts kommt und diese nicht aufgelöst werden können~\cite{wandelt_photoemission_1982}.
+        Ebenso lässt sich die Spin-Bahn-Aufspaltung des $\ce{Fe}_{3p}$ nicht auflöseb, da 1/2 und 3/2 nur etwa 1eV auseinander liegen~\cite{FeO_55}.
+
+        \begin{figure}
+            \centering
+            \begin{subfigure}[t]{0.48\textwidth}
+                \centering
+                \includegraphics[height=6cm]{Fe3O4/XAS_Fe3O4_cp.png}
+                \subcaption{}
+                \label{fig:XAS_Fe3O4}
+            \end{subfigure}
+            \begin{subfigure}[t]{0.48\textwidth}
+                \centering
+                \includegraphics[height=6cm]{FeO/XAS_FeO_cp.png}
+                \subcaption{}
+                \label{fig:XAS_FeO}
+            \end{subfigure}
+            \caption{Die Röntgenabsorptionsspektren des aufgedampften Films (\subref{fig:XAS_Fe3O4}) und des bearbeiten Films (\subref{fig:XAS_FeO}).
+            Aufgenommen mit rechtszirkular polarisiertem Licht und Teilelektronenausbeute von Sekundärelektronen bei einer Energie von $E_\text{Kin} = \SI{7}{\electronvolt}$.}
+            \label{fig:XAS}
+        \end{figure}
+        Beim Vergleich zwischen dem Röntgenabsorptionsspektrums des unbehandleten Filmsin \autoref{fig:XAS_Fe3O4}, sowie des behandleten Films in \autoref{fig:XAS_FeO} fällt auf, dass sich das Signal der $\text{L}_3$-Absorptionskante zu kleineren Photonenenergie hin verschoben hat.
+        Die Verschiebung beträgt etwa \SI{0.4}{\electronvolt} und ist korreliert mit dem Oxidationszustand \cite{chen_nexafs_1997}.
+        Mit steigendem Oxidationszustand steigt ebenfalls auch die Absorptionsenergie des $\text{L}_3$-Übergangs.
+        Erkennbar ist, dass sich der $\ce{Fe}^{2+}$-Anteil erhöht und gleichfalls sich der $\ce{Fe}^{3+}$-Anteil verringert hat durch die Behandlung.
+        Denn der Beitrag bei \SI{707}{\electronvolt} wurde für \ce{FeO} mit einer leichter Schulter zu \SI{709}{\electronvolt} beobachtet~\cite{FeO_45}.
+        Für Magnetit verhält sich dies genau umgekehrt.
+        Auch die Breite der $\text{L}_3$-Absorptionskante steigt vom unbehandeltem zum behandelten Film an.
+        Dies ist für eine kleinere Beteiligung von größeren Oxidationszuständen zu erwarten \cite{chen_nexafs_1997}.
+        Klar erkennbar ist auch die verbreitere Struktur der $\text{L}_2$-Absorptionskante zwischen dem behandeltem und unbehandeltem Film.
+        Bei dem unbehandelten Film ist die aus der Literatur bekannte Doppelspitze nicht sehr ausgeprägt, wohingegen sich bei dem behandelten Film nur eine Spitze wie erwartet ausbildet~\cite{FeO_45}.
+        Die allegemeine Struktur dieser Spektren ist recht schwierig zu beschreiben und unterscheidet sich deutlich bei unterschiedlichen Oxiden~\cite{FeO_46}.
+
+        Im Zusammenspiel der zur Charakterisierung genutzten Methoden lässt sich wohl sagen, dass es sich bei dem direkt aufgedampften Film um keine sauber präperierte Magnetit Oberfläche handelt.
         Hierzu sind die Abweichungen in den erwarteten LEED-Struktur für die gewünschte Orientierung zu groß.
         Ebenso die Abweichung bei den Augerspektrum zum erwarteten Wert der Intensitätverhältnisses.
         Auch wenn das Valenzband eine einigermaßen gute Übereinstimmung zeigt so deuten doch auch die restlichen Methoden nicht auf reines Magnetit hin.
@@ -401,72 +462,12 @@
         Viel mehr scheint es sich also um eine gemischte Phase als um reines Magnetit zu handeln.
         Da es sich nur um eine Zwischenphase zur Präperation des Eisenmonoxid handelt wird auf eine weiter Charakterisierung und das Aufbringen von Molekülen verzichtet.
 
+        Hier gegen steht das Wüstit, welches nur leichte Abweichungen zu den Erwartungen bei den unterschiedlichen Messmethoden zeigt.
+        Auf Grund der metastabilen Phase bei Raumtemperatur und tendenziellen nicht-tochimetrischen Verbindung lassen sich diese aber tolerieren.
+        Eine wiederholte Präperation und genaueren Messungen können dies noch verbessern.
+        Besonders schnelles herabkühlen soll die Stochimetrie erhöhen \textbf{Referenz}.
+        Zusammenfassend lässt sich sagen, dass der modifizierte Film sich als \ce{FeO} identifizieren lässt, wohingegen es sich bei dem direkt aufgedampft Film wohl um eine Mischphase handelt und nicht um reines Magnetit.
 
-    \section{Wüstit}
-
-        \begin{figure}
-            \centering
-            \includegraphics[height=5cm]{FeO/2021_09_09_001_FeO_125eV.png}
-            \caption{Beugungsbild des \ce{FeO} (100) bei einer Elektronenenergie von \SI{125}{\electronvolt}.}
-            \label{fig:LEED_FeO}
-        \end{figure}
-
-        Um die Wüstitstruktur zu erhalten wird die Mischstruktur zunächst auf \SI{650}{\celsius} aufgeheizt.
-        Anschließend werden vermehrt Sauerstoffatome durch ioneninduziertes Zerstäuben ausgelöst, um so die Wüstit Zusammensetzung zu erhalten~\cite{FeO_36}.
-        Im Anschluss wird die Probe nochmal auf \SI{650}{\celsius} erwärmt um die Fehlstellen auszuheilen.
-        Dies sollte unabhängig von dem vorherschenden Eisenoxid zu dem gewünschten Wüstit führen~\cite{FeO_12, FeO_15}.
-        Durch die induzierte Umordnung der Atome ergibt sich dann die gewünschte Struktur, welche in dem LEED Bild aus \autoref{fig:LEED_FeO} zu erkennen ist.
-        Die Intensitäten sind beim Eisenoxid im Gegensatz zu dem passivierten Eisen invertiert, wobei die zuvor starken Spots nicht mehr sichtbar sind.
-        Trotz der gleichen Elektronenenergie von \SI{125}{\electronvolt} sind die Spots leicht nach außen gewandert.
-        Dies Widerspricht sich mit der eigentlich größeren Gitterkonstante von Eisenoxid im Bezug auf die $\text{p}(1 \times 1)\ce{O}$ Überstruktur des passivierten Eisens.
-
-        \begin{figure}
-            \centering
-            \includegraphics[height=5cm]{FeO/AES_FeO.png}
-            \caption{Das Augerspektrum der Wüstitprobe.}
-            \label{fig:Auger_FeO}
-        \end{figure}
-
-        Das Verhältnis aus Sauerstoff und Eisen kann dabei erneut mittels Augerelektronenspektroskopie überprüft werden.
-        Auch das Augerspektrum in \autoref{fig:Auger_FeO} mit dem bereits von Carpa u.A.~\cite{FeO_1} entdecken Augerelektronenspektrum für Eisenoxid zeigt gute Übereinstimmung.
-        Ebenfalls deutet das Peakverhältnis von dem Sauerstoffsignal und Eisen mit \num{2.68} auf $\ce{FeO}$ hin, da dies nur leicht unterhalb des Wertes aus der Literatur von \num{2.89} liegt~\cite{FeO_1}.
-        Die kleien Abweichung nach unten kann dadurch erklärt werden, dass es sich um einen sehr dünnen Film auf Eisen handelt.
-        Die Augerelektronen mit ihrer für Eisen typischen kinetischen Energie weisen eine mittlere freie Weglänge von etwa \SI{14}{\angstrom} auf.
-        Hierdurch ist die Oberflächensensetivität nicht mehr gegeben und es könnte einen Beitrag durch das Eisensubstrat geben. 
-        
-        % \begin{figure}
-        %     \centering
-        %     \includegraphics[width=0.5\textwidth]{FeO/Fermi_FeO.png}
-        %     \caption{Valenzbandspektrum der des \ce{FeO} bei einer Photonenenergie von \SI{64}{\electronvolt}. Zusätzlich eingetragen ist der Fit des Beginns des Spektrums.}
-        %     \label{fig:Fermi_FeO}
-        % \end{figure}
-        % Ebenso ist in \autoref{fig:Fermi_FeO} die Elektronendichtekurve für den Valenzbandbereich des \ce{FeO} aufgetragen.
-        % Zusätzlich wurde der Beginn des Spektrums in der kinetischen Energie auf \SI{58.93}{\electronvolt} bestimmt.
-        % Der Beginn des Spektrums sieht einer Fermikante sehr ähnlich.
-        \begin{figure}
-            \centering
-            \includegraphics[width=0.5\textwidth]{FeO/VB_FeO.png}
-            \caption{Valenzbandspektrum der des \ce{FeO} bei einer Photonenenergie von \SI{64}{\electronvolt} (rot).
-            Blau gestrichelt sind die identifizierten Merkmale, die das Spektrum bestimmen.
-            In Schwarz ist das Spektrum der Literatur~\cite{FeO_14} bei einer Photonenenergie von \SI{65}{\electronvolt} dargestellt.}
-            \label{fig:EDC_FeO}
-        \end{figure}
-
-        Das Valenzbandspektrum in \autoref{fig:EDC_FeO} (rot) zeigt im niederenergetischen Bereich recht gute Übereinstimmung mit der Literatur (schwarz)~\cite{FeO_14}.
-        Es ist ein kleiner Offset unter den beiden zu erkennen, wird dieser vernachlässigt so ist bei der hier verwendeten Probe ein gößerer Sauerstoffanteil zu erkennen.
-        Denn das Spektrum lässt durch vier maßgebliche Beiträge beschreiben.
-        Hierbei handelt es sich bei \SI{1.5}{\electronvolt} um den Beitrag des hybridiserten Zustand $\ce{Fe}\:\text{d}^6\text{L}^{-1}$ und bei \SI{4}{\electronvolt} um den Beitrag des $\ce{Fe}\:\text{d}^5$ Zustands~\cite{FeO_19}.
-        Der Beitrag bei \SI{5.5}{\electronvolt}~\cite{FeO_44} und \SI{6.2}{\electronvolt}~\cite{FeO_18} haben ihren Ursprung beim Sauerstoff 2p.
-        Es ist dabei ein deutlicher Unterschied zu dem Spektrum des \ce{Fe3O4} in \autoref{fig:EDC_Fe3O4} zu erkennen.
-        Aus dem Punkt an dem die Sekundärelektronen aufhören und der Fermikante lässt sich die Austrittsarbeit auf \SI{3.06}{\electronvolt} bestimmen.
-        Dieser Wert liegt leicht unterhalb des Literaturwertes von \SI{3.5}{\electronvolt}~\cite{FeO_28}, aus vermutlich den selben Gründen wie schon bei der Mischphase.
-        Hinzu kommt bei einem dünnen Film die Austrittsarbeit auch maßgeblich von dem Übergang zwischen Metall und Oxid und dessen Defektstruktur abhängt~\cite{IF_10}.
-        Eine Absenkung der Austrittsarbeit kann dabei auf Sauerstofffehlstellen hindeuten~\cite{IF_11}, was ebenfalls durch das Augerspektrum bestätigt werden kann.
-        Durch das Aufdampfen der Moleküle verschiebt sich die Austrittsarbeit zu \SI{3.51}{\electronvolt}.
-        Der Anstieg der Austrittsarbeit kann dabei auf den Push-Back-Effekt zurück geführt werden, dies ist typisch für Adsorbate.~\cite{Goiri}
-        Allerdings wird später festgestellt, dass ebenfalls das LUMO besetzt wird, was einen Ladungsaustausch voraussetzt.
-        Dies würde zu einer Verkleinerung der Austrittsarbeit führen, da es dem Push-Back-Effekt entgegen wirkt.
-        % Dieser Ladungsaustausch würde dabei zu einer Erniedrigung der Austrittsarbeit führen.~\cite{Calloni}
 
         \begin{figure}
             \begin{subfigure}[t]{0.34\textwidth}
@@ -491,47 +492,106 @@
             \caption{Die Oberflächenbrillouinzone des Eisenmonooxid bei einer Bindungsenergie von \SI{1.95}{\electronvolt} (\subref{fig:BZ_FeO}).
             Die entlang der grünen Linien aus (\subref{fig:BZ_FeO}) extrahierte Bandstruktur bei $h\nu = \SI{64}{\electronvolt}$ (\subref{fig:Band_FeO}).}
         \end{figure}
-
-        Auch für das Wüstit lässt sich die Oberflächenbrillouinzone definieren, die in \autoref{fig:BZ_FeO} abgebildet ist.
+        Für die wohldefinierte Phase des Wüstits lässt sich auch die Oberflächenbrillouinzone definieren, die in \autoref{fig:BZ_FeO} abgebildet ist.
         Daraus lässt sich durch Schneiden des dreidimensionalen Datensatzes die Bandstruktur gewinnen, welche in \autoref{fig:Band_FeO} zu sehen ist.
         Wie schon beim Eisen reicht die Auflösung nicht aus um die Bänder klar zu erkennen.
         Auffällig ist allerdings, dass sich die Intensität bezüglich des Eisens (s. \autoref{fig:Band_Fe}) hin zu größeren Bindungsenergien verschoben hat.
+        
+
+        
+
+    \section{Molekühle auf Antiferromagneten} \label{sec:Ergeb}
+        \begin{figure}
+            \centering
+            \includegraphics[height=5cm]{Au+5A/021_Au(111)+5A(40)_16eV.png}
+            \caption{Evaluation der Monolagen Bedeckung der Oberfläche auf dem Goldsubstrat bei einer Energie von \SI{16}{\electronvolt}.}
+            \label{fig:LEED_Au+5A}
+        \end{figure}
+        Um die Monolage an Molekülen, genauer dem Pentacene zu kalibrieren wird das Gold Substrat genutzt.
+        Hier ist bekannt, dass sich die Moleküle in einer wohldefinierten Struktur anordnen~\cite{5A_4}.
+        Das entrsprechende Beugungsbild ist in \autoref{fig:LEED_Au+5A} zu erkennen.
+        Somit ist für die späteren Substrate ebenfalls die Molekülbedeckung evaluiert.
 
         \begin{figure}
             \centering
             \begin{subfigure}[t]{0.48\textwidth}
                 \centering
-                \includegraphics[height=5cm]{FeO/O1s_FeO.png}
-                \subcaption{Spektrum des $\ce{O}_{1\text{s}}$ Übergang. Fit mit einem Peak (kleiner Shirley) sehr gut.}
-                \label{fig:XPSO1s_FeO}
+                \includegraphics[height=6cm]{NiO+5A/2021_06_18_005_NiO111_5A_16eV.png}
+                \subcaption{}
+                \label{fig:LEED_NiO+5A_16}
             \end{subfigure}
             \begin{subfigure}[t]{0.48\textwidth}
                 \centering
-                \includegraphics[height=5cm]{FeO/Fe3p_FeO.png}
-                \subcaption{Spektrum des $\ce{Fe}_{3\text{p}}$ Übergang. Zuornung sehr schwierig, ein großer Peak bei kleinen BE und ein kleiner bei großen BE passen. Aber auch zwei etwa gleichgroße Peaks. Je nach dem wie die Parameter gewählt und festgestzt werden.}
-                \label{fig:XPSFe3p_FeO}
+                \includegraphics[height=6cm]{NiO+5A/2021_06_18_003_NiO111_5A_73eV.png}
+                \subcaption{}
+                % Die Bandstruktur des reinen Eisens entlang einiger Hochsymmetrierichtungen.
+                % Verwendete Photonenenergie war \SI{64}{\electronvolt} und die Polarisation p.
+                \label{fig:LEED_NiO+5A_73}
             \end{subfigure}
-            \caption{Die Röntgenphotoelektronenspektroskopie Spektrum für den $\ce{O}_\text{1s}$-Übergang bei einer Photonenergie von \SI{650}{\electronvolt} (\subref{fig:XPSO1s_FeO}) und bei einer Photonenergie von \SI{200}{\electronvolt} der $\ce{Fe}_\text{3p}$-Übergang (\subref{fig:XPSFe3p_FeO}).
-            In beiden Fällen wird s-polarisierte Strahlung verwendet.}
-            \label{fig:XPS_FeO}
+            \caption{Beugungsbild der niederenergetischen Elektronen für eine Monolage Pentacene auf der Nickeloxid (111) Oberfläche bei einer Elektronenenergie von \SI{16}{\electronvolt} (\subref{fig:LEED_NiO+5A_16}) und \SI{73}{\electronvolt} (\subref{fig:LEED_NiO+5A_73}).}
+            \label{fig:LEED_NiO+5A}
         \end{figure}
-
-        Einen genaueren Einblick welche Struktur vorliegt kann die Röntgenphotoelektronenspektroskopie bieten, da hier die kinetsichen Energien so gewählt werden, dass sie Oberflächensensetiv wirkt.
-        Das entsprechende Spektrum ist in \autoref{fig:XPS_FeO} zu finden.
-        Wie erwartet zeigt sich hinsichtlich des Sauerstoffsignals keine Veränderung bis auf die Abwesenheit der \ce{OH} Kontamination.
-        Wohingegen die Änderung im $\ce{Fe}_\text{3p}$-Signal deutliche Modifikationen aufweist.
+        Das Aufdampfen von einer Monolage Pentacene brachte kein LEED-Bild bei niedrigen Energien zustande (s. \autoref{fig:LEED_NiO+5A_16}), wie es für eine größere Überstruktur (z.B. bei Pentacene auf Gold in \autoref{fig:LEED_Au+5A}) erwartet wird.
+        Bei größeren Energien in \autoref{fig:LEED_NiO+5A_73} hingegen sind leichte Substrateffekte sichtbar.
+        So lässt sich schlussfolgern, dass sich die Moleküle auf der Oberfläche nicht in einer regelmäßigen Struktur anordnen.
 
         \begin{figure}
             \centering
-            \includegraphics[height=5cm]{FeO/XAS_FeO_cp.png}
-            \caption{Das Spektrum Röntgenabsorptionsspektrum des Wüstit mit rechtszirkularer Polarisation.}
-            \label{fig:XAS_FeO}
+            \begin{subfigure}[t]{0.30\textwidth}
+                \centering
+                \includegraphics[height=4cm]{Au+5A/EDC_Au_5A.png}
+                \subcaption{}
+                \label{fig:EDC_Au+5A}
+            \end{subfigure}
+            \begin{subfigure}[t]{0.30\textwidth}
+                \centering
+                \includegraphics[height=4cm]{NiO+5A/EDC_NiO_thin_5A.png}
+                \subcaption{}
+                \label{fig:EDC_NiO_thin+5A}
+            \end{subfigure}
+            \begin{subfigure}[t]{0.30\textwidth}
+                \centering
+                \includegraphics[height=4cm]{NiO+5A/NiO_5A_thick_new.png}
+                \subcaption{}
+                \label{fig:EDC_NiO+5A}
+            \end{subfigure}
+            \caption{Valenzbandspektrum des reinen Substrates (schwarz) und mit einer Monolage Pentacene bedeckt (rot) und dessen Differenz (grün).
+            In (\subref{fig:EDC_Au+5A}) für \ce{Au}(111), in (\subref{fig:EDC_NiO_thin+5A}) für einen dünnen Nickeloxidfilm und für einen dicken Nickeloxidfilm in (\subref{fig:EDC_NiO+5A}).}
         \end{figure}
 
-        In \autoref{fig:XAS_FeO} ist das Röntgenabsorptionsspektrum des Eisenmonoxoids dargestellt.
-        Ein Vergleich mit der Literatur zeigt eine kleine Verschiebung der $L_3$-Kante hin zu einem größeren Anteil \ce{Fe3O4}.
-        Erwartet wird ein starkes Signal bei \SI{707}{\electronvolt} mit einer kleiner Schulter hin zu \SI{709}{\electronvolt}~\cite{FeO_45}.
-        Hinsichtlich dem $L_2$-Signal ist eine deutliche Übereinstimmung mit der Literatur zu erkennen.
+
+        \begin{figure}
+            \centering
+            \includegraphics[height=5cm]{NiO+5A/NiO_thick_5A_KE12_7.png}
+            \caption{Das winkelaufgelöstes Bild bei einer Bindungsenergie von \SI{3.85}{\electronvolt} für Pentacene auf dicken Nickeloxidfilm} % bei einer kinetischen Energie von \SI{7.5}{\electronvolt}. Also Bindungsenergie von \SI{3.85}{\electronvolt}.
+            \label{fig:MOT_NiO+5A}
+        \end{figure}
+
+        Dabei zeigt der direkte Vergleich der integrierten Spektren in \autoref{fig:EDC_NiO+5A} des reinen Nickeloxid und des mit Pentacene drauf deutliche zusätzliche Spitzen.
+        Wie für adsorbierte Moleküle erwartet sind die Strukturen eher breit, da die Lebenszeit der Zustände verkürzt und damit die Energieniveaus aufgeweitet werden.
+        Weiter verschiebt sich die Austrittsarbei zu einem Wert von \SI{4.14}{\electronvolt}, dies ist eine Verschiebung um \SI{0.11}{\electronvolt} hinsichtlich dem dünnen Nickeloxidfilm.
+        Dieser Effekt wird erwartet, da durch den Push-Back-Effekt die Austrittsarbeit verringert wird.
+        Die Abwesenheit sehr ausgeprägter Merkmale in den impulsaufgelösten Bildern bestätigt die Annahme, dass sich die Moleküle auf der Oberfläche nicht regelmäßig anordnen.
+        Ferner überlappen die einzelnen Merkmale im Impulsraum, sodass ein ausgewaschenes Bild entsteht.
+        Auch wenn sich in den integrierten Spektren in \autoref{fig:EDC_NiO} klar zeigt, dass sich bei einigen Energien die Intensität erhöht ist in den entsprechenden Bildern keine klare Zuordnung möglich.
+        Ein Beispiel ist in \autoref{fig:MOT_NiO+5A} zu sehen.
+        Dieses Bild wurde gewählt da ein deutliches Signal im integrierten Spektrum zu erkennen ist und die entsprechende Energie nicht zu weit weg von der Fermikante liegt.
+
+        Das sich die Moleküle nicht auf der Oberfläche ordnen kann die Ursache von zu starker oder zu schwachen Wechselwirkung sein.
+        Da sich auf der Oberfläche der (111)-Orientierung des Nickeloxid auf Grund der Polarität ein Dipolmoment ausbildet, führ dies zu einer stärkeren Wechselwirkung.
+        Liegt die Oberfläche auch noch in der \ce{O} beziehungsweise \ce{OH-}-Terminierung vor so ist eine Abwesenheit von kovalenten Bindungen nicht auszuschließen.
+        Starke kovalente Bindungen, können wie bereits erwähnt die Selbstanordnung behindern (s. \autoref{sec:Selbstanordnung}).
+        Vermutlich handelt es sich um den Effekt der zu starken Wechselwirkung, da sich dann die Pentacene Moleküle nicht ordnen.
+        Allerdings kann auch die Ausbildung von verschiedenen Domänen und Orientierungen entlang der Substratachsen zu einer Verschmierung in der Winkelauflösung führen~\cite{Schöll und Schreiber - 2018 - Chapter 24 - Thin Films of Organic Molecules Inte.pdf}.
+
+
+        \section{FeO+5A}
+        Durch das Aufdampfen der Moleküle verschiebt sich die Austrittsarbeit zu \SI{3.51}{\electronvolt}.
+        Der Anstieg der Austrittsarbeit kann dabei auf den Push-Back-Effekt zurück geführt werden, dies ist typisch für Adsorbate.~\cite{Goiri}
+        Allerdings wird später festgestellt, dass ebenfalls das LUMO besetzt wird, was einen Ladungsaustausch voraussetzt.
+        Dies würde zu einer Verkleinerung der Austrittsarbeit führen, da es dem Push-Back-Effekt entgegen wirkt.
+        % Dieser Ladungsaustausch würde dabei zu einer Erniedrigung der Austrittsarbeit führen.~\cite{Calloni}
+
 
         \begin{figure}
             \centering
@@ -632,37 +692,12 @@
     \section{NOTIZEN}
     \subsection{Datendeutung}
         \begin{itemize}
-            \item Zuordnung des Fe3p Peaks schwer. Manche sagen sechs Peaks voraus~\cite{FeO_14, FeO_17, FeO_15} wegen der Finestruktur, andere zwei (Fe2+, Fe3+)~\cite{FeO_15, FeO_11, FeO_10, FeO_7} manche drei (Fe2+, Fe3+tetra, Fe3+octa)~\cite{FeO_12}. es kommt dabei auf das Material an, zum Identifizieren ist es also schwierig durch den einen Peak.
-            \item Die Bindungsnergie des $\ce{Fe}^{2+}$ liegt bei \SI{53.7}{\electronvolt} und die des $\ce{Fe}^{3+}$ bei \SI{55.6}{\electronvolt}~\cite{FeO_7}.
             \item FeO besitzt hingegen nur Fe2+, ist aber recht anfällig weiter zu oxidieren, so dass sich ein Fe3O4 (Fe2+, Fe3+tetra, Fe3+octa) oder Fe2O3 (nur Fe3+) Film bilden kann. 
-            \item Der  $\ce{O}_{1\text{s}}$ O2- Peak liegt bei \SI{529.7}{\electronvolt}~\cite{FeO_9} OH- bei \SI{531.2}{\electronvolt}~\cite{FeO_9}., \SI{530.1}{\electronvolt}~\cite{FeO_15} (unabhängig welches Eisenoxid).
-            \item XAS-Messungen mit Teilelektronen ausbeute von Sekundärelektronen bei einer Energie von $E_\text{Kin} = \SI{7}{\electronvolt}$.
             \item XAS Messungen wurden duch Multiplikation an Preedge ausgerichtet, dann wurde ein linear Untergrund abgezogen (pre-edge gefittet) und anschließend die Preedge auf Null gesetzt und die Postedge auf 1 (durch Division)
-            \item Fermikante beim Isolator wie \ce{FeO} (was vermutet wird vorliegen zu haben) ist schwierig (Austrittsarbeit des Analyseres liegt bei \SI{5.07}{\electronvolt}). Also bei reinem Eisen gefittet (ebenfalls schwierig da mit Peak des VB überlappt) und damit über die Austrittsarbeit des Analysators \SI{4.5}{\electronvolt} und der Photonenenergie die Bindungsenergie bestimmt.
-            \item Abschnitt des Spektrums des FeO bei \SI{-1.02}{\electronvolt}, Beginn bei \SI{58.93}{\electronvolt} -> Austrittsarbeit des \ce{FeO} \SI{4.05}{\electronvolt}, da $h\nu = \SI{64}{\electronvolt}$
             \item XAS probt die leeren Valenzbandzustände,  The empty oxide states are more localized than metal states and their energies are determined by crystal field and multiplet effects. (\cite{XMCD_XMLD})
-            \item Die Absorption ist dabei sogar $\cos(2\theta)^2$ abhängig, wobei$\theta$ der Winkel zwischen der magnetischen Achse und dem E-Feld Vektor ist.
             \item Alle Messungen sind Spin integriert, da sonst auch die Einheitszelle größer wäre.
-            \item Unterschied bei XAS für die verschiedenen Oxide~\cite{FeO_46}
-            \item bei XAS tragen alle Oxide Anteile (Fe2+ stark bei 707eV und schulter bei 709eV, Fe3+ zeigt inverses Verhalten von Fe2+)\cite{FeO_45} 
             \item Shift von Cut-off -> Dipol an der Oberfläche~\cite{5A_5}
-            \item Fe 3p nicht auflösbar, da 1/2 und 3/2 nur etwa 1eV auseinander~\cite{FeO_55}
-            \item Fe2p zeigt keinen Unterschied für Fe3+ okt/tetra~\cite{wandelt_photoemission_1982} \textbf{VORSICHT}
-            \item Die Halbwertsbreite ist recht groß, da es sich bei High-Spin zuständen zur ausbildung von Multipletts kommt und diese nicht aufgelöst werden können~\cite{wandelt_photoemission_1982}
         \end{itemize}
-        % Der $\ce{Fe}_{3\text{p}} (\SI{54.52}{\electronvolt})$ wie auch der $\ce{O}_{1\text{s}} (\SI{529.15}{\electronvolt})$ lassen sich durch einen Peak fitten.
-
-    \subsection{Ideen}
-    \begin{itemize}
-        \item XPS Fe/O Ratio - Nordmann Formel (2.20)
-        \item Inselwachstum durch Annealing? Mehr Fe zu sehen?
-    \end{itemize}
-
-    \subsection{Überbleibsel/ToDos}
-    \begin{itemize}
-        \item Ändert sich was
-        \item Verbreiterung Lebenszeit, Linienbreite Photonenquelle, Thermisch, Analysator
-    \end{itemize}
 
     % \section{Datenformat und Bearbeitung}
     % \begin{itemize}
