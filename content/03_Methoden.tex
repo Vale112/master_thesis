@@ -21,8 +21,8 @@
 
         \begin{figure}
             \centering
-            \includegraphics[width=0.6\textwidth]{Weg}
-            \caption{Die mittlere freie Weglänge für Elektronen in verschiedenen Materialien. Aus~\cite{Hüfner}.}
+            \includegraphics[width=0.6\textwidth]{Weg2.png}
+            \caption{Die mittlere freie Weglänge für Elektronen in verschiedenen Materialien. Aus~\cite{Hüfner} und bearbeitet.}
             \label{fig:Weg}
         \end{figure}
         Das Vakuum dient allerdings nicht nur der Reinheit der Probe, sondern auch das die später emittierten Elektronen den Raum durchdringen und den Analysator erreichen können.
@@ -41,124 +41,6 @@
         Zurückkommenden Elektronen mit identischer kinetischen Energie können also nur aus oberflächennahen Bereichen kommen.
         Bei der Beugung niederenergetischer Elektronen wird dieses Prinzip verwendet und nun genauer beschrieben.
 
-    \section{Beugung niederenergetischer Elektronen} \label{sec:LEED}
-        \begin{figure}
-            \centering
-            \includegraphics[width=0.5\textwidth]{LEED}
-            \caption{Innerer Aufbau der Optiken zur Beugung niederenergetischer Elektronen.
-            Die Probe befindet sich im Zentrum des Schirms und auf Erdpotential, ebenso wie das erste und dritte Gitter.
-            Die Abremsspannung liegt am zweiten Gitter an, am vierten Gitter die Beschleunigungsspannung.
-            Aus~\cite{Fauster}.}
-            \label{fig:LEED}
-        \end{figure}
-        Um sich die geometrische Oberflächenbeschaffenheit genau anzusehen wir die Beugung niederenergetischer Elektronen (\textit{Low energy electron diffraction}, LEED) eingesetzt.
-        Hierbei werden Elektronen mit einer kinetischen Energie im Bereich der Oberflächensensitivität auf die Probe geschossen.
-        Das entstehende Beugungsmuster ist charakteristisch für die Oberflächenbeschaffenheit und stellt die Oberfläche im reziproken Raum da.
-        Der Aufbau mit seinen Optiken für die Beugung niederenergetischer Elektronen ist in \autoref{fig:LEED} abgebildet.
-        
-        Die Elektronen werden zunächst durch den Glühelektrischen Effekt erzeugt und durch einen Wehnelt-Zylinder gebündet.
-        Diese beiden Komponenten bilden zusammen die Elektronenkanone.
-        Anschließend werden Sie zur Probe hin beschleunigt, welche sich im Zentrum der Gitter befindet.
-        Da die Probe geerdet ist geschieht dies durch eine negative Vorspannung zwischen Probe und Elektronenkanone.
-        Die gestreuten Elektronen bewegen sich in alle Richtungen unter dem Winkel $\alpha$ zum senkrecht auftreffenden Elektronenstrahl von der Probe weg.
-        Damit die Flugbahn nicht durch elektrische Felder beeinflusst wird befindet sich das erste von der Probe aus gesehen Netz ebenfalls auf Erdpotential.
-        Genau der Vorspannung entsprechend wird durch das dahinter liegende Netz  ein elektrisches Feld aufgebaut, gegen das die Elektronen anlaufen.
-        So können nur elastisch gestreute Elektronen die weiteren Netze durchlaufen.
-        Das nächste Gitter liegt wieder auf Erdpotential, damit das vom dahinter liegenden Gitter erzeugte Beschleunigungsfeld nicht durchgreift.
-        Dieses Beschleunigungsfeld wir durch eine hohe Spannung hervorgerufen und ist dafür notwendig, damit die Elektronen auf dem Leuchtschirm das Beugungsmuster erzeugen können.
-        Mit Hilfe einer Kamera wird dieses Beugungsmuster erfasst ~\cite{Fauster}.
-
-        Die Entstehung des Beugungsmusters geschieht durch Interferenz Effekte, es ist also eine periodische Struktur von Nöten.
-        Ebenso muss damit die Wellenlänge der Elektronen im Größenbereich der Gitterkonstanten liegen.
-        Folglich haben die Elektronen einer Energie zwischen \SIrange{30}{200}{\electronvolt}~\cite{oura_surface_2003}.
-        Kinematisch betrachtet wird die Oberfläche von einer Primärwelle getroffen.
-        Der von einem Streuer zurückgeworfene Anteil (ohne zusätzliche Streuung) interferiert mit den von anderen Streuen kommenden Sekundärwelle.
-        Für elastisch gestreute Elektronen muss also für den Impuls gelten $\abs*{\vec{k}_\text{i}} = \abs*{\vec{k}_\text{f}}$.
-        Intensitäten der einzelnen Spots $I$ ergeben sich dabei aus dem Formfaktor $F$ und dem Gitterfaktor $G$ zu
-        \begin{equation}
-            I = \abs*{F^2}\abs*{G^2}.
-            \label{eqn:LEED}
-        \end{equation}
-        Mathematisch kommt der Formfaktor aus der Position und chemischen Natur der Atome innerhalb der Einheitszelle, wohingegen der Gitterfaktor die Periodizität der Gitters wiederspiegelt.
-        Der Gitterfaktor ist nur ungleich Null, wenn die Lauebedingung erfüllt ist.
-        Folglich darf der Impulsübertrag $\increment \vec{k}_{||}$ nur einen reziproken Gittervektor $\vec{g}_\text{hk}$ betragen, dies ist die Lauebedingung.
-        Jeder Spot kann damit einem Impulsübertrag mit den Indizes $hk$ zugeordnet werden.
-        Der Gitterfaktor gibt also nur Auskunft darüber ob ein Beugungsreflex auftaucht und wo, die Intensitäten hingegen werden rein durch den Formfaktor beschrieben.
-
-        Da aber wie oben beschrieben die Impulserhaltung gelten muss und die Transaltionssymetrie senkrecht zur Oberfläche gebrochen ist ergibt sich für diese Komponente ein Impuls von $\vec{k}_{\text{f}\perp} = \pm \sqrt{\vec{k}_\text{i}^2 - (\vec{k}_{\text{i}||} + \vec{g}_\text{hk})^2}$.
-        Positives Vorzeichen entspricht der Beugung in die Oberfläche hinein und negatives Vorzeichen für eine Beugung von der Oberfläche weg.
-        $\vec{k}_{\text{f}\perp}$ kann auch imaginär werden, was zur Folge hat, dass keine Rückstreuung erfolgt.
-        \begin{figure}
-            \centering
-            \includegraphics[width=0.4\textwidth]{Ewald}
-            \caption{Schamtische darstellung zur Veranschaulichung der Konstruktion der Ewaldkugel.
-            Blaue Pfeile stellen die reziproken Gittervektoren da. 
-            Der rote Pfeil den einfallenden Wellenvektor der Elektronen, grün den der gestreuten.
-            Kopiert und modifiziert aus~\cite{Fauster}.}
-            \label{fig:Ewald}
-        \end{figure}
-        Die Beugungsreflexe lassen sich für nahezu senkrechten Einfall mit Hilfe der Ewaldkugel konstruieren, veranschaulicht zu sehen in \autoref{fig:Ewald}.
-        Hierzu wird das reziproke Gitter aufgespannt, es ergeben sich auf Grund der gebrochenen Symmetrie Gitterstangen.
-        Um einen beliebiegen Startpunkt wird eine Kugel mit dem Radius $\vec{k}_\text{i}$ gezeichnet, so ergeben sich für alle schneidenen Gitterstangen der Kugel auch Beugungsreflexe.
-        Der Schnittpunkt mit der Kugel zum Ursprung hin ergibt dann den gebeugten Wellenzahlvektor $\vec{k}_\text{f}$.
-
-        % Größere Abstände im Realraum werden im reziproken Raum kleiner abgebildet.
-        % Mit steigeneder Energie der Elektronen rücken die Beugungsmaxima dichter zum Zentrum hin.
-        Die Annahme ohne Mehrfachstreuung der Elektronen ist zu einfach gefasst, weswegen lange keine Strukturanalyse mittels LEED möglich war.
-        Ursache der Mehrfachstreuung ist der verhältnissmäßig große Streuquerschnitt der langsamen Elektronen an Atomen.
-        Es kommt vermehrt zur Streuung mit den nächsten Nachbarn der Primär- wie auch Sekundärwelle, die sich wiederum gegenseitig beeinflussen.
-        Tendenziell ist es möglich aus der Position der Beugungsreflexe auf die Größe der Einheitszelle zu schließen, durch Adsorbate und Domänen, kann dies allerdings erschwert werden.
-    
-    \section{Augerelektronenspektroskopie} \label{sec:Auger}
-        \begin{figure}
-            \centering
-            \includegraphics[width=0.4\textwidth]{Auger-Effekt.png}
-            \caption{Schamtische Darstellung des Augerprozesses. Kopiert aus \cite{Auger-Bild}.}
-            \label{fig:AES}
-        \end{figure}
-        Um sich die Zusammensetzung von Materialien genauer zu betrachten ist die Auger Methode eine einfache Methode.
-        Der da hintersteckende Augerprozess wurde von L.~Meitner und P.~Auger unabhängig von einander im Jahre \num{1920} entdeckt \cite{Auger-Prozess}.
-        Da die Atomorbitale für verschiedene Elements bei unterschiedlichen Energien liegen ist auch der Übergang zwischen zwei dieser Zustande eine charakteristische Energie.
-        Für die Augerelektronenspektroskopie wird sich dieses von Nutzen gemacht.
-        Hierfür muss zunächst ein Loch in einem der Kernniveaus erzeugt werden.
-        Dies kann auf zwei verschiedene Arten geschehen.
-        Eine ist in dem die Probe mit hochenergetischen Elektronen von eigenen Kilovolt beschossen werden und dabei ein Elektron herausschlägt.
-        Dieser Prozess ist schematisch in \autoref{fig:AES} dargestellt.
-        Die zweite Methode ist die Anregung mittels Photonen, welche dann ein Photoelektron auslösen.
-        Dieser Prozess wird genauer in \autoref{sec:PES} behandelt.
-
-        Nach dem Auslösen eines Elektrons befindet sich das Atom in einem angeregten Zustand.
-        Um wieder eine energetisch günstigere Konfiguration einzunehmen muss ein Elektronen von einem energetisch niedrigerem Zustand (weiter außen liegend) das Loch auffüllen.
-        Dabei kann die frei werdene Energie über ein Photon emittiert werden oder an ein weiteres Elektron abgegeben werden, dem Augerelektronen.
-        Letzterer Prozess ist ebenfalls in \autoref{fig:AES} zu erkennen und beruht auf der Coulombwechselwirkung.
-        Die kinetische Energie diese Elektrons ergibt sich dabei zu
-        \begin{equation}
-            E_\text{Kin} = E_\text{X} - E_\text{Y} -E_\text{Z} - \Delta U - \phi
-        \end{equation}
-        mit den Bindungsenergien des Zustandes in dem das Loch erzeugt wird $E_\text{X}$, des auffüllenden Elektrons $E_\text{Y}$ und dem emittierten Elektronen $E_\text{Z}$.
-        Abgezogen werden muss noch die Austrittsarbeit $\phi$, welche der Energieunterschied zwischen der Fermienergie $E_\text{F}$ und der Vakuumenergie $E_\text{V}$ ist.
-        Ferner muss noch eine Korrektur $\Delta U$ (meist klein) beachtet werden, da das Atom im zweifach ionisierten Zustand hinterlassen wird~\cite{Fauster}.
-        Wie zuvor angemerkt ist diese Energiedifferenz charakteristisch für jedes Element.
-        Werden die emittierten Elektronen auf ihre Energie hin untersucht.
-        Dies kann zum einen durch ein weiteres Gitter in der LEED Optik geschehen, dann ist nur eine Elektronenkanone von Nöten.
-        Andernfalls wird meist ein Zylinderspiegelanalysator verwendet, in dem die Elektronen nach ihrer Energie selektiert werden und anschließend vervielfältigt werden.
-        Entsprechende Linien in Energie aufgelösten Spektren werden dabei einem Element und entsprechendem Übergang in der Röntgennotation mit Großbuchstaben (K, L, M) zugeordnet.
-        Die Notataion setzt sich dabei aus den drei Buchstaben XYZ der Schalen zusammen, vobei das Valenzband durch den Buchstaben V ausgedrückt werden kann~\cite{Fauster}.
-
-        Für die Auslösung eines Augerelektronens ist dabei maßgeblich die Wechselwirkungswahrscheinlichtkeit zwischen der verwendeten Anregung und entsprechendem Kernniveaus Auschlag gebend.
-        Hinzukommt, dass für große Energiedifferenz der Prozess der Abregung durch Aussendung eine Photons, der Röntfluoreszenz dominiert wird.
-        Für eine maximale Ausbeute sollten die anregenden Primärelektronen etwa dem dreifachen Bindungsenergie des Rumpfniveaus $E_\text{X}$ entsprechen~\cite{Fauster}.
-        Dies kann zusammen gefasst werden in ein Sensetivitätsfaktor $S_i$ für entsprechendes Element.
-        Entsprechende Werte für verschiedene Anregungen sind tabelliert~\cite{Auger}.
-        Gemeinsam mit den Intensitäten $I_j$ der verschiedene Augerlinien im Spektrum kann anschließend die Konzentration einzelner Elemente
-        \begin{equation}
-            c_i = \frac{I_i/S_i}{\sum_j I_j/S_j}
-            \label{eqn:Auger}
-        \end{equation}
-        der verschiedenen Bestandteile in der Probe bestimmt werden.
-        Da die experimentell verwendeten kinetischen Energien im Bereich zwischen \SIrange[range-phrase=\:und\:]{100}{1200}{\electronvolt} lässt sich aus \autoref{fig:Weg} erkennen, dass diese Methode nicht immer Oberflächensensetiv ist.
-
-    
     \section{Photoelektronenspektroskopie} \label{sec:PES}
         Die Grundlage ist der Photoelektronenspektroskopie ist der photoelektrische Effekt, der 1905 zum ersten Mal von Albert Einstein erklärt wurde~\cite{Einstein}.
         Hierbei werden Elektronen durch ein einfallendes Photon angeregt.
@@ -238,7 +120,7 @@
         \subsection{Röntgenabsorptionspektroskopie - XAS}
             Für die Durchfürung von Röntgenabsorptionsmessungen ist eine durchstimmbare Photonenquelle im weichen Röntgenbereich notwendig.
             Dies ist aktuell nur durch Synchrotrons und Freieelektronenlaser realisierbar.
-            Hierbei wird die Photonenenergie $h\nu$ über einen bestimmtren Bereich varriert. % in der eine Abosrptionskante liegt abgetastet.
+            Hierbei wird die Photonenenergie $h\nu$ über einen bestimmten Bereich variiert. % in der eine Abosrptionskante liegt abgetastet.
             Trifft ein Photon auf die Oberfläche so wird dieses absorbiert und kann ein Photoelektron auslösen.
             Wie viele Photonen diesen Prozess anregen können hängt davon ab, ob sich Elektronen bei der Energie $h\nu = E_\text{B}+\phi$ befinden.
             Energien an den schlagartig die Absorption steigt werden auch Absorptionskanten genannt und sind charakteristisch für verschiedene Elemente. 
@@ -281,7 +163,7 @@
             \end{figure}
 
             Die genaue Winkelverteilung der Elektronen wird bei der winkelaufgelösten Photoelektronenspektroskopie genauer untersucht.
-            Hierzu wird vom Analysator nur ein kleiner Winkelbreich akzeptiert und der Winkel zwischen Probe und Analysator stets varriert.
+            Hierzu wird vom Analysator nur ein kleiner Winkelbreich akzeptiert und der Winkel zwischen Probe und Analysator stets variiert.
             Schematisch ist dies auch in \autoref{fig:ARPES} dargestellt.
             Für jede Winkelkombination aus polarem $\theta$ und azimunthalen $\phi$ Winkel wird ein UPS Spektrum aufgezeichnet.
             Die entsprechenden Impulsvektoren lassen sich aus den Winkeln und der kinetischen Energie nach
@@ -329,7 +211,7 @@
         Im Anschluss an das erste Linsensystem folgt ein weiters Linsensystem aus elektrostatischen Linsen, welche das Bild auf den Ausgang des Linsensystems fokussieren.
         Hier befinden sich zwei magnetische Verschiebungslinsen um Drift zu korrigieren.
         Im Anschluss gehen die Elektronen in ein Transferlinsensystem über, welches dafür sorgt, dass ein einszueins Abbild auf die Eingangsblende des Analysators trifft.
-        Die Eingangsblende kann in ihrer Größe varriert werden, sodass nur ein Teil der Elektronen in den Analysator eintritt.
+        Die Eingangsblende kann in ihrer Größe variiert werden, sodass nur ein Teil der Elektronen in den Analysator eintritt.
         Je kleiner die Blende gewählt wird, desto besser ist die Energieauflösung aber so kleiner die Gesamtintensität.
         Als Energieanalysator kommt ein hemisphärischer Analysator zum Einsatz.
         Bei dem hemisphärischer Analysator werden die Elektronen zwischen zwei Halbkugeln durch ein statisches elektrisch Feld auf eine Kreisbahn gezwungen.
@@ -387,7 +269,7 @@
             Hierbei erfolgt die Anregung mit zwei zeitlich versetzten Pulsen. 
             Dabei regt der erste Puls die Elektronen in einen höheren Zustand an und der zweite Puls löst diese dann aus.
             So ist es auch möglich zuvor unbesetzte Zustände (zwei Photonenemission) zu untersuchen.
-            Wird der zeitliche Versatz zwischen den beiden Pulsen varriert so ist auch die Lebensdauer der Zustände abschätzbar.
+            Wird der zeitliche Versatz zwischen den beiden Pulsen variiert so ist auch die Lebensdauer der Zustände abschätzbar.
             Für die gepulste Photonenquellen würde sich ein Flugzeit (TOF, \textit{Time of flight}) Analysator besser eignen.
             In einem TOF Analysators wird die kinetische Energie aus der Flugzeit der Elektronen bestimmt, weswegen es nur für gepulste Photonenquellen möglich ist.
             Der Vorteil liegt darin, dass direkt ein ganzer Datensatz für alle Impuls- und Energiewerte erfasst werden kann.
