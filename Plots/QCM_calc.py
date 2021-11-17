@@ -15,6 +15,7 @@ def Mono(Roh1, Roh2, M1, M2, SD, Lage): # Berechnet die Anzahl Monolagen in abh√
     print('Die Schichtdicke ist (A)', SD2)
     print('und entspricht Anzahl ML', ML)
 
-Mono(8.908, 6.72, 58.6, 74.69, 0.7*15, 4.17/np.sqrt(3))
-Mono(8.908, 6.72, 58.6, 74.69, 0.7*35, 4.17/np.sqrt(3))
+Mono(8.908, 6.72, 58.6, 74.69, 0.7*15, 4.17/np.sqrt(3)) # Thin NiO
+Mono(8.908, 6.72, 58.6, 74.69, 0.7*35, 4.17/np.sqrt(3)) # Thick NiO
+# Mono(7.86, 5.17, 55.85, 231.533, 0.86*35, 1)
 
