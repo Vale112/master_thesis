@@ -106,12 +106,12 @@ Im Normalfall stehen jedoch alle Ihre Resultate im Hauptteil der Bachelorarbeit 
             \centering
             \includegraphics[width=0.5\textwidth]{Au+5A/EDC_Au_5A_mod.png}
             \caption{Die integrierten Spektren für reines Gold, Gold mit einer Monolage Pentacene und deren Differenz.}
-            \label{fig:EDC_Au+5A}
+            \label{fig:EDC_Au+5A_2}
         \end{figure}
         Das Goldsubstrat eignet sich ebenfalls zur Kalibrierung der Monolage von Pentacene, da bereits bekannt ist, dass sich diese flach auf der Oberfläche ordnet \cite{5A_1}.
         Bei der Wechselwirkung mit dem Substrat handelt es sich um die Physisorption durch einen Substrat-Molekülabstand von \SI{3.28}{\angstrom} \cite{5A_1}.
         % Es ergibt sich so das LEED-Bild in \autoref{fig:LEED_Au+5A}, was auch die bekannte \textbf{Überstruktur} (5A_1, 5A_5) aufweist.
-        Schaut man sich das winkelintegrierte Spektrum im Bereich der Valenzzustände in \autoref{fig:EDC_Au+5A} an, so sind auch deutlich Elemente zu erkennen, die durch die Moleküle hervorgerufen werden.
+        Schaut man sich das winkelintegrierte Spektrum im Bereich der Valenzzustände in \autoref{fig:EDC_Au+5A_2} an, so sind auch deutlich Elemente zu erkennen, die durch die Moleküle hervorgerufen werden.
         Die senkrechten Linien stellen die Punkte da, an denen Bilder mit höherer Statistik aufgenommen wurden und die später zur Molekülorbitalanalyse herangezogen werden.
 
         \begin{figure}
@@ -353,3 +353,44 @@ Im Normalfall stehen jedoch alle Ihre Resultate im Hauptteil der Bachelorarbeit 
         So lassen sich die magnetischen Eigenschaften genauer veranschaulichen.
     
     \section{NEXAFS}
+        Wird die Absorprionskante feiner aufgelöst so lassen sich Oszillationen erkennen.
+        Diese rühren daher, dass die emittierten Elektronen an Nachbaratomen streuen und zurück zum emittierenden Atom gestreut werden.
+        Hier beeinflussen diese dann die Wellennatur des Elektrons und es kommt zu konstruktiver und destruktiven Interferenzen~\cite{Fauster}.
+        Je nach kinetischer Energie der emittierten Elektronen müssen dabei nur nächste Nachbarn oder auch weiter entfernte Nachbarn berücksichtigt werden.
+
+
+    \section{Grundlegende Bedingungen}
+        Um sich Oberflächen genauer anzusehen muss zunächst verhindert werden, dass sich keine unerwünschten Teilchen auf der Oberfläche absetzen.
+        Hierzu wird Ultrahochvakuum (UHV) eingesetzt.
+        Da es keine Pumpe gibt, die direkt vom Atmosphärendruck bis in den UHV Bereichen kleiner \SI{1e-9}{\milli\bar} reicht, ist ein mehrstufiges Pumpsystem unabdingbar \cite{Henzler}.
+        In dem vorliegenden Aufbau wird dies durch Turbomolekularpumpen mit vorgeschalteten Scrollpumpen realisert.
+        Ferner werden diese durch Titansublimationspumpen, sowie Ionenpumpen unterstützt.
+        Diese tiefen Drücke sind erforderlich, da schon bei einem Druck von \SI{1e-6}{\milli\bar} die Oberfläche innerhalb von \SI{10}{\milli\second} zu \SI{1}{\percent} mit den im Restgas vorhandenen Teilchen bedeckt wäre~\cite{Henzler}.
+
+
+        Es gibt auch die Möglichkeit gezielt Gase in die Präperationskammer zu leiten, in der die Proben für die anschließenden Messungen vorbereitet werden.
+        Dies geschieht dann durch sogenannte Leckventiele.
+        Ein Maß für die Oberflächenbedeckung ist die Einheit Langmuir \si{\langmuir}, welcher einer Dosis entspricht.
+        Dabei ist $\SI{1}{\langmuir} = \SI{1}{\torr} \cdot \si{\micro\second}$ also etwa $\SI{1.33e-6}{\milli\bar} \cdot \si{\second}$.
+        Hier wird zu Grunde gelegt, dass jedes auf die Oberfläche auftreffende Teilchen auch haften bleibt. 
+        Die Oberfläche besäße also einen Haftkoeffizienten von Eins, was in der Realität so nicht vorkommt.
+
+    \section{PES}
+        \begin{figure}
+            \centering
+            \includegraphics[width=0.6\textwidth]{Band}
+            \caption{Ein Photoemissionsspektrum von Kupfer.
+            Im niedrigen Bindungsenergiebereich befindet sich das Valenzband. 
+            Zu höheren Bindungsenergien treten dann die Kernniveaus in den Vordergrund, gemeinsam mit den Augerelektronen-Peaks und satelliten-Linien.
+            Aus~\cite{Fauster}.}
+            \label{fig:Band}
+        \end{figure}
+        Ein beispielhaftes Spektrum ist in \autoref{fig:Band} zu finden.
+        Die Fermikante, bis wohin alle Zustände besetzt sind ist im Spektrum nicht zu erkennen, legt allerdings die Bindungsenergie \SI{0}{\electronvolt} fest.
+        Im niederenergetischen Bindungsenergiebereich handelt es sich um Zustände des Valenzbandes zu höheren Energien treten Zustände der Kernniveaus auf.
+        Zusätzlich treten diskrete Linien auf, die durch Augerelektronen hervorgerufen werden.
+        Diese Augerelektronen besitzen immer eine feste kinetische Energie, da sie durch den Übergang zwischen zwei Schalen stammen und somit unabhängig von der verwendeten Photonenenergie.
+        Zum Ende des Spektrums nimmt der Untergrund stetig zu, was durch inelastisch gestreute Elektronen zustande kommt.
+        Nach jedem Peak steigt der Untergrund stufenartig an, da vermehrt Elektronen für die Streuung bereitstehen.
+        Im Bereich der niedrigen kinetischen Energie nimmt dieser Effekt ein Maximum an, die Sekundärelektronen.
+        Zusätzlich im Spektrum sind Satelliten (S) zu sehen, diese stammen von der nicht ganz monochromatischen Photonenstrahlung. %Übergang von Elektronen bei mehrfachionisierten Atomen.

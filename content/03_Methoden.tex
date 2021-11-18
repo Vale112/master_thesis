@@ -1,61 +1,46 @@
 \chapter{Methoden und Techniken} \label{cha:Methoden}
     In diesem Kapitel soll es um die verwendeten Methoden und die grundlegenden Bedingungen zur Untersuchung von Molekülen auf antiferromagnnetischen Oberflächen gehen.
     Hierfür sind oberflächensensitiv Methoden wie die Photoelektronenspektroskopie von großer Bedeutung.
+    Notwendig dafür ist ein Ultrahochvakuumsystem mit Drücken unterhalb von \SI{1e-9}{\milli\bar}~\cite{Henzler}.
+    Diese tiefen Drücke sind erforderlich, da schon bei einem Druck von \SI{1e-6}{\milli\bar} die Oberfläche innerhalb von \SI{10}{\milli\second} zu \SI{1}{\percent} mit den im Restgas vorhandenen Teilchen bedeckt wäre~\cite{Henzler}.
     Grundlegend ist es mit ihr möglich sich den für die elektrische Leitfähigkeit relevanten Bereich genauer anzuschauen. 
     Aber auch die Aussagen über die chemischen Zusammensetzungen des untersuchten Systems sind damit möglich.
-    Diese grundlegenden Prinzipien werden im \Autoref{sec:PES} behandelt.
-    Zusätzlicher Informationsgewinn über die Verteilung und die Dispersions der Ladungen in der Probe können durch die Erfassung des Austrittswinkels erlangt werden (siehe \autoref{sec:2D-PES}).
+    Diese grundlegenden Prinzipien werden im \autoref{sec:PES} behandelt.
+    Zusätzlicher Informationsgewinn über die Verteilung und die Dispersions der Ladungen in der Probe können durch die Erfassung des Austrittswinkels erlangt werden (siehe \autoref{sec:PEEM}).
     Die Erforschung von selbstanordnen Molekülen auf Oberflächen nehmen einen immer größeren Bereich in der Wissenschaft ein. 
-    Zur Identifizierung der beteiligten Molekülorbital eignet sich die Photoemissionsorbitaltomographie die in \autoref{sec:MOT} einegführt wird.
-
-    \section{Grundlegende Bedingungen} \label{sec:Grundlagen}
-        Um sich Oberflächen genauer anzusehen muss zunächst verhindert werden, dass sich keine unerwünschten Teilchen auf der Oberfläche absetzen.
-        Hierzu wird Ultrahochvakuum (UHV) eingesetzt.
-        Da es keine Pumpe gibt, die direkt vom Atmosphärendruck bis in den UHV Bereichen kleiner \SI{1e-9}{\milli\bar} reicht, ist ein mehrstufiges Pumpsystem unabdingbar \cite{Henzler}.
-        In dem vorliegenden Aufbau wird dies durch Turbomolekularpumpen mit vorgeschalteten Scrollpumpen realisert.
-        Ferner werden diese durch Titansublimationspumpen, sowie Ionenpumpen unterstützt.
-        Diese tiefen Drücke sind erforderlich, da schon bei einem Druck von \SI{1e-6}{\milli\bar} die Oberfläche innerhalb von \SI{10}{\milli\second} zu \SI{1}{\percent} mit den im Restgas vorhandenen Teilchen bedeckt wäre~\cite{Henzler}.
-
-        Es gibt auch die Möglichkeit gezielt Gase in die Präperationskammer zu leiten, in der die Proben für die anschließenden Messungen vorbereitet werden.
-        Dies geschieht dann durch sogenannte Leckventiele.
-        Ein Maß für die Oberflächenbedeckung ist die Einheit Langmuir \si{\langmuir}, welcher einer Dosis entspricht.
-        Dabei ist $\SI{1}{\langmuir} = \SI{1}{\torr} \cdot \si{\micro\second}$ also etwa $\SI{1.33e-6}{\milli\bar} \cdot \si{\second}$.
-        Hier wird zu Grunde gelegt, dass jedes auf die Oberfläche auftreffende Teilchen auch haften bleibt. 
-        Die Oberfläche besäße also einen Haftkoeffizienten von Eins, was in der Realität so nicht vorkommt.
-
-        \begin{figure}
-            \centering
-            \includegraphics[width=0.6\textwidth]{Weg2.png}
-            \caption{Die mittlere freie Weglänge für Elektronen in verschiedenen Materialien. Aus~\cite{Hüfner} und bearbeitet.}
-            \label{fig:Weg}
-        \end{figure}
-        Das Vakuum dient allerdings nicht nur der Reinheit der Probe, sondern auch das die später emittierten Elektronen den Raum durchdringen und den Analysator erreichen können.
-        Andernfalls würden die Elektronen durch Streuung an anderen Teilchen abgebremst werden und somit ihre Informationen verlieren.
-        % Elektronen hätten bei einem Druck von xx bar nur eine Reichweite von \textbf{QUELLE, Zahlen}.
-        Da es sich um die Untersuchung von Oberflächen handelt ist somit auch bei den Techniken auf die Oberflächensensitivität zu achten.
-        Relevant wird damit die mittlere freie Weglänge der verwendeten Sonde.
-        Als perfekte Sonden stellten sich die Elektronen heraus, ihre inelastische mittlere freie Weglänge ist in \autoref{fig:Weg} graphisch dargestellt.
-        Es ist zu erkennen, dass Elektronen mit einer kinetischen Energie im Bereich von \SIrange{30}{100}{\electronvolt} aus einer Tiefe von nicht mehr als \SI{5}{\angstrom} kommen.
-        Werden also Elektronen als Sonden verwendet und ihre kinetische Energie angepasst, so kann davon ausgegagngen werden, dass sie nur aus oberflächennahen Bereichen kommen.
-
-        Um Elektronen von der Probe kommend zu erhalten gibt es zwei Möglichkeiten.
-        Zünächst können Elektronen in der Probe angeregt werden, die dann aus der Oberfläche austreten und detektiert werden.
-        Dies wird bei der Photoelektronenspektroskopie genutzt und in \autoref{sec:PES} genauer erläutert.
-        Die zweite Möglichkeit ist es die Probe mit Elektronen im entsprechenden Energiebereich zu beschießen.
-        Zurückkommenden Elektronen mit identischer kinetischen Energie können also nur aus oberflächennahen Bereichen kommen.
-        Bei der Beugung niederenergetischer Elektronen wird dieses Prinzip verwendet und nun genauer beschrieben.
+    Zur Identifizierung der beteiligten Molekülorbital eignet sich die Photoemissionsorbitaltomographie die in \autoref{sec:MOT} eingeführt wird.
 
     \section{Photoelektronenspektroskopie} \label{sec:PES}
-        Die Grundlage ist der Photoelektronenspektroskopie ist der photoelektrische Effekt, der 1905 zum ersten Mal von Albert Einstein erklärt wurde~\cite{Einstein}.
-        Hierbei werden Elektronen durch ein einfallendes Photon angeregt.
-        Ist die Energie hoch genug, so treten diese aus der Probenoberfläche aus.
-        In Formeln ergibt sich so die kinetische Energie der Elektronen, die die Probe verlassen zu 
+        % Die Grundlage der Photoelektronenspektroskopie ist der photoelektrische Effekt, der 1905 zum ersten Mal von Albert Einstein erklärt wurde~\cite{Einstein}.
+        Die Photoelektronenspektroskopie gibt Aufschluss über die elektronische Struktur innerhalb eines Festkörpers.
+        Hierzu werden monochromatische Photonen einegstrahlt, die durch den photoelektrischen Effekt Elektronen anregen.
+        Für eine ausreichend hohe Energie der Photonen ist es möglich die Elektronen aus dem Festkörper zu lösen und zu detektieren.
+        Dazu muss das Photon der Energie $h \nu$ die Bindungsenergie des Elektrons $E_\text{B}$ sowie die Austrittsarbeit der Probe $\phi$ überwinden.
+        Die restliche zur Verfügung stehende Energie wird als kinetische Energie
         \begin{equation}
             E_{\text{Kin}} = h \nu - E_{\symup{B}} - \phi
             \label{eqn:Photoeffekt}
         \end{equation}
-        mit der Bindungsenergie des Elektrons $E_{\symup{B}}$ und der Energie des einfallenden Photons $h \nu$.
-        Erkennbar ist also, dass sich die kinetische Energie immer auf die Vakuumenergie bezieht wohin gegen die Bindungsenergie sich auf die Fermienergie bezieht und für gebundene Zustände stets positiv dargestellt wird.
+        an das Elektron abgegeben.
+        Da die Austrittsarbeit die Energiedifferenz zwischen Ferminiveau der Probe und Vakuumniveau darstellt bezieht sich die kinetische Energie immer auf die Vakuumenergie.
+        Im Gegensatz dazu bezieht sich die Bindungsenergie auf die Fermienergie ($E_\text{B} = \num{0}$ bei $E_\text{F}$) und wird für gebundene Zustände stets positiv dargestellt.
+
+        \begin{figure}
+            \centering
+            \includegraphics[width=0.5\textwidth]{EDC_DJ.jpg}
+            \caption{Kopiert aus \cite{oura_surface_2003}.}
+            \label{fig:EDC}
+        \end{figure}
+        Wird die Anzahl detektierter Elektronen gegen ihre kinetische Energie aufgetragen, so ergibt sich die Energie Verteilungsfunktion (\textit{energy distribution curve}, EDC).
+        Diese spiegelt die Zustandsdichte der entsprechenden Probe wieder, beispielhaft ist dies in \autoref{fig:EDC} dargestellt.
+        Links im Bild ist die elektronische Struktur in einem Festkörper dargestellt, rechts die sich ergebene Energie Verteilungskurve.
+        Mit Hilfe der Röntgenstrahlung (\textit{X-Ray}) können sich kernnahe Zustände untersucht lassen, welche Rückschlüsse auf die chemische Zusammensetzung der Probe zulassen (\textit{Electron spectroscopy for chemical analysis}, ESCA).
+        Ihre Struktur ist im Vergleich zu der des Valenzbandbereiches schmaler.
+        Der Valenzbandbereich nahe der Fermikante lässt sich mittels der ultravioletten Strahlung genauer untersuchen.
+        Ihre Strukturen fallen dabei eher etwas breiter aus als die der Kernniveaus.
+        Die verschiedenen Energiebereiche sind notwendig, damit die angeregten Elektronen eine kinetische Energie im oberflächensensitiven Bereich haben.
+        Diese erste Methode wird XPS (siehe \autoref{sec:XPS}) genannt, wohingegen die zweite Methode mit UPS (siehe \autoref{sec:UPS}) abgekürzt wird.
+        Durch die zusätzliche Erfassung der Austrittswinkel der Elektronen kann die Bandstruktur wieder gegeben werden, dazu wird die winkelaufgelösten UPS genutzt (siehe \autoref{sec:ARPES}).
         
         \begin{figure}
             \centering
@@ -65,105 +50,90 @@
             Kopiert und modifiziert aus~\cite{zhang_synchrotron_2018}.}
             \label{fig:3Stufen}
         \end{figure}
-        Dieser Prozess der Emittation eines Elektrons nach Einfall eines Photons lässt sich in einem drei Stufen Model erklären.
-        Das Model ist in \autoref{fig:3Stufen} schematisch zu sehen.
-        Der erste Schritt ist die Absorption des Photons, wodurch das Elektron angeregt wird. 
-        Dieses kann dann innerhalb des Festkörpers zur Probenoberfläche wandern.
-        In diesem zweiten Schritt kommt auch die mittlere freie Weglänge der Elektroen zu tragen, weshalb die Methode oberflächensensitiv ist.
-        Im dritten Schritt verlässt das Elektron die Oberfläche und wird auf Grund fehlender periodischer Strukturen gebeugt.
-        Hier ist die Periodizität des Festkörpers gebrochen, wodurch die senkrechte Komponente des Impulsvektors nicht erhalten bleibt.
-        Dahingegen bleibt der Impulsvektor parallel zur Oberfläche $k_{||}$ erhalten.
-
         \begin{figure}
             \centering
-            \includegraphics[width=0.6\textwidth]{Band}
-            \caption{Ein Photoemissionsspektrum von Kupfer.
-            Im niedrigen Bindungsenergiebereich befindet sich das Valenzband. 
-            Zu höheren Bindungsenergien treten dann die Kernniveaus in den Vordergrund, gemeinsam mit den Augerelektronen-Peaks und satelliten-Linien.
-            Aus~\cite{Fauster}.}
-            \label{fig:Band}
+            \includegraphics[width=0.6\textwidth]{Weg2.png}
+            \caption{Die mittlere freie Weglänge für Elektronen in verschiedenen Materialien. Aus~\cite{Hüfner} und bearbeitet.}
+            \label{fig:Weg}
         \end{figure}
-        Ein beispielhaftes Spektrum ist in \autoref{fig:Band} zu finden.
-        Die Fermikante, bis wohin alle Zustände besetzt sind ist im Spektrum nicht zu erkennen, legt allerdings die Bindungsenergie \SI{0}{\electronvolt} fest.
-        Im niederenergetischen Bindungsenergiebereich handelt es sich um Zustände des Valenzbandes zu höheren Energien treten Zustände der Kernniveaus auf.
-        Zusätzlich treten diskrete Linien auf, die durch Augerelektronen hervorgerufen werden.
-        Diese Augerelektronen besitzen immer eine feste kinetische Energie, da sie durch den Übergang zwischen zwei Schalen stammen und somit unabhängig von der verwendeten Photonenenergie.
-        Zum Ende des Spektrums nimmt der Untergrund stetig zu, was durch inelastisch gestreute Elektronen zustande kommt.
-        Nach jedem Peak steigt der Untergrund stufenartig an, da vermehrt Elektronen für die Streuung bereitstehen.
-        Im Bereich der niedrigen kinetischen Energie nimmt dieser Effekt ein Maximum an, die Sekundärelektronen.
-        Zusätzlich im Spektrum sind Satelliten (S) zu sehen, diese stammen von der nicht ganz monochromatischen Photonenstrahlung. %Übergang von Elektronen bei mehrfachionisierten Atomen.
+        Dieser Prozess der Photonelektronenemission lässt sich in einem Model mit drei unabhängigen Stufen erklären.
+        Das Model ist in \autoref{fig:3Stufen} schematisch zu sehen.
+        Der erste Schritt ist die Absorption des Photons, wodurch das Elektron aus seiner Bindung gelöst werden kann und mit einer kinetischen Energie versehen wird.
+        Dieses kann dann innerhalb des Festkörpers zur Probenoberfläche wandern.
+        Auf dem Weg zur Oberfläche können die  Elektronen hauptsächlich mit anderen Elektronen stoßen, wodurch es im Fall eines elastischen Stoßes Energie und damit seine Informationen seines Ursprungs verliert.
+        Die gestreuten Elektronen erzeugen einen kontinuierlichen Untergrund und ihr Beitrag steigt mit abnehmender kinetischen Energie an, sie werden auch Sekundärelektronen genannt.
+        Ein Maß für die Strecke die ein Elektron ohne Energieverlust durchlaufen kann, wird inelastische mittlere freie Weglänge genannt.
+        Diese ist von der kinetischen Energie des Elektrons abhängig und in \autoref{fig:Weg} dargestellt.
+        Es ist zu erkennen, dass Elektronen mit einer kinetischen Energie im Bereich von \SIrange{30}{100}{\electronvolt} aus einer Tiefe von nicht mehr als \SI{5}{\angstrom} kommen und somit aus dem Oberflächen nahen Bereich.
+        Ist die kinetische Energie des Elektrons größer als die Austrittsarbeit der Probe, so kann das Elektron die Oberfläche in einem dritten Schritt verlassen.
+        An der Oberfläche des Festkörpers ist die Periodizität gebrochen, wodurch das Elektron gebeugt wird und die senkrechte Komponente des Impulsvektors nicht erhalten bleibt.
+        Dahingegen bleibt der Impulsvektor parallel zur Oberfläche $k_{||}$ erhalten, dies wird bei der winkelaufgelösten Photoelektronenspektroskopie in \autoref{sec:ARPES} zu Nutzen gemacht.
 
-        Je nach Energie der verwendeten Photonen lässt sich in maßgeblich zwei Bereiche unterscheiden.
-        Zum Einen in den Bereich der Röntgenstrahlung (\textit{X-Ray}), womit kernnahe Zustände untersucht werden.
-        Zum Anderen den Bereich der ultravioletten Strahlung, hier können Zustände nahe der Fermikante sichtbar gemacht werden.
-        Die verschiedenen Energiebereich sind notwendig, damit die angeregten Elektronen eine kinetische Energie im oberflächensensitiven Bereich haben.
-        Diese erste Methode wird XPS genannt, wohingegen die zweite Methode mit UPS abgekürzt wird.
+        Die Wahrscheinlichkeit für einen Übergang aus dem Anfangszustand $\Psi_\text{i}$ (i = \textit{intinal}) in einen weiteren Endzustand $\Psi_\text{f}$ (f = \textit{final}) wird durch Fermi's goldene Regel festgelegt.
+        Damit ist auch die Intensität des Photoemissionsprozesses 
+        \begin{equation}
+            I_\text{fi} \propto \frac{2\pi}{\hbar} \abs{\bigl<\Psi_\text{f}|\Delta|\Psi_\text{i}\bigr>}^2 \, \delta\left(E_\text{f}-E_\text{i}-h\nu\right)
+            \label{eqn:Fermi_gold}
+        \end{equation}
+        abhängig von der verwendeten Photonenenergie $h \nu$ und dessen klassische Vektorpotential des externen elektrischen Feldes $\vec{A}$, sowie der Energie des Anfangszustandes $E_\text{i}$ und Endzustandes $E_\text{f}$.
+        Hierbei stellt $\Delta \approx \frac{\symup{e}\hbar}{m}\vec{A}\cdot\vec{p}$ einen Operator da und beschreibt die Interaktion zwischen dem äußeren Feld und dem Elektron~\cite{cao_theory_2010}.
+        Der Übergang wird also durch die Symmetrien des Anfangs- und Endzustands bestimmt, ferner ist auch die Polarisation des einfallenden Photons entscheident.
+        Die $\delta$-Funktion berücksichtigt das Prinzip der Energierhaltung.
+        Um Elektronen mittels der Photoelektronenspektroskopie zu detektieren muss der Endzustand dabei oberhalb der Vakuumenergie liegen.
+        Bei den durch das Photon angeregten Übergängen handelt es sich um direkte Übergänge und damit Impuls ($\vec{k}$) erhaltenen Prozess.
+        Der Wellenvektor des Endzustandes $\vec{k}_\text{f}$ unterscheidet sich nur um einen reziproken Gittervektor $\vec{G}$ vom Wellenvektor des Anfangszustands $\vec{k}_\text{i}$.
 
-        \subsection{Röntgenphotoelektronenspektroskopie - XPS}
-            In den Energiebereich der weichen Röntgenstrahlung fallen Photonen mit einer Energie von \SIrange{0.1}{10}{\kilo\electronvolt}~\cite{Fauster}.
+        % Lokale Effekte vernachlässigt, N Elektronen im Anfangszustand
+
+        Ein weiteres aktuelleres Model zur Beschreibung der theoretischen Photoelektronenemeission ist das ein Stufen Model.
+        Diese fasst alle drei Elemente des drei Stufen Models zu einem zusammen, vobei der Endzstand durch einen Zustand beschrieben wird, der sich im Vakuum frei ausbilden kann aber in Richtung der Oberfläche gedämpft wird.
+        Das ein Stufen Model behandelt den Prozess der Photoemission als einen kohärenten Prozess des Mehrteilchen Problems.
+        Zusätzlich berücksichtigt es auch, dass sich der Grund- und Endzustand durch die Anregung und Erzeugung eines Lochs unterscheiden.
+
+        \subsection{Röntgenphotoelektronenspektroskopie - XPS} \label{sec:XPS}
+            Um die Kernniveaus des untersuchten Systems zu betrachten wird weichen Röntgenstrahlung mit einer Energie von \SIrange{0.1}{10}{\kilo\electronvolt} verwendet~\cite{Fauster}.
             Diese Energien sind nur mit klassischen Röntgenquellen oder einem Synchrotron erreichbar.
-            Solche hohen Energien sind notwendig um Elektronen aus Kernniveaus anzuregen.
-            % Die kernnahen Niveaus sind schwieriger zu beeinflussen und eigenen sich besonders gut zur Elementanalyse.
-            Mit dieser Methode lässt sich ebenfalls die chemische Zusammensetzung untersuchen.
-            Leicht unterschiedliche Positionen für verschiedene Ionisationszustände und Bindungszuständen können dabei Rückschlüsse auf chemische Umgebungen zulassen.
-            So verschiebt sich die Energie auch, je nach dem ob die Atome an der Oberfläche oder tiefer im Festkörper sind von denen die Elektronen emittiert werden.
+            Mit dieser Methode lässt sich die chemische Zusammensetzung der Probe untersuchen, da die typischen Bindungsenergien größer als \SI{50}{\electronvolt} sind und amit nicht direkt an Bindungen beteiligt sind.
+            % und damit direkten Zugang zu der chemischen Komposition der Probe liefern.
+            Leicht unterschiedliche Positionen in der Bindungsenergie für verschiedene Ionisationszustände und Bindungszuständen können dabei Rückschlüsse auf die chemische Umgebungen zulassen.
+            Hierbei entsteht ein Beitrag auch durch die unterschiedlichen Bindungsenergien für die Atome an der Oberfläche oder tiefer im Festkörper liegend.
+            Auf Grund der Symmetrien der Wellenfunktion der Kernniveaus ist ihre Bindungsenergie unabhängig vom Impulsvektor und das Signal zeigt die Form einer Lorentz-Funktion~\cite{Hüfner}.
 
-            Ein einzelnes so detektierte Merkmal unterliegt dabei mehrern Effekten. 
-            Die Breite des charakteristischen Merkmals wird durch die Energiebreite der verwendeten Photonen und der Auflösung des Detekters beschränkt.
-            Hinzu kommen thermische Verbreiterungen, weswegen bessere Energieauflösungen erreicht werden, wenn die Probe gekühlt wird.
-            % Hinzukommen thermische Verbreiterung, sowie 
-            Nach der Entflatung durch alle anderen Merkmal verbreiternden Effekte ergibt sich die die Lebensdauer des Endzustandes, welche antiproportional zur Linienbreite ist.
-            Einseitige Verbreiterungen treten durch inelastische Streuungen der Photoelektronen auf.
+            Maßgeblich wird die Halbwertsbreite des Signals durch die Lebenszeit des entsprechenden Zustands bestimmt, dabei ergibt sich eine inverse Proportionalität.
+            Auch die Energieauflösung des Dektors fließt mit in die gemessene Halbwertsbreite ein, welches die bestimmte kinetische Energie beeinflusst.
+            Die Halbwertsbreite der verwendeten Photonenenergie sorgt für unterschiedliche kinetische Energien der vom gleichen Zustand emittierten Elektronen.
+            Durch vermessen des Systems bei niedrigen Temperaturen kann eine Verbreiterung des Siganls auf Grund von der Reduktion thermischer Effekte reduziert werden.
+            Vermehrt treten bei Metallen einseitige Verbreiterungen auf, welche auf die Wechselwirkung zwischen dem Valenzband und dem im Kernniveau erzeugten Loch zurückzuführen ist.
+            Durch dieses zusätzliche positive Potential führt zu einer Verschiebung zu größeren Bindungsenergien.
+            % inelastische Streuungen der Photoelektronen zurückzuführen ist.
+            Ebenso kann eine mehrfach Ionisation durch Multiphotonenabsorption oder interne Prozesse wie den Augerprozess zu Energieverschiebungen der emittierenden Zustände und damit einer Asymmetrie führen.
+            % \textbf{???} Die Linien erfahren eine weiter Verbreiterungen, wenn sich durch die Spin-Bahn-Kopplung Dubletts ausbilden und nur eine geringe Energieaufspaltung zeigen.
+            % Diese Aufspaltung resultiert aus der Wechselwirkung zwischen dem Spin des Valenzbandes und des photoionisierten Kernniveaus, was nun auch einen Spin trägt.
 
-            Hinzukommt, dass sich einzelne Linien als Dubletts ausbilden.
-            Dies rührt von der Spin-Bahn-Kopplung, also der Aufspaltung auf Grund des Spins.
-            Ihre Intensitätsverhältnisse ergeben sich aus ihrem Entartungsgrad. 
-            Ein Beispiel stellen die $\text{L}_2$- und $\text{L}_3$-Linien in \autoref{fig:Band} dar.
-            Die Intensitäten der $\text{M}_{1,2,3}$ sind deutlich geringer, da ihr Wirkungsquerschnitt für die Anregung mit der Photonenenergie von \SI{1486.6}{\electronvolt} geringer ausfällt.
         
-        \subsection{Röntgenabsorptionspektroskopie - XAS}
-            Für die Durchfürung von Röntgenabsorptionsmessungen ist eine durchstimmbare Photonenquelle im weichen Röntgenbereich notwendig.
-            Dies ist aktuell nur durch Synchrotrons und Freieelektronenlaser realisierbar.
-            Hierbei wird die Photonenenergie $h\nu$ über einen bestimmten Bereich variiert. % in der eine Abosrptionskante liegt abgetastet.
-            Trifft ein Photon auf die Oberfläche so wird dieses absorbiert und kann ein Photoelektron auslösen.
-            Wie viele Photonen diesen Prozess anregen können hängt davon ab, ob sich Elektronen bei der Energie $h\nu = E_\text{B}+\phi$ befinden.
-            Energien an den schlagartig die Absorption steigt werden auch Absorptionskanten genannt und sind charakteristisch für verschiedene Elemente. 
-            Es handelt sich dabei dann um einen Übergang aus einem bestimmten kernnahen Zustand in einen unbestzten Zustand.
-            Durch die Wahl der Polarisation des Lichtes kann auch spinsensetiv selktiert werden, welche Elektronen ausgelöst werden.
+        % \subsection{Röntgenabsorptionspektroskopie - XAS}
+        %     Für die Durchfürung von Röntgenabsorptionsmessungen ist eine durchstimmbare Photonenquelle im weichen Röntgenbereich notwendig.
+        %     Dies ist aktuell nur durch Synchrotrons und Freieelektronenlaser realisierbar.
+        %     Hierbei wird die Photonenenergie $h\nu$ über einen bestimmten Bereich variiert. % in der eine Abosrptionskante liegt abgetastet.
+        %     Trifft ein Photon auf die Oberfläche so wird dieses absorbiert und kann ein Photoelektron auslösen.
+        %     Wie viele Photonen diesen Prozess anregen können hängt davon ab, ob sich Elektronen bei der Energie $h\nu = E_\text{B}+\phi$ befinden.
+        %     Energien an den schlagartig die Absorption steigt werden auch Absorptionskanten genannt und sind charakteristisch für verschiedene Elemente. 
+        %     Es handelt sich dabei dann um einen Übergang aus einem bestimmten kernnahen Zustand in einen unbestzten Zustand.
+        %     Durch die Wahl der Polarisation des Lichtes kann auch spinsensetiv selktiert werden, welche Elektronen ausgelöst werden.
 
         \subsection{Ultraviolettphotoelektronenspektroskopie - UPS} \label{sec:UPS}
-            Die ultraviolette Strahlung besitzt eine Energie der Photonen im Bereich von \SIrange{10}{1000}{\electronvolt}~\cite{Fauster}.
-            Photonen in diesem Energiebereich können auch in Laboren mit Gasentladungslampen erzeugt werden, sind aber ebenfalls an Synchrotrons verfügbar.
-            Diese Energien eignen sich besonders gut für Zustände nähe der Fermikante, also auch den Oberflächenzuständen.
-            In diesen Bereich fallen auch die Energien die zur Molekülorbital Tomographie genutzt werden, welche in \autoref{sec:MOT} eingeführt wird.
+            Das Valenz- und Leitungsband kann mit ultravioletter Strahlung im Bereich von \SIrange{10}{100}{\electronvolt} untersucht werden~\cite{Fauster}.
+            Photonen in diesem Energiebereich können in Laboren mit Gasentladungslampen erzeugt werden, sind aber ebenfalls an Synchrotrons verfügbar.
+            Durch die niedrige Photonenenergie ist die Wechselwirkungswahrscheinlichtkeit mit den entsprechenden Zuständen größer, als bei der Verwendung von Röntgenstrahlung.
+            In diesen Bereich fallen auch die Energien die zur Photoemissionsorbitaltomographie genutzt werden, welche in \autoref{sec:MOT} eingeführt wird.
 
-            Es können somit Elektronen aus dem Valenz- und Leitungsband angeregt und emittiert werden. 
-            Auf Grund der geringen Photonenenergie können damit keine stark gebundenen Zustände wie die Rumpfniveaus untersucht werden.
-            Hier werden Elektronen aus ihrem Anfangszustand $\Psi_\text{i}$ (i = \textit{intinal}) mit der Energie $E_\text{i}$ und mit $N$ Elektronen gefüllt ist, in einen höheren Zustand $\Psi_\text{f}$ (f = \textit{final}) mit der Energie $E_\text{f}$  angeregt.
-            Der höher liegende Energie Zustand kann nur erreicht werden, wenn die eingestrahlte Photonenenergie dafür ausreicht.
-            So ergibt sich nach Fermis goldenen Regel die Übergangswahrscheinlichkeitsmatrixelmente
-            \begin{equation}
-                I_\text{fi} \propto \frac{2\pi}{\hbar} \abs{\bigl<\Psi_\text{f}|\Delta|\Psi_\text{i}\bigr>}^2 \, \delta\left(E_\text{f}-E_\text{i}-h\nu\right).
-                \label{eqn:Fermi_gold}
-            \end{equation}
-            Sie enthälen den Polarisationsfaktor $\Delta \approx \frac{\symup{e}\hbar}{m}\vec{A}\cdot\vec{\nabla}$, welcher die Interaktion mit dem Photonenfeld berücksichtigt.
-            Dabei beschreibt $\vec{A}$ das klassische Vektorpotential des externen elektrischen Feldes~\cite{cao_theory_2010}.
-
+            Aufgrund der starken $\vec{k}$-Abhängigkeit im Valenzband und dessen Erhaltung, sowie der niedrigen Photonenenergien können bei der Ultraviolettphotoelektronenspektroskopie einige Zustände nicht abgebildet werden~\cite{Hüfner}.
+            Bei XPS hingegen ist kaum eingeschränkt, denn durch die hohen Energien kann die ganze Brillouinzone als Akzeptanzbereich genutzt werden~\cite{Hüfner}.
 
         \subsection{Winkelaufgelöste Photoelektronenspektroskopie - ARPES} \label{sec:ARPES}
-            Bisher wurde  auf den Austrittswinkel der Elektronen nicht genauer eingegangen, zumal bei XPS und UPS auch egal ist unter welchem Winkel die Elektronen die Probe verlassen.
-            Diese Messungen werden meist auch in normaler Emission, also parallel zur Oberflächennormalen, vermessen.
-            Über alle Austrittswinkel gemittelten Spektren werden auch als integrierte Spektren bezeichnet.
-            \begin{figure}
-                \centering
-                \includegraphics[width=0.5\textwidth]{ARPES}
-                \caption{Versuchsanordnung zur Messung winkelaufgelöster Photoemissionsspektren. Aus~\cite{ARPES}.}
-                \label{fig:ARPES}
-            \end{figure}
-
-            Die genaue Winkelverteilung der Elektronen wird bei der winkelaufgelösten Photoelektronenspektroskopie genauer untersucht.
+            Durch die Erfassung der Austrittswinkel der emittierten Elektronen lassen sich Rückschlüsse auf die Bandstruktur innerhalb der Probe schließen.
             Hierzu wird vom Analysator nur ein kleiner Winkelbreich akzeptiert und der Winkel zwischen Probe und Analysator stets variiert.
-            Schematisch ist dies auch in \autoref{fig:ARPES} dargestellt.
+            Schematisch ist dies in \autoref{fig:ARPES} dargestellt.
             Für jede Winkelkombination aus polarem $\theta$ und azimunthalen $\phi$ Winkel wird ein UPS Spektrum aufgezeichnet.
             Die entsprechenden Impulsvektoren lassen sich aus den Winkeln und der kinetischen Energie nach
             \begin{gather}
@@ -171,21 +141,24 @@
                 k_\text{y} = \sqrt{\frac{2 \text{m}_\text{e} E_\text{Kin}}{\hbar^2}} \sin\theta \sin\phi
             \end{gather}
             berechnen~\cite{MM_4}.
-            Wird für eine feste Energie über alle Winkel integriert und dies für jede gemessene Energie aufgetragen ergibt sich eine integriertes Spektrum.
-            Dies hat die Bezeichnung \textit{electron density curve} (EDC), da sie die Zustandsdichte des Valenzbandes wiederspiegelt.
-
-            Von der Seite der Theorie wird das ein Stufen Model der Photonelektronenemission verwendet, welches den Prozess der Photoemission besser beschreibt, aber nicht so anschaulich wie das drei Stufen Model ist.
-            Es berücksichtigt unter Anderem, den Austrittswinkel der Elektronen (polar $\theta$ und azimuthal $\phi$) sowie den finale Zustand $\Psi_\text{f}$ mit einer Energie $E_\text{Kin}$.
-            So ergibt sich die Photoelektronenintensität in entsprechende Richtung 
+            Bei Messungen wird ein kleiner Teilbereich von $k_\text{||} = \sqrt{k_\text{x}^2 + k_\text{y}^2}$ erfasst.
+            Mit verschiedene kinetische Energien aufgenommen ergibt sich damit ein Teilbereich der Bandstruktur $E(k_\text{||})$.
+            Zusätzlich kann aus der Breite des Spektrums $\increment E$, also dem Beginn der Fermikante bis zum Abbruch der Sekundärelektronen die Austrittsarbeit der Oberfläche $\phi = h \nu - \increment E$ bestimmt werden~\cite{Hüfner}.
+            % Durch die Korrelation zwischen dem Impuls und der kinetischen Energie
+            % \begin{equation}
+            %     E_\text{Kin} = \frac{\hbar^2 \vec{k}^2}{2 m_\text{e}}
+            % \end{equation}
+            % über das reduzierte planksche Wirkungsquantum $\hbar$ und der Elektronenmasse $m_\text{e}$
+            % 
+            % Im ein Stufen Model ergibt sich
+            Unter Berücksichtigung der Austrittswinkel der Elektronen (polar $\theta$ und azimuthal $\phi$) sowie den finale Zustand $\Psi_\text{f}$ mit einer Energie $E_\text{Kin}$, die Photoelektronenintensität in entsprechende Richtung
             \begin{equation}
                 I(\theta, \phi, E_\text{Kin}) \propto \sum_i \abs*{\bigl<\Psi_\text{f}(\theta, \phi, E_\text{Kin})|\vec{A}\cdot\vec{p}|\Psi_\text{i}\bigr>}^2 \times \delta\left(E_\text{i}+E_\text{Kin}+\Phi-h\nu\right))
             \end{equation}
             vom Anfangszustand $\Psi_\text{i}$ in der Dipolapproximation~\cite{MM_2}.
-            Durch die ebene Wellen Approximation des Endzustands ist der Photoelektronenstrom proportinal zur Fouriertransformation des Anfangszustandes.
-            So ergibt sich unter Beachtung des Polarisationsfaktors $\abs*{\tilde{\Psi}_\text{i}(\vec{k})} \propto \frac{\sqrt{I_\text{i}(\theta, \phi)}}{\abs*{\vec{A}\cdot\vec{k}}}$.
 
-    \section{Zweidimensionale Photoelektronen Mikroskopie} \label{sec:2D-PES}
-        Die Zweidimensionale Photoelektronen Mikroskopie ist eine sehr viel versprechende Technik, die für immer mehr Aufsehen in den letzten Jahren gesorgt hat.
+    \section{Photoelektronenemissionsmikroskopie} \label{sec:PEEM}
+        Die Photoelektronenemissionsmikroskopie ist eine sehr viel versprechende Technik, die für immer mehr Aufsehen in den letzten Jahren gesorgt hat.
         Der größte Vorteil liegt wohl in der Kombination von spektroskopischen Methoden und mikroskopischen Methoden.
         Zuerst wurde dies 1933 durch E. Brüche entdeckt, der eine Zinkplatte mit Hilfe von Photoelektronen und einer magnetischen Linse auf einem Leuchtschirm abbildete~\cite{bruche_elektronenmikroskopische_1933}.
         Sie nutzt die Prinzipien der Energie- und Impulserhaltung um Bilder der Proben im Realraum oder Impulsraum aufzulösen.
@@ -264,6 +237,12 @@
             Der Modi wird auch als PEEM (\textit{Photon emitted electron microscopy}) bezeichnet.
         
     \section{Photoemissionsorbitaltomographie} \label{sec:MOT}
+
+    Durch die ebene Wellen Approximation des Endzustands ist der Photoelektronenstrom proportinal zur Fouriertransformation des Anfangszustandes.
+    So ergibt sich unter Beachtung des Polarisationsfaktors $\abs*{\tilde{\Psi}_\text{i}(\vec{k})} \propto \frac{\sqrt{I_\text{i}(\theta, \phi)}}{\abs*{\vec{A}\cdot\vec{k}}}$.
+
+
+
         Die Photoemissionsorbitaltomographie vereinigt die Vorteile der Impulsmikroskopie mit der Dichtefunktionaltheorie (DFT) um Molekülorbitale zu identifizieren.
         Aus der Theorie können die Orbitale der Moleküle in der Gasphase im Realraum berechnet werden~\cite{database}.
         Werden diese dann Fourier transformiert, so ergibt sich die Aufenthaltswahrscheinlichkeiten der Elektronen abhängig von ihrem Impuls.
