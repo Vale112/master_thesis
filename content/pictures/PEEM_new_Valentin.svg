@@ -8,14 +8,128 @@
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="121.32109mm"
-   height="180.5526mm"
-   viewBox="0 0 121.32109 180.5526"
+   height="189.54843mm"
+   viewBox="0 0 121.32109 189.54843"
    version="1.1"
    id="svg8"
    inkscape:version="1.0.2-2 (e86c870879, 2021-01-15)"
    sodipodi:docname="PEEM_new_Valentin.svg">
   <defs
-     id="defs2" />
+     id="defs2">
+    <marker
+       style="overflow:visible"
+       id="Arrow1Lend"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lend"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path927" />
+    </marker>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath900">
+      <rect
+         style="fill:none;stroke:#ff0000;stroke-width:0.127922;stroke-miterlimit:4;stroke-dasharray:none"
+         id="rect902"
+         width="6.5761862"
+         height="3.1728811"
+         x="72.314804"
+         y="84.682755" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath900-0">
+      <rect
+         style="fill:none;stroke:#ff0000;stroke-width:0.127922;stroke-miterlimit:4;stroke-dasharray:none"
+         id="rect902-7"
+         width="6.5761862"
+         height="3.1728811"
+         x="72.314804"
+         y="84.682755" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath1810">
+      <rect
+         style="fill:none;stroke:#ff0000;stroke-width:0.127922;stroke-miterlimit:4;stroke-dasharray:none"
+         id="rect1808"
+         width="6.5761862"
+         height="3.1728811"
+         x="72.314804"
+         y="84.682755" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath1814">
+      <rect
+         style="fill:none;stroke:#ff0000;stroke-width:0.127922;stroke-miterlimit:4;stroke-dasharray:none"
+         id="rect1812"
+         width="6.5761862"
+         height="3.1728811"
+         x="72.314804"
+         y="84.682755" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath1818">
+      <rect
+         style="fill:none;stroke:#ff0000;stroke-width:0.127922;stroke-miterlimit:4;stroke-dasharray:none"
+         id="rect1816"
+         width="6.5761862"
+         height="3.1728811"
+         x="72.314804"
+         y="84.682755" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath1822">
+      <rect
+         style="fill:none;stroke:#ff0000;stroke-width:0.127922;stroke-miterlimit:4;stroke-dasharray:none"
+         id="rect1820"
+         width="6.5761862"
+         height="3.1728811"
+         x="72.314804"
+         y="84.682755" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath1826">
+      <rect
+         style="fill:none;stroke:#ff0000;stroke-width:0.127922;stroke-miterlimit:4;stroke-dasharray:none"
+         id="rect1824"
+         width="6.5761862"
+         height="3.1728811"
+         x="72.314804"
+         y="84.682755" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath1830">
+      <rect
+         style="fill:none;stroke:#ff0000;stroke-width:0.127922;stroke-miterlimit:4;stroke-dasharray:none"
+         id="rect1828"
+         width="6.5761862"
+         height="3.1728811"
+         x="72.314804"
+         y="84.682755" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath1834">
+      <rect
+         style="fill:none;stroke:#ff0000;stroke-width:0.127922;stroke-miterlimit:4;stroke-dasharray:none"
+         id="rect1832"
+         width="6.5761862"
+         height="3.1728811"
+         x="72.314804"
+         y="84.682755" />
+    </clipPath>
+  </defs>
   <sodipodi:namedview
      id="base"
      pagecolor="#ffffff"
@@ -23,16 +137,16 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.98994949"
-     inkscape:cx="291.76416"
-     inkscape:cy="284.26579"
+     inkscape:zoom="0.49497475"
+     inkscape:cx="-709.3766"
+     inkscape:cy="498.34816"
      inkscape:document-units="mm"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="layer2"
      inkscape:document-rotation="0"
      showgrid="false"
-     inkscape:window-width="2560"
-     inkscape:window-height="1386"
-     inkscape:window-x="1912"
+     inkscape:window-width="1920"
+     inkscape:window-height="1027"
+     inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
      fit-margin-top="0"
@@ -55,7 +169,7 @@
      inkscape:groupmode="layer"
      id="layer2"
      inkscape:label="Ebene 2"
-     transform="translate(-72.254931,-84.515509)">
+     transform="translate(-72.254931,-75.51967)">
     <text
        xml:space="preserve"
        style="font-size:7.05556px;line-height:1.15;font-family:sans-serif;stroke-width:0.264583"
@@ -71,132 +185,225 @@
        xml:space="preserve"
        style="font-size:7.05556px;line-height:1.15;font-family:sans-serif;stroke-width:0.264583"
        x="129.83482"
-       y="251.65643"
+       y="242.66072"
        id="text2886"><tspan
          sodipodi:role="line"
          id="tspan2884"
          x="129.83482"
-         y="251.65643"
+         y="242.66072"
          style="stroke-width:0.264583">Extraktor</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:7.05556px;line-height:1.15;font-family:sans-serif;stroke-width:0.264583"
        x="129.83482"
-       y="234.00496"
+       y="225.00925"
        id="text2890"><tspan
          sodipodi:role="line"
          id="tspan2888"
          x="129.83482"
-         y="234.00496"
+         y="225.00925"
          style="stroke-width:0.264583">Primäroptik</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:7.05556px;line-height:1.15;font-family:sans-serif;stroke-width:0.264583"
        x="129.83482"
-       y="242.05556"
+       y="233.05984"
        id="text2894"><tspan
          sodipodi:role="line"
          id="tspan2892"
          x="129.83482"
-         y="242.05556"
+         y="233.05984"
          style="stroke-width:0.264583">Kontrastblende</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:7.05556px;line-height:1.15;font-family:sans-serif;stroke-width:0.264583"
        x="129.83482"
-       y="226.25613"
+       y="217.26042"
        id="text2898"><tspan
          sodipodi:role="line"
          id="tspan2896"
          x="129.83482"
-         y="226.25613"
+         y="217.26042"
          style="stroke-width:0.264583">Feldblende</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:7.05556px;line-height:1.15;font-family:sans-serif;stroke-width:0.264583"
        x="129.83482"
-       y="217.44923"
+       y="208.45352"
        id="text2902"><tspan
          sodipodi:role="line"
          id="tspan2900"
          x="129.83482"
-         y="217.44923"
+         y="208.45352"
          style="stroke-width:0.264583">Sekundäroptik</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:7.05556px;line-height:1.15;font-family:sans-serif;stroke-width:0.264583"
        x="129.83482"
-       y="204.78696"
+       y="195.79124"
        id="text2906"><tspan
          sodipodi:role="line"
          id="tspan2904"
          x="129.83482"
-         y="204.78696"
+         y="195.79124"
          style="stroke-width:0.264583">Tranferoptik</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:7.05556px;line-height:1.15;font-family:sans-serif;stroke-width:0.264583"
        x="129.83482"
-       y="171.48721"
+       y="162.4915"
        id="text2910"><tspan
          sodipodi:role="line"
          id="tspan2908"
          x="129.83482"
-         y="171.48721"
+         y="162.4915"
          style="stroke-width:0.264583">Energieanalysator</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:7.05556px;line-height:1.15;font-family:sans-serif;stroke-width:0.264583"
        x="129.83482"
-       y="141.3251"
+       y="132.32939"
        id="text2914"><tspan
          sodipodi:role="line"
          id="tspan2912"
          x="129.83482"
-         y="141.3251"
+         y="132.32939"
          style="stroke-width:0.264583">Refokusoptik</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:7.05556px;line-height:1.15;font-family:sans-serif;stroke-width:0.264583"
        x="129.83482"
-       y="134.14369"
+       y="125.14795"
        id="text2918"><tspan
          sodipodi:role="line"
          id="tspan2916"
          x="129.83482"
-         y="134.14369"
+         y="125.14795"
          style="stroke-width:0.264583">Mikrokanalplatte</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:7.05556px;line-height:1.15;font-family:sans-serif;stroke-width:0.264583"
        x="129.83482"
-       y="126.7732"
+       y="117.77738"
        id="text2922"><tspan
          sodipodi:role="line"
          id="tspan2920"
          x="129.83482"
-         y="126.7732"
+         y="117.77738"
          style="stroke-width:0.264583">Leuchtschirm</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:7.05556px;line-height:1.15;font-family:sans-serif;stroke-width:0.264583"
        x="129.83482"
-       y="101.25986"
+       y="92.264015"
        id="text2926"><tspan
          sodipodi:role="line"
          id="tspan2924"
          x="129.83482"
-         y="101.25986"
+         y="92.264015"
          style="stroke-width:0.264583">Kamera</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:7.05556px;line-height:1.15;font-family:sans-serif;stroke-width:0.264583"
+       x="129.83482"
+       y="249.61543"
+       id="text1934"><tspan
+         sodipodi:role="line"
+         id="tspan1932"
+         x="129.83482"
+         y="249.61543"
+         style="stroke-width:0.264583">Photonen</tspan></text>
   </g>
   <g
      inkscape:label="Ebene 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-72.254931,-84.515509)">
+     transform="translate(-72.254931,-75.51967)">
+    <g
+       id="g1796"
+       transform="rotate(-22.309254,514.39303,61.463939)">
+      <g
+         id="g1770">
+        <g
+           id="g908"
+           transform="translate(-18.763999)">
+          <g
+             id="g912" />
+          <g
+             id="g1735">
+            <ellipse
+               style="fill:none;stroke:#ff0000;stroke-width:0.6;stroke-miterlimit:4;stroke-dasharray:none"
+               id="path884"
+               ry="2.3459833"
+               rx="2.3459835"
+               cy="87.861496"
+               cx="75.600914"
+               clip-path="url(#clipPath900-0)"
+               transform="translate(-0.6999994,-0.70000404)" />
+            <ellipse
+               style="fill:none;stroke:#ff0000;stroke-width:0.6;stroke-miterlimit:4;stroke-dasharray:none"
+               id="ellipse904"
+               ry="2.3459833"
+               rx="2.3459835"
+               cy="87.861496"
+               cx="75.600914"
+               clip-path="url(#clipPath900-0)"
+               transform="matrix(1,0,0,-1,3.9899995,175.00614)" />
+            <g
+               id="g1726">
+              <ellipse
+                 style="fill:none;stroke:#ff0000;stroke-width:0.6;stroke-miterlimit:4;stroke-dasharray:none"
+                 id="ellipse914"
+                 ry="2.3459833"
+                 rx="2.3459835"
+                 cy="87.861496"
+                 cx="75.600914"
+                 clip-path="url(#clipPath900-0)"
+                 transform="translate(8.6820005,-0.70000369)" />
+              <ellipse
+                 style="fill:none;stroke:#ff0000;stroke-width:0.6;stroke-miterlimit:4;stroke-dasharray:none"
+                 id="ellipse916"
+                 ry="2.3459833"
+                 rx="2.3459835"
+                 cy="87.861496"
+                 cx="75.600914"
+                 clip-path="url(#clipPath900-0)"
+                 transform="matrix(1,0,0,-1,13.372,175.00614)" />
+            </g>
+          </g>
+        </g>
+        <ellipse
+           style="fill:none;stroke:#ff0000;stroke-width:0.6;stroke-miterlimit:4;stroke-dasharray:none"
+           id="ellipse1739"
+           ry="2.3459833"
+           rx="2.3459835"
+           cy="87.861496"
+           cx="75.600914"
+           clip-path="url(#clipPath900-0)"
+           transform="translate(-0.6999994,-0.70000404)" />
+      </g>
+      <ellipse
+         style="fill:none;stroke:#ff0000;stroke-width:0.6;stroke-miterlimit:4;stroke-dasharray:none"
+         id="ellipse1741"
+         ry="2.3459833"
+         rx="2.3459835"
+         cy="87.861496"
+         cx="75.600914"
+         clip-path="url(#clipPath900-0)"
+         transform="matrix(1,0,0,-1,3.9900008,175.00614)" />
+      <ellipse
+         style="fill:none;stroke:#ff0000;stroke-width:0.6;stroke-miterlimit:4;stroke-dasharray:none"
+         id="ellipse1743"
+         ry="2.3459833"
+         rx="2.3459835"
+         cy="87.861496"
+         cx="75.600914"
+         clip-path="url(#clipPath900-0)"
+         transform="translate(8.6820005,-0.70000369)" />
+    </g>
     <g
        id="g2777"
-       transform="matrix(1.1124015,0,0,0.99542397,-0.04616746,36.634837)">
+       transform="matrix(1.1124015,0,0,0.99542397,-0.04616746,27.638998)">
       <path
          style="fill:none;stroke:#000000;stroke-width:0.948517;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
          d="M 83.056968,218.56001 H 74.444645 L 65.473476,208.48592"
@@ -217,12 +424,12 @@
        style="fill:#fac045;fill-opacity:1;stroke:none;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none"
        id="path2779"
        cx="97.436012"
-       cy="231.9933"
+       cy="222.99759"
        rx="25"
        ry="2.5" />
     <g
        id="g2805"
-       transform="translate(22.436011,138.72026)">
+       transform="translate(22.436011,129.72437)">
       <path
          style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
          d="M 50,100.5 H 68"
@@ -234,7 +441,7 @@
     </g>
     <g
        id="g2835"
-       transform="translate(-62.745069,83.316644)">
+       transform="translate(-62.745069,74.320805)">
       <path
          style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
          d="M 153.36216,68.426546 H 135.5 v 34.724324 l 17.80568,0.0473"
@@ -259,15 +466,15 @@
     </g>
     <path
        style="fill:none;stroke:#42ff1a;stroke-width:1.37251;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="M 72.436011,125.33708 H 122.43601"
+       d="M 72.436011,116.34119 H 122.43601"
        id="path2815" />
     <path
        style="fill:none;stroke:#000000;stroke-width:2.21346;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:2.21346, 2.21346;stroke-dashoffset:0;stroke-opacity:1"
-       d="m 122.43601,129.97095 h -50"
+       d="m 122.43601,120.97506 h -50"
        id="path2817" />
     <g
        id="g2823"
-       transform="translate(22.436011,123.8385)">
+       transform="translate(22.436011,114.84261)">
       <path
          style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
          d="M 50,100.5 H 68"
@@ -281,26 +488,26 @@
        style="fill:#fac045;fill-opacity:1;stroke:none;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none"
        id="ellipse2825"
        cx="97.436012"
-       cy="214.86435"
+       cy="205.86864"
        rx="25"
        ry="2.5" />
     <ellipse
        style="fill:#45faf1;fill-opacity:1;stroke:none;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none"
        id="ellipse2827"
        cx="97.436012"
-       cy="201.8075"
+       cy="192.81178"
        rx="25"
        ry="2.5" />
     <ellipse
        style="fill:#f445fa;fill-opacity:1;stroke:none;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none"
        id="ellipse2829"
        cx="97.436012"
-       cy="138.99893"
+       cy="130.00322"
        rx="25"
        ry="2.5" />
     <g
        id="g2846"
-       transform="translate(39.011904,66.750628)">
+       transform="translate(39.011904,57.754789)">
       <rect
          style="fill:#6b6b6b;fill-opacity:1;stroke:none;stroke-width:1.69372;stroke-miterlimit:4;stroke-dasharray:1.69372, 1.69372;stroke-dashoffset:0;stroke-opacity:1"
          id="rect2837"
@@ -322,6 +529,17 @@
          height="20"
          x="43.424107"
          y="17.764881" />
+    </g>
+    <g
+       id="g1751"
+       transform="translate(18.764)">
+      <g
+         id="g1737" />
+      <g
+         id="g1749">
+        <g
+           id="g1747" />
+      </g>
     </g>
   </g>
 </svg>
