@@ -4,11 +4,11 @@
     Die Nickeloxidfilme wurden alle in dem Versuchsaufbau aus \autoref{sec:Versuchsaufbau} vorbereitet und vermessen.
     Dabei betrug die Photonenenergie immer \SI{21.22}{\electronvolt} und die Probe befand sich bei Raumtemperatur.
     Ergebnisse dieser Präparation finden sich in \autoref{sec:Prep_NiO}.
-    Das zweite Substrat, das Eisenmonooxid wurde an der NanoESCA Beamline am Synchrotron Elettra in Trieste präperiert und charakterisiert \footnote{Näheres zu diesem Versuchsaufbau und der Behandlung der Daten kann in~\cite{ma-DJ} gefunden werden.}.
+    Das zweite Substrat, das Eisenmonooxid wurde an der NanoESCA Beamline am Synchrotron Elettra in Trieste präpariert und charakterisiert \footnote{Näheres zu diesem Versuchsaufbau und der Behandlung der Daten kann in~\cite{ma-DJ} gefunden werden.}.
     Die Details dieses Prozesses sind in \autoref{sec:Prep_FeO} zusammengefasst.
     Auf beide Substrate wurden Pentacen Moleküle aufgedampft und mittels der Beugung niederenergetischer Elektronen, sowie der Photoemissionsorbitaltomographie betrachtet.
-    Dessen Ergebnisse sind in \autoref{sec:Ergeb} zusammen gestellt.
-    Zur Analyse und Bearbeitung der Daten finden die Software IGOR Pro 8~\cite{IGOR} und Inkscape~\cite{Inkscape} Anwendung.
+    Dessen Ergebnisse sind in \autoref{sec:Ergeb} zusammengestellt.
+    Zur Analyse und Bearbeitung der Daten finden die Software IGOR Pro 8~\cite{IGOR}, Spot Plotter~\cite{SpotPlotter} und Inkscape~\cite{Inkscape} Anwendung.
 
     \section{Nickeloxid} \label{sec:Prep_NiO}
         \begin{figure}
@@ -20,8 +20,8 @@
         Zur Präparation des antiferromagnetischen Nickeloxidfilms wird die Gold (111)-Oberfläche verwendet.
         Das Substrat wurde zunächste mehrere Male durch ioneninduziertes Zerstäuben und anschließendes Aufheizen auf \SI{500}{\celsius} gereinigt.
         Es ergibt sich eine wohldefinierte Struktur der Oberfläche, was sich ebenfalls in dem Beugungsbild der niederenergetischen Elektronen in \autoref{fig:LEED_Au} erkennen lässt.
-        Ferner sind scharfe Spots zu erkennen, ebenso wie die charakteristischen kleineren Spots um die Hauptspots, die von der Fischgräten-Rekonstruktion herrühren.
-        Die unterschiedlichen Intensität der einzelnen Reflexe rühren ebenfalls von der Rekonstruktion her.
+        Ferner sind scharfe Spots zu erkennen, ebenso wie die charakteristischen kleineren Spots um die Hauptspots der zweiten Ordnung, die von der Fischgräten-Rekonstruktion herrühren.
+        Die unterschiedlichen Intensitäten der einzelnen Reflexe rühren ebenfalls von der Rekonstruktion her~\cite{haag_epitaxial_2016}.
 
         \begin{figure}
             \centering
@@ -41,7 +41,7 @@
             Eingezeichnet in rot ist die erste Brillouinzone und drei Hochsymmetriepunkte.
             In (\subref{fig:Band_Au}) ist die gemessene Bandstruktur von Gold (111) aufgetragen, welche sich durch Schneiden des dreidimensionale Datensatz entlang der orange gestrichelte Linien in (\subref{fig:BZ_Au}) ergibt.}
         \end{figure}
-        Die Eigenschaft, dass Gold einen Oberflächenzustand besitzt ist nützlich um festzustellen, ob es sich um eine gut präperierte Oberfläche handelt.
+        Die Eigenschaft, dass Gold einen Oberflächenzustand besitzt ist nützlich um festzustellen, ob es sich um eine gut präparierte Oberfläche handelt.
         Der Oberflächenzustand lässt sich in \autoref{fig:BZ_Au} klar in der Mitte des Bildes erkennen.
         Zusätzlich ist die erste Oberflächenbrillouinzone eingetragen, sowie einige Hochsymmetriepunkte.
         Durch Schneiden entlang der orangen gestrichelten Linien zwischen den Hochsymmetriepunkten ergibt sich die Bandstruktur, welche in \autoref{fig:Band_Au} dargestellt ist.
@@ -56,10 +56,9 @@
             \caption{Das integrierte Spektrum an der Fermikante gemeinsam mit dem durchgeführtem Fit für das Gold.}
             \label{fig:Fermi_Au}
         \end{figure}
-
         Die Bindungsenergie wird ermittelt in dem die Photonenenergie von \SI{21.22}{\electronvolt} angenommen wird und die Fermikante des Goldes bei \SI{16.55}{\electronvolt} in dem winkelintegrierten Spektrum aus \autoref{fig:Fermi_Au} gefittet wird.
         Damit wird die Austrittsarbeit des Analysators zu \SI{4.72}{\electronvolt} bestimmt, nur dies fließt dann noch in die Gleichung \ref{eqn:Photoeffekt} ein.
-        Dies ist vorallem für die späteren Messungen des Nickeloxidfilms wichtig, da es sich hierbei um einen Isolator handelt und somit die Fermienergie in der Bandlücke liegt.
+        Dies ist vor allem für die späteren Messungen des Nickeloxidfilms wichtig, da es sich hierbei um einen Isolator handelt und somit die Fermienergie in der Bandlücke liegt.
         Wird die gesamte Länge des Spektrums betrachtet, also der Energieunterschied zwischen Fermikante und Ende der Sekundärelektronen, so lässt sich die Austrittsarbeit der Probe bestimmen.
         Für Gold lässt sich die Austrittsarbeit auf \SI{5.46}{\electronvolt} ermitteln, was genau dem Literaturwerte entspricht~\cite{5A_4}.
         % Durch die Verschiebung des Abschnitt der Sekundärelektronen nach aufbringen des Pentacen ändert sich die Austrittsarbeit zu \SI{4.62}{\electronvolt}, was dabei sehr nah am Literaturwert von \SI{4.63}{\electronvolt} liegt~\cite{5A_4}.
@@ -75,9 +74,9 @@
             \label{fig:LEED_NiO}
         \end{figure}
         Es ergibt sich das LEED Bild in \autoref{fig:LEED_NiO}.
-        Im Vergleich zu den klaren und scharfen Punkten des sauberen Gold scheinen diese ausgewaschen zu sein.
+        Im Vergleich zu den klaren und scharfen Punkten des sauberen Gold scheinen diese ausgewaschen zu sein und die Reflexe der zweiten Ordnung sind verschwunden.
         Die Ursache daran liegt in der nicht ganz perfekten Oberflächenbeschaffenheit~\cite{NiO_34}.
-        Nun sind aber die Intensitäten der Reflexe beim Nickeloxid gleich groß für alle Punkte, wie erwartet.
+        Nun sind im oberen Bereich die Intensitäten der Reflexe beim Nickeloxid gleich groß, wohingegen im unteren Bereich nur noch schwache Intensitäten zu erkennen sind.
         Die radialen Positionen der Punkte hat sich bei dem Nickeloxidfilm im Vergleich zum Gold nicht wesentlich verändert, ihre Gitterkonstanten sind also nahezu gleich.
         Durch die polare Oberflächennatur der (111)-Orientierung und der damit verbundenen Instabilität können verschiedene Relaxationsprozesse auftreten~\cite{NiO_36, NiO_35, NiO_34, NiO_27, NiO_10}.
         Aus der gleichen Symmetrie der Punkte und der Abwesenheit zusätzlicher Punkte kann eine $\text{p}(2 \times 2)$ Rekonstruktion~\cite{NiO_37}, sowie Domänenbildung der (100)-Orientierung~\cite{NiO_36} ausgeschlossen werden.
@@ -163,15 +162,17 @@
 
         \begin{figure}
             \centering
-            \includegraphics[width=0.5\textwidth]{Fe/Fe3p_Fe.png}
+            \includegraphics[width=0.5\textwidth]{Fe/Fe3p_Fe_2.png}
             \caption{XPS Spektrum des $\ce{Fe}_{3\text{p}}$-Zustand des reinen Eisens bei Raumtemperatur und einer Photonenenergie von \SI{200}{\electronvolt}.}
             \label{fig:XPSFe3p_Fe}
         \end{figure}
-        Zunächst wird die Eisenprobe mittels leichten ioneninduzierten Zerstäuben und Aufheizen auf \SI{600}{\celsius} gereinigt.
+        Zunächst wird die Eisenprobe mittels leichten ioneninduzierten Zerstäubens und Aufheizen auf \SI{600}{\celsius} gereinigt.
         Die Reinheit der Probe lässt sich auch am Spektrum des $\ce{Fe}_{3\text{p}}$-Signals in \autoref{fig:XPSFe3p_Fe} erkennen.
         Das Signal bei \SI{52.83}{\electronvolt} lässt sich nach Abzug eines Pseudo-Tougaard Untergrund sehr gut mit einer Pseudo-Voigt Funktion approximieren~\cite{schmid_new_2014}.
         Mit dieser Position des $\ce{Fe}_{3\text{p}}$-Signals passt dies zur Literatur mit einer Position von \SI{53.8}{\electronvolt} und einer Halbwertsbreite von \SI{1.73}{\electronvolt}~\cite{FeO_50}.
         Hierbei ist die gemessene Halbwertsbreite mit \SI{2.11}{\electronvolt} etwas größer, dennoch im Akzeptanzbereich. % , wobei die Probe auch bei Raumtemperatur vermessen wurde.
+        In diesem wie auch den folgenden Spektren von Kernniveaus zeigt das Residium bei steigender Flanke einige Oszillationen auf, dessen Ursache nicht bekannt ist.
+        Da es stets bei steigender Flanke und einer gleichen Form von etwa \num{3} Wellenzügen auftritt ist davon auszugehen, dass es sich nicht nur um Rauschen handelt, sondern eine systematische Ursache hat.
 
         Um ebenfalls die kinetische Energie in die übliche Bindungsenergie umzurechnen, muss die Austrittsarbeit des Analysators bestimmt werden.
         Dies ist nötig, da es sich bei den Eisenmonooxid um einen Isolator handelt und hier die Fermikante nicht ermittelt werden kann.
@@ -249,7 +250,7 @@
                 \label{fig:LEED_FeO}
             \end{subfigure}
             \caption{Das Beugungsbild der Oberfläche nach dem Aufdampfen bei einer Elektronenenergie von \SI{44}{\electronvolt} (\subref{fig:LEED_Fe3O4}).
-            Ebenfalls eigenzeichnet sind die Reflexe des Substrates (blau) und die der Überstruktur (rot).
+            Ebenfalls eigenzeichnet sind die Reflexe des Substrates (blau) und die der Überstruktur (rot, erstellt mit \cite{SpotPlotter}).
             Sowie das Beugungsbild der modifizierten Oberfläche bei einer Elektronenenergie von \SI{125}{\electronvolt} (\subref{fig:LEED_FeO}).}
         \end{figure}
         Auf die passivierte Eisenoberfläche wird Eisen mit einer Rate von \SI{0.6}{\ML\per\minute} und einem Sauerstoffdruck von \SI{2e-7}{\milli\bar} aufgedampft.
@@ -346,7 +347,7 @@
         Es ist ein kleiner Offset unter den Beiden zu erkennen, wird dieser vernachlässigt so ist bei der hier verwendeten Probe ein größerer Sauerstoffanteil zu erkennen.
         Denn das Spektrum lässt durch vier maßgebliche Beiträge beschreiben.
         Hierbei handelt es sich bei \SI{1.5}{\electronvolt} um den Beitrag des hybridisierten Zustand $\ce{Fe}\:\text{d}^6\text{L}^{-1}$ und bei \SI{4}{\electronvolt} um den Beitrag des $\ce{Fe}\:\text{d}^5$ Zustands~\cite{FeO_19}.
-        Die Beiträge bei \SI{5.5}{\electronvolt}~\cite{FeO_44} und \SI{6.2}{\electronvolt}~\cite{FeO_18} haben ihren Ursprung bei den Sauerstoff 2p-Zustände.
+        Die Beiträge bei \SI{5.5}{\electronvolt}~\cite{FeO_44} und \SI{6.2}{\electronvolt}~\cite{FeO_18} haben ihren Ursprung bei den Sauerstoff 2p-Zuständen.
         Es ist dabei ein deutlicher Unterschied zu dem Spektrum des \ce{Fe3O4} in \autoref{fig:EDC_Fe3O4} zu erkennen.
         Beide Spektren zeigen eine recht ausgeprägte Spitze mit einer Schulter bei niedrigen Bindungsenergien.
         Aus dem Punkt an dem die Sekundärelektronen aufhören und der Fermikante lässt sich die Austrittsarbeit auf \SI{3.48}{\electronvolt} bestimmen.
@@ -372,7 +373,7 @@
             Links zu sehen in (\subref{fig:XPSO1s_Fe3O4}) ist der aufgedampfte Film und rechts in (\subref{fig:XPSO1s_FeO}) der modifizierte Film.}
             \label{fig:XPS_O1s}
         \end{figure}
-        Um genauer die Zusammensetzung zu überprüfen wird auch die chemisch senstive Methode der Röntgenphotoelektronenspektroskopie angewendet.
+        Um genauer die Zusammensetzung zu überprüfen wird auch die chemisch sensitive Methode der Röntgenphotoelektronenspektroskopie angewendet.
         Die entsprechenden Spektren des $\ce{O}_{1\text{s}}$-Signals sind in \autoref{fig:XPS_O1s} dargestellt.
         Das $\ce{O}_{1\text{s}}$-Signal des aufgebrachten Films zeigt dabei einen kleinen Anteil einer \ce{OH}-Kontamination~\cite{FeO_9}.
         Aus der Position des $\ce{O}_{1\text{s}}$ lässt sich nach der Literatur keine Information über das vorhandene Eisenoxid gewinnen~\cite{FeO_15, FeO_9, FeO_64, wandelt_photoemission_1982}.
@@ -382,7 +383,7 @@
         Ursache könnte sein, dass es an einer Referenzmessung zur Bestimmung der Photonenenergie fehlt, welche mit \SI{650}{\electronvolt} angenommen wurde und damit zu einer konstanten Verschiebung führt.
         Ermittelte Halbwertsbreiten hingegen passen recht gut zur Literatur von etwa \SI{1.6}{\electronvolt}~\cite{FeO_53} und sind mit \SI{1.5}{\electronvolt} sogar etwas kleiner.
         Beim modifizierten Film zeigt sich in \autoref{fig:XPSO1s_FeO} hingegen die Abwesenheit der \ce{OH}-Kontamination.
-        Die Position lässt sich auf \SI{529.7}{\electronvolt} bestimmen und liegt wie schon für den unmodifizierten Film leicht unterhalb des erwarteten Wertes.
+        Die Position lässt sich auf \SI{529.7}{\electronvolt} bestimmen und liegt wie schon für den direkt aufgebrachten Film leicht unterhalb des erwarteten Wertes.
         Da zwischen den beiden Messungen am Monochromator die Gitter getauscht wurden sind leichte unterschiedliche Photonenenergien anzunehmen.
         Dies würde auch deren relative Position der beiden Peaks von \SI{0.5}{\electronvolt} untereinander erklären, welcher nicht erwartet wird~\cite{FeO_15, FeO_9, FeO_64, wandelt_photoemission_1982}.
 
@@ -400,7 +401,7 @@
                 \subcaption{}
                 \label{fig:XPSFe3p_FeO}
             \end{subfigure}
-            \caption{Die Röntgenphotoelektronenspektroskopie Spektren bei einer Photonenergie von \SI{200}{\electronvolt} der $\ce{Fe}_\text{3p}$-Zustände mit s-polarisierter Strahlung.
+            \caption{Die Röntgenphotoelektronenspektroskopie Spektren bei einer Photonenenergie von \SI{200}{\electronvolt} der $\ce{Fe}_\text{3p}$-Zustände mit s-polarisierter Strahlung.
             In (\subref{fig:XPSFe3p_Fe3O4}) das Spektrum des aufgedampften Films, sowie des modifizierten Films in (\subref{fig:XPSFe3p_FeO}).}
             \label{fig:XPS_Fe3p}
         \end{figure}
@@ -712,7 +713,7 @@
         \end{figure}
         Die jeweils identifizieren Merkmale finden sich ebenfalls im winkelintegrierten Spektrum in \autoref{fig:EDC_FeO+5A} wieder.
         An den jeweiligen Positionen befinden sich klar erkennbare Erhebungen.
-        Auch ohne die fehlende rferenzmessung des Substartes lässt sich dies erkennen.
+        Auch ohne die fehlende Referenzmessung des Substartes lässt sich dies erkennen.
 
         Es kann davon ausgegangen werden, dass es sich bei der Wechselwirkung um die Chemisorption handelt, denn auch das LUMO wird besetzt.
         Um dies zu erlangen muss vorher Ladung zwischen den Molekülen und dem Substrat ausgetauscht worden sein, was das Merkmal der Chemisorption ist.
@@ -739,15 +740,14 @@
         % Aber auch bei der Betrachtung der winkelaufgelösten Bilder sind klare Unterschiede hinsichtlich der Merkmale erkennbar.
         % Teilweise zeigen die Bilder bei den gleichen Energien wie die HOMO bis HOMO-2 Orbitale sehr ähnliche Signale wie mit den Molekülen.
   
-    \section{NOTIZEN}
-    \subsection{Datendeutung}
-        \begin{itemize}
-            \item FeO besitzt hingegen nur Fe2+, ist aber recht anfällig weiter zu oxidieren, so dass sich ein Fe3O4 (Fe2+, Fe3+tetra, Fe3+octa) oder Fe2O3 (nur Fe3+) Film bilden kann. 
-            \item XAS Messungen wurden duch Multiplikation an Preedge ausgerichtet, dann wurde ein linear Untergrund abgezogen (pre-edge gefittet) und anschließend die Preedge auf Null gesetzt und die Postedge auf 1 (durch Division)
-            \item Alle Messungen sind Spin integriert, da sonst auch die Einheitszelle größer wäre.
-            \item spin-polarisierte Zustände für die Chemisorption auf FM gesehen \cite{IF_16}
-            \item orbital verbreiterung und energie-verschiebung abhängig vom Spin \cite{IF_16}
-        \end{itemize}
+    % \section{NOTIZEN}
+    % \subsection{Datendeutung}
+    %     \begin{itemize}
+    %         % \item FeO besitzt hingegen nur Fe2+, ist aber recht anfällig weiter zu oxidieren, so dass sich ein Fe3O4 (Fe2+, Fe3+tetra, Fe3+octa) oder Fe2O3 (nur Fe3+) Film bilden kann. 
+    %         % \item XAS Messungen wurden duch Multiplikation an Preedge ausgerichtet, dann wurde ein linear Untergrund abgezogen (pre-edge gefittet) und anschließend die Preedge auf Null gesetzt und die Postedge auf 1 (durch Division)
+    %         \item Alle Messungen sind Spin integriert, da sonst auch die Einheitszelle größer wäre.
+    %         % \item orbital verbreiterung und energie-verschiebung abhängig vom Spin \cite{IF_16}
+    %     \end{itemize}
 
     % \section{Datenformat und Bearbeitung}
     % \begin{itemize}

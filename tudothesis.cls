@@ -94,8 +94,8 @@
   \begin{tabular}{@{}l@{\hspace{2em}}l@{}}
       Erstgutachter:  & \thefirstcorrector \\
       Zweitgutachter: & \thesecondcorrector \\
-      Betreuer: & \thesupervisor \\
-      & \thesecondsupervisor \\
+      Betreuer: & \thesecondsupervisor \\
+      & \thesupervisor \\
       Abgabedatum:    & \thesubmissiondate
   \end{tabular}
   \newpage
