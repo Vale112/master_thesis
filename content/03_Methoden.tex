@@ -16,7 +16,7 @@
         Dazu muss das Photon der Energie $h \nu$ mindestens die Bindungsenergie des Elektrons $E_\text{B}$ sowie die Austrittsarbeit der Probe $\phi$ besitzen.
         Die restliche zur Verfügung stehende Energie wird als kinetische Energie
         \begin{equation}
-            E_{\text{Kin}} = h \nu - E_{\symup{B}} - \phi
+            E_{\text{kin}} = h \nu - E_{\symup{B}} - \phi
             \label{eqn:Photoeffekt}
         \end{equation}
         an das Elektron abgegeben.
@@ -61,8 +61,8 @@
                 \caption{Inelastische mittlere freie Weglänge für Elektronen in verschiedenen Materialien. Aus~\cite{Hüfner} und bearbeitet.}
                 \label{fig:Weg}
             \end{figure}
-            Der Prozess der Photoelektronenemission lässt sich in einem Model mit drei unabhängigen Stufen erklären.
-            Das Model ist in \autoref{fig:3Stufen} schematisch zu sehen.
+            Der Prozess der Photoelektronenemission lässt sich in einem Modell mit drei unabhängigen Stufen erklären.
+            Das Modell ist in \autoref{fig:3Stufen} schematisch zu sehen.
             Der erste Schritt ist die Absorption des Photons, wodurch das Elektron aus seiner Bindung gelöst wird und in einen unbesetzten Zustand angeregt wird.
             Dabei besitzt das Elektron eine gewisse kinetische Energie mit der es innerhalb des Festkörpers zur Probenoberfläche wandert.
             Auf dem Weg zur Oberfläche können die Elektronen Stößen unterfahren, wodurch sie im Fall eines inelastischen Stoßes mit anderen Elektronen Energie und damit Informationen über deren Ursprung verlieren.
@@ -147,20 +147,20 @@
             Schematisch ist dies in \autoref{fig:ARPES} dargestellt.
             Unter der Annahme, dass sich das ausgetretene Elektron wie ein freies Elektron im Vakuum verhält, ergibt sich der Impulsvektor parallel zur Oberfläche zu 
             \begin{equation}
-                k_{||} = \frac{\sqrt{2 m_\text{e} E_\text{Kin}}}{\hbar} sin(\theta),
+                k_{||} = \frac{\sqrt{2 m_\text{e} E_\text{kin}}}{\hbar} sin(\theta),
             \end{equation}
             mit dem polarem Austrittswinkel $\theta$.
             Aus den energieselektierten Elektronen kann ein Teilbereich der Bandstruktur $E(k_\text{||})$ rekonstruiert werden.
             % Wird für jede Winkelkombination aus polarem $\theta$ und azimutalen $\phi$ Winkel ein UPS-Spektrum aufgezeichnet, so lassen sich die entsprechenden Impulsvektoren der Elektronen aus den Winkeln und der kinetischen Energie zu
             % \begin{gather}
-            %     k_\text{x} = \sqrt{\frac{2 \text{m}_\text{e} E_\text{Kin}}{\hbar^2}} \sin\theta \cos\phi \\
-            %     k_\text{y} = \sqrt{\frac{2 \text{m}_\text{e} E_\text{Kin}}{\hbar^2}} \sin\theta \sin\phi
+            %     k_\text{x} = \sqrt{\frac{2 \text{m}_\text{e} E_\text{kin}}{\hbar^2}} \sin\theta \cos\phi \\
+            %     k_\text{y} = \sqrt{\frac{2 \text{m}_\text{e} E_\text{kin}}{\hbar^2}} \sin\theta \sin\phi
             % \end{gather}
             % bestimmen~\cite{MM_4}.
             
-            Unter Berücksichtigung der polarem $\theta$ und azimutalen $\phi$ Austrittswinkel der Elektronen, sowie des finalen Zustands $\Psi_\text{f}$ mit einer Energie $E_\text{Kin}$, ergibt sich die Photoelektronenintensität in entsprechende Richtung
+            Unter Berücksichtigung der polarem $\theta$ und azimutalen $\phi$ Austrittswinkel der Elektronen, sowie des finalen Zustands $\Psi_\text{f}$ mit einer Energie $E_\text{kin}$, ergibt sich die Photoelektronenintensität in entsprechende Richtung
             \begin{equation}
-                I(\theta, \phi, E_\text{Kin}) \propto \sum_i \abs*{\bigl<\Psi_\text{f}(\theta, \phi, E_\text{Kin})|\vec{A}\cdot\vec{p}|\Psi_\text{i}\bigr>}^2 \times \delta\left(E_\text{i}+E_\text{Kin}+\Phi-h\nu\right)
+                I(\theta, \phi, E_\text{kin}) \propto \sum_i \abs*{\bigl<\Psi_\text{f}(\theta, \phi, E_\text{kin})|\vec{A}\cdot\vec{p}|\Psi_\text{i}\bigr>}^2 \times \delta\left(E_\text{i}+E_\text{kin}+\Phi-h\nu\right)
                 \label{eqn:ARPES}
             \end{equation}
             vom Anfangszustand $\Psi_\text{i}$ in der Dipolapproximation~\cite{MM_2}.
@@ -269,7 +269,7 @@
                 \label{fig:DFT3}
             \end{subfigure}
             \caption{In (\subref{fig:DFT1}) ist die sich aus der Dichtefunktionaltheorie (DFT) ergebene Struktur von Pentacen gezeigt.
-            Die durch Fouriertransformation gewonnen Orbitalstruktur im reziproken Raum (\subref{fig:DFT2}).
+            Die durch die Fouriertransformation gewonnen Orbitalstruktur im reziproken Raum (\subref{fig:DFT2}).
             (\subref{fig:DFT3}) die Projektion der Fouriertransformation der Molekülorbitale für eine feste kinetische Energie.
             Aus~\cite{MM_2}}
             \label{fig:DFT}
