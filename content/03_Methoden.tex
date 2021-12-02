@@ -47,6 +47,7 @@
         Der Valenzbandbereich nahe der Fermikante lässt sich mittels der ultravioletten Strahlung genauer untersuchen, was in \autoref{sec:UPS} genauer erläutert wird.
 
         \subsection{Das drei Stufenmodell} \label{sec:3Stufen}
+            Der Prozess der Photoelektronenemission lässt sich in einem Modell mit drei unabhängigen Stufen erklären.
             \begin{figure}
                 \centering
                 \includegraphics[width=0.5\textwidth]{3Stufen}
@@ -55,18 +56,17 @@
                 Kopiert und modifiziert aus~\cite{zhang_synchrotron_2018}.}
                 \label{fig:3Stufen}
             \end{figure}
+            Das Modell ist in \autoref{fig:3Stufen} schematisch zu sehen.
+            Der erste Schritt ist die Absorption des Photons, wodurch das Elektron aus seiner Bindung gelöst wird und in einen unbesetzten Zustand angeregt wird.
+            Dabei besitzt das Elektron eine gewisse kinetische Energie mit der es innerhalb des Festkörpers zur Probenoberfläche wandert.
+            Auf dem Weg zur Oberfläche können die Elektronen Stößen unterfahren, wodurch sie im Fall eines inelastischen Stoßes mit anderen Elektronen Energie und damit Informationen über deren Ursprung verlieren.
+            Die gestreuten Elektronen, sogenannte Sekundärelektronen, erzeugen einen kontinuierlichen Untergrund und ihr Beitrag steigt mit abnehmender kinetischer Energie an.
             \begin{figure}
                 \centering
                 \includegraphics[width=0.6\textwidth]{Weg2.png}
                 \caption{Inelastische mittlere freie Weglänge für Elektronen in verschiedenen Materialien. Aus~\cite{Hüfner} und bearbeitet.}
                 \label{fig:Weg}
             \end{figure}
-            Der Prozess der Photoelektronenemission lässt sich in einem Modell mit drei unabhängigen Stufen erklären.
-            Das Modell ist in \autoref{fig:3Stufen} schematisch zu sehen.
-            Der erste Schritt ist die Absorption des Photons, wodurch das Elektron aus seiner Bindung gelöst wird und in einen unbesetzten Zustand angeregt wird.
-            Dabei besitzt das Elektron eine gewisse kinetische Energie mit der es innerhalb des Festkörpers zur Probenoberfläche wandert.
-            Auf dem Weg zur Oberfläche können die Elektronen Stößen unterfahren, wodurch sie im Fall eines inelastischen Stoßes mit anderen Elektronen Energie und damit Informationen über deren Ursprung verlieren.
-            Die gestreuten Elektronen, sogenannte Sekundärelektronen, erzeugen einen kontinuierlichen Untergrund und ihr Beitrag steigt mit abnehmender kinetischer Energie an.
             Die mittlere freie Weglänge, die ein Elektron im Festkörper zurücklegt ohne inelastische zu streuen, ist stark abhängig von der kinetischen Energie, wie in \autoref{fig:Weg} gezeigt ist.
             Es ist zu erkennen, dass Elektronen mit einer kinetischen Energie im Bereich von \SIrange{30}{100}{\electronvolt} und nicht inelastisch gestreut wurden, aus einer Tiefe von nicht mehr als \SI{5}{\angstrom} herrühren und somit aus dem oberflächennahen Bereich.
             Ist die kinetische Energie des Elektrons größer als die Austrittsarbeit der Probe, so kann das Elektron die Oberfläche in einem dritten Schritt verlassen.
@@ -169,7 +169,7 @@
     \section{Photoelektronenemissionsmikroskopie} \label{sec:PEEM}
         Die Photoelektronenemissionsmikroskopie vereinigt spektroskopische und mikroskopische Methoden. % ist eine sehr viel versprechende Technik, die für immer mehr Aufsehen in den letzten Jahren gesorgt hat.
         Sie nutzt die Prinzipien der Energie- und Impulserhaltung, um Bilder der Proben im Realraum oder Impulsraum aufzulösen.
-        Zuerst wurde dies 1933 durch E. Brüche entdeckt, der eine Realraumaufnahme einer Zinkplatte mit Hilfe von Photoelektronen und einer magnetischen Linse auf einem Leuchtschirm abbildete~\cite{bruche_elektronenmikroskopische_1933}.
+        Zuerst wurde dies 1933 durch E. Brüche entdeckt, der eine Realraumaufnahme einer Zinkplatte mit Hilfe von Photoelektronen, einer Extraktor-Linse und einer magnetischen Linse auf einem Leuchtschirm abbildete~\cite{bruche_elektronenmikroskopische_1933}.
         Die experimentelle Umsetzung einer zweidimensionalen Aufnahme im Impulsraum gelang erstmals durch Kotsugi u. a. im Jahre 2002~\cite{kotsugi_microspectroscopic_2003}.
         
         \begin{figure}
@@ -205,7 +205,7 @@
             \label{fig:real_k}
         \end{figure}
         Für den Realraum ist dies in \autoref{fig:real_k}\,a und für den Impulsraum in \autoref{fig:real_k}\,b dargestellt.
-        Im vorderen Teil, dem PEEM (\textit{Photoemitted electron microscopy}), ändert sich nichts wohingegen die Transferlinse dafür sorgt, dass entweder das Beugungs- oder Realraumbild auf die Eintrittsblende des Analysators abgebildet wird.
+        Im vorderen Teil, dem PEEM (\textit{Photoemitted electron microscopy}), ändert sich nichts wohingegen die Transferlinse dafür sorgt, dass entweder das Realraum- oder Beugungsbild auf die Eintrittsblende des Analysators abgebildet wird.
         Vorteil der Umschaltung zwischen den Modis ist, dass sich auf sehr kleinen Bereichen die im Realraum bestimmt wurden Messungen im reziproken Raum durchführen lassen~\cite{suga_photoelectron_2021}.
         % Realisiert wird dies durch die Transferlinse, die durch eine entsprechende Fokussierung das Bild generiert.
         Dies ist nur möglich, wenn die gesamte Ausrichtung passt und sich das Realraumbild immer an der Stelle der Bildebene ergibt und das Beugungsbild in der hinteren Brennebene.
@@ -311,11 +311,11 @@
         Beide Kammern sind dabei eigenständige Systeme und werden nur für den Probentransfer verbunden.
         Da es keine Pumpe gibt, die direkt vom Atmosphärendruck bis in den UHV Bereich kleiner \SI{1e-9}{\milli\bar} reicht, ist ein mehrstufiges Pumpsystem unabdingbar \cite{Henzler}.
         In dem vorliegenden Aufbau wird dies durch Turbomolekularpumpen mit vorgeschalteten Scrollpumpen realisiert.
-        Ferner werden diese durch eine Titansublimationspumpe, sowie eine Ionenpumpe unterstützt.
+        Ferner werden diese durch eine Titansublimationspumpe sowie eine Ionenpumpe unterstützt.
 
-        In der Präparationskammer befinden sich die Geräte und Komponenten zur Probenpräparation, sowie zur Überprüfung der Oberflächenbeschaffenheit.
+        In der Präparationskammer befinden sich die Geräte und Komponenten zur Probenpräparation sowie zur Überprüfung der Oberflächenbeschaffenheit.
         Für die Reinigung der Probe steht eine Ionenquelle zur Verfügung, um die Probe mittels ioneninduzierter Zerstäubung zu reinigen.
-        Auf dem Manipulator, mit dem die Probe im Ultrahochvakuum verfahren werden können, ist eine Elektronenstoßheizung montiert, um die Probe aufzuheizen.
+        Auf dem Manipulator, mit dem die Probe im Ultrahochvakuum verfahren werden kann, ist eine Elektronenstoßheizung montiert, um die Probe aufzuheizen.
         Die Präparationskammer ist mit einer LEED-Optik ausgestattet, wodurch die Oberflächenbeschaffenheit kontrolliert werden kann.
         Des Weiteren befindet sich ein Feindosierventil für Sauerstoff, sowie Molekül- und Metallaufdampfer an der Kammer.
         Um die Aufdampfraten der Materialien zu bestimmen, steht eine Quarzkristallwaage am Manipulator zur Verfügung.
